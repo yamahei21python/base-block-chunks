@@ -1,0 +1,64 @@
+name: census-release
+
+# Census one raw chunk that already sits in a release, entirely inside
+# Actions: download, run census.py with the repo registry, upload the
+# census JSON back to the SAME release.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag holding the raw chunk"
+        required: true
+        type: string
+      asset:
+        description: "Chunk asset file name (chunk_<first>_<last>.db.gz)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download raw chunk from the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          ASSET: ${{ inputs.asset }}
+        run: |
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --pattern "$ASSET" --dir .
+          gunzip "$ASSET"
+
+      - name: Census with the repo registry
+        env:
+          ASSET: ${{ inputs.asset }}
+        run: |
+          CHUNK="${ASSET%.gz}"
+          OUT="census_${CHUNK#chunk_}"
+          OUT="${OUT%.db}.json"
+          python3 scripts/census.py "$CHUNK" \
+            --registry scripts/known_topics.json --out "$OUT"
+          ls -la
+
+      - name: Upload census to the same release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          ASSET: ${{ inputs.asset }}
+        run: |
+          CHUNK="${ASSET%.gz}"
+          OUT="census_${CHUNK#chunk_}"
+          OUT="${OUT%.db}.json"
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
+            "$OUT" --clobber
+
+      - name: Beacon (ntfy)
+        if: always()
+        run: |
+          curl -s --max-time 15 -d "${{ github.workflow }} run ${{ github.run_id }}: ${{ job.status }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
