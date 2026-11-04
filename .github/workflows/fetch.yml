@@ -108,4 +108,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Beacon (ntfy)
-        run: curl -s --max-time 15 -d "fetch run ${{ github.run_id }}: plan=${{ needs.plan.result }} fetch=${{ needs.fetch.result }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
+        run: |
+          curl -s --max-time 15 -d "fetch run ${{ github.run_id }}: plan=${{ needs.plan.result }} fetch=${{ needs.fetch.result }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
