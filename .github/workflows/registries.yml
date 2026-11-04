@@ -23,7 +23,7 @@ jobs:
         run: python3 scripts/resolve_tokens.py
       - name: Commit if changed
         run: |
-          if git diff --quiet -- scripts/known_tokens.json; then
+          if [ -z "$(git status --porcelain -- scripts/known_tokens.json)" ]; then
             echo "known_tokens.json unchanged"
           else
             git config user.name "github-actions"
