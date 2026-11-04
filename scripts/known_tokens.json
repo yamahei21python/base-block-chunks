@@ -20136,6 +20136,158 @@
   "0xffe6510baf2a479ab567d76af8ec79d9f7d0366a": {
    "symbol": "BLUESCREEN",
    "name": "BLUESCREEN"
+  },
+  "0x00bde1d818064f863853e57ecebc390513bc16ea": {
+   "symbol": "PEPE",
+   "name": "PEPE"
+  },
+  "0x02043225edf7e2b4938c0eff6f8302574a96c7d0": {
+   "symbol": "HEXN",
+   "name": "Hexncoin"
+  },
+  "0x020940df9f5e77338a094d55b5b5914122a804a5": {
+   "symbol": "RBNT",
+   "name": "Redbelly Network coin"
+  },
+  "0x0d91ebb16291873a0c67158f578ec249f4321b49": {
+   "symbol": "AIV",
+   "name": "AIVeronica by Virtuals"
+  },
+  "0x0fa3982c370e06dc16d48fa8bc13c03814007777": {
+   "symbol": "1029",
+   "name": "10 29"
+  },
+  "0x11f1f1458c909ab97f0150af3ac3de2d73f181ec": {
+   "symbol": "BOKK",
+   "name": "the meme chicken"
+  },
+  "0x14434deeee70fc99c167b063e09c23834d01116c": {
+   "symbol": "REBATE",
+   "name": "Rebate"
+  },
+  "0x1514fca8b76237b95187494dcf13b2e279cf91f6": {
+   "symbol": "USOE",
+   "name": "US Oil Exchange (USOE)"
+  },
+  "0x164239fa94aec9c4e437bf6890ea8602b759fd74": {
+   "symbol": "VERONICA",
+   "name": "VERONICA by Virtuals"
+  },
+  "0x22c0a2e55aed8b317a285ccbd4f3d8ee24c9e5e3": {
+   "symbol": "FYNI",
+   "name": "Fyni AI by Virtuals"
+  },
+  "0x2b5b5cd45180965efd92d6571cde8ce1c79d7777": {
+   "symbol": "SHADOW",
+   "name": "Shadow Realms"
+  },
+  "0x445937762c7eb859ef70b54994a6290ebf03cbc9": {
+   "symbol": "VMRt",
+   "name": "VMR stt"
+  },
+  "0x45e4e92f5a94f4b741c9cb553ff8be7b25eb7df5": {
+   "symbol": "AITV",
+   "name": "AITV"
+  },
+  "0x5401b8620e5fb570064ca9114fd1e135fd77d57c": {
+   "symbol": "LBTCv",
+   "name": "Lombard BTC Vault"
+  },
+  "0x59f680f431f5280e7662b96f2dfa195d1693852d": {
+   "symbol": "MAG",
+   "name": "Magnify Cash"
+  },
+  "0x61527cd3667243b0a80d41cb690237444e42a8d0": {
+   "symbol": "DONNA",
+   "name": "IP Tokens of IPNFT #220"
+  },
+  "0x7977e264b8832d02a88a7938adc17b4e60422467": {
+   "symbol": "USOE",
+   "name": "USOE"
+  },
+  "0x79dacb99a8698052a9898e81fdf883c29efb93cb": {
+   "symbol": "ACOLYT",
+   "name": "Acolyte by Virtuals"
+  },
+  "0x96bf23f62dcedd26e0649595e10ed2c1e19eb444": {
+   "symbol": "No",
+   "name": "No Token"
+  },
+  "0x9a6a7ce135114d1f4473f14eb9db8818592e2fe1": {
+   "symbol": "No",
+   "name": "No Token"
+  },
+  "0x9b507288910545eabda0bcc90634f3d0035b8eb8": {
+   "symbol": "0XZAPS",
+   "name": "OpenZaps"
+  },
+  "0x9c6983df8d23427a155f2a1e9c87b15c0f58e222": {
+   "symbol": "TSR",
+   "name": "TIBBIR Strategic Reserve"
+  },
+  "0xa282064541bb45caa046fb9f21a240671abb7f46": {
+   "symbol": "cowAeroBaseUSDC-NVDAc",
+   "name": "Cow Aero Base USDC-NVDAc"
+  },
+  "0xa366060dcfad8cb61db953a3a170d4cd8232f021": {
+   "symbol": "KAS",
+   "name": "Kaspa"
+  },
+  "0xadf13c450a0fc1c292906fcc17e8f637aadd84da": {
+   "symbol": "PI-HOLE",
+   "name": "PI-HOLE github.com/pi-hole/PI-HOLE"
+  },
+  "0xadf47ed2c1cf78086128d72d8bae97edad51ffb0": {
+   "symbol": "VEE-VALIDATE",
+   "name": "VEE-VALIDATE github.com/logaretm/VEE-VALIDATE"
+  },
+  "0xadf591b419a4300b5237c92d83a0edd154137d24": {
+   "symbol": "WAYDROID",
+   "name": "WAYDROID github.com/waydroid/WAYDROID"
+  },
+  "0xadf7bd7244ed8c06611b1790fa1e4ce6389cfcc1": {
+   "symbol": "UPLOT",
+   "name": "UPLOT github.com/leeoniya/UPLOT"
+  },
+  "0xadf94047414435ce430947ca01335c31e3e12c40": {
+   "symbol": "RUFFLE",
+   "name": "RUFFLE github.com/ruffle-rs/RUFFLE"
+  },
+  "0xb2000000000000000000005a0c125da6cf531d01": {
+   "symbol": "BRAINARM",
+   "name": "Brain Armstrong"
+  },
+  "0xb7fa17a2f1ec8e1ddd6891e53492c86b9f2572dd": {
+   "symbol": "rcowAeroBaseUSDC-NVDAc",
+   "name": "Reward Cow Aero Base USDC-NVDAc"
+  },
+  "0xbb146326778227a8498b105a18f84e0987a684b4": {
+   "symbol": "ASK",
+   "name": "Permission Token"
+  },
+  "0xc77eb53473759913bf278e52861ef281829cbe4d": {
+   "symbol": "SKY",
+   "name": "Skynet by Virtuals"
+  },
+  "0xc8299ac1bcaa801284aad7e78901e89dbf947777": {
+   "symbol": "QPC",
+   "name": "QuantPC"
+  },
+  "0xd317fdf7e7e3ba9dc9a73cae2e54732646866025": {
+   "symbol": "mooBeefyAeroBaseUSDC-NVDAc",
+   "name": "Moo Beefy Aero Base USDC-NVDAc"
+  },
+  "0xd6de3e72611bce57a780500cdf64ef4b807179bb": {
+   "symbol": "CBDUSK",
+   "name": "CBDUSK"
+  },
+  "0xdb2a5bc598aecbe216363e00c512c995547a7777": {
+   "symbol": "UNSAFU",
+   "name": "Funds Are UNSAFU"
+  },
+  "0xe27d710f054d80d3b51f36e1de4c5291dbd6d7b4": {
+   "symbol": "SPX48D",
+   "name": "spx48d (SPX48D)"
   }
  }
 }
