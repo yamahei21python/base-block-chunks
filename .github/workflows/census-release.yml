@@ -43,7 +43,7 @@ jobs:
           OUT="census_${CHUNK#chunk_}"
           OUT="${OUT%.db}.json"
           python3 scripts/census.py "$CHUNK" \
-            --registry scripts/known_topics.json --out "$OUT"
+            --registry scripts/known_topics.json --min-events 1 --min-txs 1 --out "$OUT"
           ls -la
 
       - name: Upload census to the same release
