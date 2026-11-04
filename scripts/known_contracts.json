@@ -1,1 +1,77 @@
-{"contracts":{"0x238a358808379702088667322f80ac48bad5e6c4":{"name":"PancakeSwap Infinity Vault","protocol":"PancakeSwap Infinity","role":"vault","source":"decode v0.5 singleton resolution; verified against V4 conventions"},"0x290e41f7b52dbd2dc1e3009fe19e6a824f296a42":{"name":"PMM emitting pool","protocol":"PMM (unidentified operator)","role":"pool (example)","source":"residue investigation 2026-11-04"},"0x2a53833cc95548cf52c7b159110e22d3a9018f32":{"name":"MetricOmmPoolFactory","protocol":"Metric","role":"factory","source":"identification investigation 2026-11-04: verified pool 0x9fc528c6... created via this factory"},"0x498581ff718922c3f8e6a244956af099b2652b2b":{"name":"Uniswap V4 PoolManager","protocol":"Uniswap","role":"pool_manager","source":"decode v0.5 singleton resolution; verified in census investigations"},"0x4bba9eeedebf2fbfb10b59290c922eba47fd2bed":{"name":"PMM engine","protocol":"PMM (unidentified operator)","role":"engine","source":"residue investigation 2026-11-04: PMM swap format proof, vault settlement matched 66/69 events"},"0x71c2ed90cc288229be59f26b8b3eef3c07d7ab99":{"name":"Swap-signature logger (NOT Metric)","protocol":"unknown aggregator RFQ adapter","role":"logger/adapter","source":"identification investigation 2026-11-04: non-indexed Swap(address,address,uint256,uint256,uint256) logger; mirrors 0xc2be7b94 events; zero own Transfers"},"0x9fc528c6856fdd1d6fb3633c6071ff5e86203951":{"name":"Metric pool (getImmutables-verified)","protocol":"Metric","role":"pool (verified example)","source":"identification investigation 2026-11-04"},"0xa74b86db79fb8161ac903365161235854da70cd4":{"name":"PMM settlement vault","protocol":"PMM (unidentified operator)","role":"vault","source":"residue investigation 2026-11-04"},"0xba12222222228d8ba445958a75a0704d566bf2c8":{"name":"Balancer V2 Vault","protocol":"Balancer V2","role":"vault","source":"top-500 deep classification 2026-11-04, Transfer-exact on samples"},"0xba1333333333a1ba1108e8412f11850a5c319ba9":{"name":"Balancer V3 Vault","protocol":"Balancer V3","role":"vault","source":"top-500 deep classification 2026-11-04, Transfer-exact on samples"},"0xc2be7b94d5498b1aceb914f3a1dec4ce502d235f":{"name":"RFQ detailed-event twin of 0x71c2ed90","protocol":"unknown aggregator RFQ adapter","role":"detailed event emitter","source":"identification investigation 2026-11-04: first 5 data words byte-identical to the logger twin in all 7 sampled txs"}},"version":"v2026-11-04.1"}
+{
+ "contracts": {
+  "0x238a358808379702088667322f80ac48bad5e6c4": {
+   "name": "PancakeSwap Infinity Vault",
+   "protocol": "PancakeSwap Infinity",
+   "role": "vault",
+   "source": "decode v0.5 singleton resolution; verified against V4 conventions"
+  },
+  "0x290e41f7b52dbd2dc1e3009fe19e6a824f296a42": {
+   "name": "PMM emitting pool",
+   "protocol": "PMM (unidentified operator)",
+   "role": "pool (example)",
+   "source": "residue investigation 2026-11-04"
+  },
+  "0x2a53833cc95548cf52c7b159110e22d3a9018f32": {
+   "name": "MetricOmmPoolFactory",
+   "protocol": "Metric",
+   "role": "factory",
+   "source": "identification investigation 2026-11-04: verified pool 0x9fc528c6... created via this factory"
+  },
+  "0x498581ff718922c3f8e6a244956af099b2652b2b": {
+   "name": "Uniswap V4 PoolManager",
+   "protocol": "Uniswap",
+   "role": "pool_manager",
+   "source": "decode v0.5 singleton resolution; verified in census investigations"
+  },
+  "0x4bba9eeedebf2fbfb10b59290c922eba47fd2bed": {
+   "name": "PMM engine",
+   "protocol": "PMM (unidentified operator)",
+   "role": "engine",
+   "source": "residue investigation 2026-11-04: PMM swap format proof, vault settlement matched 66/69 events"
+  },
+  "0x71c2ed90cc288229be59f26b8b3eef3c07d7ab99": {
+   "name": "Swap-signature logger (NOT Metric)",
+   "protocol": "unknown aggregator RFQ adapter",
+   "role": "logger/adapter",
+   "source": "identification investigation 2026-11-04: non-indexed Swap(address,address,uint256,uint256,uint256) logger; mirrors 0xc2be7b94 events; zero own Transfers"
+  },
+  "0x9fc528c6856fdd1d6fb3633c6071ff5e86203951": {
+   "name": "Metric pool (getImmutables-verified)",
+   "protocol": "Metric",
+   "role": "pool (verified example)",
+   "source": "identification investigation 2026-11-04"
+  },
+  "0xa74b86db79fb8161ac903365161235854da70cd4": {
+   "name": "PMM settlement vault",
+   "protocol": "PMM (unidentified operator)",
+   "role": "vault",
+   "source": "residue investigation 2026-11-04"
+  },
+  "0xba12222222228d8ba445958a75a0704d566bf2c8": {
+   "name": "Balancer V2 Vault",
+   "protocol": "Balancer V2",
+   "role": "vault",
+   "source": "top-500 deep classification 2026-11-04, Transfer-exact on samples"
+  },
+  "0xba1333333333a1ba1108e8412f11850a5c319ba9": {
+   "name": "Balancer V3 Vault",
+   "protocol": "Balancer V3",
+   "role": "vault",
+   "source": "top-500 deep classification 2026-11-04, Transfer-exact on samples"
+  },
+  "0xc2be7b94d5498b1aceb914f3a1dec4ce502d235f": {
+   "name": "RFQ detailed-event twin of 0x71c2ed90",
+   "protocol": "unknown aggregator RFQ adapter",
+   "role": "detailed event emitter",
+   "source": "identification investigation 2026-11-04: first 5 data words byte-identical to the logger twin in all 7 sampled txs"
+  },
+  "0xf085c29fee3001a26ddbb65d0ec30bb95f2283af": {
+   "protocol": "WKK",
+   "role": "factory",
+   "name": "WKK V2 factory",
+   "source": "deep round C 2026-11-04: WKK V2 Swap topic 0xfe5d070a proven Transfer-exact; pools verified against this factory"
+  }
+ },
+ "version": "v2026-11-04.2"
+}
