@@ -101,3 +101,11 @@ jobs:
             chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
             chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
             --clobber
+
+  notify:
+    needs: [plan, fetch]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Beacon (ntfy)
+        run: curl -s --max-time 15 -d "fetch run ${{ github.run_id }}: plan=${{ needs.plan.result }} fetch=${{ needs.fetch.result }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
