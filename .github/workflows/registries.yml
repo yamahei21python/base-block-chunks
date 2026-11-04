@@ -32,3 +32,7 @@ jobs:
             git commit -m "known_tokens: resolve symbols/names from known_pools"
             git push
           fi
+
+      - name: Beacon (ntfy)
+        if: always()
+        run: curl -s --max-time 15 -d "${{ github.workflow }} run ${{ github.run_id }}: ${{ job.status }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
