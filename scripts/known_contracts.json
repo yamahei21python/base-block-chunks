@@ -1,5 +1,17 @@
 {
  "contracts": {
+  "0x041abd8b7acaa7872a0595af75d07c3c4e60dfea": {
+   "name": "Zora Hook Handler",
+   "protocol": "Zora / Uniswap V4",
+   "role": "pool manager",
+   "source": "Step 4: Counterparty hook/vault receiving currency and emitting Uniswap V4 swap log 0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67 in CoinBuy tx 0x3087917e78621c4065667f9dc28aec1dcfbba502d00a428d2cb4430dfe9d6250"
+  },
+  "0x0bd474b7b119b1b139d3ab899947de051f916a9c": {
+   "name": "PAMM Vault",
+   "protocol": "PAMM",
+   "role": "settlement vault",
+   "source": "PAMMRouter.vault() state read and transaction custody token transfers"
+  },
   "0x238a358808379702088667322f80ac48bad5e6c4": {
    "name": "PancakeSwap Infinity Vault",
    "protocol": "PancakeSwap Infinity",
@@ -18,6 +30,12 @@
    "role": "factory",
    "source": "identification investigation 2026-11-04: verified pool 0x9fc528c6... created via this factory"
   },
+  "0x39460a75a7459fd694514b8847569ca136894b3e": {
+   "name": "UmbraeLBPairUpgradeable BeaconProxy",
+   "protocol": "Umbrae",
+   "role": "pool",
+   "source": "Sourcify verified BeaconProxy pointing to beacon 0xf74ca4e58da6f4f8d1dc1d9ff087b1bed1d9a573 -> UmbraeLBPairUpgradeable"
+  },
   "0x498581ff718922c3f8e6a244956af099b2652b2b": {
    "name": "Uniswap V4 PoolManager",
    "protocol": "Uniswap",
@@ -29,6 +47,12 @@
    "protocol": "PMM (unidentified operator)",
    "role": "engine",
    "source": "residue investigation 2026-11-04: PMM swap format proof, vault settlement matched 66/69 events"
+  },
+  "0x4f37a9d177470499a2dd084621020b023fcffc1f": {
+   "name": "Exchange Aggregator Router",
+   "protocol": "DEX Aggregator",
+   "role": "router",
+   "source": "Step 2: Aggregator router emitting Exchange (0x56d0661e240dfb199ef196e16e6f42473990366314f0226ac978f7be3cd9ee83) across multi-hop pools"
   },
   "0x71c2ed90cc288229be59f26b8b3eef3c07d7ab99": {
    "name": "Swap-signature logger (NOT Metric)",
@@ -48,6 +72,18 @@
    "role": "vault",
    "source": "residue investigation 2026-11-04"
   },
+  "0xa841ee5340dd851b595f95b0b2b0b677fd79d73f": {
+   "name": "AML Escrow Seller",
+   "protocol": "8lends",
+   "role": "router",
+   "source": "Step 2: Escrow router contract emitting TokensSold (0x7debc712939ce2028bbca7ca90cc85e8fb59a7772e041423d3ec1588af4730ed) routing sales through Uniswap V2 pair 0x241de8c5b58830b8046830b05031786795d5cba8"
+  },
+  "0xaa4b4fabf41754e759338778e6031a156eea6acc": {
+   "name": "Trade Router",
+   "protocol": "Launchpad Router",
+   "role": "router",
+   "source": "Step 2: Router contract emitting Trade (0xcf6134cf8f8fa0f61c06e9337d250bda27270cfcf573fad89dc8d24d009e0d94) routing user swap through DEX pools"
+  },
   "0xba12222222228d8ba445958a75a0704d566bf2c8": {
    "name": "Balancer V2 Vault",
    "protocol": "Balancer V2",
@@ -66,12 +102,24 @@
    "role": "detailed event emitter",
    "source": "identification investigation 2026-11-04: first 5 data words byte-identical to the logger twin in all 7 sampled txs"
   },
+  "0xe0143476a279fc54119ad2ce14c46b5511e6022c": {
+   "name": "PAMMRouter",
+   "protocol": "PAMM",
+   "role": "router",
+   "source": "Sourcify exact_match verified contract 8453:0xe0143476a279fc54119ad2ce14c46b5511e6022c"
+  },
   "0xf085c29fee3001a26ddbb65d0ec30bb95f2283af": {
+   "name": "WKK V2 factory",
    "protocol": "WKK",
    "role": "factory",
-   "name": "WKK V2 factory",
    "source": "deep round C 2026-11-04: WKK V2 Swap topic 0xfe5d070a proven Transfer-exact; pools verified against this factory"
+  },
+  "0xfdfd1a05a22bd5ee57a97af4a2adb7b3d743851b": {
+   "name": "CoinV4 Implementation",
+   "protocol": "Zora",
+   "role": "pool",
+   "source": "Step 2: Verified ERC-1167 proxy implementation for creator coin contracts (e.g. 0x356ca33f9e67b7e468354ef119519888b552bed9) emitting CoinBuy"
   }
  },
- "version": "v2026-11-04.2"
+ "version": "2026-11-04.3"
 }
