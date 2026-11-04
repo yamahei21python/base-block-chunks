@@ -50,6 +50,36 @@ from pathlib import Path
 RPC_URLS = ["https://base-rpc.publicnode.com", "https://mainnet.base.org"]
 UA = {"User-Agent": "base-block-chunks/0.4", "Content-Type": "application/json"}
 
+# Shared pair/decimals cache: pool token pairs and token decimals are
+# immutable on-chain facts, so resolutions are reused across chunks
+# instead of being re-asked from the RPC for every chunk. The cache is
+# advisory only — any failure to read or write it falls back to RPC.
+SHARED_CACHE = os.environ.get(
+    "DECODE_SHARED_CACHE",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "pool_cache.json"))
+
+
+def load_shared_cache():
+    try:
+        with open(SHARED_CACHE) as f:
+            d = json.load(f)
+        return ({a: (t[0], t[1]) for a, t in d.get("pools", {}).items()},
+                dict(d.get("decimals", {})))
+    except Exception:  # noqa: BLE001 - cache is optional
+        return {}, {}
+
+
+def save_shared_cache(pools, decimals):
+    try:
+        tmp = SHARED_CACHE + ".tmp"
+        with open(tmp, "w") as f:
+            json.dump({"pools": {a: list(t) for a, t in pools.items()},
+                       "decimals": {a: d for a, d in decimals.items()
+                                    if d is not None}}, f)
+        os.replace(tmp, SHARED_CACHE)
+    except Exception:  # noqa: BLE001 - cache is optional
+        pass
+
 ETH0 = "0x0000000000000000000000000000000000000000"
 TRANSFER = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
 PM_V4 = "0x498581ff718922c3f8e6a244956af099b2652b2b"
@@ -184,6 +214,12 @@ def main():
     # --- prefetch pool token pairs per resolver + decimals ---
     cached_pools = {a: (t0, t1) for a, t0, t1 in
                     out.execute("SELECT address, token0, token1 FROM pool_meta")}
+    # Shared pairs are keyed "resolver:pool": a pair is only ever reused
+    # for the same resolver that produced it, because resolvers differ
+    # in convention (token0/token1 vs tokenA/tokenB vs tokenX/tokenY).
+    # Singleton poolIds are NOT shared: their pairs are flow-derived
+    # per chunk and are not stable facts.
+    _shared_pairs, _shared_dec = load_shared_cache()
 
     def fetch_pair01(pool):
         return pool, (call_address(pool, "0x0dfe1681").lower(),
@@ -210,6 +246,13 @@ def main():
                 "tokenab": fetch_tokenab, "xy": fetch_xy}
     failed_pools = set()
     for resolver, pools in pair_pools.items():
+        for p in pools:
+            key = f"{resolver}:{p}"
+            if p not in cached_pools and key in _shared_pairs:
+                pair = tuple(_shared_pairs[key])
+                cached_pools[p] = pair
+                out.execute("INSERT OR REPLACE INTO pool_meta VALUES (?,?,?)",
+                            (p, pair[0], pair[1]))
         todo = [p for p in pools if p not in cached_pools]
         if not todo:
             continue
@@ -222,6 +265,7 @@ def main():
                     failed_pools.add(pool)  # kill the whole chunk
                     continue
                 cached_pools[pool] = pair
+                _shared_pairs[f"{resolver}:{pool}"] = list(pair)
                 out.execute("INSERT OR REPLACE INTO pool_meta VALUES (?,?,?)",
                             (pool, pair[0], pair[1]))
     out.commit()
@@ -238,6 +282,9 @@ def main():
     cached_dec = {a: d for a, d in
                   out.execute("SELECT address, decimals FROM token_meta")}
     cached_dec[ETH0] = 18
+    for _a, _d in _shared_dec.items():
+        if _d is not None:
+            cached_dec.setdefault(_a, _d)
 
     def fetch_dec(addr):
         try:
@@ -405,6 +452,15 @@ def main():
         ("swap_events", str(swap_events)),
     ])
     out.commit()
+    # Keep the ledger self-contained: decimals served from the shared
+    # cache were never inserted by the fetch loop, so write back this
+    # chunk's token set (the same set a cold-cache run would have
+    # stored; ETH0 is excluded, as a cold run never inserts it).
+    for _a in tokens:
+        if _a != ETH0 and cached_dec.get(_a) is not None:
+            out.execute("INSERT OR REPLACE INTO token_meta VALUES (?,?)",
+                        (_a, cached_dec[_a]))
+    out.commit()
     out.close()
 
     # --- self-check: independent recount of format topics in receipts ---
@@ -453,6 +509,7 @@ def main():
     }
     with open(ledger_path + ".manifest.json", "w") as f:
         json.dump(manifest, f, indent=1)
+    save_shared_cache(_shared_pairs, cached_dec)
     print(json.dumps(manifest, indent=1))
     if recount != swap_events:
         print("SELF-CHECK FAILED: swap event recount mismatch", file=sys.stderr)
