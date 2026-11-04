@@ -28,7 +28,7 @@ on:
         type: number
         default: 10
   schedule:                        # pilot live since 2026-11-04: every 3 hours (UTC)
-    - cron: "7 */3 * * *"
+    - cron: "7 2,5,8,11,14,17,20,23 * * *"   # = 23:07 JST first, then every 3h JST
 
 permissions:
   contents: write
