@@ -1,0 +1,34 @@
+name: registries
+
+# Registry maintenance that needs no judgment:
+# - tokens: resolve symbol/name for every token in known_pools.json
+#   into known_tokens.json and commit the result back.
+# (Contract identification is NOT mechanical; it flows through the
+# investigation commissions and human-side acceptance instead.)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "23 5 * * 1"   # weekly, Mondays 05:23 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve token identities
+        run: python3 scripts/resolve_tokens.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- scripts/known_tokens.json; then
+            echo "known_tokens.json unchanged"
+          else
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git add scripts/known_tokens.json
+            git commit -m "known_tokens: resolve symbols/names from known_pools"
+            git push
+          fi
