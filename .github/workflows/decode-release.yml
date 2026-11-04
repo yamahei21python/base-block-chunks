@@ -60,3 +60,7 @@ jobs:
             "$LEDGER.gz" "$LEDGER.manifest.json" --clobber
           gh release view "$TAG" --repo "$GITHUB_REPOSITORY" \
             --json assets --jq '.assets[].name'
+
+      - name: Beacon (ntfy)
+        if: always()
+        run: curl -s --max-time 15 -d "${{ github.workflow }} run ${{ github.run_id }}: ${{ job.status }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
