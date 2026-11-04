@@ -23,7 +23,9 @@ import sqlite3
 import sys
 import time
 import urllib.request
+from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 RPC_URLS = ["https://base-rpc.publicnode.com", "https://mainnet.base.org"]
 UA = {"User-Agent": "base-block-chunks/0.3", "Content-Type": "application/json"}
@@ -206,12 +208,43 @@ def main():
     recount = sum(
         1 for rec in receipts.values() for log in rec.get("logs", [])
         if (log.get("topics") or [""])[0].lower() in (TOPIC_V2_SWAP, TOPIC_V3_SWAP))
+
+    # --- unknown-topic residue (registry: known_topics.json, if present) ---
+    unknown_topics = []
+    tx_with_unknown = 0
+    reg_path = Path(__file__).with_name("known_topics.json")
+    if reg_path.exists():
+        known = set(json.loads(reg_path.read_text())["topics"])
+        ev = Counter()
+        txs_of = defaultdict(set)
+        for h, rec in receipts.items():
+            here = set()
+            for log in rec.get("logs", []):
+                ts = log.get("topics") or []
+                if not ts:
+                    continue
+                t0 = ts[0].lower()
+                if t0 not in known:
+                    ev[t0] += 1
+                    here.add(t0)
+            for t0 in here:
+                txs_of[t0].add(h)
+            if here:
+                tx_with_unknown += 1
+        unknown_topics = [
+            {"topic": t0, "events": ev[t0], "txs": len(txs_of[t0])}
+            for t0 in ev if ev[t0] >= 5]
+        unknown_topics.sort(key=lambda r: -r["txs"])
+        unknown_topics = unknown_topics[:20]
+
     manifest = {
         "first_block": first, "last_block": last, "tx": n_tx,
         "legs": n_legs, "swap_events": swap_topics,
         "swap_events_recount": recount,
         "chunk_bytes": os.path.getsize(chunk_path),
         "ledger_bytes": os.path.getsize(ledger_path),
+        "tx_with_unknown_topic": tx_with_unknown,
+        "unknown_topics": unknown_topics,
     }
     with open(ledger_path + ".manifest.json", "w") as f:
         json.dump(manifest, f, indent=1)
