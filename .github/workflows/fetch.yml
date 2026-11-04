@@ -45,9 +45,10 @@ jobs:
           FIRST: ${{ inputs.first_block }}
           LAST: ${{ inputs.last_block }}
         run: |
-          gh release create "$TAG" --title "Blocks $FIRST-$LAST" \
-            --notes "Base mainnet blocks $FIRST-$LAST as SQLite chunks (public chain data). Each chunk has a .manifest.json with counts and sha256." \
-            || echo "release already exists, reusing"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1 \
+            || gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
+                 --title "Blocks $FIRST-$LAST" \
+                 --notes "Base mainnet blocks $FIRST-$LAST as SQLite chunks (public chain data). Each chunk has a .manifest.json with counts and sha256."
 
   fetch:
     needs: plan
@@ -71,7 +72,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ needs.plan.outputs.tag }}
         run: |
-          gh release upload "$TAG" \
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
             chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
             chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
             --clobber
