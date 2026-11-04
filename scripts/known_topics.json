@@ -1,0 +1,313 @@
+{
+ "version": "2026-11-04.1",
+ "topics": {
+  "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822": {
+   "class": "swap",
+   "name": "Uniswap V2 style",
+   "signature": "Swap(address,address,uint256,uint256,uint256,uint256,address)",
+   "note": "verified: decoder in production"
+  },
+  "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67": {
+   "class": "swap",
+   "name": "Uniswap V3 style",
+   "signature": "Swap(address,address,int256,int256,uint160,uint128,int24)",
+   "note": "verified: decoder in production"
+  },
+  "0x19b47279256b2a23a1665c810c8d55a1758940ee09377d4f8d26497a3577dc83": {
+   "class": "swap",
+   "name": "CL variant (V3-family)",
+   "signature": "Swap(address,address,int256,int256,uint160,uint128,int24,uint128,uint128)",
+   "note": "identified via winners TX-2/TX-3; layout assumed V3-like, pending AGY verification"
+  },
+  "0x40e9cecb9f5f1f1c5b9c97dec2917b7ee92e57ba5563708daca94dd84ad7112f": {
+   "class": "swap",
+   "name": "Uniswap V4 PoolManager",
+   "signature": "Swap(bytes32,address,int128,int128,uint160,uint128,int24,uint24)",
+   "note": "identified via signature DB; id-based pools, pending AGY verification"
+  },
+  "0xcad09799f755048f0fd388c6b2fcc8e0cebefd15756c6903522cc2a95f661f70": {
+   "class": "swap",
+   "name": "Liquidity Book (BinSwapped)",
+   "signature": "BinSwapped(int256,uint256,uint256)",
+   "note": "identified via winners TX-2; direction rule pending AGY verification"
+  },
+  "0x9734819749a91fc3be03ea83205f924ee08479bd3f0da48efc91d94d050cac1e": {
+   "class": "swap",
+   "name": "Liquidity Book pair Swap",
+   "signature": "Swap(address,address,uint256,uint256,uint256)",
+   "note": "companion of BinSwapped in winner TX-2; pending AGY verification"
+  },
+  "0xfcfa612587d1091cc6d8ce39878a7e6e8742c856865fc9d64db3e1a2f1ab52ef": {
+   "class": "swap",
+   "name": "UNIDENTIFIED Swap-named",
+   "signature": "Swap(address,uint256,uint256,uint256,address)",
+   "note": "protocol not yet identified; same txs emit FeesGenerated + ALTBCCurveState"
+  },
+  "0x1d9f7b5e406d8c887155e1a78e070d2d41c5d0444dab8b21612f846835c27183": {
+   "class": "swap",
+   "name": "UNIDENTIFIED Swap-named (tuple)",
+   "signature": "Swap(address,(address,address,uint24,int24,address),bytes32,(bool,int256,uint160),int128,int128,bytes)",
+   "note": "protocol not yet identified; 2 emitters"
+  },
+  "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+   "class": "non_swap",
+   "name": "Transfer",
+   "note": "token movement (the flow record itself)"
+  },
+  "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+   "class": "non_swap",
+   "name": "Approval",
+   "note": "spending permission"
+  },
+  "0x29e088dffd7bf6815d088137a59f364d6747163baa7ff4bc47f316a1ad1b9586": {
+   "class": "non_swap",
+   "name": "FeedUpdated",
+   "note": "oracle price feed update"
+  },
+  "0xf8e1a15aba9398e019f0b49df1a4fde98ee17ae345cb5f6b5e2c27f5033e8ce7": {
+   "class": "non_swap",
+   "name": "MetadataUpdate",
+   "note": "token/NFT metadata update"
+  },
+  "0x49628fd1471006c1482da88028e9ce4dbb080b815c9b0344d39e5a8e6ec1419f": {
+   "class": "non_swap",
+   "name": "UserOperationEvent",
+   "note": "ERC-4337 smart account operation"
+  },
+  "0xbb47ee3e183a558b1a2ff0874b079f3fc5478b7454eacf2bfc5af2ff5878f972": {
+   "class": "non_swap",
+   "name": "BeforeExecution",
+   "note": "ERC-4337 execution hook"
+  },
+  "0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5": {
+   "class": "non_swap",
+   "name": "AuthorizationUsed",
+   "note": "smart account session authorization"
+  },
+  "0x70935338e69775456a85ddef226c395fb668b63fa0115f5f20610b388e6ca9c0": {
+   "class": "non_swap",
+   "name": "Collect",
+   "note": "CL position fee collection"
+  },
+  "0x40d0efd1a53d60ecbf40971b9daf7dc90178c3aadc7aab1765632738fa8b8f01": {
+   "class": "non_swap",
+   "name": "Collect",
+   "note": "position fee collection (other variant)"
+  },
+  "0x0c396cd989a39f4459b5fa1aed6a9a8dcdbc45908acfd67e028cd568da98982c": {
+   "class": "non_swap",
+   "name": "Burn",
+   "note": "CL position burn"
+  },
+  "0x7a53080ba414158be7ec69b987b5fb7d07dee101fe85488f0853ae16239d0bde": {
+   "class": "non_swap",
+   "name": "Mint",
+   "note": "CL position mint"
+  },
+  "0x0f8712c47eb813e705bf827a60bdd551e6f2e055b4a1c2004304d52208a5a513": {
+   "class": "non_swap",
+   "name": "IncreaseLiquidity",
+   "note": "LP position increase"
+  },
+  "0x26f6a048ee9138f2c0ce266f322cb99228e8d619ae2bff30c67f8dcf9d2377b4": {
+   "class": "non_swap",
+   "name": "DecreaseLiquidity",
+   "note": "LP position decrease"
+  },
+  "0xc9817c7b5bf7b2417ea338292b8681857834d37427fbb1899f98e6897f3fe426": {
+   "class": "non_swap",
+   "name": "Deposit",
+   "note": "LP/vault deposit"
+  },
+  "0xac2f121be0a440c47693663f2118f4d3b12cf85696cbe2c7a1b4a35e68a827d2": {
+   "class": "non_swap",
+   "name": "Withdraw",
+   "note": "LP/vault withdrawal"
+  },
+  "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c": {
+   "class": "non_swap",
+   "name": "Deposit (WETH)",
+   "note": "ETH wrapping"
+  },
+  "0x7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65": {
+   "class": "non_swap",
+   "name": "Withdrawal (WETH)",
+   "note": "ETH unwrapping"
+  },
+  "0xd14a5bd00daa2f3d53854ba105be35afa78eb389d08398e4bdc0fb5620d02fce": {
+   "class": "non_swap",
+   "name": "GaugeSettled",
+   "note": "gauge reward settlement"
+  },
+  "0x2fc4875070bf2f61f7192e9e3710c8c8e3738c1a7ec632e3cbc591fc1242051a": {
+   "class": "non_swap",
+   "name": "GaugeCapSettled",
+   "note": "gauge cap settlement"
+  },
+  "0x9acaadd0523552411c0e34a0160b98573211a163d69962b54a3786be27542f7a": {
+   "class": "non_swap",
+   "name": "EmissionsMinted",
+   "note": "reward emissions"
+  },
+  "0x7b6bd720815adbeaaaed4fc759e1a535705901f33709fbb33e62ee9a89427bb1": {
+   "class": "non_swap",
+   "name": "EmissionsClaimed",
+   "note": "reward claim"
+  },
+  "0x25b428dfde728ccfaddad7e29e4ac23c24ed7fd1a6e3e3f91894a9a073f5dfff": {
+   "class": "non_swap",
+   "name": "Minted",
+   "note": "minting (rewards/assets)"
+  },
+  "0x871c9c135204dfaa6a5ebebccc99a16da2bfb11ef83a4511d5c87cab5f7916f8": {
+   "class": "non_swap",
+   "name": "RedeemProcessed",
+   "note": "redemption processing"
+  },
+  "0x27d4634c833b7622a0acddbf7f746183625f105945e95c723ad1d5a9f2a0b6fc": {
+   "class": "non_swap",
+   "name": "Redeemed",
+   "note": "redemption"
+  },
+  "0x93353145426252e868e8c3c5aa51e34eeaadf3bd6e61a28c32770f3e5928305a": {
+   "class": "non_swap",
+   "name": "MessageReceived",
+   "note": "cross-chain message"
+  },
+  "0x9ece25ff2f38a4b95c813c9bde80512c628d5cf29c3922ba549630f856fb5858": {
+   "class": "non_swap",
+   "name": "MessageDispatched",
+   "note": "cross-chain message"
+  },
+  "0x6895c13664aa4f67288b25d7a21d7aaa34916e355fb9b6fae0a139a9085becb8": {
+   "class": "non_swap",
+   "name": "ExecutionFromModuleSuccess",
+   "note": "smart wallet module execution"
+  },
+  "0xb648d3644f584ed1c2232d53c46d87e693586486ad0d1175f8656013110b714e": {
+   "class": "non_swap",
+   "name": "SafeModuleTransaction",
+   "note": "Safe multisig module tx"
+  },
+  "0xecdf3a3effea5783a3c4c2140e677577666428d44ed9d474a0b3a4c9943f8440": {
+   "class": "non_swap",
+   "name": "EnabledModule",
+   "note": "smart wallet admin"
+  },
+  "0x4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e235": {
+   "class": "non_swap",
+   "name": "ProxyCreation",
+   "note": "wallet/contract creation"
+  },
+  "0x141df868a6331af528e38c83b7aa03edc19be66e37ae67f9285bf4f8e3c6a1a8": {
+   "class": "non_swap",
+   "name": "SafeSetup",
+   "note": "Safe multisig setup"
+  },
+  "0x9f8368fa4ddcbd561efd7ad2a2174235bf5b840a73fb18f20db9705c11462498": {
+   "class": "non_swap",
+   "name": "AssignRoles",
+   "note": "role admin"
+  },
+  "0x4f6c340456f64db31a3d003c1224ba1de058557b1cdf71f21ae48ce4a4f64f52": {
+   "class": "non_swap",
+   "name": "ScopeFunction",
+   "note": "role admin"
+  },
+  "0x277465b84f512b759d745fab70327b693ee21ce592fca91a3f491739a25fa76a": {
+   "class": "non_swap",
+   "name": "ScopeTarget",
+   "note": "role admin"
+  },
+  "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1": {
+   "class": "non_swap",
+   "name": "Sync",
+   "note": "V2 pool reserve sync (swap byproduct, not a swap)"
+  },
+  "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+   "class": "non_swap",
+   "name": "OwnershipTransferred",
+   "note": "contract admin"
+  },
+  "0xc7f505b2f371ae2175ee4913f4499e1f2633a7b5936321eed1cdaeb6115181d2": {
+   "class": "non_swap",
+   "name": "Initialized",
+   "note": "contract admin"
+  },
+  "0x8c8e19e7e8e193118a05465d7676e82215052d3cb150628fbf598105dc2bb6ab": {
+   "class": "non_swap",
+   "name": "HashExecuted",
+   "note": "smart account bookkeeping"
+  },
+  "0xd51a9c61267aa6196961883ecf5ff2da6619c37dac0fa92122513fb32c032d2d": {
+   "class": "non_swap",
+   "name": "AccountDeployed",
+   "note": "smart account creation"
+  },
+  "0x2150ada912bf189ed721c44211199e270903fc88008c2a1e1e889ef30fe67c5f": {
+   "class": "non_swap",
+   "name": "ModuleProxyCreation",
+   "note": "smart wallet creation"
+  },
+  "0x34d3b96a088381c6843a1f9d94d251afa88f83cc7a0d17fc23a7057506a3fc6d": {
+   "class": "non_swap",
+   "name": "RolesModSetup",
+   "note": "role admin"
+  },
+  "0xfc6d279aa22eb9d6ba081f1bd2443d1e1c8eb3bcf089906d78064616798fbad0": {
+   "class": "non_swap",
+   "name": "UserOperationSponsored",
+   "note": "4337 sponsorship"
+  },
+  "0x7a270f29ae17e8e2304ff1245deb50c3b6206bca82928d904f3e284d35c5ffd2": {
+   "class": "non_swap",
+   "name": "UserOperationSponsored",
+   "note": "4337 sponsorship (variant)"
+  },
+  "0x5f3fa3067c2d3f65ae9df1f8f69859d3de926cd813ca4842286871c7d4a2a06d": {
+   "class": "non_swap",
+   "name": "AnchorCommitted",
+   "note": "protocol bookkeeping"
+  },
+  "0x9712a51ea526989599b0bcba7b8c63cf1344563bbb680b8dc5f7b8df23e032e9": {
+   "class": "non_swap",
+   "name": "EmissionsForfeited",
+   "note": "reward forfeiture"
+  },
+  "0x84d24bc2eee194c09c5b44197d9c64101dca6178c60ee7544cd3b7016360be87": {
+   "class": "non_swap",
+   "name": "EarlyWithdrawPenalty",
+   "note": "staking penalty"
+  },
+  "0xca5f7361ea42c74fda1fb5461d79fc07a5a0bc02cc7a317ecb2dc5a27d68488e": {
+   "class": "non_swap",
+   "name": "FeesGenerated",
+   "note": "protocol fee bookkeeping (companion of an unidentified swap)"
+  },
+  "0x41d81c238d179b323f52fe9ae5587317d77b7d300b6eff3edba3c6ca3d56288f": {
+   "class": "non_swap",
+   "name": "ALTBCCurveState",
+   "note": "protocol state bookkeeping (companion of an unidentified swap)"
+  },
+  "0x1bb43f2da90e35f7b0cf38521ca95a49e68eb42fac49924930a5bd73cdf7576c": {
+   "class": "non_swap",
+   "name": "OrderRecord",
+   "note": "order bookkeeping (not a pool swap)"
+  },
+  "0x7970b0744fdb6cf0b120e5e0a5f4da3ab8cbec6d5d9ec8a4f327ccc1d8a5eb8b": {
+   "class": "non_swap",
+   "name": "CommissionAndTrimInfo",
+   "note": "aggregator bookkeeping"
+  },
+  "0x5c73ddc351c7ef1a1d2bbdfe988e7d72c92a8d41570c1803a0fe5ca2318de58d": {
+   "class": "non_swap",
+   "name": "ObservationRecorded",
+   "note": "oracle observation (TWAP)"
+  },
+  "0x7724394874fdd8ad13292ec739b441f85c6559f10dc4141b8d4c0fa4cbf55bdb": {
+   "class": "marker",
+   "name": "SwapOrderId",
+   "note": "intent/order marker; does not itself move tokens at a pool"
+  }
+ }
+}
