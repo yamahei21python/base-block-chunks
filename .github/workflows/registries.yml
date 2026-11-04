@@ -30,6 +30,7 @@ jobs:
             git config user.email "actions@github.com"
             git add scripts/known_tokens.json
             git commit -m "known_tokens: resolve symbols/names from known_pools"
+            git pull --rebase origin main
             git push
           fi
 
