@@ -68,6 +68,7 @@ FORMATS = {
     "0x1b43ddf90e971181a7faf41549e512675072e84befadbba7873086509dec1fdc": ("lunarbase", "lunarbase"),
     "0x40e9cecb9f5f1f1c5b9c97dec2917b7ee92e57ba5563708daca94dd84ad7112f": ("v4", "singleton"),
     "0x04206ad2b7c0f463bff3dd4f33c5735b0f2957a351e4f79763a4fa9e775dd237": ("pancake-infinity", "singleton"),
+    "0x858ca532ad00ebb4d1c8c4fa77d87a5a8f4955e607f96bce1b600eed67d4c2b0": ("pmm", "pmm"),
 }
 
 
@@ -297,7 +298,7 @@ def main():
             legs = []
             for ev in raw_events.get(h, []):
                 kind, family, pool, w = ev["kind"], ev["family"], ev["pool"], ev["words"]
-                if family not in ("singleton", "lunarbase") \
+                if family not in ("singleton", "lunarbase", "pmm") \
                         and pool not in cached_pools:
                     skipped += 1
                     continue
@@ -310,6 +311,12 @@ def main():
                     elif a1i > 0 and a0o > 0:
                         leg = (pool, kind, t1, a1i, t0, a0o)
                 elif family in ("v3style", "metric"):
+                    if family == "metric" and len(ev["topics"]) != 3:
+                        # Same signature string, non-indexed variant
+                        # (e.g. logger 0x71c2ed90...): not a Metric
+                        # pool swap. Genuine Metric Swap has exactly
+                        # 3 topics (2 indexed addresses).
+                        continue
                     t0, t1 = cached_pools[pool]
                     if family == "v3style":
                         a0, a1 = signed(w[0], 256), signed(w[1], 256)
@@ -321,6 +328,15 @@ def main():
                         leg = (pool, kind, t0, a0, t1, -a1)
                     elif a1 > 0 and a0 < 0:
                         leg = (pool, kind, t1, a1, t0, -a0)
+                elif family == "pmm":
+                    # topics[1]=tokenIn, topics[2]=tokenOut,
+                    # w0=amountIn, w1=amountOut (vault-settled;
+                    # verified 66/69 events exact vs the PMM vault,
+                    # remaining 3 in one multi-leg tx).
+                    ts = ev["log"]["topics"]
+                    if len(ts) >= 3 and len(w) >= 2 and w[0] > 0 and w[1] > 0:
+                        leg = (pool, kind, "0x" + ts[1][-40:], w[0],
+                               "0x" + ts[2][-40:], w[1])
                 elif family == "forte":
                     xt, yt = cached_pools[pool]
                     tin = "0x" + ev["log"]["data"][2:66][-40:]
