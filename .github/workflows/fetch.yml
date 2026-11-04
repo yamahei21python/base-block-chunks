@@ -1,0 +1,77 @@
+name: fetch-blocks
+
+on:
+  workflow_dispatch:
+    inputs:
+      first_block:
+        description: "First block number"
+        required: true
+        type: number
+      last_block:
+        description: "Last block number (span is split into chunks of at most 100)"
+        required: true
+        type: number
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.plan.outputs.chunks }}
+      tag: ${{ steps.plan.outputs.tag }}
+    steps:
+      - id: plan
+        env:
+          FIRST: ${{ inputs.first_block }}
+          LAST: ${{ inputs.last_block }}
+        run: |
+          python3 - << 'EOF'
+          import json, os
+          first, last = int(float(os.environ["FIRST"])), int(float(os.environ["LAST"]))
+          assert last >= first and last - first + 1 <= 100000, "bad range"
+          chunks = [{"first": f, "last": min(f + 99, last)}
+                    for f in range(first, last + 1, 100)]
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"chunks={json.dumps(chunks)}\n")
+              fh.write(f"tag=data-{first}-{last}\n")
+          print(chunks)
+          EOF
+      - name: Create release for this range
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.plan.outputs.tag }}
+          FIRST: ${{ inputs.first_block }}
+          LAST: ${{ inputs.last_block }}
+        run: |
+          gh release create "$TAG" --title "Blocks $FIRST-$LAST" \
+            --notes "Base mainnet blocks $FIRST-$LAST as SQLite chunks (public chain data). Each chunk has a .manifest.json with counts and sha256." \
+            || echo "release already exists, reusing"
+
+  fetch:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        chunk: ${{ fromJSON(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch chunk ${{ matrix.chunk.first }}-${{ matrix.chunk.last }}
+        run: |
+          python3 scripts/fetch_chunk.py \
+            --first ${{ matrix.chunk.first }} --last ${{ matrix.chunk.last }} \
+            --out chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db --workers 4
+          gzip -9 chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
+          ls -la
+      - name: Upload chunk to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ needs.plan.outputs.tag }}
+        run: |
+          gh release upload "$TAG" \
+            chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
+            chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
+            --clobber
