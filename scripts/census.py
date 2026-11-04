@@ -36,6 +36,7 @@ def scan(db_paths, topics_reg):
     events = Counter()
     txs_of = defaultdict(set)
     emitters = defaultdict(set)
+    samples = defaultdict(list)
     tx_classes = Counter()   # per-tx rollup
     total_tx = 0
     swap_topics = {t for t, v in topics_reg.items() if v.get("class") == "swap"}
@@ -56,6 +57,8 @@ def scan(db_paths, topics_reg):
                 here.add(t0)
             for t0 in here:
                 txs_of[t0].add(h)
+                if len(samples[t0]) < 3:
+                    samples[t0].append(h)
             if here & swap_topics:
                 tx_classes["tx_with_known_swap"] += 1
             if TRANSFER in here:
@@ -66,7 +69,7 @@ def scan(db_paths, topics_reg):
             if unknown_here:
                 tx_classes["tx_with_unknown_topic"] += 1
         con.close()
-    return events, txs_of, emitters, tx_classes, total_tx
+    return events, txs_of, emitters, tx_classes, total_tx, samples
 
 
 def main():
@@ -79,11 +82,11 @@ def main():
     args = ap.parse_args()
 
     topics_reg, version = load_registry(args.registry)
-    events, txs_of, emitters, tx_classes, total_tx = scan(args.dbs, topics_reg)
+    events, txs_of, emitters, tx_classes, total_tx, samples = scan(args.dbs, topics_reg)
 
     unknown = [
         {"topic": t0, "events": events[t0], "txs": len(txs_of[t0]),
-         "emitters": len(emitters[t0]),
+         "emitters": len(emitters[t0]), "sample_txs": samples[t0],
          "flagged": events[t0] >= args.min_events or len(txs_of[t0]) >= args.min_txs}
         for t0 in events if t0 not in topics_reg
     ]
