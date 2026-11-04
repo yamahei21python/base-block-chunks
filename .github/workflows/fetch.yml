@@ -11,6 +11,12 @@ on:
         description: "Last block number (span is split into chunks of at most 100)"
         required: true
         type: number
+      mode:
+        description: "ledger = decode and upload only the ledger (raw stays in the runner and is discarded); raw = upload the raw chunk"
+        required: true
+        type: choice
+        options: [ledger, raw]
+        default: ledger
 
 permissions:
   contents: write
@@ -48,7 +54,7 @@ jobs:
           gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1 \
             || gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
                  --title "Blocks $FIRST-$LAST" \
-                 --notes "Base mainnet blocks $FIRST-$LAST as SQLite chunks (public chain data). Each chunk has a .manifest.json with counts and sha256."
+                 --notes "Base mainnet blocks $FIRST-$LAST (public chain data). Ledger mode uploads a decoded ledger DB per 100-block chunk (native token amounts, no pricing); raw mode uploads the raw chunk DB. Each asset has a .manifest.json with counts and sizes."
 
   fetch:
     needs: plan
@@ -65,13 +71,32 @@ jobs:
           python3 scripts/fetch_chunk.py \
             --first ${{ matrix.chunk.first }} --last ${{ matrix.chunk.last }} \
             --out chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db --workers 4
-          gzip -9 chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
           ls -la
-      - name: Upload chunk to release
+      - name: Decode chunk into ledger (ledger mode)
+        if: inputs.mode == 'ledger'
+        run: |
+          python3 scripts/decode_chunk.py \
+            chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db \
+            ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
+          gzip -9 ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
+          ls -la
+      - name: Upload ledger to release (raw chunk is discarded with the runner)
+        if: inputs.mode == 'ledger'
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ needs.plan.outputs.tag }}
         run: |
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
+            ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
+            ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
+            --clobber
+      - name: Upload chunk to release (raw mode)
+        if: inputs.mode == 'raw'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ needs.plan.outputs.tag }}
+        run: |
+          gzip -9 chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
           gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
             chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
             chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
