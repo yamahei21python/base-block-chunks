@@ -1,5 +1,5 @@
 {
- "version": "2026-11-04.3",
+ "version": "v2026-11-04.4",
  "topics": {
   "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822": {
    "class": "swap",
@@ -35,7 +35,7 @@
    "class": "swap",
    "name": "Metric Exchange (MetricOmmPool)",
    "signature": "Swap(address,address,uint256,uint256,uint256)",
-   "note": "VERIFIED: winner TX-2 leg transfer-exact; data word1 = packed int128 deltas (upper amount0, lower amount1); tokens via getImmutables() words 1,2"
+   "note": "VERIFIED: winner TX-2 leg transfer-exact; data word1 = packed int128 deltas (upper amount0, lower amount1); tokens via getImmutables() words 1,2 CAUTION: the identical signature string Swap(address,address,uint256,uint256,uint256) also exists in a non-indexed variant (topics=1, data=5 words: tokenIn/tokenOut/amountIn/amountOut/timestamp) emitted by RFQ-adapter/logger contracts (confirmed: 0x71c2ed90cc288229be59f26b8b3eef3c07d7ab99, an aggregator-called adapter unrelated to Metric; its getters revert). Genuine Metric Swap always has exactly 3 topics; the decoder enforces this."
   },
   "0xfcfa612587d1091cc6d8ce39878a7e6e8742c856865fc9d64db3e1a2f1ab52ef": {
    "class": "swap",
@@ -9848,6 +9848,2096 @@
    "class": "swap_unverified",
    "name": "AlienSwap",
    "note": "database hit: AlienSwap(address,int256,int256); sub-threshold unverified"
+  },
+  "0x21a4c35ab35322c83c7806cd9a17771f8cca94e69068f95b7d17e57f063307d6": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 313/314 txs (99.7%)"
+  },
+  "0xdd4ab4adb66a02b66a1ef06bbc69065968520a5054f5bbb940618ef04b955771": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 313/313 txs (100.0%)"
+  },
+  "0x9d42fcb8949775ed7230625f034c76026ce792efcc19714020339363a53e7a69": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 312/312 txs (100.0%)"
+  },
+  "0x735299f8e2622ce024c3e2d0a87a211c83ffaefe34c97213710f17a25c4f2fe2": {
+   "class": "swap_adjacent",
+   "name": "UNXSwap/Odos Router Event",
+   "note": "swap_adjacent: router swap record; emitted by UNXSwap/Odos Router (0x8ea5ad2a58c1dae75394b1e8636e6518eb6dac50)"
+  },
+  "0x96b90c23f50d672223d68212799070cc429bfd2cdb7e3abb8999b31409769064": {
+   "class": "duplicate",
+   "name": "Automated LP Rebalance Factory (Uniswap V3 style duplicate)",
+   "note": "co-occurs with Uniswap V3 style in 254/255 txs (99.6%); emitted by Automated LP Rebalance Factory (0xa8198fcbbe197ceeb933d333a9408d4b1885513a)"
+  },
+  "0x55874a1fcafeb22942b077d988ce9e312adc3ff4150d0d2a45ced5621ed7190a": {
+   "class": "non_swap",
+   "name": "Uniswap V3 Range Management Vault Event",
+   "note": "non_swap: LP position management; emitted by Uniswap V3 Range Management Vault (0x315c82fcd0ed93a0b0d87557877c3b030ea70b5a)"
+  },
+  "0xadce622fbc918f2d7193dfe1005f81d0bf7efedd49c882dbef857bedc56674c0": {
+   "class": "non_swap",
+   "name": "Uniswap V3 Range Management Vault Event",
+   "note": "non_swap: LP position management; emitted by Uniswap V3 Range Management Vault (0x315c82fcd0ed93a0b0d87557877c3b030ea70b5a)"
+  },
+  "0xc3f32ba77d3ec770a66729e4e68e62a933abe839cf930ec87d841447299ef2b5": {
+   "class": "non_swap",
+   "name": "CL Gauge / Staking Manager Event",
+   "note": "non_swap: LP position management; emitted by CL Gauge / Staking Manager (0x30a05155585ff7f356283a0bcabcb98eb8b1283d)"
+  },
+  "0xc035da294269ae5afe93a15344a19d8e2fbba752ad3af2502c2e486edb9a6ff8": {
+   "class": "swap_adjacent",
+   "name": "KyberSwap Aggregator Executor Event",
+   "note": "swap_adjacent: aggregator execution state/fee; emitted by KyberSwap Aggregator Executor (0x8f10b468b06c6fd214b65f87778827f7d113f996)"
+  },
+  "0x8e1cfcb7f5b76231021914b9d4ae980c5838f9a6f8f42db8f97f6fa9f50579da": {
+   "class": "non_swap",
+   "name": "CL Range Position Manager Event",
+   "note": "non_swap: LP position management; emitted by CL Range Position Manager (0xe49dd6ce1dddbfc21f5e2383b568769037c4cde4)"
+  },
+  "0x9d13927bfbd28405be0345533edd2a8bed88800f0fb0f8809d3733a0df608647": {
+   "class": "non_swap",
+   "name": "CL Range Position Manager Event",
+   "note": "non_swap: LP position management; emitted by CL Range Position Manager (0xe49dd6ce1dddbfc21f5e2383b568769037c4cde4)"
+  },
+  "0x56441808e0dc590c63862fb3c0c914bff286fc67b3983cd294eb33e21cca326e": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 146/149 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa58b5b8aa8e13ae388cdf60ab74c1c7fddc512d5111cb5e2da075bee3aaab522": {
+   "class": "non_swap",
+   "name": "NonfungiblePositionManager Event",
+   "note": "non_swap: LP position management; emitted by NonfungiblePositionManager (0xd5c6312ec57178277bbf8c34fb94965c6bddb014)"
+  },
+  "0x7bec7d55a62a7a7b8068f1533e2a3bbf727b3e2e57f30c576fe159da60e09a65": {
+   "class": "swap_adjacent",
+   "name": "UNXSwap Router OrderFlow Event",
+   "note": "swap_adjacent: router order state; emitted by UNXSwap Router OrderFlow (0x67d03631fe51b741c0c00c4e16eb662ac84381df)"
+  },
+  "0xfd08115c8e43d2a49d95ee18d7f69b8bbac60bd368c73cf22d30664a22a0626d": {
+   "class": "swap_adjacent",
+   "name": "UNXSwap Router OrderFlow Event",
+   "note": "swap_adjacent: router order state; emitted by UNXSwap Router OrderFlow (0x67d03631fe51b741c0c00c4e16eb662ac84381df)"
+  },
+  "0xa55e444f584a786ae3f72445fb0ab9a5ae87526bfe3b0c120503ae7388a70b62": {
+   "class": "non_swap",
+   "name": "NonfungiblePositionManager Event",
+   "note": "non_swap: LP position management; emitted by NonfungiblePositionManager (0xd5c6312ec57178277bbf8c34fb94965c6bddb014)"
+  },
+  "0xa1c72a3d32c2986539e7511a0e917e6b2307dc961141dace55b622363266e54f": {
+   "class": "non_swap",
+   "name": "NonfungiblePositionManager Event",
+   "note": "non_swap: LP position management; emitted by NonfungiblePositionManager (0xd5c6312ec57178277bbf8c34fb94965c6bddb014)"
+  },
+  "0xb39117de635cd4fd7d24ae866d808dece4246f2cdde281bff6e8b60e568244e7": {
+   "class": "duplicate",
+   "name": "Overnight USD+ / Algebra Pool (Uniswap V3 style duplicate)",
+   "note": "co-occurs with Uniswap V3 style in 120/120 txs (100.0%); emitted by Overnight USD+ / Algebra Pool (0xb3b87f33754be6ff81fda3de485642261c966e1a)"
+  },
+  "0x1500a1c3c79aaee816caa03e73959fde25689425389159897be510e989e0f8f1": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 116/116 txs (100.0%)"
+  },
+  "0x5a5913aa4e76c82ee72d0341ba47c72293dd5a57fe3355036ee9476e3a26a675": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 103 txs (92 outside swaps); internal protocol operation"
+  },
+  "0x960eca2d2315948ab1a5776b5b024f40346d5e981eccafd26c1f31a27575c9d7": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 81 txs (81 outside swaps); internal protocol operation"
+  },
+  "0x215fac0809a94b500700d578967a524b596a30168b73c899d9f6456c4feec809": {
+   "class": "swap_adjacent",
+   "name": "KyberSwap Aggregator Executor Event",
+   "note": "swap_adjacent: aggregator execution state/fee; emitted by KyberSwap Aggregator Executor (0x8f10b468b06c6fd214b65f87778827f7d113f996)"
+  },
+  "0x09625cab8c2e814f2fecee9e0277000f0d6f2bfe16735bac4913f59136cde081": {
+   "class": "duplicate",
+   "name": "PMM Engine Swap (duplicate)",
+   "note": "duplicate of PMM pool swap (0x858ca532...; co-occurs in 67/67 txs, 100.0%)"
+  },
+  "0x858ca532ad00ebb4d1c8c4fa77d87a5a8f4955e607f96bce1b600eed67d4c2b0": {
+   "class": "swap",
+   "name": "PMM Swap (0x290e41f7...)",
+   "note": "VERIFIED: PMM swap on 0x290e41f7b52dbd2dc1e3009fe19e6a824f296a42; transfer-exact on 67/67 txs (layout: topics[1]=tokenIn, topics[2]=tokenOut, word0=amtIn, word1=amtOut)"
+  },
+  "0xd812d6b198fc810e67e63550f7dce07830404fdc81903b75b6d55919cbc9ee82": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x1fa233323a761247f79297e94ee3db3258a044166bc4d5401a4b873dfdf5038f": {
+   "class": "swap_adjacent",
+   "name": "Swap Custodian Router Event",
+   "note": "swap_adjacent: swap routing wrapper; emitted by Swap Custodian Router (0x98c1d9e102eb2806d902b13186bdc7892ac4ffba)"
+  },
+  "0xf5b58036d39911dd0308d450a6fa6d6556cc93c1c82f300be5c01108f68bb8a3": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 59/59 txs (100.0%)"
+  },
+  "0x28091792aa15efd80467574181f40ded90921ee540bf65b3b5602752e0c47a04": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 58 txs (58 outside swaps); internal protocol operation"
+  },
+  "0x34a5fe9ecee73bae74d18dee54a89263cc00aa313fbaaa01fa1c334212371a4d": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 58 txs (58 outside swaps); internal protocol operation"
+  },
+  "0x4858d822a60a8f40ed0ced2eff407b999867b6dc5a641e8154e7a77d5992e1b2": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 58 txs (58 outside swaps); internal protocol operation"
+  },
+  "0x46aadd657d7f3091873c90195a06394bb12fe49e795524521773a21747d824fd": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 58 txs (58 outside swaps); internal protocol operation"
+  },
+  "0xe5b9f85c5caca875a8b78e5b2d88de86d7793cbff3d81ea4ecbec4c2b9ad7beb": {
+   "class": "swap_adjacent",
+   "name": "SwapWrap Router Event",
+   "note": "swap_adjacent: swap wrapper record; emitted by SwapWrap Router (0x3d90f66b534dd8482b181e24655a9e8265316be9)"
+  },
+  "0xa441699ef46589494a7167a03b4dc78a5adfb1dbf33323acd42fbdd30a27c5b0": {
+   "class": "duplicate",
+   "name": "Token Staking Vault (Metric Exchange (MetricOmmPool) duplicate)",
+   "note": "co-occurs with Metric Exchange (MetricOmmPool) in 50/50 txs (100.0%); emitted by Token Staking Vault (0xc2be7b94d5498b1aceb914f3a1dec4ce502d235f)"
+  },
+  "0x74647a56026fd5e5a5fdb01d686969d17f40667aeedffef44cdeb894156e35a4": {
+   "class": "non_swap",
+   "name": "Protocol Admin/Pause Contract Event",
+   "note": "non_swap: internal state; emitted by Protocol Admin/Pause Contract (0xa834e70303322d86e5dae95ee47e9c6a073d9812)"
+  },
+  "0xaace87638dd3fe88aba5462ec5df612c3cfc1ce8dedace6a69dc364d7696624f": {
+   "class": "duplicate",
+   "name": "CL Range Position Manager (Uniswap V3 style duplicate)",
+   "note": "co-occurs with Uniswap V3 style in 49/49 txs (100.0%); emitted by CL Range Position Manager (0xe49dd6ce1dddbfc21f5e2383b568769037c4cde4)"
+  },
+  "0x11caba4dfdfa60b8536e69afbbd9721b03bb2760be96a313000c118afb70f4bf": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 47 txs (47 outside swaps); internal protocol operation"
+  },
+  "0xcaa4fa2b32caf0bc5ee0ddea8c2b0a4ca336a432cd3b0a826f9a0659397ad437": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 46 txs (46 outside swaps); internal protocol operation"
+  },
+  "0xf3eb396a9abbca6ef92038e7bd1b802fcc025cdd33fa517ad67c906f7ebb6811": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 46 txs (46 outside swaps); internal protocol operation"
+  },
+  "0x50ab5ec9d36b495e0874b8de8f6eb3621b783f40b78e39b3af474b6c6fb303dd": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 46 txs (46 outside swaps); internal protocol operation"
+  },
+  "0xf9e75751a321c94233856a3eabfff657d18bdc52aa83ef460bc33047270f0657": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 46 txs (46 outside swaps); internal protocol operation"
+  },
+  "0x84b514c5b926879bf66a04e4becdc6f521e94a4411e7dfa3dd255f214478f558": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 44/44 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x023916d46c0d18491146f8b0bc7d927a62a0559c8ca79920bda7dc7db1fc72f3": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 43 txs (43 outside swaps); internal protocol operation"
+  },
+  "0xf60febbc90a6c60eb64fee1a9a89939dd6c06f671beb374373e0aa062fa20de6": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 42/42 txs (100.0%)"
+  },
+  "0x90f8e48f7f4a2802c2995bdf8f62b28d1d9c09e8ce6f6e571406d2a4e3746622": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 42 txs (42 outside swaps); internal protocol operation"
+  },
+  "0x6287d4e630b53796d564aa1826a13b9501d64682c62e810bd91dbd60b5db6104": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 42 txs (42 outside swaps); internal protocol operation"
+  },
+  "0x53af4f61d749f1662147128c38e0e25087a7ce34c4fa4bc336a687e504dc8cd7": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 42/42 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xf86ec677eccf108c39e1718ba95c349d518db5f62cba1bbdfacb7985a28c8219": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 41 txs (37 outside swaps); internal protocol operation"
+  },
+  "0x724b4a738d6b8b5387a77a3a50fb8d7814d1b89bd5b21089dee6cfcf9ccc9577": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x779f1f1fb7c2574e36be741fe09fea13f48014d4624035b113e26a44c562422a": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x9c9b76e0fe76229c3ca5a41a226377eab782629baacd599b04e1794c716f8ccb": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 37 txs (37 outside swaps); internal protocol operation"
+  },
+  "0x6cb1fc582503d121058bedba12222cd15fe6e2b9ca6ca7bca7f4e8f65a6f54c4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 37 txs (37 outside swaps); internal protocol operation"
+  },
+  "0xf59effc2636b8d583e4dc2dc09ef1c511d765b9483adb4ff6508a977e1ee19d9": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 36 txs; internal contract state"
+  },
+  "0x82162bec4e66140735b7edd4026e2461d39d508198a195f1f54e758685ac85f6": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 35 txs; internal contract state"
+  },
+  "0xc29315d3cecedbb14e9e40479e8dc7f18fc868b72676faf2efc351dea7a0094f": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 32/32 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xcb57b6fdcb5af4331055568a4d3a4afa86bb1b318ebfd069bc8c561e0901d192": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 32/32 txs (100.0%)"
+  },
+  "0xa6074124268d80199a7232e12a4aa28c9fb325a0709c64b42f38c699d2d49d06": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 27/31 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x1e3b60443014cd63c30e184603b2fb4bdc53a72185b71b73f8627e625563ffd5": {
+   "class": "non_swap",
+   "name": "CL Gauge / Staking Manager Event",
+   "note": "non_swap: LP position management; emitted by CL Gauge / Staking Manager (0x30a05155585ff7f356283a0bcabcb98eb8b1283d)"
+  },
+  "0xb063f6f3794686525abd1ad491b1831bae1ed11d3e0bdcfc585a171b6f77021e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 31 txs (25 outside swaps); internal protocol operation"
+  },
+  "0xe21d434adfe4b3dcbb7c5e1f375192625ef25b326cfa167e53caee3b9b06d782": {
+   "class": "non_swap",
+   "name": "CL Gauge / Staking Manager Event",
+   "note": "non_swap: LP position management; emitted by CL Gauge / Staking Manager (0x30a05155585ff7f356283a0bcabcb98eb8b1283d)"
+  },
+  "0xb68a85978e462601e28cb1bcf75575a069919614a8465ff50a43f1ec4fd673d8": {
+   "class": "duplicate",
+   "name": "LunarBase PropAMM SwapExecuted duplicate",
+   "note": "co-occurs with LunarBase PropAMM SwapExecuted in 29/29 txs (100.0%)"
+  },
+  "0xfe501452dda9020e758013c7a853ee26084957e0f6829b6f9b900741371c750b": {
+   "class": "non_swap",
+   "name": "Protocol Admin/Pause Contract Event",
+   "note": "non_swap: internal state; emitted by Protocol Admin/Pause Contract (0xa834e70303322d86e5dae95ee47e9c6a073d9812)"
+  },
+  "0xd79c94fb0dcc230bf7d69e707071ada28084c2fd199e45006d7176d6d0e601c5": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 28 txs; internal contract state"
+  },
+  "0x922ac9235d682f147a60e659221eea059d7d64db5e29a9cbe90b59e180a1fd5d": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xb088c81adfcacd563429e26e7631ea07420e292ec0720ea2b58373a531cc716d": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xac4045ae21e6cd6324733b859977f90f20cfdb6c9a98b9512a515ba734bd54f7": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x709a025dd9cf5dbf90909341c5b039d8904829872812a76739f10171b1f957a7": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 27 txs (27 outside swaps); internal protocol operation"
+  },
+  "0x2075417d843f6036e2a37eaccd014fa90eb9687a3b32f22f9c93ebe940a47a64": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xcb655a3f087af5025ef992a4152250c7bfe969da25f249a04ab0e947aab24b8a": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x72c2daa262c7df735c7fc6f5ca699ae4f5d09d040ebd83d6015be18f90f8e3a8": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xdd843ac5a4992f3eab7cad3296e91657976fe8225b1265745f10c0fd6092a781": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 27 txs (27 outside swaps); internal protocol operation"
+  },
+  "0xf1f1aa42429ddf73a7653fc53cf2bda3c50b84ec52a2d1845f41bd2a18bdf53d": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xe4052e8df42955b49f2fa202883140097507222b3b896309f426c39a937a0019": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xcf6b6600bcdb2e99db66c4a30bc91be11242d962b2fda094748840ec63153d7f": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x507539023a7b6a713438d0f44eab4f97bcf8905b183b1108148409a8e8c1ed8c": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x434468d2c79031450a5edd6723f12a249f7783b45d3c03b9049628acbffcacb5": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 26 txs (26 outside swaps); internal protocol operation"
+  },
+  "0x89a885b6900024aaed2c0845aad74f2204445bf00ac135917c70f57540e557b3": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 26/26 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa6a2df24ee4ec45e2e12162377366dc6dcab75453bd667597be605198a9be778": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x2424fa7f27211b796beb197a8fce686865ccdf10b967ac073ad3a9e37eb2fbf0": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 23/25 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x0431a3acd01c7fee647b873fa8c382caf70010a31da6a14b6141746cb1604828": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 25 txs; internal contract state"
+  },
+  "0x55094bbaffecb7c9d0d13c420641f25e229d8ec4ead569b9bdc5f058878af40d": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 24/24 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x8e39e54c388e18cba72d2953a65d1da25bde1e84e73ae36ae0ac5f767a4dc75e": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 23 txs; internal contract state"
+  },
+  "0x7af24e5c613ac48d048691774e9628abdc41c7d6d0b61f915af585016c539ca8": {
+   "class": "non_swap",
+   "name": "Protocol Admin/Pause Contract Event",
+   "note": "non_swap: internal state; emitted by Protocol Admin/Pause Contract (0xa834e70303322d86e5dae95ee47e9c6a073d9812)"
+  },
+  "0x4246c15f4969fe0fc080f44aab1ae786773aaf3e47d9571b33b28d19d0f40f9e": {
+   "class": "non_swap",
+   "name": "Protocol Admin/Pause Contract Event",
+   "note": "non_swap: internal state; emitted by Protocol Admin/Pause Contract (0xa834e70303322d86e5dae95ee47e9c6a073d9812)"
+  },
+  "0x4cb288744658d0096706cb9d559cb612a22e6776759f40d2c246b369e40e3a2c": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x8eac73c060a009dc041f45bb6ceb6bab7c79a4e3659e2d74bce1bbfbdcf0f554": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 20 txs (20 outside swaps); internal protocol operation"
+  },
+  "0xa40398e32edae03a216a8666fedb8b24bfaa1a9d1b2e2a78729c9530f7dcb7c6": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 19 txs (19 outside swaps); internal protocol operation"
+  },
+  "0x07e804730276df9f1d20d4fe80973ad0144087f6efae49ac444a2432dd506a3f": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 19 txs; internal contract state"
+  },
+  "0x7427e8893eb98520e0174d49c1e82ef45a73b5a130948ea9ed099e58ec50b4c8": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 19 txs; internal contract state"
+  },
+  "0x426c78505078b232d9361b28a06ffb6543dc2642cef292c5e7fac9039640ced6": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 19 txs; internal contract state"
+  },
+  "0x2ed5a8749a7e3a68a074750cc77850912a0708dc62ab7ea42b0c3e5beb36f017": {
+   "class": "duplicate",
+   "name": "Uniswap V4 PoolManager duplicate",
+   "note": "co-occurs with Uniswap V4 PoolManager in 19/19 txs (100.0%)"
+  },
+  "0x36758ab566f3a7a29a25739777641d0faad0419110d1839ac538640c87fbbe45": {
+   "class": "swap_adjacent",
+   "name": "Swap Custodian Router Event",
+   "note": "swap_adjacent: swap routing wrapper; emitted by Swap Custodian Router (0x98c1d9e102eb2806d902b13186bdc7892ac4ffba)"
+  },
+  "0xfac20fe2669411e98eb3cb9c4b63d21ac4502345120dd557bdbf7b761eb73a65": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 18 txs (18 outside swaps); internal protocol operation"
+  },
+  "0xcdad023039fb3b146aa9902d31a2512a3d2c7180d901044aa17f6d69fb0683c1": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 17/18 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x4261262bb75a328bd5972c1bfb091719c4d38f4f4d6f612ecac6e8ea5e8a46ba": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 17 txs (17 outside swaps); internal protocol operation"
+  },
+  "0x146d3b2b7a79a0e67607e8f056eebbeef9025a2a41041f5eb9088088da9b7219": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 16 txs (16 outside swaps); internal protocol operation"
+  },
+  "0x8be262ddb819545972e7ea6e488ed3258c33cc1daf8f911e26c5e61734acb94f": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 16 txs (16 outside swaps); internal protocol operation"
+  },
+  "0x59f8e5fd695451b098789f51583777e88d8e00fe5addd6cc8f4809c38bc90814": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xf7468891d44cd26505532e288543dd0800c8f3f09f9e420d2241568bb41f6e07": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 15 txs (15 outside swaps); internal protocol operation"
+  },
+  "0x89a89cbafb8de4e048a41f4240eac46bbf025904bc4880d3f7a0ebf9d98249a1": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 15/15 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xc07dd2f4f180ead051da3b84aba7f357692996f34f601e7c7760d6091ad2e7b5": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 15 txs (15 outside swaps); internal protocol operation"
+  },
+  "0xf29ba0907b9876b42f3af9501b5dd430a6358002b3f858cebe1e2312df2d9071": {
+   "class": "non_swap",
+   "name": "Reward Pool / Claim Contract Event",
+   "note": "non_swap: other (reward claim); emitted by Reward Pool / Claim Contract (0x3fa7cdde6b956de18b64a32be24e2dfedae2165c)"
+  },
+  "0xab90364f861071aebcddb946c19c9e79856619102fc74f95d9694210d823011c": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 14 txs; internal contract state"
+  },
+  "0xb2f23ebd83e20409fcd8af40e5e1194c8feeaee18cff4fe840889e69e8576a0d": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 14/14 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x0ecb2dada618984c480ee78d58384a7cb219bf184fe80fa2e659b05425fdad13": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 14 txs (14 outside swaps); internal protocol operation"
+  },
+  "0x95af5f4132d1fd230e14e2c91166c830d6b4d8891340f891fb4286bee75fc53a": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 14 txs (14 outside swaps); internal protocol operation"
+  },
+  "0xa5b1b2a354d76eb7df0060494e6b417da55544a491c20322f7fe8e83e6aa138e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 14 txs (14 outside swaps); internal protocol operation"
+  },
+  "0x97784be9c5fab8f8b2277c92ab989bd8bac8c22f842b2e7ba6e9aad0b17ec321": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 13 txs; internal contract state"
+  },
+  "0xe1e5486451892c32135675e25b18ce7578d49bc187a91cbfe35f610b08754a6c": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xa842f62083f70260d2e5dc372cb3b982e78354cc26f824503ac04bb51f70aef4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 12 txs (5 outside swaps); internal protocol operation"
+  },
+  "0xa2b3214c441bdfdc957327b2ddf50f1f62b3f026a19ad1976e0bf6e64c3a3f46": {
+   "class": "non_swap",
+   "name": "NonfungiblePositionManager Event",
+   "note": "non_swap: LP position management; emitted by NonfungiblePositionManager (0xd5c6312ec57178277bbf8c34fb94965c6bddb014)"
+  },
+  "0x84da3a1d17f63dbfc5400acadf1acb0d383df817d20cd08cd2d9a16b7085b781": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 11/12 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x24e0e750e9b0658d9179ad1662912205ec2f1b2dc00bcbda15d801da1bb5a35a": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xae1481633e7f0f606fc7fbb856c66d5cccd813c8f0fda0182460b07bd4920fbe": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x766792cb82c148672cdc10ae627fed1adb6c752d09790b5862079add5a270006": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 11/11 txs (100.0%)"
+  },
+  "0xaa239a19db9b2cf7346a4ce1e6a2354f256a6cf517cc6e1642d9f5542890ef45": {
+   "class": "swap_adjacent",
+   "name": "UNXSwap/Odos Router Event",
+   "note": "swap_adjacent: router swap record; emitted by UNXSwap/Odos Router (0x8ea5ad2a58c1dae75394b1e8636e6518eb6dac50)"
+  },
+  "0xa77189f7f3269d1f42f6645b529280a012d530509c1435a1dbe6b0c6a2eee3fc": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 11 txs (11 outside swaps); internal protocol operation"
+  },
+  "0xe42474a69f25880e6235cc9e622af5b1c485ca3f88e21703dd4469ef72396027": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 10 txs (10 outside swaps); internal protocol operation"
+  },
+  "0x8272feeb62b20abe3be33925cfb01bc82727d4e7c616b9e1e607af0ac46e8953": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 10/10 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x8147aa4022a48141481ca46cf772b2564877667ed79ba5e4cd355e7bc4bafb85": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 10 txs (10 outside swaps); internal protocol operation"
+  },
+  "0xd0ac9b06fb59c3b950a0d1a103fa3b46cfc39c3a1ea9c25c29ea6ad8b8a9b670": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 10/10 txs (100.0%)"
+  },
+  "0x4dd2fa6db7c9371d3b113f088dc07aef99fb77cfee830e8601c1ac4946e05dbb": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 10 txs (10 outside swaps); internal protocol operation"
+  },
+  "0x1c77a19b6071c15e4a8bdd41b6d2b8e0999478bbfefaa931652ff3083e36a7fc": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 10/10 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x154c43c12bbeae5db36abcdfc7c3a8760d4488addd96dcc1014e6e427f9b5424": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 10 txs (10 outside swaps); internal protocol operation"
+  },
+  "0x813aa91bb1899d41e2a00c7ce8ef931161c89ffbdc73401899e44f1a0225ad47": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 10 txs; internal contract state"
+  },
+  "0x49b0a4e65056256e09083a79dfcad263194d397ad3dba29e496366213812438b": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 10 txs (10 outside swaps); internal protocol operation"
+  },
+  "0x1c60b685c958af93ff57aeb587daf656a3c63c3048e385c88acbf77aab1b4ea2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 9 txs; internal contract state"
+  },
+  "0xface8b18fceeb5b7fdc07c1cd01a83185cc37cf810d300f84353ea48b2493304": {
+   "class": "non_swap",
+   "name": "NonfungiblePositionManager Event",
+   "note": "non_swap: LP position management; emitted by NonfungiblePositionManager (0xd5c6312ec57178277bbf8c34fb94965c6bddb014)"
+  },
+  "0x50f0e2d3ba7f1a665f448a1aa7c8f7b6309e51ce668429f5877e7907e6e78063": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 9 txs (9 outside swaps); internal protocol operation"
+  },
+  "0x66d8fa04d44464c5e6579b930b638800e04541f1a20564e8f4aa4aa931430273": {
+   "class": "duplicate",
+   "name": "PancakeSwap V3 duplicate",
+   "note": "co-occurs with PancakeSwap V3 in 9/9 txs (100.0%)"
+  },
+  "0xb4bf3b007741b9bb0b654fd6b0c4c42f4ad4fc6d3449b3cccab32d93c614f888": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 9 txs (9 outside swaps); internal protocol operation"
+  },
+  "0xb36461462589b989327b1ff53a50ddd7d804ca87372bb393bfabe9a003309896": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x4ee8489ec72b6975cfcb44f5303e51f74e41f6077370325701a16049537fd841": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x353eb1ceefbdf32e30f32e5bd2a05f046233ea25594eca4ce1db3ef9d5c11276": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0xfdc5bce9a7d1c179a0de0ab2db9e44717e3dbb2ee5029eaace940c9930771224": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x0d04a17e67c8c417043eb9740c2df0eab7b7ec244577a3cd4b9610af73080600": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 8/8 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x4100fd95f57b81a6457d73eead765eb6470b66a0f3c406983d8085ede4a62302": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 8/8 txs (100.0%)"
+  },
+  "0x5e1811a6e1d8cabd5fba907b400d57e256f9d73ab0edc1566d2659bfa9a52019": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 8 txs (8 outside swaps); internal protocol operation"
+  },
+  "0x1c308516cf6182214e59f87aea7a6210abc756c63e6f2de85b786de806612750": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 8/8 txs (100.0%)"
+  },
+  "0xbcd4b484ae0d5f9830a55ebadd57aabbae329079b9d8821feb488d538dda80a3": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x483e1e584314bc79cac91c105b7178ce61d788141053d6bfb0a389ec6789d4b6": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x4ada356b841e801fa7066f7707811ccc41430fa9b5b04034856199e024371a7a": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x0df5c912eb8bf07dcc7fe37388f8f34e54aafbcfd5bfa8588bc9f3b4e21a9af2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0xc6ba17e51a76b79ac39a67a9acde82ccf270b6e2e3dea20b1c9d6296c633bbf3": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x3c302e3703f618846b472d2c0374b2988cf952fb8e6d6ddbbc47761e626aa881": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 8/8 txs (100.0%)"
+  },
+  "0x1d8751a03287272d1cfb9d3780df4dc663c4ad1d54e158c038326b476f1a7ebb": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 8 txs; internal contract state"
+  },
+  "0x928776cb24a47398a25ad2f2286343e8c65f64f5b115a164eb0e31915d8d7bf2": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 8 txs (7 outside swaps); internal protocol operation"
+  },
+  "0x49414b6380cc5c2c365d6e15d2745ec8cb6390950824329a9af63818e1a3d8df": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 7 txs; internal contract state"
+  },
+  "0xc7652e41dd06108ebe8245e1e05c61a52bfa92a69c054da193b065deef33afca": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 7 txs; internal contract state"
+  },
+  "0x152e6b78edc4d153fc1963d2c334c69bb1b234ba0c61720cb4dff9e3e80bb170": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 7/7 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xf20fa8f474e37c08cebc04b88de63cf9e5748541d43427a0a1b59a7b4c48ecef": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 7/7 txs (100.0%)"
+  },
+  "0x0f8835155637a3b842bd78e9ab74be9dd4ce60dc9482a04e6490da6c452c15d1": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 7/7 txs (100.0%)"
+  },
+  "0x7abdcd9ea8406567cff9524034f894f278136a7445ee4e0e2d69250235c277cb": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 7/7 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x0987b270a2791d070b8eec093a272a46489de5d7bb6d46ab2acd49bf25218e37": {
+   "class": "duplicate",
+   "name": "Metric Exchange (MetricOmmPool) duplicate",
+   "note": "co-occurs with Metric Exchange (MetricOmmPool) in 7/7 txs (100.0%)"
+  },
+  "0x0da1661d338f89f6ca41427edb5a67f16b81236b5b3790961c4e4fab76494476": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 7 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x2c4277f42f53362a5210d66ea68f79e549a2696db1068445875131548e767a2c": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 7 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x1c05a977fba19db965bbfd8d90f80aa685de01ca09109d9234a94c0193f67a85": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 7 txs (7 outside swaps); internal protocol operation"
+  },
+  "0x7f0ed35289962bbf2aef37472babaa2f8dd7690c112dfbe3feafd6e5ce1a8756": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 7 txs (7 outside swaps); internal protocol operation"
+  },
+  "0x1a154d2690ceea3e43ce6a49b06f26ec3f28b873a562f62f2b5a9bfac539b70c": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 7 txs; internal contract state"
+  },
+  "0x90173b60d7918a4a160c58e446ff3d44ec92b334d3a5936bf4639dea07d4e591": {
+   "class": "duplicate",
+   "name": "Algebra Integral Swap duplicate",
+   "note": "co-occurs with Algebra Integral Swap in 7/7 txs (100.0%)"
+  },
+  "0xc67e185f610ed448f819a46c3a22f5d9e2c0db97637a97d0113bdab831106805": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 7 txs; internal contract state"
+  },
+  "0x2d27837a600426b91f8973e3ad37045eb3351b43769cbb4fb9ad1f9aaff1a484": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 7 txs (7 outside swaps); internal protocol operation"
+  },
+  "0x0fee4799857c39adce81e92cca3ceec36011917cd675b91dad36d2be13e1fd2d": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 7 txs (7 outside swaps); internal protocol operation"
+  },
+  "0x1ffa77ecbb81fafce184204d036fd8b9826b7fe57fe95aab07d091b5b7a2f62d": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 6/6 txs (100.0%)"
+  },
+  "0x620daa4c0a37f945f6c485ef71874ec92d24952176a03eef2f46049e17db2a72": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 6 txs (6 outside swaps); internal protocol operation"
+  },
+  "0x798b29afca25233efa3000711476f6961cfa93ffd88466bb03f2f6a60f4558d4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 6 txs (6 outside swaps); internal protocol operation"
+  },
+  "0x0a71a8bfd56db20df6f9354050d16d3964882d0907c5e3795f87c6db8f0a70a4": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 6/6 txs (100.0%)"
+  },
+  "0x4f40964b21904a461ce0fbf9122bb3a050036ef44c38c3a96717e1936b164b86": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 6 txs; internal contract state"
+  },
+  "0xa329905b70489ac1b6c97c77b3d841044f80645f5983c85c2a4e0cff1f5ab8de": {
+   "class": "duplicate",
+   "name": "Uniswap V3 style duplicate",
+   "note": "co-occurs with Uniswap V3 style in 6/6 txs (100.0%)"
+  },
+  "0x7a83261cccfcf202c8b4099be3437ea26621c1f1e0115d3f6d4ff46785901152": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0x0b35e35a74208124ad7fa1bf31809f86ef92edaeb8c50ea0ea7b5279fe05ce26": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0x68d46a229e06eaf2fd14f7afe0ed000667748a29dd0ee0142b99c26a68590ff6": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0x61e15d162454aea85616c856a9216347d7d7e4015784dd40eec674c403f3f23b": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xfa085d9e93cb57f9cef9cd51f3b0764afdc0574259fb97c201e378433918489f": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0xf4606905899dbd3c91ebd0753b7f5c221b7f392a865ddc8e090c2eb5b8936981": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0x82fa316970ede817c1e0f2a54ad1051f35dcbeeb73e6fd5938d3c546bc791ad2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 5 txs; internal contract state"
+  },
+  "0x76b58022447c94a0c99c55b78097ad95aa58d94f845fced191c0d3a7851e58f5": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 5/5 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xd79ef00d793c4181451d62646a64d9757cef914f7a2754f10d0142cffa590e25": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 5/5 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xff0668076cdb7e0b2376cd3ec067effa43fd35e48fef3ad3c99a1e16dd40fc10": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0x821624d839a9bf2576910a13de3d688bc1a9ad92d2f80f4c27b37ba5ae011552": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 5 txs (5 outside swaps); internal protocol operation"
+  },
+  "0x2c351a26560b62f2c3d0fd258267d84e764ef58e43fc706372233c77b04b1ba4": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 5 txs; internal contract state"
+  },
+  "0xc669d10136c6da604469378be23e245c7adb8357aec0dc7bd0d916382392c8db": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0xa88a55107ca4fcfc21f263d63b243faa644648b1c606522ce57575e0e7e20735": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 4/4 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x9f7aef2a1582464d0244a52cc1f231a2d561441cf1316f74ea68a573b9c21ba8": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x5f1f7e13aca318047481d0cb3e1c57845c3cf1036a29945ed08a2d0d01eb56c7": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0xa8ea971848087cd4b3cedf858dccffc849c33b312c43bd672c0ca1a0eb94125d": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0x658a20cb855f2fbf2668597a70f60821af1383866261e1bccf7542723194f46b": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x88e81086d58030bb39db469fdae6fe53ab9337d091f4f9a5bbdf5f6dcdf7a1ff": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0xb51e0080591358c6acd543e4989b2cc178707c6d20c9218e83f2af19a8a1e315": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x3e259cfe413e863779862ccdd251678eaadd05cbdf647a676c52d0efcef21bc4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0xbb53a85c01611e528d140466fc00cc8a2d4de7cb6ddfe313cb67b95618eb3369": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x1fbb702f826fb831beef7dd874c3b6a8bdd32d75e235b5bd9e91b55c82b41251": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x6ef430631339aef32a4ee73e4bc529b568613a208490bf4c3e4c2d1d9774b860": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0xc655cb46dc5ce42a761911538e3addd1179588af1a3c1360e4c6e13982a0195e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x1242056839243891ddd4aff744d9d81c7f14427a69fd894e89ebea14ddf5e215": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0x83d650dc59755f5925dae9a8ffe19b0e39bd7d617366cbad03a66833ef38a45a": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x19ae0f5e0cb597dbafb664d3f3af84b84f64f03d39bd0465526110d1c3467122": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 4/4 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xd11a3f731923042c4586c676262ff71f6b0325bf3b3e3d49aacb34633aedc300": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0x2316c468679329c17bc7de2f30c110f9ab69edde4584280c2ff79d4248894955": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0xaac4d6cb139242a9f94319eda7c7cafab8ded279d8e04ab32becbb330a5df3ec": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0x37a0fa84f79e04cebe39515a0af113c7fbebb382e84ebc5581cce1920585edb8": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x67248a387b8478f43d9c87f5bfefc103ca7bae2022dd3bf057eca7fb06d0fdb9": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0xa9bdbcf9a04f455361dcf31422ce82c1da8a434a70b23651c063652c9f72d35a": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0x2f2033d5516138060b96d4a877fc664ca70ca0914df8344093dc0263fc02cf08": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (4 outside swaps); internal protocol operation"
+  },
+  "0xb10d1225fbddbf0a4d40f581c5782c075b0933b4bca07d7150b4552e08668477": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 4/4 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xf71875998d2550c25197fa716ca1dfe47250785888e584db4b37f6b2064ca332": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 4/4 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xfa50a62714820f6b266c30096a83b879ace9247fd9cc4ac266ec150eb2667e0f": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0xa35a4c07d8e5befa55c6fc74dabc6c160977dbf732d646e047ed1ae9cfad0b36": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 4 txs; internal contract state"
+  },
+  "0x8fca32d4dc16f1d1ff475a2109aec0986269a80f461fc593ee8d7306d76d7025": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 4/4 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x34f9d4885022b51e3202bec0433fefacd2a80177dfbde2ff9c376db37f00f50e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 4 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x0751c3ad6c5272a7056d3872b521989518c655bbd49e2af71a26a26523927f84": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xba30bd9068d2c8e5c7589c0197d2a201734d12134147f5f32b16c820763a3dca": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x874478a46924f86b0337d5701a9a4651633c9d28be9e9d2d896e7236564ae442": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x76b8af3f62878ea7ec17e95adecb3136b5107689be69d26b90cd259b030affd3": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 3 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x05772ba1b5164cb962dd03274b9dc823e73eba7b9be46e086a64c77dcb93e29a": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 3 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x23596d6c05f36e4734ac179198f3a12a5d5bf77d58c27cb028dd354526f1d9bb": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x79bef1c5cf6b09ee678e31250925995eb697de32f96adc6f9ebdfd2aff9c70a2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x10d6845efff7bdf83603fddeadc65af44cea45ef172a96a4c72315fbc302c9e5": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x8609667ce31a828830d7eaca016f9ed73a56291b302b2889d834c95ff1bc39fc": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x1ad8b24daef6c33df3a29fcd46cd891854b54c1270ff1432a18798f65a16b37a": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0xbcdcebf725fe182758bfdb7b53293d743f42c141a875c7991e8e667dd5e7eb72": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0xec51190389c99664406557ebbf39b07c0d5fe3c307e583bb4fd63834f49c453f": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x975ad0d2bb010adc2236866c49a4b0d20ae2c74fd11b765c20b4cb4f280ceace": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x4de3b2534f857f1b655d94311f25f1de77c755361feb22da0faa102d640e1698": {
+   "class": "swap_adjacent",
+   "name": "Swap Custodian Router Event",
+   "note": "swap_adjacent: swap routing wrapper; emitted by Swap Custodian Router (0x98c1d9e102eb2806d902b13186bdc7892ac4ffba)"
+  },
+  "0x3499d7ccdda0eed66915fd1343720a416ddd5099f874731b6f5dbfab677fb885": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x3021293b5a82bd4bbf17d9cb3309e7385d3aac42fc5f8116aceb6edd6a923415": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 3 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x845cfb91a4bf59af536a5c8a5e1e3266c0867c650763679ccf78e1c7469550e8": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0xea6ea8d966122d0c471273385aa8291790ab9e70878a6c5ef26e9543f6274e6c": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xe6ae41a87552d7ada44c8c9549aea7d842e6126cb2bd9a0831a935b7e282cf73": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x89ad32c25aec479e0eebfaa32071e39c18d46f1d9122c92d181092c0aa6fdfb2": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 3/3 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x997b9d57335c33409a72d5fdea05979a96cd471ba7dba9588cd7f4a4cf97e183": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 3 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x152f75f26844f4e9914c455d4b8f672009f4a57fc41067ce2870f250c01fa020": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 3 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x71a7099981da17196bdad487fa15d3ecaa832632ff543972deb6cc2316a0e61c": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x480a9098f7cb332374eca52e21122a2f73ab6e50becf03333f0ea9db9845e5fa": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x7ac7209362d966cc591c146afb72220d5ced3ab5399ae59a22580287fb51b932": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 3 txs (3 outside swaps); internal protocol operation"
+  },
+  "0x0418be4bfde701b019187bc692f62f8b4da2644003a3f034df4b4fc1a2eb5719": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x62180c568e0797fc8ed53da6230f3b083268ffc00643da26d3033f12975f72a2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 3 txs; internal contract state"
+  },
+  "0x3df8cd49dded0c9e0a12567cfe891b98cce3a9e4058c7aab14688aa1f9e16bff": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0xaca30565b9e62f9c4c39dad88797273368a9bb538fa24477e66f3da2cf9dd0ec": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xe5ddf61dab42e15fe73081203ffa98bcd311dd0f0c132c6643adc7df427bb122": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xddb0054c1c5a006585e33e0bddcc3a7ede9101a877a520b65bb9d82a8c03f419": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xd02afb8e85578b67f1a5fed5dc77fd4089c86047b1f42c2707bcb548afbc6793": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x3a548752200e7f6d85d55ae7e81877b35bb84f2f3f557cc6b6ba415ffa012664": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0xfd9bf2730513a1709722ff379a0844dfd8f997d600693c2bcc659e188bbdba0d": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x14b97a138eaa05b342dd1e5d33faf74d5748f17ab30ca5aa1fb64a0c278b60bb": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x2d3a44a533d59369de3718b10310e6c9b13bf1e8ebaae42d1579cb5ecc6bdea0": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0xd8928b051ae9fe62a5517bded78e4bcd0a48957a903cd6d950830506a1800b29": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x10a90de14c2156a9977f87105373badab3f0c1efa5259256aade3776c53c82b5": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x843b537250f89fab0d69ae0dddec59eeb5d4f10749b4579f05c5b8118716a58f": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0xde16fbaad8e9f2f28f9774192d3743517552b15e0e0014b9af772ddac8bffe39": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0xe62cd733521a4c56ece9e95d5ad0fb99355edf96d0d36f1accdbe15a90259ddb": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x3b04087bd1e356c1f32db414fd6804f5d1a5ce38fd3bcd076283cad174d918ee": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x03a63d6bfc38c3621714fe95238ffdefd3c01d56aadab6a82379c72c393ec478": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x10eeb6b5da38528b0f969a3ec08431456444eaf55e9b239367aa26363b03a211": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x113353ed85854286055867268bdcd6fac150903905d901d4dd6750dbe5bb16a1": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x17520059c45de89f1d5bd8578ea5ce8d63431e9d49f6b961ce1617ca8860ac1c": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x818c90158fa9c48a6e4c56a187e8c2ce8bdb869c56484f37757f7667f6ae84e6": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x60ab22a5967fe4be104bb9e0d5110cb20bce214531458ca6ab78529bce0b4cb9": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x3211ded2b552ba914bbabfa75dbfb5a6a11540e31a58d7fa0056890eef84ce51": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xf664311b3e9c649cdd38a40823e8d95fcbf467f67a220b990f92adc90ace8a95": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x2e429b4c79d7157362415651c8ff482c41421725bf80f8d80eca42fb45d815d9": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x9473e22097825e4aff0489c91f55b60e25f6d67685a65144c19cfcec74d5f596": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x26b7bdafa25ab6afa4aa1f7681d0a1770f3e82192bf0a8778e808c27f5448636": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x169309d238222335933c839af2465cd2a34c0ecc6c06069f69060b12fc8c4cc6": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x96df998a9286eb80a7f5d986fedb93d83dd416456fb29e5ac2a5b9f546e604d4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xd5f9349924bfb1cab928ed1bf6ef1733ec203c3220603ebfa696bd1a621e9e49": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xcbff561999a80509b6e1c6a22859d188315844a05aaefae8babe690890089e39": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xae5b82f3087014b4c0961ffcc14dd57269388012d8cffca4a95c5b50e30eab5f": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x8f25a5a49efe8f695514e2f0ec135e493bea5935cb3f370ab9841fa256664d36": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa3c51650941ff4403d7ea15c2c39a6fa70835d8a7bb700f929a0ac5c74ba74f7": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xeb01e749edc4e13944e6e93a250a4b24cbb3c2be4f0be3e2560bf5bb917cab64": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x9081b0c7358e50ca02471b820938d93fe5056e12845973a2ba61ee24fd564b30": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x16768f4ecc93786618270641524e6209d40480302598062adee1bf55a3e7da29": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xde3a9a7f6e6aa42da27fb5bab5db593026cac1bee6f542557fe3d09663cf3630": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x9c4481a854e37c8068c7e446fbefedce6372366247ab61611294cd02dea895cf": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x17bb9f180941f168b5e2e93332128ad8dc31c4d9d4cbd1ff8cef107659bb787c": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x2f16e6da1daa3b68b2df5302eaa8b52aae67e7402130ff1e4d9730c23350c982": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x11c009b37d5dc3af33a2bf8b13e640e19d14e64c85cc8f89def0595fb13251fc": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x6541a6bf258ac16553b207e671211ea82d99cd0065de65e75925eef060b232f0": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x1008ada0a64ef3fa9560fab6e92968b5913dc89c6b106f458da3e3ee049867c7": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xb4c1013919fbad8f05727c62b4795f19ba9ee61ec4315416a46f242efb29dac8": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xc9cc09f6cdf91cc7a4578468a89382e7c1ca72cfb7c431120b504500b24465a8": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x849273f9b3e360304bf70dc49ebd30f116f67c5abaca91de0f5b26a3cb488927": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0xd5f9f826fc21efcf68759546c7c8b2310a2578fea237abd7dda948b990f4f097": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 2/2 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x575d2d35bf8a83216c7c5f626a1143d863039612678aac62a67121a91395182f": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 2 txs; internal contract state"
+  },
+  "0x2d91b8732e7fbda754587f36a7f9290cd5c8650d69e236edec21c691ca6d6c87": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 2 txs (2 outside swaps); internal protocol operation"
+  },
+  "0x221adf998952a492a43b1040105a861eb1f2222deda4a0510c13941794bbf839": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x0aa6fb3c5efb4fb51abcb3db9fd32653f7b592cfbb8f84debd8b2ca0ecc2511d": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xea6d8de9af23b195296aef20f06b5b8e2d974c5ddc8d6cc86206945c8bc532bd": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x29218bd8014f12a9cf0da2df1f6f84e4f4c83d870016282f7d801551b28d4333": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xbd961b16c67452fa1a08d54bef8bb73ff55466875891acf4f8134c86cf441a06": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xc7e46581df1d7ed2fd787bcc72dd7f9f90780746dfbb26db47187ddd4ae87bee": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x1d2f96886cadaff3ebf3e783f0ada072ed6ce8e185613c64f467e65eebf0d675": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x741ab7ea4d555992cb7175a611bbe5a1cd9c3695f01508d195fbb8175169cd22": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x88189a948e3b8621b1ff19c2296d4fa89501af9db5cd79c77c5d8c775b949340": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xf8f6793c25a93b14404c79e343996747f968c7ce8db10819fbd9aef1e6fa11d0": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x33c6ab85cc51053afe57fbd42eda9b64fe8fdf88d1261d1accbd07e0f57f1684": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xe8dda65ee0e7bcc02f893f781cde3b0ed6d876dbe74945cf63ebea2e9c7de4f3": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xe38287fc41e46f7a46d77d92c1b27c71ac40bc0adbb158b902647edf336d499d": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x7c3a25417e20f5856c7aeab8b7ba739fc507bd472d00f36fd2a6f2dee42e5ea7": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x5603e2fc9937b376c2db1cb5e22c4c014732266ee2d1a5976fc7cb90689e6756": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa615c02f8d2e4ed8939b003560300a25353b784438c2efaa9f20fb5303a4d6d8": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x6dbaf5fed8698ad9e3d7d7cf26095248bcf21849fa5eeae1452f16d39a7192a9": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xcdf6ba134ba30a046c9623072589d256903d7bf769836ee87f3c8e7b336db8a1": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x2fa369db8a1dc4a39d09280ffa783665dfc1ba6ef4686874ba6fab000f8b6830": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x72e9c044e7def27bbdc1bbcf1a836ef746f8749fc0774015ddbf1631d60ebc32": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x07b0b0263d8833726d8b859b724fb3d62b8fe9ce6e2a5ac1f944306ae2bdf30e": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x75234e1693bfd219697bb8126e722d512b5fc927e0e73ad3593dafee5396da89": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xd48fe47c98a2a6601b836e051be9f7bd0f503b1a29ed2cbba86e7e75064ef44f": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x0f62a5328ce51e876843faedc3afb73b2db973b1754a4eb13db9fd194bd160bd": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xe6c5c0a9dea19cf14b099635293fd6ea074f539c3ebd25cc51c47513348b20f3": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x497a444147175fd761ac36f26109be0e7b775c9e23a6e67c4386f2e3b60957a0": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x4d53773a3abe949160eb89f3949f806050fd428b1ab6e4cf20edc0c91ff42a25": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x0f05ce4737f8930a6facb7f20af2d74bee511c4183c9853885955f2414778fea": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x771b4da337631ad9ebc121b3fb3e0385364a93105c9009c4632f20bc2fbb8517": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x8dd96c6bf38317dfb0c2cb6409a5c94e5fc08bea06183c03410d8006457aee02": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xcbc7e68e92c6ce0d9d273380d97620e6593a841d41b2b1a9f065d4effe3664b0": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xea6c46fb3e6049fab135212df86379e4459142f0437c478715e70ed3c770d542": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x0f3148eff186613efa45cbb7eeacd51801ff0262382abe3a3c504ab24ed1eb6e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xce104d17203dfc0dce3bdb31a0080b63cc5d9309bee1e225bd8b2ad53d1ea9f3": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x6b33244f243fe6bb02d879186e470578b2dbc448bc08b20d5a2ae2ad37b5ce9f": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa1469da5bd87e5f58c87cfd602522ad378570e54d5c7541ae78836441f9da1df": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x8e003d20c8312934b3d76c07d02110335bac371c5d4943b180c38c49e426c51e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x1c5f32a99c5d55a47a2075cd446f0968727e1071ccb80daae763e8eb8b222034": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x9eb40e591a2fa9dae709480ed356c8b8a6bbe48d4f6a3c78a9c69d7674beb109": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xafcd2f01e1000e65be8e955c4cf979e469ea3fbe9dd0b5532a6eea4946d830f6": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xc99c5117a4c2718cf95aefa2c413367bef543fd854bd8730d326a80ce0b06323": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x7d15389c0ba94d2931f776763a9ea2b4075d0c5043fe8624d55b39e890795b9b": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x8ba319255b2f89951ab45f56cf4225a59278ee612bdf9bc0692763fa398de6ca": {
+   "class": "swap_adjacent",
+   "name": "KyberSwap Aggregator Executor Event",
+   "note": "swap_adjacent: aggregator execution state/fee; emitted by KyberSwap Aggregator Executor (0x8f10b468b06c6fd214b65f87778827f7d113f996)"
+  },
+  "0x6d2d8a42711a21bff52c81aaa6ca57741cf7da1b3b7fa3246c45daba83d8eaee": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xadb5cbac4f0eea7b0effa5e34a81732e59e726b749259249897dc81aa7580267": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xb85bf48b4eead276238f4559abd2848a2f4aa4492eb7fc50cc98ec1658adac41": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x22cb6aecdd84bc81d16db8cb94544a60ddcb27f378424cc8b0f0b48833d228a5": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xefc967d026ee8c5f9f26fb04fc2d13f229a95961be704383e2ba4df65daa4533": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xce78853067970b5e5b0eabc7316029bcecef6f611b0229e24cb88f2e2e876c9e": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x800fd4f1882210d295aa348610fb5717e979f0a0b84862e2350dda8d4aeda9d9": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x513dc41de89f1515e49db81e27a3e9d0dd7f27b37264f8e992617a4829b1a1c6": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x9facfb71910157915c27429cce81fcf59a5861faaa3c57b5e8658558a10def39": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x0ad754dae06e124b968725de222fd33a42106c3cbf3f4255a92f7165ba9b2032": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xcad7cb03da5dbdce0972956c374d9619d67e73cd3d6659b4233ed2d2692489ae": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x1f4c2db6a5219f3c584adbb79a8b2ac144cb92e4d504894f94afdf7f281b94e9": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x2fdd2999e12752bbcf9082eb6d55f8f581fcd60bea2aba3aa7d029fe4ee49b46": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xabe007c43a06d688cb939f6ea5961b93afb3b81b25e504d110f026f82e743df2": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x63f2383c42da84dc0ab866cab2d71abd67600ddaa46d325ae4997377c03ca75a": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x682a9677a20f66fbad9cc0c870945a0b7d7d2fe146fc644017218eb8a96a15b3": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x0ef290f51ff43cc4e75dbe88a34c0bbe6f0661857f9206b17a0a3c3bc7a8d0c4": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x86c7060480ff2dbeb9484f33aee0bcdc79785c7c04c1e4ef1d68411942bfa87a": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa22a08142cc9219582130a3e72d7a6ac37e051ea7fa5b4ea586f743c6df7e110": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xf7bf2862105f25ade94532565b1f32aa0c46da62cc938e322fe5352f8aef7d65": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xa65f4d025435a3a8c52ff6fcfa3681d8ce08f2260ae01558fcb6cdd8ca80da60": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xb4f26ccb808d3835cf485e30f0921cd53e6ebf1923de97d4b7aa7e388ff6eb1b": {
+   "class": "swap_adjacent",
+   "name": "SwapWrap Router Event",
+   "note": "swap_adjacent: swap wrapper record; emitted by SwapWrap Router (0x3d90f66b534dd8482b181e24655a9e8265316be9)"
+  },
+  "0x93fa8e60316527fe6e292d2424cc211c1baed802d9f2164e9afb68c64808e201": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xed27856c813a48bf0521b788b216bb3844fecc3cb8d4946e100f8f0ed2927c29": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xbeaf6c56457dfd2a41464dc50a71644a30e3306d058e2b5a6ffc9d42d969aa87": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xf3bba44a42f054d3afb76f6a026007d9a31fc8de296a58782a0fcec48a8baa47": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xf4b9ec1f6fcec2cf8d46a82ef290e1e0d5cbaa5e8d0e15fd0c4eeba256c5326d": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x9fa132dd7d5befff8573db57651190327aae5331991983283c736aeeb4eda2f7": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xdfba5c8b2471d386ac8f6982a0eea68e462b407bce0768705017186790434045": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xbedcd0f1b456b3eca4306f27f0a0cf13cac5dc91507811d62d9d0f2450426394": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xabb054199c9b2129058eda93c9f27d17a3df89c521a63b2154065da7c9c02743": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x71e89d82c295ed823bc06e56fed4d8d1eb41f747da3c1cf833274d6c47d34f40": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x920489482eec8896222a05f0a7af8faf836d2f051241b6cd31155e506bb3da24": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x3b7e6f71b50f76f8f8efa88c6e0ab4a0616a7c42887ab2f6c343853a308710c1": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x1accf22f0fedd0bec1453ff29baad617417d57c06b2937d6b12f392e58120ec1": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x90638880e32a6c52167b6ea1e915b9b1d17c66d143e7206d2e57353475fc3550": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xf7c34bb271504693c435f040f449ee63698136470ed50d720c904e2aa4e1c741": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x7a27713c8f2cac188b72aba5c0167e518c8b2da39cb906c17eaf21d3602409fa": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0x0e6e0d79fd9851747c4be48268c22bb479d38f3b968386f32d6eafb1359da917": {
+   "class": "non_swap",
+   "name": "P2P Fiat Ramp (OrderFlow) Event",
+   "note": "non_swap: other (fiat on/off ramp); emitted by P2P Fiat Ramp (OrderFlow) (0x4cad6ec90e65babec9335cad728ddc610c316368)"
+  },
+  "0xbaec455e75d5e7487d95531fd132b012798401221eb7417e502e8748e9c32219": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x5cdbeb54227c5139f1d723c3db05ae916028afb8a36913751c97a9230795c5ce": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xe6512016db8608f8ddfb1b8b349a1caae0e8fd837ae4e669b8e6270ddaec9834": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x7023985ebc4ecd0268639b9fcfa6d47451ede6ee7c44325e0faa03849b94e28b": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x53927b8c9deb37ba92d61f42cbf12ff07c7cc1606c7ff2393c507a82f15d07d2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x8d08349ac84cf5f3323334392f72d4771dbb30fdb95045f98d24368d2738225b": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xf0aba19cea407386aaa32103c16d06eb0bdaeb7712dc440346641055574b6d4c": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x46b36bd5de19e198a7c784e38bc2130fde6a179358b0b77133c4bd9a81f757b2": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x1bf5c2447caedf8c9cc4079bff27764485d5ce6512741089a6af2c60db3b4466": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xe8cacc90d5fb561f33056eca7b2ce30168fdc76114300fc27355f95035acf16a": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xaf91e436860a4589440dbb7e91330803172e07d00b7b47c6c39913b2a6a92cec": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xfe419ab5e1e61422ddc15754a248d4304c3d2cb1591a906cdc02369b414a23e6": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xadc301c7c596d4e31593ffd11bfe19b38b10a5aa9e355cde00765b7c5978f7be": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xd5d9d3a49ac1e171660afd29258ef4f4ab9f5d07b97ad130eac61d88ff3447c5": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x263490ab43b96e7edd85d158bfa47e38ac547998cded4b6b0e38ccb42c216f36": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xcf72c51da339d19966826116da0a3f8bce3dbe0872b6cd7d3dc9ec8a1845e7bc": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xcbb06c21da8bcdc06fd4366cf1d039046e412d1eb5fd036ecc2cb1b4b659842f": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x022484d9ab07e2ea8d2f868574c16404cf7fc639be80032dc1e9a1641bdd2eb1": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xb3c563cf2932c935ef3e9ad8b5f7a9fe9e8970beb92b7ff12e3875208cdd4b05": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x7b807ec69ec9b6911d9eec0f0f7992956800622337c19ed7be7b175b5bda98a1": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xdd7e3701c51bd8a2a1dc534c825eb085c5ca6e3f83e818826fca9afbd01d164c": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x016983bee34588b0010455a178c50323e8f077b4c223a1f28d65b66ffb6b36b2": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x291e88df43bdcee9b302e5bc6c203d12541a8ca1d31a588bf42716f41b7e8ca4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xc570b8550e482cf7581be93487c71a90ef036b3434229a846dfca990df85eb3b": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xe1272a5a1e2d70864cbe5931c0211a12783f5d03bfe2c6501ec0c7b798385edc": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x0953834ad7d81bc7d40403ebf438095b67236cf16099dfe74d4e7bedb29628bc": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x12d8b7f340c5c7a2b8efc734423c1073ed9a761f8522d0e6d4c7bab4b72d1152": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x68c8b223e1ee28bef286745e1c7324635dbd43e9ddc5a02603fecf8d402553ff": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xaaafee11af6c575287782cadd6341fa03ae3e3fb9094643b23aba7ea902df210": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x7dd1a6135b81e116e26453cc1754f36ddf5ed3ac63358999cafc1d34f222451e": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xe7c1744d9ae94e76d0d7fc1c297a0b8e10717edcfd31ecb54de53d0d7130c5dd": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x15a60ed279fcd5a07a30f985be6fef73dceb2569690033fa8fef5f3c9c67535c": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x8e6d01f4f3fd9973b147dd0958a18a536dfbe4c61cd3240c875331963e1188ce": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x713e33bc9f7ab186d9b1c8385ce15c72a60e8207a2efc1807b945966036bd740": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x6b35025be17ad066dc360b6fde5533281579fc1e515863980c53a83568f6b246": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x14c8228c61ec1e3bd2ff41658697f5ca00176ad34f175e399749af0aab165c7d": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x802338f758632b43bbbeed1e98b812d74ee8b1b35b4670e3b47c50e5f92f1ad4": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x0062262c7a4b897cc6c9ac8e1fed6cb7d1d60742ae5d3128376a4c4758cf5527": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x69f6fbbd6d6a41d3dca116e3a93d84f5d308493065763f3a956dd892877a5cef": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xead8d628518fcfa90c4a58a9f8a62a430c6df456e0b416ca3fa378f7bd00c2c6": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x0f32a39c74648368c3c1846866951357d5a14663bd3429bc4e2a5063fff48c6c": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xf216be68b7419f0481d8f339ebb0bb302db7139dea988397730b9e69b875e5b8": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x1b23e3786ea5e18db878d4736bb272192d3f3252c7827411ec2ff52a513fc1ec": {
+   "class": "non_swap",
+   "name": "NonfungiblePositionManager Event",
+   "note": "non_swap: LP position management; emitted by NonfungiblePositionManager (0xd5c6312ec57178277bbf8c34fb94965c6bddb014)"
+  },
+  "0xd868d48fd674f6a14bbd469e43e67758ff66829ee8078d22b3fd814e6514ed37": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0xe2533f65d38257c136f450770dffc4c1d938719c443d83b4b416d9518512864d": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0x3b0f4da93e5240b60bbde4e82559f173561529a9a28a2dd85875c9df1e834e69": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0xc2baa19512579fa535817f5c076a8ebb49cebb3f57befcea0a2cbbd93b0e744c": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
+  },
+  "0x0c28d55cc0d448b35b270dd507796937bbc66e46aae3cb58dcda4b6739e04f6b": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x5f4a5dfe0f00c4b13a9ac3e9195293a679fdb932caee3bb3cdedce767a905354": {
+   "class": "swap_adjacent",
+   "name": "Swap-Adjacent Routing/Fee Record",
+   "note": "swap-adjacent: 1/1 txs carry DEX swaps; records router execution/fee/state"
+  },
+  "0xfd3e48767b64e77a474dda38b96bb82e87f83618174904217612a56f4f53b068": {
+   "class": "non_swap",
+   "name": "Zero-Transfer State Record",
+   "note": "zero-transfer measurement: 0 token transfers across 1 txs; internal contract state"
+  },
+  "0x64e3a083050af2fdd05c31b0e202f8c08d66e8aab266cedacd7779c1c704f077": {
+   "class": "non_swap",
+   "name": "DeFi / State Operation",
+   "note": "non-swap: 1 txs (1 outside swaps); internal protocol operation"
   }
  }
 }
