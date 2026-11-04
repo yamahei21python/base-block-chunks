@@ -132,3 +132,7 @@ jobs:
             ledger.db.gz ledger.db.manifest.json census.json undecided_pack.json \
             --clobber
           gh release view "$TAG" --repo "$GITHUB_REPOSITORY"
+
+      - name: Beacon (ntfy)
+        if: always()
+        run: curl -s --max-time 15 -d "${{ github.workflow }} run ${{ github.run_id }}: ${{ job.status }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
