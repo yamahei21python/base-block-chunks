@@ -27,8 +27,8 @@ on:
         required: false
         type: number
         default: 10
-  # schedule:                      # production: every 3 hours (UTC)
-  #   - cron: "7 */3 * * *"
+  schedule:                        # pilot live since 2026-11-04: every 3 hours (UTC)
+    - cron: "7 */3 * * *"
 
 permissions:
   contents: write
