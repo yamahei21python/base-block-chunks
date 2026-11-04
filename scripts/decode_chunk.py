@@ -50,13 +50,15 @@ from pathlib import Path
 RPC_URLS = ["https://base-rpc.publicnode.com", "https://mainnet.base.org"]
 UA = {"User-Agent": "base-block-chunks/0.4", "Content-Type": "application/json"}
 
-# Shared pair/decimals cache: pool token pairs and token decimals are
-# immutable on-chain facts, so resolutions are reused across chunks
-# instead of being re-asked from the RPC for every chunk. The cache is
-# advisory only — any failure to read or write it falls back to RPC.
+# Pool registry (known_pools.json, sibling of known_topics.json): pool
+# token pairs and token decimals are immutable on-chain facts, so they
+# are kept in a versioned registry instead of being re-asked from the
+# RPC for every chunk. Pairs are keyed "resolver:pool" (a pair is only
+# reused for the resolver that produced it). The registry is advisory —
+# any failure to read or write it falls back to RPC.
 SHARED_CACHE = os.environ.get(
     "DECODE_SHARED_CACHE",
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), "pool_cache.json"))
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "known_pools.json"))
 
 
 def load_shared_cache():
@@ -71,13 +73,20 @@ def load_shared_cache():
 
 def save_shared_cache(pools, decimals):
     try:
+        version = "dev"
+        try:
+            with open(SHARED_CACHE) as f:
+                version = json.load(f).get("version", "dev")
+        except Exception:  # noqa: BLE001
+            pass
         tmp = SHARED_CACHE + ".tmp"
         with open(tmp, "w") as f:
-            json.dump({"pools": {a: list(t) for a, t in pools.items()},
+            json.dump({"version": version,
+                       "pools": {a: list(t) for a, t in pools.items()},
                        "decimals": {a: d for a, d in decimals.items()
                                     if d is not None}}, f)
         os.replace(tmp, SHARED_CACHE)
-    except Exception:  # noqa: BLE001 - cache is optional
+    except Exception:  # noqa: BLE001 - registry is optional
         pass
 
 ETH0 = "0x0000000000000000000000000000000000000000"
