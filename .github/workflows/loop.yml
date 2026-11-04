@@ -135,4 +135,5 @@ jobs:
 
       - name: Beacon (ntfy)
         if: always()
-        run: curl -s --max-time 15 -d "${{ github.workflow }} run ${{ github.run_id }}: ${{ job.status }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
+        run: |
+          curl -s --max-time 15 -d "${{ github.workflow }} run ${{ github.run_id }}: ${{ job.status }}" https://ntfy.sh/bbc-gha-f7b42dc9 > /dev/null || true
