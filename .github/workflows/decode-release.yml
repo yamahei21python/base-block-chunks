@@ -1,0 +1,62 @@
+name: decode-release
+
+# Decode a raw chunk that already sits in a release, entirely inside
+# Actions: download the chunk asset, decode it with the repo registry
+# (known_topics.json + known_pools.json from the checkout), and upload
+# the ledger back to the SAME release. The raw chunk never leaves
+# GitHub; only the ledger (~1/20 the size) is produced.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag holding the raw chunk"
+        required: true
+        type: string
+      asset:
+        description: "Chunk asset file name (chunk_<first>_<last>.db.gz)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download raw chunk from the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          ASSET: ${{ inputs.asset }}
+        run: |
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --pattern "$ASSET" --dir .
+          gunzip "$ASSET"
+          ls -la
+
+      - name: Decode into a ledger (registry from the checkout)
+        env:
+          ASSET: ${{ inputs.asset }}
+        run: |
+          CHUNK="${ASSET%.gz}"
+          LEDGER="ledger_${CHUNK#chunk_}"
+          python3 scripts/decode_chunk.py "$CHUNK" "$LEDGER"
+          gzip -9 "$LEDGER"
+          ls -la
+
+      - name: Upload ledger to the same release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          ASSET: ${{ inputs.asset }}
+        run: |
+          CHUNK="${ASSET%.gz}"
+          LEDGER="ledger_${CHUNK#chunk_}"
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
+            "$LEDGER.gz" "$LEDGER.manifest.json" --clobber
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --json assets --jq '.assets[].name'
