@@ -1,0 +1,134 @@
+name: loop3h
+
+# 3-hour cycle template (see LOOP.md):
+#   fetch a fixed number of blocks -> census -> decode to a ledger ->
+#   cut out an undecided-events pack -> publish ledger + reports to a
+#   loop-<first>-<last> release. The raw chunk is never uploaded; it is
+#   discarded with the runner. Only the undecided pack becomes
+#   classification work, so as the registry grows the unknown share of
+#   each cycle shrinks.
+#
+# Template state: block_count is capped at 100 (one job, no matrix).
+# Production (5,400 blocks / 3h) splits the range with the same matrix
+# pattern as fetch.yml; see LOOP.md.
+#
+# To enable the 3-hour schedule, uncomment the schedule block below.
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_block:
+        description: "First block (blank = continue after the latest loop-* release, or the chain head on the first run)"
+        required: false
+        type: string
+        default: ""
+      block_count:
+        description: "Blocks per cycle (template cap: 100)"
+        required: false
+        type: number
+        default: 10
+  # schedule:                      # production: every 3 hours (UTC)
+  #   - cron: "7 */3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decide the range
+        id: range
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          START_IN: ${{ inputs.start_block }}
+          COUNT_IN: ${{ inputs.block_count }}
+        run: |
+          python3 - << 'EOF'
+          import json, os, re, urllib.request
+
+          count = int(float(os.environ["COUNT_IN"] or 10))
+          assert 1 <= count <= 100, "template cap: block_count must be 1..100"
+
+          def rpc_head():
+              body = json.dumps({"jsonrpc": "2.0", "id": 1,
+                                 "method": "eth_blockNumber", "params": []}).encode()
+              for url in ("https://base-rpc.publicnode.com", "https://mainnet.base.org"):
+                  try:
+                      req = urllib.request.Request(url, data=body,
+                          headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"})
+                      with urllib.request.urlopen(req, timeout=30) as r:
+                          return int(json.load(r)["result"], 16)
+                  except Exception:
+                      continue
+              raise RuntimeError("no RPC answered")
+
+          head = rpc_head() - 2  # small confirmation margin
+          start_in = (os.environ.get("START_IN") or "").strip()
+          if start_in:
+              first = int(float(start_in))
+          else:
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{os.environ['REPO']}/releases?per_page=100",
+                  headers={"Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                           "User-Agent": "Mozilla/5.0"})
+              last_done = None
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  for rel in json.load(r):
+                      m = re.fullmatch(r"loop-(\d+)-(\d+)", rel.get("tag_name", ""))
+                      if m:
+                          last_done = max(last_done or 0, int(m.group(2)))
+              first = last_done + 1 if last_done is not None else head - count + 1
+          last = min(first + count - 1, head)
+          skip = last < first
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"first={first}\nlast={last}\nskip={str(skip).lower()}\n")
+          print(f"head={head} range={first}-{last} skip={skip}")
+          EOF
+
+      - name: Fetch blocks
+        if: steps.range.outputs.skip != 'true'
+        run: |
+          python3 scripts/fetch_chunk.py \
+            --first ${{ steps.range.outputs.first }} --last ${{ steps.range.outputs.last }} \
+            --out chunk.db --workers 4
+          ls -la
+
+      - name: Census against the registry
+        if: steps.range.outputs.skip != 'true'
+        run: |
+          python3 scripts/census.py chunk.db \
+            --registry scripts/known_topics.json --out census.json
+          cat census.json | python3 -c "import json,sys; d=json.load(sys.stdin); print('total_tx', d['total_tx'], 'unknown topics', len(d['unknown_topics']))"
+
+      - name: Decode into a ledger (raw chunk stays in the runner)
+        if: steps.range.outputs.skip != 'true'
+        run: |
+          python3 scripts/decode_chunk.py chunk.db ledger.db
+          gzip -9 ledger.db
+          ls -la
+
+      - name: Cut out the undecided-events pack
+        if: steps.range.outputs.skip != 'true'
+        run: |
+          python3 scripts/build_undecided_pack.py chunk.db census.json undecided_pack.json
+          ls -la undecided_pack.json
+
+      - name: Publish ledger + reports (raw is discarded)
+        if: steps.range.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FIRST: ${{ steps.range.outputs.first }}
+          LAST: ${{ steps.range.outputs.last }}
+        run: |
+          TAG="loop-$FIRST-$LAST"
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --title "Loop cycle $FIRST-$LAST" \
+            --notes "One loop3h cycle: decoded ledger + census report + undecided-events pack for Base blocks $FIRST-$LAST. Raw blocks were decomposed in the runner and discarded."
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
+            ledger.db.gz ledger.db.manifest.json census.json undecided_pack.json \
+            --clobber
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY"
