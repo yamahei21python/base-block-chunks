@@ -8,7 +8,7 @@ name: loop3h
 #   classification work, so as the registry grows the unknown share of
 #   each cycle shrinks.
 #
-# Template state: block_count is capped at 100 (one job, no matrix).
+# Single-job form: block_count up to 5,400 runs sequentially in one job.
 # Production (5,400 blocks / 3h) splits the range with the same matrix
 # pattern as fetch.yml; see LOOP.md.
 #
@@ -23,7 +23,7 @@ on:
         type: string
         default: ""
       block_count:
-        description: "Blocks per cycle (template cap: 100)"
+        description: "Blocks per cycle (single job; matrix split is the production form)"
         required: false
         type: number
         default: 10
@@ -51,7 +51,7 @@ jobs:
           import json, os, re, urllib.request
 
           count = int(float(os.environ["COUNT_IN"] or 10))
-          assert 1 <= count <= 100, "template cap: block_count must be 1..100"
+          assert 1 <= count <= 5400, "block_count must be 1..5400"
 
           def rpc_head():
               body = json.dumps({"jsonrpc": "2.0", "id": 1,
