@@ -37507,7 +37507,27 @@
    "class": "non_swap",
    "name": "(signature name unverified)",
    "note": "発行元: AgentReputationBadgeProxy (0x8906bf80edb9…) / 注記: 実装が未検証のためイベント署名・パラメータ名は復元不可; プロトコル公式情報は公開されていない（AgentReputationBadge の名称は Blockscout の検証済みコントラクト名） [unresolved56 round via PR #29; Muse acceptance: keccak verified where named, format shapes sample-verified]"
+  },
+  "0xdabee9ed72c76b12a28781d992bdee7ca56da7b019b9239ba8e53b86267950fd": {
+   "class": "non_swap",
+   "name": "PlayedPreFlop(uint256,uint256,address,uint256)",
+   "note": "Overtime Casino (Thales) Texas Holdem pre-flop bet and VRF request event (defi-loopbatch12)"
+  },
+  "0x47be52679faec1351f7cbc49c9c808abdebeda3c9b03565260d8886702a0f747": {
+   "class": "non_swap",
+   "name": "FlopDealt(uint256,uint256,address,uint8,uint8,uint8)",
+   "note": "Overtime Casino (Thales) Texas Holdem VRF callback flop deal event (defi-loopbatch12)"
+  },
+  "0xbd3fce8d7d7e2d611532acf38ba61043078d25782ac8ba8f1cf294201dc87279": {
+   "class": "non_swap",
+   "name": "Relisted(uint256,uint256)",
+   "note": "botBTC Bots auction duration extension when settled with zero bidders (defi-loopbatch12)"
+  },
+  "0xe798ca6bc77d8f92347f9cb9dc6745afc4335dfd450a7e7ae6346a1bc3e2335c": {
+   "class": "non_swap",
+   "name": "PlayerApplied(uint256,address,uint256,uint256)",
+   "note": "LeagueFun Gateway player registration entry event (defi-loopbatch12)"
   }
  },
- "version": "2026-11-05.8"
+ "version": "2026-11-05.9"
 }
