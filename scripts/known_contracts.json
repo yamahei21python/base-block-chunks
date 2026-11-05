@@ -24,6 +24,17 @@
    "role": "other (token approval manager)",
    "source": "step 1: listed in Uniswap official deployments; step 2: Basescan verified contract name Permit2"
   },
+  "0x0000000000bbf5c5fd284e657f01bd000933c96d": {
+   "name": "Adapter",
+   "protocol": "CowSwap / CoW Adapter",
+   "role": "TWAP Order Settlement Adapter",
+   "source": "BaseScan verified contract 0x0000000000bbf5c5fd284e657f01bd000933c96d"
+  },
+  "0x0000000021526b5c055653a55df60b21b73da999": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x0000000071727de22e5e9d8baf0edac6f37da032": {
    "name": "EntryPoint",
    "protocol": "ERC-4337",
@@ -35,6 +46,27 @@
    "protocol": "PropAMM",
    "role": "router",
    "source": "step 2: Basescan verified contract name PropAMMExecutor; step 3: emits LadderCommitted and PMM Fill topics"
+  },
+  "0x00012c436240fa0b7286aa85ca098c9fd8cc2000": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x00019db9af5b57974cb395823cd1fa5347777777": {
+   "kind": "",
+   "name": "TransparentUpgradeableProxy",
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x0006f3462be7043c594f503602e3a9269b024482": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x00afefa66ff775ae1c407fec613faab5e64fef94": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "Symmio (Rasa Capital)",
+   "role": "solver depositor vault (implementation RasaOffChainSymmioDepositor 0x10ed5fccf10c6df226a60f09743d058d321e345d)",
+   "source": "step 1: identified in defi-loopbatch13 with Basescan verified proxy and implementation names and SYMMIO official docs; step 2: Muse verified emitter on the WithdrawClaimedEvent sample receipt"
   },
   "0x03a520b32c04bf3beef7beb72e919cf822ed34f1": {
    "name": "NonfungiblePositionManager",
@@ -48,11 +80,27 @@
    "role": "pool manager",
    "source": "Step 4: Counterparty hook/vault receiving currency and emitting Uniswap V4 swap log 0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67 in CoinBuy tx 0x3087917e78621c4065667f9dc28aec1dcfbba502d00a428d2cb4430dfe9d6250"
   },
+  "0x05b9079458d57f80e6638cf0abafd31bfba0f586": {
+   "kind": "",
+   "name": "ERC1967Proxy (WalletAutomator)",
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x05d06db68a8c13a6a58c7ddc15cd3f54e9063aef": {
+   "name": "TrainingCampFacet",
+   "protocol": "FrenPet",
+   "role": "training_facet",
+   "source": "https://basescan.org/address/0x05d06db68a8c13a6a58c7ddc15cd3f54e9063aef"
+  },
   "0x0656cdf4539f412f542a8d8a029f7c6c5ce90d7b": {
    "name": "UniswapV3Pool",
    "protocol": "Uniswap V3",
    "role": "pool",
    "source": "step 2: Basescan verified contract name UniswapV3Pool; step 3: on-chain factory() returns 0x33128a8fc17869897dce68ed026d694621f6fdfd (UniswapV3Factory)"
+  },
+  "0x077ba82476c406e0d628e5a6f5d2a193731f4168": {
+   "kind": "",
+   "name": "ERC1967Proxy",
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x09aea4b2242abc8bb4bb78d537a67a245a7bec64": {
    "name": "SpokePool",
@@ -65,6 +113,12 @@
    "protocol": "Autonolas",
    "role": "other (autonomous service module)",
    "source": "step 1: listed in Autonolas registry deployments; step 2: Basescan verified contract name MechFixedPriceNative"
+  },
+  "0x0a8cdd1b39f476cdde606a7e4c330b3ddb04314e": {
+   "name": "ParSwapPool",
+   "protocol": "ParSwapPool",
+   "role": "1:1 Pegged Par Swap Pool",
+   "source": "BaseScan verified contract 0x0a8cdd1b39f476cdde606a7e4c330b3ddb04314e"
   },
   "0x0bd474b7b119b1b139d3ab899947de051f916a9c": {
    "name": "PAMM Vault",
@@ -90,6 +144,17 @@
    "role": "other (game diamond)",
    "source": "step 2: Basescan verified contract name Diamond (Fren Pet: Diamond); step 3: emits ClaimRewards and BuyItem topics"
   },
+  "0x0e5d5ade8e9f5ddc2df1caebc63ea37c1fc5be3b": {
+   "name": "UniswapAdapter",
+   "protocol": "UniswapAdapter",
+   "role": "Adapter",
+   "source": "https://basescan.org/address/0x0e5d5ade8e9f5ddc2df1caebc63ea37c1fc5be3b#code"
+  },
+  "0x0e9f81c565dd7d3c84cbcff570df681d8ba5f137": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x0f34f7f7b558f43a821af4181f0f8e5bc4b74892": {
    "name": "StakedMetadex03CLAM",
    "protocol": "Metadex",
@@ -108,6 +173,17 @@
    "role": "aggregator",
    "source": "step 1: listed in LI.FI official deployments; step 2: Basescan verified contract name LiFiDiamond"
   },
+  "0x130a401047aed3c56d0fe2669b8c9b42d8d478da": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x13c71b0061ec698e4ba46747e910eedbf280dc21": {
+   "name": "ERC1967Proxy",
+   "protocol": "Bonding / Fixed Sale Contract",
+   "role": "Token Issuance Contract",
+   "source": "BaseScan verified contract 0x13c71b0061ec698e4ba46747e910eedbf280dc21"
+  },
   "0x14018f5afaeca44bb49d5036267d836723b57c91": {
    "name": "CLGauge",
    "protocol": "Aerodrome Slipstream",
@@ -119,6 +195,22 @@
    "protocol": "Aerodrome Slipstream",
    "role": "gauge",
    "source": "step 2: Basescan verified contract name CLGauge / on-chain pool() query returns 0x4a7af46bc8abc00048c6c7920a1488daf568366c; step 3: emits Aerodrome gauge reward/deposit events"
+  },
+  "0x14852dceea98d5e781335ba8ea8d4b3a14508868": {
+   "name": "MorphoDepositAdapter",
+   "protocol": "Morpho",
+   "role": "Deposit Adapter",
+   "source": "Event MorphoDeposit on Base"
+  },
+  "0x185deda40a9df661ce9213fb3a8a7c5bb5594931": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x1942aecf922630a851c30525257c8fa955e56609": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x1a110bba13a1f16cca4b79758bd39290f29de82d": {
    "name": "Referral",
@@ -132,17 +224,52 @@
    "role": "router",
    "source": "step 1: listed in LayerZero V2 Base documentation; step 2: Basescan verified contract name EndpointV2"
   },
+  "0x1b26c4cb741dc877430e7162c7302255ba5cce14": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x1ea172fb88c24dfc21ff6fa38762511c123ba948": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "Token Launchpad / Presale",
+   "role": "Crowdsale Contract",
+   "source": "BaseScan verified contract 0x1ea172fb88c24dfc21ff6fa38762511c123ba948"
+  },
   "0x1f91c998e7c2f4b690d75bdbf6502bdcd6e02acc": {
    "name": "LaunchHook",
    "protocol": "o1 Launchpad",
    "role": "other (hook)",
    "source": "step 2: Basescan verified contract name LaunchHook (o1 Launchpad ecosystem); step 3: emits hook/escrow topics corroborated with launch transactions"
   },
+  "0x20a7847009b2d2e3963f8e9277f3a6532ff76ae3": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x2154c604df568a5285284d1c4918dc98c39240df": {
+   "name": "AnyBidWall",
+   "protocol": "flaunch",
+   "role": "bid_wall",
+   "source": "https://sourcify.dev/server/v2/contract/8453/0x2154c604df568a5285284d1c4918dc98c39240df"
+  },
   "0x238a358808379702088667322f80ac48bad5e6c4": {
    "name": "PancakeSwap Infinity Vault",
    "protocol": "PancakeSwap Infinity",
    "role": "vault",
    "source": "decode v0.5 singleton resolution; verified against V4 conventions"
+  },
+  "0x24dd71add0026e924e0fc7a7701a851e2b9c09c4": {
+   "name": "DGTokenVendor",
+   "protocol": "DGTokenVendor",
+   "role": "Token Vendor Vending Machine",
+   "source": "BaseScan verified contract 0x24dd71add0026e924e0fc7a7701a851e2b9c09c4"
+  },
+  "0x259de2b43b6b767cf565fe9a59d1862957eb8efb": {
+   "name": "CasinoHoldemGame",
+   "note": " ERC-1967 proxy to poker implementation 0x905b64830a4aa26245946997f29c031ccd0825d3 (loopbatch11 return).",
+   "protocol": "overtime",
+   "role": "game",
+   "source": "registered in Overtime Core 0xab487c74bd9fb88cea5d39f25c6a15c4a7734055 under getRegisteredGames()[6]"
   },
   "0x2626664c2603336e57b271c5c0b26f421741e481": {
    "name": "SwapRouter02",
@@ -180,17 +307,39 @@
    "role": "factory",
    "source": "identification investigation 2026-11-04: verified pool 0x9fc528c6... created via this factory"
   },
+  "0x2ab2d95df450dad5548fcebf70052d69681f3f62": {
+   "name": "GiudasNFC",
+   "protocol": "Giudas",
+   "role": "NFT",
+   "source": "https://basescan.org/address/0x2ab2d95df450dad5548fcebf70052d69681f3f62#code"
+  },
+  "0x2c894b3a726b49d9e68e71d548157964e5e0fbb6": {
+   "name": "GuardedSwap",
+   "protocol": "GuardedSwap",
+   "role": "Loss-guarded token sell executor wrapper",
+   "source": "BaseScan verified contract 0x2c894b3a726b49d9e68e71d548157964e5e0fbb6"
+  },
   "0x2cc0c7981d846b9f2a16276556f6e8cb52bfb633": {
    "name": "VerifyingPaymaster",
    "protocol": "ERC-4337",
    "role": "other (paymaster)",
    "source": "step 1: standard ERC-4337 account abstraction deployment; step 2: Basescan verified name VerifyingPaymaster"
   },
+  "0x2cef59d4c30a5ad85fb7b0f22a07734ee9dfd886": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x2dbe0e264c7c246e05c6614794899937f264cf7b": {
    "name": "CLPool",
    "protocol": "Aerodrome Slipstream",
    "role": "pool",
    "source": "step 2: Basescan verified contract name CLPool; step 3: emits Concentrated Liquidity Swap/Mint/Burn topics corroborated by Aerodrome router"
+  },
+  "0x2dc6bfee0089bc39fb831e3e9184f2afe3614c43": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x2faeb0760d4230ef2ac21496bb4f0b47d634fd4c": {
    "name": "VerifyingPaymaster",
@@ -209,6 +358,17 @@
    "protocol": "Plinks",
    "role": "other (social/app)",
    "source": "step 2: Basescan verified proxy implementation PlinksManager"
+  },
+  "0x31f6a0c6262dab7450e4d31f718d3be2414a93f3": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "Asset Vault",
+   "role": "Asset Liquidation Module",
+   "source": "BaseScan verified contract 0x31f6a0c6262dab7450e4d31f718d3be2414a93f3"
+  },
+  "0x32754c23ca2866824cb3ec86e1d3bb2a21b7b58b": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x32b7d5457628c5bc187f03a33d51d3ec3ee2b844": {
    "name": "Coordinator",
@@ -234,6 +394,23 @@
    "role": "vault",
    "source": "step 1: standard Safe multisig factory proxy deployment; step 2: Basescan verified contract name SafeProxy; step 3: emits ExecutionFromModuleSuccess topics"
   },
+  "0x346ec0fadbf97cc3a5e2fbdaa7e4d10503f1052e": {
+   "kind": "dex_aggregator",
+   "name": "DexAggregatorRouterProxy",
+   "note": "ERC-1967 transparent proxy delegating to DEX aggregator router implementation 0xe73549e46330c998939e27b16b6c4e6e213838d1. Name inferred from behaviour (loopbatch11 return); not a verified source name."
+  },
+  "0x35f1b89f4feb2897cc1a6eff381d518d05824008": {
+   "name": "RobinhoodChurnProxy",
+   "protocol": "Robinhood",
+   "role": "Proxy",
+   "source": "https://basescan.org/address/0x35f1b89f4feb2897cc1a6eff381d518d05824008#code"
+  },
+  "0x37ca10c307fa8caa772f3583b3fd1e923dee2aa8": {
+   "name": "StableSwapHooks",
+   "protocol": "Uniswap v4 StableSwap Hook",
+   "role": "v4 Hook Contract",
+   "source": "BaseScan verified contract 0x37ca10c307fa8caa772f3583b3fd1e923dee2aa8"
+  },
   "0x382409fad8503fbcdbb27a4211551fa03e884078": {
    "name": "LeafVoter",
    "protocol": "Dromos",
@@ -252,11 +429,22 @@
    "role": "pool",
    "source": "Sourcify verified BeaconProxy pointing to beacon 0xf74ca4e58da6f4f8d1dc1d9ff087b1bed1d9a573 -> UmbraeLBPairUpgradeable"
   },
+  "0x3e0c83e29f92982754ba7dd03ec596e331b67db5": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x4048a4f24551a9b634d0a3bb5209ebbf6c44748a": {
    "name": "UniswapV3Pool",
    "protocol": "Uniswap V3",
    "role": "pool",
    "source": "step 2: Basescan verified contract name UniswapV3Pool; step 3: on-chain factory() returns 0x33128a8fc17869897dce68ed026d694621f6fdfd (UniswapV3Factory)"
+  },
+  "0x4200000000000000000000000000000000000006": {
+   "name": "Wrapped Ether (WETH9)",
+   "protocol": "Base",
+   "role": "Wrapped Native Asset",
+   "source": "Base System Addresses"
   },
   "0x44914408af82bc9983bbb330e3578e1105e11d4e": {
    "name": "TradingRouter",
@@ -282,11 +470,22 @@
    "role": "gauge",
    "source": "step 2: Basescan verified contract name CLGauge / on-chain pool() query returns 0x4a7af46bc8abc00048c6c7920a1488daf568366c; step 3: emits Aerodrome gauge reward/deposit events"
   },
+  "0x477a535be86e7307bb429ae91709aa28bfdf1729": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x4857db576ee0e45f10525ec59527bfd10beec60b": {
    "name": "NonfungiblePositionManager",
    "protocol": "o1 Launchpad",
    "role": "pool_manager",
    "source": "step 2: Basescan verified contract name NonfungiblePositionManager (o1 Launchpad ecosystem); step 3: emits hook/escrow topics corroborated with launch transactions"
+  },
+  "0x4972760d9d849bfa33c3fedea9db9da56a524610": {
+   "name": "UniswapV2Pair",
+   "protocol": "UniswapV2",
+   "role": "liquidity_pool",
+   "source": "https://basescan.org/address/0x4972760d9d849bfa33c3fedea9db9da56a524610#code"
   },
   "0x498581ff718922c3f8e6a244956af099b2652b2b": {
    "name": "Uniswap V4 PoolManager",
@@ -312,11 +511,23 @@
    "role": "engine",
    "source": "residue investigation 2026-11-04: PMM swap format proof, vault settlement matched 66/69 events"
   },
+  "0x4bdafcc48cc61aaf1ed2f5ebacc05ee305c80916": {
+   "name": "AntseedKbfVerification",
+   "protocol": "Antseed",
+   "role": "Verification",
+   "source": "https://basescan.org/address/0x4bdafcc48cc61aaf1ed2f5ebacc05ee305c80916#code"
+  },
   "0x4cd00e387622c35bddb9b4c962c136462338bc31": {
    "name": "RelayDepository",
    "protocol": "Relay",
    "role": "vault",
    "source": "step 1: listed in Relay cross-chain bridge documentation; step 2: Basescan verified contract name RelayDepository"
+  },
+  "0x4ee35c658b8032a7577096b60bd51ae9909e4f98": {
+   "name": "DividendVault",
+   "protocol": "DividendVault",
+   "role": "Dividend Reinvestment Vault",
+   "source": "BaseScan verified contract 0x4ee35c658b8032a7577096b60bd51ae9909e4f98"
   },
   "0x4f347fec2aeb8fdb569045af4d0806ee7f7f6194": {
    "name": "RootMessageOrchestrator",
@@ -336,6 +547,12 @@
    "role": "vault",
    "source": "step 1: listed in Euler / EVC official repository; step 2: Basescan verified contract name EthereumVaultConnector"
   },
+  "0x579bdb8d849cfd4816ec23c3be088411a79c917d": {
+   "name": "ERC1967Proxy",
+   "protocol": "Perpetual / Derivatives DEX",
+   "role": "Derivatives Margin Clearing House",
+   "source": "BaseScan verified contract 0x579bdb8d849cfd4816ec23c3be088411a79c917d"
+  },
   "0x59268a34ba897e82368fee39839ffc661d4f9c97": {
    "name": "Minter",
    "protocol": "Dromos",
@@ -347,6 +564,11 @@
    "protocol": "ParaSwap",
    "role": "router",
    "source": "step 1: listed in ParaSwap deployments; step 2: Basescan verified contract name AugustusSwapper"
+  },
+  "0x5a4e9a730b6c8c056c14656b8bed68450b9e35f2": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x5b14d6d194e49330647eb4717010ade1b1b3f8b5": {
    "name": "CLGauge",
@@ -366,11 +588,22 @@
    "role": "factory",
    "source": "sibling of 0x784e539f15ca2d19449a6311c5dab6cf37d8f1ba"
   },
+  "0x5ec775a8024b2791c1f93499460012281963e696": {
+   "name": "NoytrixNavOracle",
+   "protocol": "noytrix",
+   "role": "oracle",
+   "source": "registered in Noytrix USDC Vault 0x0ba57e8484db60a0f3bff76bd8529dd4be3e5d81 under navOracle()"
+  },
   "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789": {
    "name": "EntryPoint",
    "protocol": "ERC-4337",
    "role": "router",
    "source": "step 1: standard ERC-4337 account abstraction deployment; step 2: Basescan verified name EntryPoint"
+  },
+  "0x604e47e6328e0c5886fa0d6c2213f079acf104dc": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x6131b5fae19ea4f9d964eac0408e4408b66337b5": {
    "name": "MetaAggregationRouterV2",
@@ -401,6 +634,12 @@
    "protocol": "OKX DEX",
    "role": "router",
    "source": "step 2: Basescan verified contract name DexRouter (OKX Labs); step 3: emits DEX aggregation routing events"
+  },
+  "0x69f9cf374c87059c02d0221ec97c1e3ef85abc0f": {
+   "name": "PerchVault",
+   "protocol": "perch",
+   "role": "vault",
+   "source": "https://sourcify.dev/server/v2/contract/8453/0x69f9cf374c87059c02d0221ec97c1e3ef85abc0f"
   },
   "0x6aba0315493b7e6989041c91181337b662fb1b90": {
    "name": "BinanceWeb3Aggregator",
@@ -438,6 +677,12 @@
    "role": "oracle",
    "source": "step 1: listed in Pyth Network documentation; step 2: Basescan verified name EntropyUpgradable"
   },
+  "0x71153c7787bf2d167035a8cfa4f6a3358b2c3d6a": {
+   "name": "CumulativeSlippageTolerancePolicy",
+   "protocol": "SlippageTolerance",
+   "role": "Policy",
+   "source": "https://basescan.org/address/0x71153c7787bf2d167035a8cfa4f6a3358b2c3d6a#code"
+  },
   "0x71c2ed90cc288229be59f26b8b3eef3c07d7ab99": {
    "name": "Swap-signature logger (NOT Metric)",
    "protocol": "unknown aggregator RFQ adapter",
@@ -462,6 +707,11 @@
    "role": "lending",
    "source": "step 2: Basescan verified contract name RainCollateralController; step 3: emits StatementPublished and Liquidation topics with corporate collateral credit records"
   },
+  "0x774c69ab32f404e7205ff61779c52d6d2df4062e": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x777777777777aec03fd955926dbf81597e66834c": {
    "name": "SingletonPaymasterV7",
    "protocol": "ERC-4337",
@@ -474,17 +724,45 @@
    "role": "pool",
    "source": "step 2: Basescan verified contract name CLPool; step 3: emits Concentrated Liquidity Swap/Mint/Burn topics corroborated by Aerodrome router"
   },
+  "0x794f9e63b7666985256f1d2763ee24cc0b528199": {
+   "name": "ERC1967Proxy",
+   "protocol": "CLOB DEX",
+   "role": "Order Book Matching Engine",
+   "source": "BaseScan verified contract 0x794f9e63b7666985256f1d2763ee24cc0b528199"
+  },
+  "0x7bf44168ff3990acef0b01bcc82c54843dbd15ff": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x7c5e8507891cb1e5b2683b876462348f24229e9a": {
+   "name": "DepositVault",
+   "protocol": "DepositVault",
+   "role": "Options / Structured Product Vault",
+   "source": "BaseScan verified contract 0x7c5e8507891cb1e5b2683b876462348f24229e9a"
+  },
   "0x7ea1079604af6da2282b80f4cdc6cea7b07914fe": {
    "name": "LeafMessageOrchestrator",
    "protocol": "Dromos",
    "role": "other (cross-chain orchestrator)",
    "source": "step 2: Basescan verified contract name LeafMessageOrchestrator with Dromos tag/deployment"
   },
+  "0x7f0f058c731b479a214da459a1ac4cf98d568bf0": {
+   "name": "MineSwapSplitRouter",
+   "protocol": "MineSwap",
+   "role": "Router",
+   "source": "https://basescan.org/address/0x7f0f058c731b479a214da459a1ac4cf98d568bf0#code"
+  },
   "0x7f69b6783855772d10a4bc2afaae650599f040db": {
    "name": "KarmaProxy",
    "protocol": "Autonolas",
    "role": "other (autonomous service module)",
    "source": "step 1: listed in Autonolas registry deployments; step 2: Basescan verified contract name KarmaProxy"
+  },
+  "0x7f6d91d1b499dc68f6f98a44393459c6578a0423": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x81d40f21f12a8f0e3252bccb954d722d4c464b64": {
    "name": "MessageTransmitterV2",
@@ -504,11 +782,56 @@
    "role": "pool_manager",
    "source": "step 1: listed in Aerodrome official documentation; step 2: Basescan verified contract name NonfungiblePositionManager"
   },
+  "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+   "name": "USD Coin (USDC)",
+   "protocol": "Circle",
+   "role": "Stablecoin",
+   "source": "Circle Base Deployment"
+  },
+  "0x83ac20d215d53f7dad68ee17d41251130c7c58bf": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0x83d0bbb49b5caaddedff1ac02c79a379d6c69023": {
    "name": "CoinFlip",
    "protocol": "CoinFlip",
    "role": "other (gaming)",
    "source": "step 2: Basescan verified contract name CoinFlip"
+  },
+  "0x85564fb392e18a84a64343a3fb65839206936c0f": {
+   "name": "IporIndexUpdateFeed",
+   "protocol": "IPOR",
+   "role": "Interest Rate Oracle",
+   "source": "Event IporIndexUpdate on Base"
+  },
+  "0x868490134066f345476c8be41ced370fb81ad76a": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x86c05ecc3daa55ac46406fb42bfbfab792f1b445": {
+   "name": "PairManagerV8",
+   "protocol": "PairManager",
+   "role": "Router",
+   "source": "https://basescan.org/address/0x86c05ecc3daa55ac46406fb42bfbfab792f1b445#code"
+  },
+  "0x87a4e12530071269f0671a2f064afffbfe74eaec": {
+   "name": "MemeFunHook",
+   "protocol": "MemeFun",
+   "role": "Hook",
+   "source": "https://basescan.org/address/0x87a4e12530071269f0671a2f064afffbfe74eaec#code"
+  },
+  "0x888888888889758f76e7103c6cbf23abbf58f946": {
+   "name": "PendleRouterV4",
+   "protocol": "Pendle",
+   "role": "Pendle Router V4",
+   "source": "BaseScan verified contract 0x888888888889758f76e7103c6cbf23abbf58f946"
+  },
+  "0x8906bf80edb90d87d7f053fef5c6fa44b94ab36a": {
+   "kind": "",
+   "name": "AgentReputationBadgeProxy",
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x8a311d7048c35985aa31c131b9a13e03a5f7422d": {
    "name": "TradingStorageProxy",
@@ -516,11 +839,45 @@
    "role": "router",
    "source": "step 2: Basescan name tag Veranta and verified implementation TradingStorageProxy"
   },
+  "0x8a33650bbbd7622d7bf1b98d4ae851c134126c18": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x8df63e8a92115294e495bfb639d9ba51e0b2981d": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x8e335230bd7787a87b66ad0d6220981e192ecc32": {
+   "kind": "settlement_executor",
+   "name": "TplusAtomicSettler",
+   "note": "Atomic settlement executor for Tplus Deposit Vault 0x7c5e8507891cb1e5b2683b876462348f24229e9a. Name inferred from behaviour (loopbatch11 return); not a verified source name.",
+   "protocol": "tplus"
+  },
   "0x8f10b468b06c6fd214b65f87778827f7d113f996": {
    "name": "AggregationExecutor",
    "protocol": "KyberSwap",
    "role": "aggregator",
    "source": "step 3: emits KyberSwap Aggregator Executor topics; step 4: called by KyberSwap MetaAggregationRouterV2 (0x6131b5fae19ea4f9d964eac0408e4408b66337b5) in sample transaction"
+  },
+  "0x8fb6177eb7ac7d9e75de2d58d8749755d6bd9ea1": {
+   "name": "RouterV2",
+   "protocol": "RouterV2",
+   "role": "Swap Router Contract",
+   "source": "BaseScan verified contract 0x8fb6177eb7ac7d9e75de2d58d8749755d6bd9ea1"
+  },
+  "0x905b64830a4aa26245946997f29c031ccd0825d3": {
+   "name": "OvertimeBonusHoldem",
+   "protocol": "Overtime",
+   "role": "game_implementation",
+   "source": "https://basescan.org/address/0x905b64830a4aa26245946997f29c031ccd0825d3#code"
+  },
+  "0x91f909e739c1cfe27a19b97708d3bc2478ddc936": {
+   "name": "CrateHashClaimableBufferV2",
+   "protocol": "CrateHash",
+   "role": "Buffer",
+   "source": "https://basescan.org/address/0x91f909e739c1cfe27a19b97708d3bc2478ddc936#code"
   },
   "0x931f9d2ce13212f33cee3512768224b70820ea96": {
    "name": "WishWishManager",
@@ -534,11 +891,34 @@
    "role": "vault",
    "source": "step 2: Basescan verified proxy implementation Tranche"
   },
+  "0x9581cee724009957f3ab2420bc0036357d96a99b": {
+   "name": "KSIntentInboxFactory",
+   "protocol": "KSIntentInbox",
+   "role": "Factory",
+   "source": "https://basescan.org/address/0x9581cee724009957f3ab2420bc0036357d96a99b#code"
+  },
   "0x96cebb59b00109dc8c4de1a9a94d9fad658fee46": {
    "name": "TokenERC721Amex",
    "protocol": "Amex",
    "role": "other (NFT)",
    "source": "step 2: Basescan verified contract name TokenERC721Amex"
+  },
+  "0x99b4cf7d9b6353b583847d6cf98c3c1acf6550d6": {
+   "name": "MiningPool",
+   "protocol": "MiningPool",
+   "role": "Mining Pool Contract",
+   "source": "BaseScan verified contract 0x99b4cf7d9b6353b583847d6cf98c3c1acf6550d6"
+  },
+  "0x9a039ccdb7cfa560e004419f3aa7a552e040e88c": {
+   "name": "MorphoLiquidationExecutor",
+   "protocol": "Morpho",
+   "role": "Liquidation Bot / Integration",
+   "source": "Event MorphoLiquidationExecuted on Base"
+  },
+  "0x9bb6a1be463190f01c581047eed8b0836f9fa411": {
+   "kind": "",
+   "name": "TransparentUpgradeableProxy",
+   "note": " [unresolved56 round, PR #29]"
   },
   "0x9bfa331679b307cf358438f45f6413a205fd3ebf": {
    "name": "PancakeV3Pool",
@@ -551,6 +931,33 @@
    "protocol": "Dromos",
    "role": "factory",
    "source": "sibling of 0x391e07a9921b047407d81e30bd2e857825e97b0e"
+  },
+  "0x9d91977cba597d910b1755b8acb3b616e3552f17": {
+   "kind": "",
+   "name": "PendleMarketV7",
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x9de87cfd1e53ed208ebe610f9c89f1447b34d2f5": {
+   "name": "VectaAggregatorRouter",
+   "protocol": "Vecta",
+   "role": "Vecta Aggregator Router",
+   "source": "BaseScan verified contract 0x9de87cfd1e53ed208ebe610f9c89f1447b34d2f5"
+  },
+  "0x9e7243b98a8a9713cb9dc37fe9f18879f0e64dcb": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x9f12bb8ae3cd5f0d22d096cff984414adcbbee82": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0x9f862a27523e676deef9bd38a35d7fbe02d06415": {
+   "name": "ArmorCurrentV7",
+   "protocol": "ArmorCurrent",
+   "role": "core_contract",
+   "source": "https://basescan.org/address/0x9f862a27523e676deef9bd38a35d7fbe02d06415#code"
   },
   "0x9fc528c6856fdd1d6fb3633c6071ff5e86203951": {
    "name": "Metric pool (getImmutables-verified)",
@@ -570,6 +977,12 @@
    "role": "other (prediction market tokens)",
    "source": "step 2: Basescan verified contract name ConditionalTokens"
   },
+  "0xa6dcac1c20cb369a1a1edcb7789946828bf22b9a": {
+   "name": "SwapPair",
+   "protocol": "SwapPair",
+   "role": "AMM Liquidity Pair (0xa6dcac1c20cb369a1a1edcb7789946828bf22b9a)",
+   "source": "BaseScan verified contract 0xa6dcac1c20cb369a1a1edcb7789946828bf22b9a"
+  },
   "0xa74b86db79fb8161ac903365161235854da70cd4": {
    "name": "PMM settlement vault",
    "protocol": "PMM (unidentified operator)",
@@ -582,11 +995,23 @@
    "role": "router",
    "source": "Step 2: Escrow router contract emitting TokensSold (0x7debc712939ce2028bbca7ca90cc85e8fb59a7772e041423d3ec1588af4730ed) routing sales through Uniswap V2 pair 0x241de8c5b58830b8046830b05031786795d5cba8"
   },
+  "0xa9c937a0d1d22ad79099aea10efa62a270dfc22c": {
+   "name": "TpdaLiquidationRouter",
+   "protocol": "TpdaLiquidationRouter",
+   "role": "Liquidation Swap Router",
+   "source": "BaseScan verified contract 0xa9c937a0d1d22ad79099aea10efa62a270dfc22c"
+  },
   "0xaa4b4fabf41754e759338778e6031a156eea6acc": {
    "name": "Trade Router",
    "protocol": "Launchpad Router",
    "role": "router",
    "source": "Step 2: Router contract emitting Trade (0xcf6134cf8f8fa0f61c06e9337d250bda27270cfcf573fad89dc8d24d009e0d94) routing user swap through DEX pools"
+  },
+  "0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f": {
+   "name": "TSAggregatorGeneric_V1",
+   "protocol": "THORChain / TSAggregatorGeneric",
+   "role": "Cross-Chain Inbound Swap Aggregator",
+   "source": "BaseScan verified contract 0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f"
   },
   "0xabb3fb6659e05847631896cb87a6d1b8bc0c6d8c": {
    "name": "CLGauge",
@@ -594,11 +1019,34 @@
    "role": "gauge",
    "source": "step 2: Basescan verified contract name CLGauge / on-chain pool() query returns 0xec3c3755b9ded4a2960ef50c9b48c1694ce274c2; step 3: emits Aerodrome gauge reward/deposit events"
   },
+  "0xac143bf41bba4a8014b4ef5a5f46b39a36ae40a8": {
+   "name": "PausableImmutableOraclePool",
+   "protocol": "PausableImmutableOraclePool",
+   "role": "Fixed Oracle AMM Pool",
+   "source": "BaseScan verified contract 0xac143bf41bba4a8014b4ef5a5f46b39a36ae40a8"
+  },
+  "0xac4f3817a726016fc8254119fc48be838a21f17f": {
+   "kind": "",
+   "name": "GenericSwap",
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0xac80b9465d70aafbe492a08baea5c6e9d77b1478": {
+   "name": "AaveV3WithdrawalAdapter",
+   "protocol": "AaveV3",
+   "role": "Yield / Withdrawal Adapter",
+   "source": "Event AaveV3Withdrawal on Base"
+  },
   "0xad20523a7dc37babc1cc74897e4977232b3d02e5": {
    "name": "GToken",
    "protocol": "Gains Network",
    "role": "vault",
    "source": "step 1: listed in Gains Network (gTrade) deployments; step 2: Basescan verified implementation GToken"
+  },
+  "0xade2c0a7491e52b8b202c8d77ea67d8a7559c491": {
+   "name": "SatsfunRouter",
+   "protocol": "Satsfun",
+   "role": "Satsfun Router",
+   "source": "BaseScan verified contract 0xade2c0a7491e52b8b202c8d77ea67d8a7559c491"
   },
   "0xadedd8ab6de832766fedf0fac4992e5c4d3ea18a": {
    "name": "Midnight",
@@ -606,11 +1054,45 @@
    "role": "oracle",
    "source": "step 1: listed in Morpho documentation; step 2: Basescan verified contract name Midnight"
   },
+  "0xaf14797ccf963b1e3d028a9d51853ace16aedba1": {
+   "name": "RubicMultiProxy",
+   "protocol": "Rubic",
+   "role": "Cross-Chain Router",
+   "source": "Event RubicSwappedGeneric on Base"
+  },
+  "0xb00000fdc6785dd211185092e2328106964ddbdb": {
+   "kind": "",
+   "name": "RoutaProxy",
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xb034f9844ce0e278bce049c1e21f0fbd48e1f0b3": {
    "name": "DexFiKeeper",
    "protocol": "DexFi",
    "role": "other (keeper)",
    "source": "step 2: Basescan verified contract name DexFiKeeper"
+  },
+  "0xb08f28a3575805ee1e3729fc19ab7e869cbaf563": {
+   "name": "CleaveSwapShell",
+   "protocol": "CleaveSwapShell",
+   "role": "DEX Aggregator Shell",
+   "source": "BaseScan verified contract 0xb08f28a3575805ee1e3729fc19ab7e869cbaf563"
+  },
+  "0xb1000000096bd2f8ca9b6883182eccaf31e7c3fd": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0xb125e6687d4313864e53df431d5425969c15eb2f": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "Lending / Liquidation Engine",
+   "role": "Liquidation Manager",
+   "source": "BaseScan verified contract 0xb125e6687d4313864e53df431d5425969c15eb2f"
+  },
+  "0xb222da5a71e8fb89a5a38b7c920eab5dfbc74b91": {
+   "name": "JBBuybackHook",
+   "protocol": "Juicebox",
+   "role": "JBBuybackHook",
+   "source": "BaseScan verified contract 0xb222da5a71e8fb89a5a38b7c920eab5dfbc74b91"
   },
   "0xb2cc224c1c9fee385f8ad6a55b4d94e92359dc59": {
    "name": "CLPool",
@@ -642,11 +1124,23 @@
    "role": "pool",
    "source": "step 2: Basescan verified contract name UniswapV3Pool; step 3: on-chain factory() returns 0x33128a8fc17869897dce68ed026d694621f6fdfd (UniswapV3Factory)"
   },
+  "0xb505dcdd7a53067a030fa05a0f57703e9383a5be": {
+   "name": "JubJubCatalogue",
+   "protocol": "JubJub",
+   "role": "Catalogue",
+   "source": "https://basescan.org/address/0xb505dcdd7a53067a030fa05a0f57703e9383a5be#code"
+  },
   "0xb5320b0b3a13cc860893e2bd79fcd7e13484dda2": {
    "name": "SendUln302",
    "protocol": "LayerZero V2",
    "role": "other (messaging library)",
    "source": "step 1: listed in LayerZero V2 Base documentation; step 2: Basescan verified contract name SendUln302"
+  },
+  "0xb84aefef2ddde628d5c7f1fba320de63e3f4757c": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "WOOFi",
+   "role": "WOOFi Cross-Chain Destination Router",
+   "source": "BaseScan verified contract 0xb84aefef2ddde628d5c7f1fba320de63e3f4757c"
   },
   "0xb94b22332abf5f89877a14cc88f2abc48c34b3df": {
    "name": "PancakeV3Pool",
@@ -672,6 +1166,11 @@
    "role": "router",
    "source": "step 1: listed in CoW Protocol deployments; step 2: Basescan verified contract name CoWSwapEthFlow"
   },
+  "0xbaa8c0dd620f6411c9cc380140d5d312bcaf2a38": {
+   "kind": "",
+   "name": "ERC1967Proxy",
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xbb5507daae822ba89c4da61bbfdf4b49a1666bac": {
    "name": "CLPool",
    "protocol": "Aerodrome Slipstream",
@@ -683,6 +1182,11 @@
    "protocol": "Morpho",
    "role": "lending",
    "source": "step 1: listed in Morpho documentation; step 2: Basescan verified contract name Morpho"
+  },
+  "0xbd4a415d633b6e6bb9586b532cb07a1b990597e4": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5": {
    "name": "SwapRouter",
@@ -696,11 +1200,33 @@
    "role": "other (gaming)",
    "source": "step 2: Basescan verified proxy implementation BaseJackpot"
   },
+  "0xc0fdcb1799ccc2cebaa1fe247157b0df33d57572": {
+   "name": "FLAMMProxy",
+   "protocol": "Fluid / FLAMM",
+   "role": "FLAMM Automated Market Maker Pool",
+   "source": "BaseScan verified contract 0xc0fdcb1799ccc2cebaa1fe247157b0df33d57572"
+  },
+  "0xc170b635219545d44370ab023b88436cf669f81c": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xc2be7b94d5498b1aceb914f3a1dec4ce502d235f": {
    "name": "RFQ detailed-event twin of 0x71c2ed90",
    "protocol": "unknown aggregator RFQ adapter",
    "role": "detailed event emitter",
    "source": "identification investigation 2026-11-04: first 5 data words byte-identical to the logger twin in all 7 sampled txs"
+  },
+  "0xc5d25c596d0bcdf534d642eac3241f6e5bebf71c": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0xc62d6349d3564bd06ace93f1c1ab6de30edd85eb": {
+   "name": "Gateway",
+   "protocol": "LeagueFun",
+   "role": "other (league gateway)",
+   "source": "step 1: identified in defi-loopbatch12 with Basescan verified contract name Gateway.sol (impl 0x07b84003c16218903385dfe6be7f82e618a7038c); step 2: Muse verified emitter on the PlayerApplied sample receipt"
   },
   "0xc64703b2bbed8abc39adbb770d8ecd959bd819dd": {
    "name": "SHARE",
@@ -708,11 +1234,32 @@
    "role": "other (token)",
    "source": "step 2: Basescan verified contract name SHARE"
   },
+  "0xc6eb5f6016d0f22ece511ddedde95508ae4cf5c3": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xc87de04e2ec1f4282dff2933a2d58199f688fc3d": {
    "name": "AggregatorGuard",
    "protocol": "IcecreamSwap",
    "role": "other (aggregator guard)",
    "source": "step 2: Basescan verified contract name AggregatorGuard (IcecreamSwap v2); step 3: emits aggregation protection records"
+  },
+  "0xc88d6a36338d422bbc3ea600602f8b0183dfb6a3": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0xcb0546e357531b5f1420a3fd845b1ec25b8ac2cf": {
+   "name": "UxuySmartPool",
+   "protocol": "UXUY",
+   "role": "Cross-Chain Outbound Pool",
+   "source": "BaseScan verified contract 0xcb0546e357531b5f1420a3fd845b1ec25b8ac2cf"
+  },
+  "0xcb2a7cc0a77f7fad7c36c539688ad2a76c20de2d": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0xcbc5aa58084aaae6a283101011e6001d7ba7783a": {
    "name": "ShareRaffle",
@@ -738,6 +1285,18 @@
    "role": "pool",
    "source": "step 2: Basescan verified contract name UniswapV3Pool; step 3: on-chain factory() returns 0x33128a8fc17869897dce68ed026d694621f6fdfd (UniswapV3Factory)"
   },
+  "0xd0bc08d0afd821a9afcaa803ae62e7410a613ae5": {
+   "name": "DarkSwapAssetManager",
+   "protocol": "DarkSwap",
+   "role": "asset manager (ZK dark pool deposits/withdrawals, note Merkle tree)",
+   "source": "step 1: identified in defi-loopbatch13 with Basescan verified contract name DarkSwapAssetManager; step 2: Muse verified emitter on the DarkSwapWithdraw sample receipt"
+  },
+  "0xd25313591ba4c2645ba7427f34ea61951faf1d6a": {
+   "name": "DexConnectorProxy",
+   "protocol": "DexConnector",
+   "role": "DexConnector Proxy Aggregator",
+   "source": "BaseScan verified contract 0xd25313591ba4c2645ba7427f34ea61951faf1d6a"
+  },
   "0xd53292182a342953f446cd4d10dc177776044306": {
    "name": "flooordotfunvrnouns",
    "protocol": "Flooor",
@@ -750,11 +1309,38 @@
    "role": "vault",
    "source": "step 1: standard Safe multisig factory proxy deployment; step 2: Basescan verified contract name SafeProxy; step 3: emits ExecutionFromModuleSuccess topics"
   },
+  "0xd5c6312ec57178277bbf8c34fb94965c6bddb014": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xd5d517abe5cf79b7e95ec98db0f0277788aff634": {
    "name": "VRFCoordinatorV2_5_Optimism",
    "protocol": "Chainlink",
    "role": "oracle",
    "source": "step 1: listed in Chainlink official Base documentation; step 2: Basescan verified contract name VRFCoordinatorV2_5_Optimism"
+  },
+  "0xd70e1bab713d84c3a110ded11e41714542e604ba": {
+   "name": "SmardexPair",
+   "protocol": "SmarDex",
+   "role": "SmarDex AMM Pair",
+   "source": "BaseScan verified contract 0xd70e1bab713d84c3a110ded11e41714542e604ba"
+  },
+  "0xd8e05b857f45652776413524e3b61d26c8f5ea51": {
+   "name": "BaseFriendTasks",
+   "protocol": "BaseFriend",
+   "role": "task_contract",
+   "source": "https://basescan.org/address/0xd8e05b857f45652776413524e3b61d26c8f5ea51"
+  },
+  "0xd995588235693b1b626c702922e73c7268d18929": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
+  "0xdb11d3699928b40dbfae9136a999d55842913fcb": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0xdb9b1e94b5b69df7e401ddbede43491141047db3": {
    "name": "DelegationManager",
@@ -762,11 +1348,33 @@
    "role": "other (delegation manager)",
    "source": "step 1: listed in MetaMask delegation framework; step 2: Basescan verified contract name DelegationManager"
   },
+  "0xdbc83f5f1cc0413d15a45ba346502e71a495d842": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xdbdd7b8a8747904f53eb7aef655a6ff81e2c306a": {
    "name": "ExecuteProxy",
    "protocol": "Veranta",
    "role": "router",
    "source": "step 2: Basescan name tag Veranta and verified implementation ExecuteProxy"
+  },
+  "0xddddddddeb2e68ee19832e356fcb5537124a9708": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "Intent / Filler Network",
+   "role": "Intent Settlement Proxy",
+   "source": "BaseScan verified contract 0xddddddddeb2e68ee19832e356fcb5537124a9708"
+  },
+  "0xdef40b7e4cfc4462ba886927c08c32a63ec592bc": {
+   "name": "BotAuction",
+   "protocol": "botBTC (Bots)",
+   "role": "other (auction)",
+   "source": "step 1: identified in defi-loopbatch12 with Basescan verified contract name BotAuction.sol; step 2: Muse verified emitter on the Relisted sample receipt"
+  },
+  "0xdf460698e3abae9c26f60a69f207ddc8eff81cc8": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
   },
   "0xe0143476a279fc54119ad2ce14c46b5511e6022c": {
    "name": "PAMMRouter",
@@ -786,11 +1394,22 @@
    "role": "pool_manager",
    "source": "sibling of 0xa238dd80c259a72e81d7e4664a9801593f98d1c5"
   },
+  "0xe431c803339775c3dc8d28cc40090136a2ee2fd3": {
+   "kind": "",
+   "name": null,
+   "note": " [unresolved56 round, PR #29]"
+  },
   "0xe522cb4a5fcb2eb31a52ff41a4653d85a4fd7c9d": {
    "name": "OrderBookV6",
    "protocol": "OrderBook",
    "role": "router",
    "source": "step 2: Basescan verified contract name OrderBookV6"
+  },
+  "0xe5c6a301fff7de54847cb92be9d9577ca4d04af4": {
+   "name": "SignedRateEmitter",
+   "protocol": "SignedRate",
+   "role": "Emitter",
+   "source": "https://basescan.org/address/0xe5c6a301fff7de54847cb92be9d9577ca4d04af4#code"
   },
   "0xe74ea7af85a9e8f8d68f07d780d2a9cee0ab3ebe": {
    "name": "Coordinator",
@@ -804,6 +1423,12 @@
    "role": "oracle",
    "source": "step 2: Basescan verified contract name CompressedOracleV1"
   },
+  "0xe883426b4fc84a7f5cc86415cabbef43e73a4cc8": {
+   "name": "EulerV2BorrowEnterFuse",
+   "protocol": "EulerV2",
+   "role": "Fuse / Borrow Integration",
+   "source": "Event EulerV2BorrowEnterFuse on Base"
+  },
   "0xe9fb8c70af1b99f2baaa07aa926fcf3d237348dd": {
    "name": "VaultManager",
    "protocol": "Veranta",
@@ -815,6 +1440,12 @@
    "protocol": "Aerodrome Slipstream",
    "role": "pool",
    "source": "step 2: Basescan verified contract name CLPool; step 3: emits Concentrated Liquidity Swap/Mint/Burn topics corroborated by Aerodrome router"
+  },
+  "0xefc320800b70ffb9a06c040c12265583001a769f": {
+   "name": "PRCVault",
+   "protocol": "PRCVault",
+   "role": "Vault Purchase Module",
+   "source": "BaseScan verified contract 0xefc320800b70ffb9a06c040c12265583001a769f"
   },
   "0xf085c29fee3001a26ddbb65d0ec30bb95f2283af": {
    "name": "WKK V2 factory",
@@ -852,270 +1483,11 @@
    "role": "lending",
    "source": "step 2: Basescan verified contract name Coordinator; step 3: emits StatementPublished and Liquidation topics with corporate collateral credit records"
   },
-  "0xfdfd1a05a22bd5ee57a97af4a2adb7b3d743851b": {
-   "name": "CoinV4 Implementation",
-   "protocol": "Zora",
-   "role": "pool",
-   "source": "Step 2: Verified ERC-1167 proxy implementation for creator coin contracts (e.g. 0x356ca33f9e67b7e468354ef119519888b552bed9) emitting CoinBuy"
-  },
-  "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
-   "name": "USD Coin (USDC)",
-   "protocol": "Circle",
-   "role": "Stablecoin",
-   "source": "Circle Base Deployment"
-  },
-  "0x4200000000000000000000000000000000000006": {
-   "name": "Wrapped Ether (WETH9)",
-   "protocol": "Base",
-   "role": "Wrapped Native Asset",
-   "source": "Base System Addresses"
-  },
-  "0xaf14797ccf963b1e3d028a9d51853ace16aedba1": {
-   "name": "RubicMultiProxy",
-   "protocol": "Rubic",
-   "role": "Cross-Chain Router",
-   "source": "Event RubicSwappedGeneric on Base"
-  },
-  "0x9a039ccdb7cfa560e004419f3aa7a552e040e88c": {
-   "name": "MorphoLiquidationExecutor",
-   "protocol": "Morpho",
-   "role": "Liquidation Bot / Integration",
-   "source": "Event MorphoLiquidationExecuted on Base"
-  },
-  "0xac80b9465d70aafbe492a08baea5c6e9d77b1478": {
-   "name": "AaveV3WithdrawalAdapter",
-   "protocol": "AaveV3",
-   "role": "Yield / Withdrawal Adapter",
-   "source": "Event AaveV3Withdrawal on Base"
-  },
-  "0xe883426b4fc84a7f5cc86415cabbef43e73a4cc8": {
-   "name": "EulerV2BorrowEnterFuse",
-   "protocol": "EulerV2",
-   "role": "Fuse / Borrow Integration",
-   "source": "Event EulerV2BorrowEnterFuse on Base"
-  },
   "0xf5000df73c79180f9fde55cc7308fe9eca3a264a": {
    "name": "EulerV2SupplyFuseExit",
    "protocol": "EulerV2",
    "role": "Fuse / Supply Integration",
    "source": "Event EulerV2SupplyFuseExitFailed on Base"
-  },
-  "0x85564fb392e18a84a64343a3fb65839206936c0f": {
-   "name": "IporIndexUpdateFeed",
-   "protocol": "IPOR",
-   "role": "Interest Rate Oracle",
-   "source": "Event IporIndexUpdate on Base"
-  },
-  "0x14852dceea98d5e781335ba8ea8d4b3a14508868": {
-   "name": "MorphoDepositAdapter",
-   "protocol": "Morpho",
-   "role": "Deposit Adapter",
-   "source": "Event MorphoDeposit on Base"
-  },
-  "0x4bdafcc48cc61aaf1ed2f5ebacc05ee305c80916": {
-   "name": "AntseedKbfVerification",
-   "protocol": "Antseed",
-   "role": "Verification",
-   "source": "https://basescan.org/address/0x4bdafcc48cc61aaf1ed2f5ebacc05ee305c80916#code"
-  },
-  "0xe5c6a301fff7de54847cb92be9d9577ca4d04af4": {
-   "name": "SignedRateEmitter",
-   "protocol": "SignedRate",
-   "role": "Emitter",
-   "source": "https://basescan.org/address/0xe5c6a301fff7de54847cb92be9d9577ca4d04af4#code"
-  },
-  "0x9581cee724009957f3ab2420bc0036357d96a99b": {
-   "name": "KSIntentInboxFactory",
-   "protocol": "KSIntentInbox",
-   "role": "Factory",
-   "source": "https://basescan.org/address/0x9581cee724009957f3ab2420bc0036357d96a99b#code"
-  },
-  "0x71153c7787bf2d167035a8cfa4f6a3358b2c3d6a": {
-   "name": "CumulativeSlippageTolerancePolicy",
-   "protocol": "SlippageTolerance",
-   "role": "Policy",
-   "source": "https://basescan.org/address/0x71153c7787bf2d167035a8cfa4f6a3358b2c3d6a#code"
-  },
-  "0xb505dcdd7a53067a030fa05a0f57703e9383a5be": {
-   "name": "JubJubCatalogue",
-   "protocol": "JubJub",
-   "role": "Catalogue",
-   "source": "https://basescan.org/address/0xb505dcdd7a53067a030fa05a0f57703e9383a5be#code"
-  },
-  "0x86c05ecc3daa55ac46406fb42bfbfab792f1b445": {
-   "name": "PairManagerV8",
-   "protocol": "PairManager",
-   "role": "Router",
-   "source": "https://basescan.org/address/0x86c05ecc3daa55ac46406fb42bfbfab792f1b445#code"
-  },
-  "0x2ab2d95df450dad5548fcebf70052d69681f3f62": {
-   "name": "GiudasNFC",
-   "protocol": "Giudas",
-   "role": "NFT",
-   "source": "https://basescan.org/address/0x2ab2d95df450dad5548fcebf70052d69681f3f62#code"
-  },
-  "0x91f909e739c1cfe27a19b97708d3bc2478ddc936": {
-   "name": "CrateHashClaimableBufferV2",
-   "protocol": "CrateHash",
-   "role": "Buffer",
-   "source": "https://basescan.org/address/0x91f909e739c1cfe27a19b97708d3bc2478ddc936#code"
-  },
-  "0x35f1b89f4feb2897cc1a6eff381d518d05824008": {
-   "name": "RobinhoodChurnProxy",
-   "protocol": "Robinhood",
-   "role": "Proxy",
-   "source": "https://basescan.org/address/0x35f1b89f4feb2897cc1a6eff381d518d05824008#code"
-  },
-  "0x87a4e12530071269f0671a2f064afffbfe74eaec": {
-   "name": "MemeFunHook",
-   "protocol": "MemeFun",
-   "role": "Hook",
-   "source": "https://basescan.org/address/0x87a4e12530071269f0671a2f064afffbfe74eaec#code"
-  },
-  "0x7f0f058c731b479a214da459a1ac4cf98d568bf0": {
-   "name": "MineSwapSplitRouter",
-   "protocol": "MineSwap",
-   "role": "Router",
-   "source": "https://basescan.org/address/0x7f0f058c731b479a214da459a1ac4cf98d568bf0#code"
-  },
-  "0x0e5d5ade8e9f5ddc2df1caebc63ea37c1fc5be3b": {
-   "name": "UniswapAdapter",
-   "protocol": "UniswapAdapter",
-   "role": "Adapter",
-   "source": "https://basescan.org/address/0x0e5d5ade8e9f5ddc2df1caebc63ea37c1fc5be3b#code"
-  },
-  "0x2154c604df568a5285284d1c4918dc98c39240df": {
-   "name": "AnyBidWall",
-   "protocol": "flaunch",
-   "role": "bid_wall",
-   "source": "https://sourcify.dev/server/v2/contract/8453/0x2154c604df568a5285284d1c4918dc98c39240df"
-  },
-  "0x69f9cf374c87059c02d0221ec97c1e3ef85abc0f": {
-   "name": "PerchVault",
-   "protocol": "perch",
-   "role": "vault",
-   "source": "https://sourcify.dev/server/v2/contract/8453/0x69f9cf374c87059c02d0221ec97c1e3ef85abc0f"
-  },
-  "0x259de2b43b6b767cf565fe9a59d1862957eb8efb": {
-   "name": "CasinoHoldemGame",
-   "protocol": "overtime",
-   "role": "game",
-   "source": "registered in Overtime Core 0xab487c74bd9fb88cea5d39f25c6a15c4a7734055 under getRegisteredGames()[6]",
-   "note": " ERC-1967 proxy to poker implementation 0x905b64830a4aa26245946997f29c031ccd0825d3 (loopbatch11 return)."
-  },
-  "0x5ec775a8024b2791c1f93499460012281963e696": {
-   "name": "NoytrixNavOracle",
-   "protocol": "noytrix",
-   "role": "oracle",
-   "source": "registered in Noytrix USDC Vault 0x0ba57e8484db60a0f3bff76bd8529dd4be3e5d81 under navOracle()"
-  },
-  "0x2c894b3a726b49d9e68e71d548157964e5e0fbb6": {
-   "name": "GuardedSwap",
-   "protocol": "GuardedSwap",
-   "role": "Loss-guarded token sell executor wrapper",
-   "source": "BaseScan verified contract 0x2c894b3a726b49d9e68e71d548157964e5e0fbb6"
-  },
-  "0xc0fdcb1799ccc2cebaa1fe247157b0df33d57572": {
-   "name": "FLAMMProxy",
-   "protocol": "Fluid / FLAMM",
-   "role": "FLAMM Automated Market Maker Pool",
-   "source": "BaseScan verified contract 0xc0fdcb1799ccc2cebaa1fe247157b0df33d57572"
-  },
-  "0x9de87cfd1e53ed208ebe610f9c89f1447b34d2f5": {
-   "name": "VectaAggregatorRouter",
-   "protocol": "Vecta",
-   "role": "Vecta Aggregator Router",
-   "source": "BaseScan verified contract 0x9de87cfd1e53ed208ebe610f9c89f1447b34d2f5"
-  },
-  "0x0a8cdd1b39f476cdde606a7e4c330b3ddb04314e": {
-   "name": "ParSwapPool",
-   "protocol": "ParSwapPool",
-   "role": "1:1 Pegged Par Swap Pool",
-   "source": "BaseScan verified contract 0x0a8cdd1b39f476cdde606a7e4c330b3ddb04314e"
-  },
-  "0x37ca10c307fa8caa772f3583b3fd1e923dee2aa8": {
-   "name": "StableSwapHooks",
-   "protocol": "Uniswap v4 StableSwap Hook",
-   "role": "v4 Hook Contract",
-   "source": "BaseScan verified contract 0x37ca10c307fa8caa772f3583b3fd1e923dee2aa8"
-  },
-  "0xd70e1bab713d84c3a110ded11e41714542e604ba": {
-   "name": "SmardexPair",
-   "protocol": "SmarDex",
-   "role": "SmarDex AMM Pair",
-   "source": "BaseScan verified contract 0xd70e1bab713d84c3a110ded11e41714542e604ba"
-  },
-  "0xac143bf41bba4a8014b4ef5a5f46b39a36ae40a8": {
-   "name": "PausableImmutableOraclePool",
-   "protocol": "PausableImmutableOraclePool",
-   "role": "Fixed Oracle AMM Pool",
-   "source": "BaseScan verified contract 0xac143bf41bba4a8014b4ef5a5f46b39a36ae40a8"
-  },
-  "0x794f9e63b7666985256f1d2763ee24cc0b528199": {
-   "name": "ERC1967Proxy",
-   "protocol": "CLOB DEX",
-   "role": "Order Book Matching Engine",
-   "source": "BaseScan verified contract 0x794f9e63b7666985256f1d2763ee24cc0b528199"
-  },
-  "0x579bdb8d849cfd4816ec23c3be088411a79c917d": {
-   "name": "ERC1967Proxy",
-   "protocol": "Perpetual / Derivatives DEX",
-   "role": "Derivatives Margin Clearing House",
-   "source": "BaseScan verified contract 0x579bdb8d849cfd4816ec23c3be088411a79c917d"
-  },
-  "0x13c71b0061ec698e4ba46747e910eedbf280dc21": {
-   "name": "ERC1967Proxy",
-   "protocol": "Bonding / Fixed Sale Contract",
-   "role": "Token Issuance Contract",
-   "source": "BaseScan verified contract 0x13c71b0061ec698e4ba46747e910eedbf280dc21"
-  },
-  "0x0000000000bbf5c5fd284e657f01bd000933c96d": {
-   "name": "Adapter",
-   "protocol": "CowSwap / CoW Adapter",
-   "role": "TWAP Order Settlement Adapter",
-   "source": "BaseScan verified contract 0x0000000000bbf5c5fd284e657f01bd000933c96d"
-  },
-  "0x99b4cf7d9b6353b583847d6cf98c3c1acf6550d6": {
-   "name": "MiningPool",
-   "protocol": "MiningPool",
-   "role": "Mining Pool Contract",
-   "source": "BaseScan verified contract 0x99b4cf7d9b6353b583847d6cf98c3c1acf6550d6"
-  },
-  "0xfcbf4458cd001aa3268e361f7955123044f5aad4": {
-   "name": "RangeVaultSlipstream",
-   "protocol": "RangeVaultSlipstream",
-   "role": "Concentrated Liquidity Vault Rebalancer",
-   "source": "BaseScan verified contract 0xfcbf4458cd001aa3268e361f7955123044f5aad4"
-  },
-  "0x1ea172fb88c24dfc21ff6fa38762511c123ba948": {
-   "name": "TransparentUpgradeableProxy",
-   "protocol": "Token Launchpad / Presale",
-   "role": "Crowdsale Contract",
-   "source": "BaseScan verified contract 0x1ea172fb88c24dfc21ff6fa38762511c123ba948"
-  },
-  "0xfc52e33f48dd3fcd5ee428c160722efda645d74a": {
-   "name": "Auction",
-   "protocol": "Auction",
-   "role": "Auction Settlement Engine",
-   "source": "BaseScan verified contract 0xfc52e33f48dd3fcd5ee428c160722efda645d74a"
-  },
-  "0xb125e6687d4313864e53df431d5425969c15eb2f": {
-   "name": "TransparentUpgradeableProxy",
-   "protocol": "Lending / Liquidation Engine",
-   "role": "Liquidation Manager",
-   "source": "BaseScan verified contract 0xb125e6687d4313864e53df431d5425969c15eb2f"
-  },
-  "0x7c5e8507891cb1e5b2683b876462348f24229e9a": {
-   "name": "DepositVault",
-   "protocol": "DepositVault",
-   "role": "Options / Structured Product Vault",
-   "source": "BaseScan verified contract 0x7c5e8507891cb1e5b2683b876462348f24229e9a"
-  },
-  "0xddddddddeb2e68ee19832e356fcb5537124a9708": {
-   "name": "TransparentUpgradeableProxy",
-   "protocol": "Intent / Filler Network",
-   "role": "Intent Settlement Proxy",
-   "source": "BaseScan verified contract 0xddddddddeb2e68ee19832e356fcb5537124a9708"
   },
   "0xf834d6ce994f29cdca6e094bf83aa66ed85cd71c": {
    "name": "TaxHandler",
@@ -1123,399 +1495,39 @@
    "role": "Automated Fee Liquidator",
    "source": "BaseScan verified contract 0xf834d6ce994f29cdca6e094bf83aa66ed85cd71c"
   },
-  "0x888888888889758f76e7103c6cbf23abbf58f946": {
-   "name": "PendleRouterV4",
-   "protocol": "Pendle",
-   "role": "Pendle Router V4",
-   "source": "BaseScan verified contract 0x888888888889758f76e7103c6cbf23abbf58f946"
-  },
-  "0xade2c0a7491e52b8b202c8d77ea67d8a7559c491": {
-   "name": "SatsfunRouter",
-   "protocol": "Satsfun",
-   "role": "Satsfun Router",
-   "source": "BaseScan verified contract 0xade2c0a7491e52b8b202c8d77ea67d8a7559c491"
-  },
-  "0xa9c937a0d1d22ad79099aea10efa62a270dfc22c": {
-   "name": "TpdaLiquidationRouter",
-   "protocol": "TpdaLiquidationRouter",
-   "role": "Liquidation Swap Router",
-   "source": "BaseScan verified contract 0xa9c937a0d1d22ad79099aea10efa62a270dfc22c"
-  },
-  "0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f": {
-   "name": "TSAggregatorGeneric_V1",
-   "protocol": "THORChain / TSAggregatorGeneric",
-   "role": "Cross-Chain Inbound Swap Aggregator",
-   "source": "BaseScan verified contract 0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f"
-  },
-  "0xcb0546e357531b5f1420a3fd845b1ec25b8ac2cf": {
-   "name": "UxuySmartPool",
-   "protocol": "UXUY",
-   "role": "Cross-Chain Outbound Pool",
-   "source": "BaseScan verified contract 0xcb0546e357531b5f1420a3fd845b1ec25b8ac2cf"
-  },
-  "0x4ee35c658b8032a7577096b60bd51ae9909e4f98": {
-   "name": "DividendVault",
-   "protocol": "DividendVault",
-   "role": "Dividend Reinvestment Vault",
-   "source": "BaseScan verified contract 0x4ee35c658b8032a7577096b60bd51ae9909e4f98"
-  },
-  "0x31f6a0c6262dab7450e4d31f718d3be2414a93f3": {
-   "name": "TransparentUpgradeableProxy",
-   "protocol": "Asset Vault",
-   "role": "Asset Liquidation Module",
-   "source": "BaseScan verified contract 0x31f6a0c6262dab7450e4d31f718d3be2414a93f3"
-  },
-  "0xefc320800b70ffb9a06c040c12265583001a769f": {
-   "name": "PRCVault",
-   "protocol": "PRCVault",
-   "role": "Vault Purchase Module",
-   "source": "BaseScan verified contract 0xefc320800b70ffb9a06c040c12265583001a769f"
-  },
-  "0x24dd71add0026e924e0fc7a7701a851e2b9c09c4": {
-   "name": "DGTokenVendor",
-   "protocol": "DGTokenVendor",
-   "role": "Token Vendor Vending Machine",
-   "source": "BaseScan verified contract 0x24dd71add0026e924e0fc7a7701a851e2b9c09c4"
-  },
-  "0xb08f28a3575805ee1e3729fc19ab7e869cbaf563": {
-   "name": "CleaveSwapShell",
-   "protocol": "CleaveSwapShell",
-   "role": "DEX Aggregator Shell",
-   "source": "BaseScan verified contract 0xb08f28a3575805ee1e3729fc19ab7e869cbaf563"
-  },
-  "0xd25313591ba4c2645ba7427f34ea61951faf1d6a": {
-   "name": "DexConnectorProxy",
-   "protocol": "DexConnector",
-   "role": "DexConnector Proxy Aggregator",
-   "source": "BaseScan verified contract 0xd25313591ba4c2645ba7427f34ea61951faf1d6a"
-  },
-  "0xa6dcac1c20cb369a1a1edcb7789946828bf22b9a": {
-   "name": "SwapPair",
-   "protocol": "SwapPair",
-   "role": "AMM Liquidity Pair (0xa6dcac1c20cb369a1a1edcb7789946828bf22b9a)",
-   "source": "BaseScan verified contract 0xa6dcac1c20cb369a1a1edcb7789946828bf22b9a"
-  },
-  "0xb222da5a71e8fb89a5a38b7c920eab5dfbc74b91": {
-   "name": "JBBuybackHook",
-   "protocol": "Juicebox",
-   "role": "JBBuybackHook",
-   "source": "BaseScan verified contract 0xb222da5a71e8fb89a5a38b7c920eab5dfbc74b91"
-  },
-  "0x8fb6177eb7ac7d9e75de2d58d8749755d6bd9ea1": {
-   "name": "RouterV2",
-   "protocol": "RouterV2",
-   "role": "Swap Router Contract",
-   "source": "BaseScan verified contract 0x8fb6177eb7ac7d9e75de2d58d8749755d6bd9ea1"
-  },
-  "0xb84aefef2ddde628d5c7f1fba320de63e3f4757c": {
-   "name": "TransparentUpgradeableProxy",
-   "protocol": "WOOFi",
-   "role": "WOOFi Cross-Chain Destination Router",
-   "source": "BaseScan verified contract 0xb84aefef2ddde628d5c7f1fba320de63e3f4757c"
-  },
-  "0x9f862a27523e676deef9bd38a35d7fbe02d06415": {
-   "name": "ArmorCurrentV7",
-   "protocol": "ArmorCurrent",
-   "role": "core_contract",
-   "source": "https://basescan.org/address/0x9f862a27523e676deef9bd38a35d7fbe02d06415#code"
-  },
-  "0x905b64830a4aa26245946997f29c031ccd0825d3": {
-   "name": "OvertimeBonusHoldem",
-   "protocol": "Overtime",
-   "role": "game_implementation",
-   "source": "https://basescan.org/address/0x905b64830a4aa26245946997f29c031ccd0825d3#code"
-  },
-  "0x05d06db68a8c13a6a58c7ddc15cd3f54e9063aef": {
-   "name": "TrainingCampFacet",
-   "protocol": "FrenPet",
-   "role": "training_facet",
-   "source": "https://basescan.org/address/0x05d06db68a8c13a6a58c7ddc15cd3f54e9063aef"
-  },
-  "0xd8e05b857f45652776413524e3b61d26c8f5ea51": {
-   "name": "BaseFriendTasks",
-   "protocol": "BaseFriend",
-   "role": "task_contract",
-   "source": "https://basescan.org/address/0xd8e05b857f45652776413524e3b61d26c8f5ea51"
-  },
-  "0x4972760d9d849bfa33c3fedea9db9da56a524610": {
-   "name": "UniswapV2Pair",
-   "protocol": "UniswapV2",
-   "role": "liquidity_pool",
-   "source": "https://basescan.org/address/0x4972760d9d849bfa33c3fedea9db9da56a524610#code"
-  },
-  "0x8e335230bd7787a87b66ad0d6220981e192ecc32": {
-   "name": "TplusAtomicSettler",
-   "protocol": "tplus",
-   "kind": "settlement_executor",
-   "note": "Atomic settlement executor for Tplus Deposit Vault 0x7c5e8507891cb1e5b2683b876462348f24229e9a. Name inferred from behaviour (loopbatch11 return); not a verified source name."
-  },
-  "0x346ec0fadbf97cc3a5e2fbdaa7e4d10503f1052e": {
-   "name": "DexAggregatorRouterProxy",
-   "kind": "dex_aggregator",
-   "note": "ERC-1967 transparent proxy delegating to DEX aggregator router implementation 0xe73549e46330c998939e27b16b6c4e6e213838d1. Name inferred from behaviour (loopbatch11 return); not a verified source name."
-  },
-  "0x20a7847009b2d2e3963f8e9277f3a6532ff76ae3": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x130a401047aed3c56d0fe2669b8c9b42d8d478da": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xbaa8c0dd620f6411c9cc380140d5d312bcaf2a38": {
-   "name": "ERC1967Proxy",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x077ba82476c406e0d628e5a6f5d2a193731f4168": {
-   "name": "ERC1967Proxy",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x185deda40a9df661ce9213fb3a8a7c5bb5594931": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x868490134066f345476c8be41ced370fb81ad76a": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x8df63e8a92115294e495bfb639d9ba51e0b2981d": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xdf460698e3abae9c26f60a69f207ddc8eff81cc8": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x2dc6bfee0089bc39fb831e3e9184f2afe3614c43": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xffcd3362e608b267f77f32964bffec22611bf49e": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xb1000000096bd2f8ca9b6883182eccaf31e7c3fd": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x05b9079458d57f80e6638cf0abafd31bfba0f586": {
-   "name": "ERC1967Proxy (WalletAutomator)",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x9f12bb8ae3cd5f0d22d096cff984414adcbbee82": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x0006f3462be7043c594f503602e3a9269b024482": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x7f6d91d1b499dc68f6f98a44393459c6578a0423": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x00019db9af5b57974cb395823cd1fa5347777777": {
-   "name": "TransparentUpgradeableProxy",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xac4f3817a726016fc8254119fc48be838a21f17f": {
-   "name": "GenericSwap",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xdb11d3699928b40dbfae9136a999d55842913fcb": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xcb2a7cc0a77f7fad7c36c539688ad2a76c20de2d": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x00012c436240fa0b7286aa85ca098c9fd8cc2000": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x9e7243b98a8a9713cb9dc37fe9f18879f0e64dcb": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xbd4a415d633b6e6bb9586b532cb07a1b990597e4": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x7bf44168ff3990acef0b01bcc82c54843dbd15ff": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x2cef59d4c30a5ad85fb7b0f22a07734ee9dfd886": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x774c69ab32f404e7205ff61779c52d6d2df4062e": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x3e0c83e29f92982754ba7dd03ec596e331b67db5": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x83ac20d215d53f7dad68ee17d41251130c7c58bf": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xe431c803339775c3dc8d28cc40090136a2ee2fd3": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x0e9f81c565dd7d3c84cbcff570df681d8ba5f137": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x9d91977cba597d910b1755b8acb3b616e3552f17": {
-   "name": "PendleMarketV7",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x477a535be86e7307bb429ae91709aa28bfdf1729": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x32754c23ca2866824cb3ec86e1d3bb2a21b7b58b": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xc170b635219545d44370ab023b88436cf669f81c": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x5a4e9a730b6c8c056c14656b8bed68450b9e35f2": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x604e47e6328e0c5886fa0d6c2213f079acf104dc": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xc6eb5f6016d0f22ece511ddedde95508ae4cf5c3": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x1942aecf922630a851c30525257c8fa955e56609": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x9bb6a1be463190f01c581047eed8b0836f9fa411": {
-   "name": "TransparentUpgradeableProxy",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x8a33650bbbd7622d7bf1b98d4ae851c134126c18": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x1b26c4cb741dc877430e7162c7302255ba5cce14": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
   "0xfae73492bcfcbbfbd3f53f8d09c7bc688fb129ae": {
+   "kind": "",
    "name": null,
-   "kind": "",
    "note": " [unresolved56 round, PR #29]"
   },
-  "0x0000000021526b5c055653a55df60b21b73da999": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xdbc83f5f1cc0413d15a45ba346502e71a495d842": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xd995588235693b1b626c702922e73c7268d18929": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xb00000fdc6785dd211185092e2328106964ddbdb": {
-   "name": "RoutaProxy",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xc5d25c596d0bcdf534d642eac3241f6e5bebf71c": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0x8906bf80edb90d87d7f053fef5c6fa44b94ab36a": {
-   "name": "AgentReputationBadgeProxy",
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
-  },
-  "0xc88d6a36338d422bbc3ea600602f8b0183dfb6a3": {
-   "name": null,
-   "kind": "",
-   "note": " [unresolved56 round, PR #29]"
+  "0xfc52e33f48dd3fcd5ee428c160722efda645d74a": {
+   "name": "Auction",
+   "protocol": "Auction",
+   "role": "Auction Settlement Engine",
+   "source": "BaseScan verified contract 0xfc52e33f48dd3fcd5ee428c160722efda645d74a"
   },
   "0xfc7bb0558a855bb6c61d28ec22e49495faa80b1a": {
-   "name": null,
    "kind": "",
+   "name": null,
    "note": " [unresolved56 round, PR #29]"
   },
-  "0xd5c6312ec57178277bbf8c34fb94965c6bddb014": {
-   "name": null,
+  "0xfcbf4458cd001aa3268e361f7955123044f5aad4": {
+   "name": "RangeVaultSlipstream",
+   "protocol": "RangeVaultSlipstream",
+   "role": "Concentrated Liquidity Vault Rebalancer",
+   "source": "BaseScan verified contract 0xfcbf4458cd001aa3268e361f7955123044f5aad4"
+  },
+  "0xfdfd1a05a22bd5ee57a97af4a2adb7b3d743851b": {
+   "name": "CoinV4 Implementation",
+   "protocol": "Zora",
+   "role": "pool",
+   "source": "Step 2: Verified ERC-1167 proxy implementation for creator coin contracts (e.g. 0x356ca33f9e67b7e468354ef119519888b552bed9) emitting CoinBuy"
+  },
+  "0xffcd3362e608b267f77f32964bffec22611bf49e": {
    "kind": "",
+   "name": null,
    "note": " [unresolved56 round, PR #29]"
-  },
-  "0xdef40b7e4cfc4462ba886927c08c32a63ec592bc": {
-   "name": "BotAuction",
-   "protocol": "botBTC (Bots)",
-   "role": "other (auction)",
-   "source": "step 1: identified in defi-loopbatch12 with Basescan verified contract name BotAuction.sol; step 2: Muse verified emitter on the Relisted sample receipt"
-  },
-  "0xc62d6349d3564bd06ace93f1c1ab6de30edd85eb": {
-   "name": "Gateway",
-   "protocol": "LeagueFun",
-   "role": "other (league gateway)",
-   "source": "step 1: identified in defi-loopbatch12 with Basescan verified contract name Gateway.sol (impl 0x07b84003c16218903385dfe6be7f82e618a7038c); step 2: Muse verified emitter on the PlayerApplied sample receipt"
   }
  },
- "version": "2026-11-05.7"
+ "version": "2026-11-05.8"
 }
