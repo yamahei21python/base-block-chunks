@@ -12,7 +12,8 @@ name: loop3h
 # Production (5,400 blocks / 3h) splits the range with the same matrix
 # pattern as fetch.yml; see LOOP.md.
 #
-# To enable the 3-hour schedule, uncomment the schedule block below.
+# The 3-hour schedule below is LIVE (pilot since 2026-11-04).
+# Delay/miss tolerance design (backstop dispatch + serialization): see LOOP.md.
 
 on:
   workflow_dispatch:
@@ -32,6 +33,15 @@ on:
 
 permissions:
   contents: write
+
+# Serialize overlapping triggers (GitHub schedule can fire very late,
+# and the Muse-side backstop may dispatch for the same slot). A queued
+# run decides its range only when it starts, i.e. after the earlier run
+# has published, so it takes the NEXT range instead of colliding on the
+# same release tag.
+concurrency:
+  group: loop3h-cycle
+  cancel-in-progress: false
 
 jobs:
   cycle:
