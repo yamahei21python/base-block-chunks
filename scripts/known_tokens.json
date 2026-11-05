@@ -20432,6 +20432,14 @@
   "0xe8bddee33596c04338c7d9c0f4f9c635928330ab": {
    "symbol": "VIRTUAL",
    "name": "Virtual Protocol"
+  },
+  "0x0129614474d4b1df7053cc18c4e1cb646c563332": {
+   "symbol": "PIMP",
+   "name": "PimpFun"
+  },
+  "0xe2c76b440b5aa9f6d224f8965ab612ba32fd6357": {
+   "symbol": "horswe",
+   "name": "horswe"
   }
  }
 }
