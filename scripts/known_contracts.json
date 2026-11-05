@@ -80,6 +80,12 @@
    "role": "pool manager",
    "source": "Step 4: Counterparty hook/vault receiving currency and emitting Uniswap V4 swap log 0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67 in CoinBuy tx 0x3087917e78621c4065667f9dc28aec1dcfbba502d00a428d2cb4430dfe9d6250"
   },
+  "0x04916bb42564cded96e10f55c059d65e4fcb1be6": {
+   "name": "SuperLedger",
+   "protocol": "Superform v2",
+   "role": "accounting",
+   "source": "step 1: identified in defi-loopbatch14 from Superform v2-core sources and BscScan verified contract name SuperLedger; step 2: Muse verified emitter on the sample receipt (UsedSharesCapped and AccountingOutflow)"
+  },
   "0x05b9079458d57f80e6638cf0abafd31bfba0f586": {
    "kind": "",
    "name": "ERC1967Proxy (WalletAutomator)",
@@ -1529,5 +1535,5 @@
    "note": " [unresolved56 round, PR #29]"
   }
  },
- "version": "2026-11-05.8"
+ "version": "2026-11-05.9"
 }
