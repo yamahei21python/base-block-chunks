@@ -28144,6 +28144,11 @@
    "name": "ClaimedReward",
    "note": "database hit: ClaimedReward(address,address,uint256,uint256,uint256)"
   },
+  "0xc1eb34142f486694077c8fe62a1e5ea0af28fa50ecb14190c84a7f60ffbb05fd": {
+   "class": "non_swap",
+   "name": "AccountingOutflow(address,address,address,uint256,uint256)",
+   "note": "Superform v2 SuperLedger accounting outflow record (defi-loopbatch14)"
+  },
   "0xc1ed05721d27ad6b2555d61388ac393b120f5cc0e6009e53230e02c68e60064a": {
    "class": "non_swap",
    "name": "Protocol Event: IntentFunded",
@@ -29745,6 +29750,11 @@
    "class": "non_swap",
    "name": "NewTopLink((address,int256,uint256,bool,string,uint8))",
    "note": "OpenChain hit: NewTopLink((address,int256,uint256,bool,string,uint8)). Bookkeeping, lifecycle, governance, administrative, or liquidity management event, not a value exchange."
+  },
+  "0xcbf6e1ecca8662a52fbda88e401671949eb8ef33066b8afbc19ecca7f127b22d": {
+   "class": "non_swap",
+   "name": "UsedSharesCapped(uint256,uint256)",
+   "note": "Superform v2 SuperLedger accounting event (share-usage cap accounting); no token flow in the event itself (defi-loopbatch14)"
   },
   "0xcbfa7d191838ece7ba4783ca3a30afd316619b7f368094b57ee7ffde9a923db1": {
    "class": "non_swap",
@@ -37544,5 +37554,5 @@
    "note": "OpenChain hit: \"OFTSent(bytes32,uint32,address,uint256)\". Non-exchange protocol bookkeeping/lifecycle event at emitter 0x2b11834ed1feaed4b4b3a86a6f571315e25a884d."
   }
  },
- "version": "2026-11-05.10"
+ "version": "2026-11-05.11"
 }
