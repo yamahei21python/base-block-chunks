@@ -20448,6 +20448,38 @@
   "0xb76ea30db8399a98715af3a6832b8c0847a63c39": {
    "symbol": "USOR",
    "name": "U.S. OIL RESERVE"
+  },
+  "0x016da9f8b561b10e0e7c3155dfefaf8a812ffe8c": {
+   "symbol": "ALICE",
+   "name": "Alice the Bully by Virtuals"
+  },
+  "0x2366aea0c0dc92f5710f04a5292b72e7b63e88f3": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x2878cfc54aabdadd9bb5d70dd24d6b91485afba3": {
+   "symbol": "Polygraph",
+   "name": "Polygraph litmus"
+  },
+  "0x543a77ac0e94e1403f155c53cf30ad3841b97766": {
+   "symbol": "MUTM",
+   "name": "Mutuum Finance"
+  },
+  "0x6802958fc5b89c4baf5667682744f47e6302817c": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x7a55f8b4639bba6014aa6a68a0fe90afb0ebcd5f": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0xb200000000000000000000780b9b46eab7b53f7b": {
+   "symbol": "USOR",
+   "name": "U.S Oil Reserve"
+  },
+  "0xed7aa11ca0e0b4e70a77b8c77613ca0432bf7b07": {
+   "symbol": "AMBRX",
+   "name": "Amber tokenized stock (xStock)  "
   }
  }
 }
