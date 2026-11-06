@@ -1,0 +1,20 @@
+{
+ "files": {
+  "NIGHT_A_REFACTOR.md": {
+   "sha256": "faa112afe05436621a3aa5b285a10c95b6cacf72ed444bade76fa98dd91f8782",
+   "bytes": 5680
+  },
+  "NIGHT_B_PILOTS.md": {
+   "sha256": "d0e3c6477d11984d167a4ba2ca1efe038d647702f7ee8ccb680ead2528e77ea7",
+   "bytes": 4928
+  },
+  "REFACTOR_CANDIDATES_20261106.md": {
+   "sha256": "548bfaeaf94a714d0dd1888c4e239d4be082658a9595eb55ab2af7103a36094c",
+   "bytes": 5313
+  },
+  "REVIEW_CONTEXT.md": {
+   "sha256": "635667fd8330b71b1f5985381060b574537372d5ee7bcd1e763855ba8ca44096",
+   "bytes": 3166
+  }
+ }
+}
