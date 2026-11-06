@@ -1,0 +1,1791 @@
+{
+ "0xe0c1b141a85ba7f8df7ded19a02a004b049d9e0a67f9dea87186c07bce3923b0": {
+  "kind": "Trade",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0x853c8e677490312983a1757c837355487031d90920d260d439269c024de030c2": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "address",
+    "uint256",
+    "uint256",
+    "uint256",
+    "address"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   2
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0x9ec2cbdc7c510df38f982d15dfab2db2ba557c382afbec908ed154dfb83b1fcb": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "address",
+    "uint8",
+    "address",
+    "address",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   3
+  ],
+  "ain": [
+   "data",
+   5
+  ],
+  "tout": [
+   "data",
+   2
+  ],
+  "aout": [
+   "data",
+   4
+  ]
+ },
+ "0x5a417e3ceaff68360f7300df6686a9d417ae12328724de7bc2fd6c012a2ffa85": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0xee4825a7988c5519a874be79f2a84d13d02cfe5f74cad97cda2d5b55d2b13bfa": {
+  "kind": "SwapExecuted",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "address"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x77f92a1b6a1a11de8ca49515ad4c1fad45632dd3442167d74b90b304a3c7a758": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0x4aa9c8b0c9a939db1d9261ba132e6ad5bc8390e89cb6ac192c10f4ca67f49e40": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "bool",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xc9b356cd595a52e855855ac43eae98058d001ef4f0895fc098509ad2f2fe7cad": {
+  "kind": "Traded",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xee524511e0afdb415a78a457a9fb0be80c11f2d7d2bbec13af282afd933923f9": {
+  "kind": "Bought",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   3
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0x6db63bebf1e6540277744df32846ebdb98385b1a73f2d5de49b28348add63f50": {
+  "kind": "TokensSold",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x2ad8739d64c070ab4ae9d9c0743d56550b22c3c8c96e7a6045fac37b5b8e89e3": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0x2afb56853a8b76a0868e64c0001eedd84d9a7f5bc7fb788aba6180e422ba6ec5": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "uint256",
+    "bytes32"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "address"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x0a17ff6a9995a1332a432b8bf852005142714ccfe1f1ccda72a3aba5e9ed408f": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "indexed",
+   0
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0x22aea6cd253f249ce9b7d0a1af21a0eca8bbe111c26bcc705eece987ad4d2105": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "uint256",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   2
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0x4fd47c7108c4f49e2398c5159bbd183546a2fca795309705e629fed588852416": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   2
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xdde2f3711ab09cdddcfee16ca03e54d21fb8cf3fa647b9797913c950d38ad693": {
+  "kind": "SwapExecuted",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "address",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   1
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   3
+  ],
+  "aout": [
+   "data",
+   4
+  ]
+ },
+ "0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469": {
+  "kind": "WooSwap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "address",
+    "address",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140": {
+  "kind": "TokenExchange",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "int128",
+    "uint256",
+    "int128",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0x3b841dc9ab51e3104bda4f61b41e4271192d22cd19da5ee6e292dc8e2744f713": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "address",
+    "bool",
+    "bool",
+    "uint256",
+    "uint256",
+    "int32"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   4
+  ],
+  "aout": [
+   "data",
+   5
+  ]
+ },
+ "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c": {
+  "kind": "TokenExchange",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0x2170c741c41531aec20e7c107c24eecfdd15e69c9bb0a8dd37b1840b9e0b207b": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "bytes32",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x88b012650d7da64b7697c175b1dc42bd7dd09d8a2ef28c62cbb448086f548ce6": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "uint256"
+   ],
+   "data": [
+    "bool",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x0874b2d545cb271cdbda4e093020c452328b24af12382ed62c4d00f5c26709db": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xc2c0245e056d5fb095f04cd6373bc770802ebd1e6c918eb78fdef843cdb37b0f": {
+  "kind": "DODOSwap",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "address",
+    "address"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xe2cee3f6836059820b673943853afebd9b3026125dab0d774284e6f28a4855be": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   2
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0xbfca96f8fea048c07457ab90159d04dfbef79bc43270596da55ae633213585e4": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint8",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "indexed",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xb159dc503a6f507638f48f62f81cab93f1e806b7476ac426ea5f5793ddbf9127": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint24",
+    "bool"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xb2e76ae99761dc136e598d4a629bb347eccb9532a5f8bbd72e18467c3c34cc98": {
+  "kind": "TokenExchange",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xc4cc441884c8b8ce500de14f1f490522149ac5ec673710ca5c792c38ec736847": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "bytes32"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xb39c9bc43f811e1a7ce159c5f147458fdb80266bf23c17322013316e27e086d0": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "address"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xfe5d070a8c6c1bf4a4675905e56f14d922474c8fead10febb0d9c963a2c2d0e7": {
+  "kind": "Unknown",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xa54201e99d8e1488291e015a3af88c7a169bcf4932617ecd9536e1f1ad435110": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "indexed",
+   0
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0xca1985de4499b70bca89ad1f3711d7081a4bfefe76dfbdf83beecf1336fb85d8": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "bytes32"
+   ],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint8"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   1
+  ],
+  "ain": [
+   "data",
+   3
+  ],
+  "tout": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0x086c7fcd1952b421cc49f207e360cef93dead3f9caa1d6eb4b0e51bb58367738": {
+  "kind": "StableSwap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x546b1f988790578dc4043a3d0e3640574a568eb04e498b08ef98518eee574882": {
+  "kind": "WEDXswapEvent",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "address",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xb8a2a375cd0661da64ed8ab72ba981ae5e21e5d484fb6eaa8e5236ac2111d13c": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "address",
+    "uint256",
+    "uint24",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   4
+  ]
+ },
+ "0xac98876c63e9e95442ed72d8ca81d9a5c922f18616dc2b8b155416310b898dd9": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "address",
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "bytes32",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   2
+  ],
+  "ain": [
+   "data",
+   4
+  ],
+  "tout": [
+   "data",
+   3
+  ],
+  "aout": [
+   "data",
+   5
+  ],
+  "sentinel": true
+ },
+ "0x2fb0748023df976464b18b5e5d1c2f8d79da559ffeb202c8a2ce83737a946906": {
+  "kind": "MultiSwap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0xa62ddba0018cb74df710cd81eb65dbeb85eb16937bc4967591c36b169d8100c6": {
+  "kind": "SwapDone",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xdb587d878116df0bdd4fe154699aa2c5f439da001cc811dfd05d9f589fc5a8ee": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "uint256",
+    "address",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "data",
+   2
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0xc82975a4eae9f14416813a0bd7312edf547928cd25ae9b8597ee4c92fa6862d2": {
+  "kind": "RFQTrade",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address",
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "bytes16",
+    "address"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   1
+  ],
+  "ain": [
+   "data",
+   3
+  ],
+  "tout": [
+   "data",
+   2
+  ],
+  "aout": [
+   "data",
+   4
+  ]
+ },
+ "0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c": {
+  "kind": "WooRouterSwap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint8",
+    "uint256",
+    "uint256",
+    "address",
+    "address"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0x2e65e08f215f8172b6bc6ae6c1191f00c014355c9d39c03627de921283bd3ba2": {
+  "kind": "Unknown",
+  "types": {
+   "indexed": [
+    "uint256"
+   ],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ]
+ },
+ "0x3993372c7f54dee1879dcc58987731c2857a033eccc34111f4d2efb1b045d947": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "uint112",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   3
+  ],
+  "pool_field": [
+   "indexed",
+   2
+  ]
+ },
+ "0xdd36740e2a012d93061a0d99eaa9107860955de4e90027d3cf465a055026c407": {
+  "kind": "SwapExecuted",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xa3f37f0446dcac60c3831cc0ebda32d57d7cddb7bef6d734cdd7b0c72c277922": {
+  "kind": "SwapExecuted",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint8"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xa078c4190abe07940190effc1846be0ccf03ad6007bc9e93f9697d0b460befbb": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x25f1d03755df23c30e25db2dbd3891e31ce084bdfbfc46f9fe5e446ee5f9b2d4": {
+  "kind": "TokensSwapped",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "address",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0x6621486d9c28838df4a87d2cca5007bc2aaf6a5b5de083b1db8faf709302c473": {
+  "kind": "OrderFilled",
+  "types": {
+   "indexed": [
+    "bytes32",
+    "address",
+    "address"
+   ],
+   "data": [
+    "address",
+    "uint256",
+    "address",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "data",
+   2
+  ],
+  "ain": [
+   "data",
+   3
+  ],
+  "tout": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0xbbc79dc7d11fb8ae8de963e009943172807faa4a90c3620ef772f4783e76355f": {
+  "kind": "Sell",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   1
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   2
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x5380cf97d8f645d3c4896da60c053458dca03a3a31cec642ac80e1ddf0d8d02a": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   2
+  ],
+  "ain": [
+   "data",
+   1
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0xe4c8d224f59766afb8ace8df8ee71f9f0e26664f915e4045a3df5296a991ad50": {
+  "kind": "TideFiSwap",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x6b17016c67d28f4cc3a653d895e3b1db09320d6852a46f95aa225059190f7dcd": {
+  "kind": "TokensSold",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x673ff070bec3aea00f2fa45c0f7ed58c227af4a03a626e01fe29b34d3b9ecfdb": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "bool",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "gross",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0x1560b71ca6695825842f12e8721dc7f437286c08deb7c7ebc708bb3bdc3d01c5": {
+  "kind": "StockBought",
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "gross",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   0
+  ]
+ },
+ "0x7a7e1d68c6a73a4841f6e57bf2d968148c641201d165b651b1fd3a43f270991b": {
+  "kind": "Swapped",
+  "types": {
+   "indexed": [],
+   "data": [
+    "bool",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "gross_rev",
+  "ain": [
+   "data",
+   1
+  ],
+  "aout": [
+   "data",
+   2
+  ]
+ },
+ "0x9c45db89e530035bcb2e1d6a8c5526097f83283b8c1938f69ee5ffff9ae133ca": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ },
+ "0x0a3279173ae79e514355394a631c9ff226a83934a08c0703301aaccd3a8afa70": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event_flow_out",
+  "tin": [
+   "data",
+   0
+  ],
+  "ain": [
+   "data",
+   2
+  ],
+  "tout": [
+   "data",
+   1
+  ]
+ },
+ "0x2251435bd151cd72851a82be055bf6d1c3d7f34d08d56493dddf874229b8e897": {
+  "kind": "TransitSwapped",
+  "types": {
+   "indexed": [
+    "address",
+    "address",
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "uint256",
+    "bytes32"
+   ]
+  },
+  "st": "event",
+  "tin": [
+   "indexed",
+   0
+  ],
+  "ain": [
+   "data",
+   0
+  ],
+  "tout": [
+   "indexed",
+   1
+  ],
+  "aout": [
+   "data",
+   1
+  ],
+  "sentinel": true
+ },
+ "0x6bef5eec9bc0ce6168c21a5cfb879d8b7dd72ef58d698042cd16112a52a7daa3": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "address",
+    "uint256",
+    "address",
+    "address",
+    "uint256",
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "event_auto_dir",
+  "cand": [
+   [
+    [
+     "data",
+     2
+    ],
+    [
+     "data",
+     4
+    ]
+   ],
+   [
+    [
+     "data",
+     3
+    ],
+    [
+     "data",
+     5
+    ]
+   ]
+  ],
+  "trader": [
+   "indexed",
+   0
+  ]
+ },
+ "0xe1010d0ab476908054981d12fbb96915efcceb8d57a09ae8ca62f4bda7318373": {
+  "kind": "Swap",
+  "types": {
+   "indexed": [],
+   "data": [
+    "address[]",
+    "uint256[]",
+    "address"
+   ]
+  },
+  "st": "array"
+ },
+ "0x6d32c49713283fb5a97cce0721fc538d74432a839930d49ddb15a199f6cb44c3": {
+  "kind": null,
+  "types": {
+   "indexed": [
+    "address"
+   ],
+   "data": [
+    "uint256",
+    "uint256"
+   ]
+  },
+  "st": "flows",
+  "ain": [
+   "data",
+   0
+  ],
+  "aout": [
+   "data",
+   1
+  ]
+ }
+}

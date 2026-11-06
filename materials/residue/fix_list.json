@@ -1,0 +1,1383 @@
+[
+ {
+  "topic": "0x0e9201911743fd4d03e146f00ad23945dc8f3ffc200906eff25179a52b726f17",
+  "pack": "b",
+  "name": "RangoSwap(address,address,address,uint256,uint256,uint16,uint256,address,string)",
+  "category": "token_mismatch",
+  "issue": "金額は両側とも実レシートに厳密一致するが、形式の token_in/out が別の語を指している",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "requestId",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other",
+     "description": "request identifier"
+    },
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "data",
+     "index": 0,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "recipient",
+     "source": "data",
+     "index": 1,
+     "type": "address",
+     "meaning": "other",
+     "description": "output recipient"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "minAmountOut",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "other",
+     "description": "minimum output limit"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 4,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "affiliateFee",
+     "source": "data",
+     "index": 5,
+     "type": "uint16",
+     "meaning": "fee"
+    },
+    {
+     "name": "affiliateFeeAmount",
+     "source": "data",
+     "index": 6,
+     "type": "uint256",
+     "meaning": "fee"
+    },
+    {
+     "name": "affiliate",
+     "source": "data",
+     "index": 7,
+     "type": "address",
+     "meaning": "other",
+     "description": "affiliate address"
+    },
+    {
+     "name": "dAppName",
+     "source": "data",
+     "index": 8,
+     "type": "string",
+     "meaning": "other",
+     "description": "origin dApp name string offset"
+    }
+   ]
+  },
+  "sample_tx": "0xe218769062ebfebe8ef494a84976451e605d8f6cc96e5aa495bc2df486a43878",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0xa98f07efc4d0a837f30fe354a44231615ea1ef631a52a1c83fa7c19b5128dd0f",
+  "pack": "b",
+  "name": "Swap(address,address,uint256,uint256,int256,int256,uint256,uint256)",
+  "category": "token_mismatch",
+  "issue": "amount_in が別トークンの Transfer と一致し、amount_out が自称 token_in の Transfer と一致（in/out 割当の入替）",
+  "claimed_format": {
+   "indexed": 0,
+   "fields": [
+    {
+     "name": "bToken",
+     "source": "data",
+     "index": 0,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "recipient",
+     "source": "data",
+     "index": 1,
+     "type": "address",
+     "meaning": "other",
+     "description": "recipient of swap proceeds"
+    },
+    {
+     "name": "initialPrice",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "other",
+     "description": "initial pool price before swap"
+    },
+    {
+     "name": "finalPrice",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "other",
+     "description": "final pool price after swap"
+    },
+    {
+     "name": "bTokenDelta",
+     "source": "data",
+     "index": 4,
+     "type": "int256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "reserveDelta",
+     "source": "data",
+     "index": 5,
+     "type": "int256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "floor",
+     "source": "data",
+     "index": 6,
+     "type": "uint256",
+     "meaning": "other",
+     "description": "floor price level"
+    },
+    {
+     "name": "fee",
+     "source": "data",
+     "index": 7,
+     "type": "uint256",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0xa32a4c08aef549162f926a91021f615fe336a430b4397a6418b85ffbc39d5c9a",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0x365f10e9e7ce45d7acfd986c42e0b666f8af282e440e6dafc78c1f2b2f786760",
+  "pack": "b",
+  "name": "HookSwap(bytes32,address,int128,int128,uint128,uint128)",
+  "category": "token_mismatch",
+  "issue": "amount_out は別トークンの Transfer と厳密一致。amount_in は未一致",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "poolId",
+     "source": "topic",
+     "index": 1,
+     "type": "bytes32",
+     "meaning": "other",
+     "description": "Uniswap v4 pool ID"
+    },
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "other",
+     "description": "swap caller"
+    },
+    {
+     "name": "amount0",
+     "source": "data",
+     "index": 0,
+     "type": "int128",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amount1",
+     "source": "data",
+     "index": 1,
+     "type": "int128",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "hookLPfee0",
+     "source": "data",
+     "index": 2,
+     "type": "uint128",
+     "meaning": "fee"
+    },
+    {
+     "name": "hookLPfee1",
+     "source": "data",
+     "index": 3,
+     "type": "uint128",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0x177454580fb65f24f5a34ec01289115fa016912440b8529b35bc457f50a80e14",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0xb280b2fd9334458c7b5a2343837fec55db58deb4c932372b74fa588e170cce6d",
+  "pack": "c",
+  "name": "CoinBuy(address,address,address,uint256,address,uint256,uint256)",
+  "category": "token_mismatch",
+  "issue": "両金額とも厳密一致。ただし自称 token_out は address(0) で、実際の out トークンは別",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "buyer",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other"
+    },
+    {
+     "name": "recipient",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "other"
+    },
+    {
+     "name": "coin",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountCoin",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "paymentToken",
+     "source": "data",
+     "index": 1,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "fee",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "fee"
+    },
+    {
+     "name": "paymentAmount",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "amount_in"
+    }
+   ]
+  },
+  "sample_tx": "0x3087917e78621c4065667f9dc28aec1dcfbba502d00a428d2cb4430dfe9d6250",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0x9d5b7f31c5338a7ece1b4343740b50239e6bddaff0fc515a8a4a0644088536e1",
+  "pack": "c",
+  "name": "Sold(address,uint256,uint256,uint256,address)",
+  "category": "token_mismatch",
+  "issue": "両金額とも厳密一致。token_in の指す語が実際の in トークンと違う",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "seller",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other"
+    },
+    {
+     "name": "token",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenAmount",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "proceeds",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "fee",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0x4cf574be870687fd3b1b7c86a4e290a00a9533d7f87fa4fbe7357ceb820ccc77",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0xdba43ee9916cb156cc32a5d3406e87341e568126a46815294073ba25c9400246",
+  "pack": "a",
+  "name": "Swap(address,address,address,address,uint256,uint256,uint256)",
+  "category": "token_mismatch",
+  "issue": "amount_out が token_in の Transfer と厳密一致、amount_in はその 1e-9（in/out 入替＋単位）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "recipient",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other:recipient"
+    },
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "caller",
+     "source": "data",
+     "index": 0,
+     "type": "address",
+     "meaning": "other:caller"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "fee",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0xd24c7dc0e428061c112c047ab304f2eca7b18ac3e75e173b9f85a6763a4ed51e",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0x8619026a40d38bedb4002fe511cea4bc4a9b336710efe8f21a61869a7ee0f02a",
+  "pack": "a",
+  "name": "Swap(address,address,address,uint256,uint256,(uint8,address,address,address,uint24,int24,address,bytes,address,bytes32)[])",
+  "category": "token_mismatch",
+  "issue": "amount_out は別トークンの Transfer と厳密一致（自称 token_out は address(0)）。amount_in は送金の 1.01 倍（手数料込みの疑い）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other:sender"
+    },
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "routes_offset",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "other:routes_offset"
+    },
+    {
+     "name": "routes_data",
+     "source": "data",
+     "index": 3,
+     "type": "bytes",
+     "meaning": "other:routes_payload"
+    }
+   ]
+  },
+  "sample_tx": "0x165cf28df82c3a3dcaa6f9c44cedac09e360340faf54bbef34944625ad5a4e3f",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0x3145c7c5a7804148dd68148a26f9f6a2ad2816be643e0f456290a8b81b9c5154",
+  "pack": "a",
+  "name": "Swap(address,address,address,uint256,uint256,(uint8,address,address,address,uint24,int24,address,bytes)[])",
+  "category": "token_mismatch",
+  "issue": "amount_out は別トークンの Transfer と厳密一致。amount_in は単位ずれ（1e15 倍の Transfer が存在）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other:sender"
+    },
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "routes_offset",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "other:routes_offset"
+    },
+    {
+     "name": "routes_data",
+     "source": "data",
+     "index": 3,
+     "type": "bytes",
+     "meaning": "other:routes_payload"
+    }
+   ]
+  },
+  "sample_tx": "0xf21c3e04642ca9cc45b787700a03f16687041b986d708a08fda83f01c8dcadc3",
+  "fix_needed": "サンプル実測で token_in/token_out の正しい語を特定し直す（金額の語は正しい前提）"
+ },
+ {
+  "topic": "0xfa2dda1cc1b86e41239702756b13effbc1a092b5c57e3ad320fbe4f3b13fe235",
+  "pack": "b",
+  "name": "Swap(address,address,uint256,uint256)",
+  "category": "oneside",
+  "issue": "amount_in は厳密一致。amount_out のみ未一致（手数料・分割の余地）",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    }
+   ]
+  },
+  "sample_tx": "0x4a3e3a91aa6981cbbf63ccf72675b3494793f773663a8a0b0d10d18e388d052c",
+  "fix_needed": "未一致側の金額の意味（手数料控除・分割・msgvalue）をサンプルで確定する"
+ },
+ {
+  "topic": "0x692315744755ee6d80decaeb993d4b1bb95ff5db042cc47b32d5a7d858b01902",
+  "pack": "b",
+  "name": "Swapped(address,address,uint256,address,uint256)",
+  "category": "oneside",
+  "issue": "amount_in は厳密一致。amount_out のみ未一致",
+  "claimed_format": {
+   "indexed": 0,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "data",
+     "index": 0,
+     "type": "address",
+     "meaning": "other",
+     "description": "caller address"
+    },
+    {
+     "name": "tokenIn",
+     "source": "data",
+     "index": 1,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "data",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 4,
+     "type": "uint256",
+     "meaning": "amount_out"
+    }
+   ]
+  },
+  "sample_tx": "0x061c226acbb6ea0ea2c5d1ae6b4859a84f4bfcf7cc5e2e8e97f0ba070440bf5e",
+  "fix_needed": "未一致側の金額の意味（手数料控除・分割・msgvalue）をサンプルで確定する"
+ },
+ {
+  "topic": "0xab5ce61cc1108f6c770a3f1c268c5be3f795d9d805e8a5445a4b480323f5612f",
+  "pack": "b",
+  "name": "SimpleSwapped(address,address,address,uint256,uint256,address)",
+  "category": "oneside",
+  "issue": "amount_out は厳密一致。amount_in（ネイティブ表示 0xeeee…）が未一致（msgvalue の可能性）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other",
+     "description": "caller address"
+    },
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "receiver",
+     "source": "data",
+     "index": 2,
+     "type": "address",
+     "meaning": "other",
+     "description": "receiver address"
+    }
+   ]
+  },
+  "sample_tx": "0x590f00be02ecaa3c6838b7e289bf53b955bbba55b637508376f920fb62d224e7",
+  "fix_needed": "未一致側の金額の意味（手数料控除・分割・msgvalue）をサンプルで確定する"
+ },
+ {
+  "topic": "0x0fe977d619f8172f7fdbe8bb8928ef80952817d96936509f67d66346bc4cd10f",
+  "pack": "b",
+  "name": "Swap(address,address,uint24,bool,uint256,uint256,int24)",
+  "category": "oneside",
+  "issue": "amount_out は厳密一致。amount_in は Transfer と近傍だが不一致（相対差 3e-6、手数料差の疑い）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "fee",
+     "source": "topic",
+     "index": 3,
+     "type": "uint24",
+     "meaning": "fee"
+    },
+    {
+     "name": "zeroForOne",
+     "source": "data",
+     "index": 0,
+     "type": "bool",
+     "meaning": "other",
+     "description": "direction flag: token0 to token1"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "tick",
+     "source": "data",
+     "index": 3,
+     "type": "int24",
+     "meaning": "other",
+     "description": "ending pool tick"
+    }
+   ]
+  },
+  "sample_tx": "0xc07f6eda3e67140f7b59eb4ea55755df4b6113b2d189bb56e1df2aa54a55850e",
+  "fix_needed": "未一致側の金額の意味（手数料控除・分割・msgvalue）をサンプルで確定する"
+ },
+ {
+  "topic": "0xad671c9d50262b75ba17bdf7e330ae0d7da971800b2526584a85f83d23296b15",
+  "pack": "c",
+  "name": "SwapExecuted(address,address,address,uint256,uint256,uint256)",
+  "category": "oneside",
+  "issue": "amount_out は厳密一致。amount_in は 0.1 ETH のネイティブ（msgvalue 候補で照合不能だった）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "user",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other"
+    },
+    {
+     "name": "tokenIn",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "minAmountOut",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "other"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_out"
+    }
+   ]
+  },
+  "sample_tx": "0x21922802df4b1f0a4b1ba57cf707409f6b1e90abc5942e6e4ed3f1788d3c3b60",
+  "fix_needed": "未一致側の金額の意味（手数料控除・分割・msgvalue）をサンプルで確定する"
+ },
+ {
+  "topic": "0xc528cda9e500228b16ce84fadae290d9a49aecb17483110004c5af0a07f6fd73",
+  "pack": "a",
+  "name": "Swap(address,address,uint256,bool,uint256,uint256,uint256,uint256)",
+  "category": "unit",
+  "issue": "両金額とも Transfer の約 1/100・桁違い（単位ずれの疑い）",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other:sender"
+    },
+    {
+     "name": "recipient",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "other:recipient"
+    },
+    {
+     "name": "id",
+     "source": "topic",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "other:bin_id"
+    },
+    {
+     "name": "swapForY",
+     "source": "data",
+     "index": 0,
+     "type": "bool",
+     "meaning": "other:direction"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "volatilityAccumulator",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "other:volatilityAccumulator"
+    },
+    {
+     "name": "fees",
+     "source": "data",
+     "index": 4,
+     "type": "uint256",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0xa0f5a582a3dc11c5480f6954fda7a2f351e593a144d95dca6aed1a4571dbfbf0",
+  "fix_needed": "金額の単位・縮尺（decimals 差・パック語）を特定する"
+ },
+ {
+  "topic": "0xad7d6f97abf51ce18e17a38f4d70e975be9c0708474987bb3e26ad21bd93ca70",
+  "pack": "b",
+  "name": "Swap(address,address,uint24,bytes32,bytes32,uint24,bytes32,bytes32)",
+  "category": "unit",
+  "issue": "amount_out は厳密一致。amount_in の語は金額ではない（パック語・ハッシュの疑い）—形式側の誤りの可能性が高い",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other",
+     "description": "swap caller"
+    },
+    {
+     "name": "to",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "other",
+     "description": "recipient of swap output"
+    },
+    {
+     "name": "id",
+     "source": "data",
+     "index": 0,
+     "type": "uint24",
+     "meaning": "other",
+     "description": "active bin id"
+    },
+    {
+     "name": "amountsIn",
+     "source": "data",
+     "index": 1,
+     "type": "bytes32",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountsOut",
+     "source": "data",
+     "index": 2,
+     "type": "bytes32",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "volatilityAccumulator",
+     "source": "data",
+     "index": 3,
+     "type": "uint24",
+     "meaning": "other",
+     "description": "volatility accumulator value"
+    },
+    {
+     "name": "totalFees",
+     "source": "data",
+     "index": 4,
+     "type": "bytes32",
+     "meaning": "fee"
+    },
+    {
+     "name": "protocolFees",
+     "source": "data",
+     "index": 5,
+     "type": "bytes32",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0x30fd63eb59ecd69ff6cfeeb0b0afa892bc96087f373a5afa47e3bc647bc02610",
+  "fix_needed": "金額の単位・縮尺（decimals 差・パック語）を特定する"
+ },
+ {
+  "topic": "0x627892cdf8066c17932571d7916884f22f3b911facbe7b6f37e8877c58242105",
+  "pack": "a",
+  "name": "TokensSwapped(address,address,uint256[],uint256[],uint256[],uint256[],uint256[],uint256[])",
+  "category": "unit",
+  "issue": "両側とも未一致。サンプル内の送金が少なく、金額の出所が不明",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "swapper",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other:swapper"
+    },
+    {
+     "name": "recipient",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "other:recipient"
+    },
+    {
+     "name": "tokenIdsIn_offset",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "other:tokenIdsIn_offset"
+    },
+    {
+     "name": "tokenAmountsIn_offset",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "other:tokenAmountsIn_offset"
+    },
+    {
+     "name": "tokenIdsOut_offset",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "other:tokenIdsOut_offset"
+    },
+    {
+     "name": "tokenAmountsOut_offset",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "other:tokenAmountsOut_offset"
+    },
+    {
+     "name": "currencyReceived_offset",
+     "source": "data",
+     "index": 4,
+     "type": "uint256",
+     "meaning": "other:currencyReceived_offset"
+    },
+    {
+     "name": "sellFeeAmounts_offset",
+     "source": "data",
+     "index": 5,
+     "type": "uint256",
+     "meaning": "other:sellFeeAmounts_offset"
+    },
+    {
+     "name": "tokenAmountsIn",
+     "source": "data",
+     "index": 9,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "currencyReceived",
+     "source": "data",
+     "index": 15,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "sellFeeAmount",
+     "source": "data",
+     "index": 17,
+     "type": "uint256",
+     "meaning": "fee"
+    }
+   ]
+  },
+  "sample_tx": "0xbc67bcac082dcd1ad92a3c6d16751a31f7efadc5944fbd9432ba6cd9fa50c631",
+  "fix_needed": "金額の単位・縮尺（decimals 差・パック語）を特定する"
+ },
+ {
+  "topic": "0x76af224a143865a50b41496e1a73622698692c565c1214bc862f18e22d829c5e",
+  "pack": "b",
+  "name": "Swapped(address,address,address,address,uint256,uint256,uint256,uint256,uint256,address)",
+  "category": "unit",
+  "issue": "amount_in は厳密一致。amount_out は in と同額の計上（1:1 ラップ会計型）で実送金と一致しない",
+  "claimed_format": {
+   "indexed": 3,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other",
+     "description": "swap initiator"
+    },
+    {
+     "name": "inputToken",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "outputToken",
+     "source": "topic",
+     "index": 3,
+     "type": "address",
+     "meaning": "token_out"
+    },
+    {
+     "name": "receiver",
+     "source": "data",
+     "index": 0,
+     "type": "address",
+     "meaning": "other",
+     "description": "output recipient"
+    },
+    {
+     "name": "inputAmount",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "minAmountOut",
+     "source": "data",
+     "index": 3,
+     "type": "uint256",
+     "meaning": "other",
+     "description": "minimum output limit"
+    },
+    {
+     "name": "expectedAmountOut",
+     "source": "data",
+     "index": 4,
+     "type": "uint256",
+     "meaning": "other",
+     "description": "expected amount out"
+    },
+    {
+     "name": "swapFee",
+     "source": "data",
+     "index": 5,
+     "type": "uint256",
+     "meaning": "fee"
+    },
+    {
+     "name": "referral",
+     "source": "data",
+     "index": 6,
+     "type": "address",
+     "meaning": "other",
+     "description": "referral address"
+    }
+   ]
+  },
+  "sample_tx": "0x27ce2010bf44cf0c0ef497fb261ea9449f2913e60155b46e31ae95bb0d3be039",
+  "fix_needed": "金額の単位・縮尺（decimals 差・パック語）を特定する"
+ },
+ {
+  "topic": "0x4d3257edb95914b701655f9bf4b58e4b422017a7b94dad03a20dae00f4b1cbb7",
+  "pack": "c",
+  "name": "SwapExecuted(uint256,uint256,uint256)",
+  "category": "polymorphic",
+  "issue": "発行元で形が違う（支配的発行元は indexed 1、パックのサンプルは indexed 0）。発行元別の形式が要る",
+  "claimed_format": {
+   "indexed": 1,
+   "fields": [
+    {
+     "name": "id",
+     "source": "topic",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "other"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    }
+   ]
+  },
+  "sample_tx": "0x0fbc58dd16b22b748b53a3912a903cf9d5936a5ac9e1811255b4568978665739",
+  "fix_needed": "発行元ごとに形式を分けて記録する"
+ },
+ {
+  "topic": "0xf23fb97e8642200d71532c9c5ae884a9236ca6b8eb58fed071a7cc3f2ac4161d",
+  "pack": "a",
+  "name": "Swap(address,address,address[],uint256,uint256,uint8,uint256,address)",
+  "category": "manual",
+  "issue": "複数イベント・複数送金が絡み自動照合で決着せず。手作業トレース要",
+  "claimed_format": {
+   "indexed": 2,
+   "fields": [
+    {
+     "name": "sender",
+     "source": "topic",
+     "index": 1,
+     "type": "address",
+     "meaning": "other:sender"
+    },
+    {
+     "name": "recipient",
+     "source": "topic",
+     "index": 2,
+     "type": "address",
+     "meaning": "other:recipient"
+    },
+    {
+     "name": "path_offset",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "other:path_offset"
+    },
+    {
+     "name": "amountIn",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amountOut",
+     "source": "data",
+     "index": 2,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "flag",
+     "source": "data",
+     "index": 3,
+     "type": "uint8",
+     "meaning": "other:flag"
+    },
+    {
+     "name": "minAmountOut",
+     "source": "data",
+     "index": 4,
+     "type": "uint256",
+     "meaning": "other:minAmountOut"
+    },
+    {
+     "name": "to",
+     "source": "data",
+     "index": 5,
+     "type": "address",
+     "meaning": "other:to"
+    },
+    {
+     "name": "path_len",
+     "source": "data",
+     "index": 6,
+     "type": "uint256",
+     "meaning": "other:path_len"
+    },
+    {
+     "name": "tokenIn",
+     "source": "data",
+     "index": 7,
+     "type": "address",
+     "meaning": "token_in"
+    },
+    {
+     "name": "tokenOut",
+     "source": "data",
+     "index": 8,
+     "type": "address",
+     "meaning": "token_out"
+    }
+   ]
+  },
+  "sample_tx": "0xc86f7fc0bc938526de19378fafe81fdf98ce685fb9edbb901918f042e4bed998",
+  "fix_needed": "サンプル tx を手で全レグ追跡して金額の対応を確定する"
+ },
+ {
+  "topic": "0x6af07fec27a8c155131e72c96138ede7f9087476d47e469a69839c8bf3261e4a",
+  "pack": "c",
+  "name": "Swapped(uint256,uint256,uint160,uint160)",
+  "category": "manual",
+  "issue": "金額が送金の合計に近いが厳密一致しない（約 0.6% 差）。手作業トレース要",
+  "claimed_format": {
+   "indexed": 0,
+   "fields": [
+    {
+     "name": "amount0",
+     "source": "data",
+     "index": 0,
+     "type": "uint256",
+     "meaning": "amount_in"
+    },
+    {
+     "name": "amount1",
+     "source": "data",
+     "index": 1,
+     "type": "uint256",
+     "meaning": "amount_out"
+    },
+    {
+     "name": "sqrtPriceX96",
+     "source": "data",
+     "index": 2,
+     "type": "uint160",
+     "meaning": "other"
+    },
+    {
+     "name": "liquidity",
+     "source": "data",
+     "index": 3,
+     "type": "uint160",
+     "meaning": "other"
+    }
+   ]
+  },
+  "sample_tx": "0x5d556be536121f9af06aa2ac2d9c9e0906341290b3e6ad1cac77dfb176ce86d2",
+  "fix_needed": "サンプル tx を手で全レグ追跡して金額の対応を確定する"
+ },
+ {
+  "topic": "0xfd53b5d2be8149b740c4dfbcef47be8d9238845e12dde6237a24765a2cbf1b5d",
+  "pack": "a",
+  "name": "Swap(bytes32,uint8,address,address,address,uint256,uint256,uint256,int256,uint256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other:id', 'other:dex', 'other:swapper', 'token_in', 'token_out', 'amount_in', 'amount_out', 'other:minAmountOut', 'other:tier', 'other:deadline']）",
+  "sample_tx": null,
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0x68d2d9ac11f4244eb2dd3ff0c821057cdfd46c8fbd10af187298a53334315bac",
+  "pack": "b",
+  "name": "FlashSwapHandled(bytes32,address,address,address,address,address,uint256,uint256,uint256,uint256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'token_in', 'token_out', 'other', 'other', 'other', 'amount_in', 'amount_out', 'fee', 'fee']）",
+  "sample_tx": "0x677e01a0db028c24cfddf51aee998344c20fcb4ec1c6dbe355fa98319623e1ca",
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0x35001030bac7516ed5b1daf42bbfd3eaf587acc70c90f7f00ee42d5a34d75233",
+  "pack": "b",
+  "name": "PoolSwap(bytes32,int256,int256,int256,int256,int256,int256,int256,int256,int256,int256,int256,int256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'amount_in', 'amount_out', 'other', 'other', 'other', 'other', 'other', 'other', 'other', 'other', 'other', 'other']）",
+  "sample_tx": "0xc9f3a949666c5d1406857147b30962b9a71092e078513b630388e602766099c0",
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0xbf511038cfa32cfb7971e976074c0e6aeda010e6afcbb38d87b4f91030501494",
+  "pack": "b",
+  "name": "Swapped(bool,int256,int256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'amount_in', 'amount_out']）",
+  "sample_tx": "0x5b85e054b1f649bf4494191a6be17f352125bb7694cc0f3ec56a5c378909dbba",
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0xbfd50a04f1e6e4aee344f5d0e7f15d74d0dbb58cd1f711daa6463094ca9508cd",
+  "pack": "b",
+  "name": "Swap(address,bool,uint256,uint256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'other', 'amount_in', 'amount_out']）",
+  "sample_tx": "0xd91cdf5a9f31ae5dc83f125a83705ee038ef050dbd37e0c451610e74b3447990",
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0xb52233096efdadd1f841ef42312c9d50e3d7e1fee8f5bd58c34336b6376ffdd2",
+  "pack": "c",
+  "name": "SwapExecuted(address,address,address,address,address,uint256,uint256,uint256,address,uint256,string)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'token_in', 'token_out', 'other', 'other', 'amount_in', 'amount_out', 'fee', 'other', 'fee', 'other', 'other', 'other']）",
+  "sample_tx": null,
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0xea9d2d31b34087ee14504ff4c6722566e9163aff8cc95f6e280dc6f4e08514d4",
+  "pack": "c",
+  "name": "Swapped((address,address,address,address,address,uint24,uint256,uint256,uint256,uint256))",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'other', 'other', 'token_in', 'token_out', 'fee', 'amount_in', 'amount_out', 'other', 'other']）",
+  "sample_tx": null,
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0x881cb06ae984d9e71db210f224332d1183c2b2c30010e4aea15ef8bf02901932",
+  "pack": "c",
+  "name": "Swap(uint8,uint256,uint256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'amount_in', 'amount_out']）",
+  "sample_tx": null,
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0xb5e64f967a9524d6a50602ad4833db0fde476f580ac0fe92952de19573884a69",
+  "pack": "c",
+  "name": "SplitSwapExecuted(address,address,address,uint256,uint256,uint256,uint256)",
+  "category": "unchecked",
+  "issue": "照合不能だった（形式の意味付け: ['other', 'token_in', 'token_out', 'amount_in', 'amount_out', 'amount_out', 'fee']）",
+  "sample_tx": null,
+  "fix_needed": "金額フィールドの意味付け（amount_in/out への対応）をサンプルで確定する"
+ },
+ {
+  "topic": "0x9bac37bc1cd52b4c1682c957aeea74388700042376fcfec42cccfc69d73819e8",
+  "pack": "c",
+  "name": "FallbackSwap(address,address,address,uint256,uint8,uint8)",
+  "category": "no_format",
+  "issue": "swap 判定だが形式が成果物に含まれていなかった",
+  "fix_needed": "サンプルと署名から形式を導出する"
+ }
+]

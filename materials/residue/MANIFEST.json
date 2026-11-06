@@ -1,0 +1,50 @@
+{
+ "ADAPTER_SPEC.md": {
+  "bytes": 4405,
+  "sha256": "bc78a868a4752cf9b2fc907581654f52825bdd917805ec710794ee44fba6fc7e"
+ },
+ "FIX_LIST.md": {
+  "bytes": 14402,
+  "sha256": "bc61d3a0076f6ad1945134abcc8b7d999ced81541bf7a0cce43469f01dd7e21f"
+ },
+ "NOTES_adapter.md": {
+  "bytes": 11485,
+  "sha256": "5a55dc2ec81bee03b3b7163eb38033e1ab8e49365cf309d7b1b05c5371d9eb18"
+ },
+ "adapter_families.json": {
+  "bytes": 301,
+  "sha256": "ff4d5945fb2e89bf7b06b7961ce4086dfbd3feb6b7857e0d502320e42740e20b"
+ },
+ "adapter_readers.json": {
+  "bytes": 22770,
+  "sha256": "f5248993df75432f37c2347c6db736c49ecb60658bd91e2d404081274cfff86d"
+ },
+ "amount_check.json": {
+  "bytes": 10961,
+  "sha256": "26aa5ceaa9cd7e69324a944e088270486e234b04b97e7ce777ff522082228aeb"
+ },
+ "decode_chunk.py": {
+  "bytes": 61681,
+  "sha256": "a539b32082287ee87e9580981fa3e392aa4d63d5b61787ef21677c0c4adf3373"
+ },
+ "fix_list.json": {
+  "bytes": 36649,
+  "sha256": "44552e1481a937ee5d897a6df438ece36be891ce1791f7262ce9345fb773174a"
+ },
+ "formats_accepted.json": {
+  "bytes": 47770,
+  "sha256": "046c70c8cde578498c13095b1d3794ca4657539de04678d26e79fbdf4872808e"
+ },
+ "formats_verified42.json": {
+  "bytes": 2061,
+  "sha256": "e51368e0a5b6996daab6f3d2ee49be48d2ecbe3b2a6ddd608eb021fabd194d80"
+ },
+ "samples_adapter.json": {
+  "bytes": 247129,
+  "sha256": "72b8ef57433f4e8dfe8fb8e57fb5762b19f7be9513b5ba59fa780b60af9652ad"
+ },
+ "samples_enriched.json": {
+  "bytes": 441388,
+  "sha256": "1fc2c95a2bc7d64f04f6f245acb683aaac367ecef526574d4c05e0ffd2d42701"
+ }
+}

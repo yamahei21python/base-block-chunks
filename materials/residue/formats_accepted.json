@@ -1,0 +1,2711 @@
+{
+ "0xe0c1b141a85ba7f8df7ded19a02a004b049d9e0a67f9dea87186c07bce3923b0": {
+  "name": "Trade",
+  "indexed": [
+   {
+    "name": "trader",
+    "type": "address"
+   },
+   {
+    "name": "token",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOutNet",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x673ff070bec3aea00f2fa45c0f7ed58c227af4a03a626e01fe29b34d3b9ecfdb": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "poolAssetIn",
+    "type": "bool"
+   },
+   {
+    "name": "amountInUsed",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "feeOut",
+    "type": "uint256"
+   },
+   {
+    "name": "feeWad",
+    "type": "uint256"
+   },
+   {
+    "name": "spotAfterWad",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x853c8e677490312983a1757c837355487031d90920d260d439269c024de030c2": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "user",
+    "type": "address"
+   },
+   {
+    "name": "target",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ]
+ },
+ "0x9ec2cbdc7c510df38f982d15dfab2db2ba557c382afbec908ed154dfb83b1fcb": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "recipient",
+    "type": "address"
+   },
+   {
+    "name": "swapType",
+    "type": "uint8"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x5a417e3ceaff68360f7300df6686a9d417ae12328724de7bc2fd6c012a2ffa85": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x086c7fcd1952b421cc49f207e360cef93dead3f9caa1d6eb4b0e51bb58367738": {
+  "name": "StableSwap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "adminFee",
+    "type": "uint256"
+   },
+   {
+    "name": "virtualPrice",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xa4228e1eb11eb9b31069d9ed20e7af9a010ca1a02d4855cee54e08e188fcc32c": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amount0",
+    "type": "int256"
+   },
+   {
+    "name": "amount1",
+    "type": "int256"
+   }
+  ]
+ },
+ "0xee4825a7988c5519a874be79f2a84d13d02cfe5f74cad97cda2d5b55d2b13bfa": {
+  "name": "SwapExecuted",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ]
+ },
+ "0x77f92a1b6a1a11de8ca49515ad4c1fad45632dd3442167d74b90b304a3c7a758": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x4aa9c8b0c9a939db1d9261ba132e6ad5bc8390e89cb6ac192c10f4ca67f49e40": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "by",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "zeroForOne",
+    "type": "bool"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x6e897e83b2ea962118c2abaeb4ffb85a1a63da2c8f1880660079b88983900d84": {
+  "name": "SwapExecuted",
+  "indexed": [
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "minAmountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xc9b356cd595a52e855855ac43eae98058d001ef4f0895fc098509ad2f2fe7cad": {
+  "name": "Traded",
+  "indexed": [
+   {
+    "name": "trader",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xc3faa507a9ab633f4bcaa2ce7ce398b983462987263703015679a34a54db95a6": {
+  "name": "SwappedTokenToBase",
+  "indexed": [],
+  "data": [
+   {
+    "name": "tokensSwapped",
+    "type": "uint256"
+   },
+   {
+    "name": "baseReceived",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x8bec65d6ee5a26ecf71caf53f9585123357a7a9e9557638044890bfbe708abc3": {
+  "name": "Trade",
+  "indexed": [
+   {
+    "name": "user",
+    "type": "address"
+   },
+   {
+    "name": "token",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "isBuy",
+    "type": "bool"
+   },
+   {
+    "name": "tokenAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "baseAmount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xc3e764298a9fad13823b73a0d08df8366d14e2b62920b94b42c635f0ddd0d7b4": {
+  "name": "SwappedExactAmountOut",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "receiver",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "maxAmountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ]
+ },
+ "0x1560b71ca6695825842f12e8721dc7f437286c08deb7c7ebc708bb3bdc3d01c5": {
+  "name": "StockBought",
+  "indexed": [
+   {
+    "name": "buyer",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "ethSpent",
+    "type": "uint256"
+   },
+   {
+    "name": "stockReceived",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xee524511e0afdb415a78a457a9fb0be80c11f2d7d2bbec13af282afd933923f9": {
+  "name": "Bought",
+  "indexed": [
+   {
+    "name": "buyer",
+    "type": "address"
+   },
+   {
+    "name": "token",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountPaid",
+    "type": "uint256"
+   },
+   {
+    "name": "tokensReceived",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "price",
+    "type": "uint256"
+   },
+   {
+    "name": "timestamp",
+    "type": "uint256"
+   },
+   {
+    "name": "nonce",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x6db63bebf1e6540277744df32846ebdb98385b1a73f2d5de49b28348add63f50": {
+  "name": "TokensSold",
+  "indexed": [
+   {
+    "name": "buyer",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountOfTokensSold",
+    "type": "uint256"
+   },
+   {
+    "name": "cost",
+    "type": "uint256"
+   },
+   {
+    "name": "price",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x2ad8739d64c070ab4ae9d9c0743d56550b22c3c8c96e7a6045fac37b5b8e89e3": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amount0In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount0Out",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1Out",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "reserve0",
+    "type": "uint256"
+   },
+   {
+    "name": "reserve1",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x4e10ec2896c1df89b9597b5fdf91d1005fe1c886d92335c5e7f6584a5b8b906e": {
+  "name": "Swaped",
+  "indexed": [],
+  "data": [
+   {
+    "name": "txOrigin",
+    "type": "address"
+   },
+   {
+    "name": "amount0In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount0Out",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1Out",
+    "type": "uint256"
+   },
+   {
+    "name": "blockTime",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x7097fd230786f36f04beadb5ecc281def4e8c63bfda0994292c1115c4aeb62b4": {
+  "name": "SwapExecuted",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "int256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "routeId",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x7a7e1d68c6a73a4841f6e57bf2d968148c641201d165b651b1fd3a43f270991b": {
+  "name": "Swapped",
+  "indexed": [],
+  "data": [
+   {
+    "name": "zeroForOne",
+    "type": "bool"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xa3a2846538c60e47775faa60c6ae79b67dee6d97bb70e386ebbaf4c3a38e8b81": {
+  "name": "SwapYtAndToken",
+  "indexed": [
+   {
+    "name": "caller",
+    "type": "address"
+   },
+   {
+    "name": "market",
+    "type": "address"
+   },
+   {
+    "name": "token",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "receiver",
+    "type": "address"
+   },
+   {
+    "name": "netYtToAccount",
+    "type": "int256"
+   },
+   {
+    "name": "netTokenToAccount",
+    "type": "int256"
+   },
+   {
+    "name": "netSyInterm",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xe1010d0ab476908054981d12fbb96915efcceb8d57a09ae8ca62f4bda7318373": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "path",
+    "type": "address[]"
+   },
+   {
+    "name": "amounts",
+    "type": "uint256[]"
+   },
+   {
+    "name": "receiver",
+    "type": "address"
+   }
+  ]
+ },
+ "0x546b1f988790578dc4043a3d0e3640574a568eb04e498b08ef98518eee574882": {
+  "name": "WEDXswapEvent",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "adapter",
+    "type": "address"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x2afb56853a8b76a0868e64c0001eedd84d9a7f5bc7fb788aba6180e422ba6ec5": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "projectId",
+    "type": "uint256"
+   },
+   {
+    "name": "poolId",
+    "type": "bytes32"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountToSwapWith",
+    "type": "uint256"
+   },
+   {
+    "name": "amountReceived",
+    "type": "uint256"
+   },
+   {
+    "name": "caller",
+    "type": "address"
+   }
+  ]
+ },
+ "0xb8a2a375cd0661da64ed8ab72ba981ae5e21e5d484fb6eaa8e5236ac2111d13c": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint24"
+   },
+   {
+    "name": "minOut",
+    "type": "uint256"
+   },
+   {
+    "name": "out",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x02e8b4141c9c8d09b38fc030dc49203576b5528516547a8d0a44857a93a6ec75": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "ParallelWorld (PUSD/PWC) 系の自動戦略実行コントラクト群（非公開・未検証）",
+  "emitter": "0x20a7847009b2d2e3963f8e9277f3a6532ff76ae3",
+  "indexed": [
+   {
+    "type": "bytes32",
+    "meaning": "strategyId（全サンプルで一定 0x70b7f5c2...42ae）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "連番（0x79a08→0x79a15→0x79a37 と単調増加）"
+   },
+   {
+    "type": "bytes32",
+    "meaning": "オーダー/リクエストID（同txの 0x0d4032a4 発行イベント 0xe25bdb09/0x4fe17c58 の topic2 と同一）"
+   }
+  ],
+  "data": [
+   {
+    "type": "bytes32",
+    "meaning": "strategyRef（直前の戦略イベント topic1 と同一値 0x6b31c708...）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn（スワップ投入量）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut（スワップ取得量）"
+   }
+  ]
+ },
+ "0x0a17ff6a9995a1332a432b8bf852005142714ccfe1f1ccda72a3aba5e9ed408f": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "スワップ実行ラッパー（LI.FI Diamond を内部利用・非公開・未検証）",
+  "emitter": "0x130a401047aed3c56d0fe2669b8c9b42d8d478da",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "tokenIn"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut"
+   }
+  ],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut"
+   }
+  ]
+ },
+ "0x0a3279173ae79e514355394a631c9ff226a83934a08c0703301aaccd3a8afa70": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "Hedgex（HedgexDao）",
+  "emitter": "0xbaa8c0dd620f6411c9cc380140d5d312bcaf2a38",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "呼び出し元（戦略ルータ。tx.to の 0x185deda4 等）"
+   }
+  ],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "tokenIn"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "定数 100（意味未確定。料金/制度パラメータか）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "定数 1（フラグ）"
+   }
+  ]
+ },
+ "0x22aea6cd253f249ce9b7d0a1af21a0eca8bbe111c26bcc705eece987ad4d2105": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "プライベートルータ（UNI→WETH→USDC 等の2ホップ実行、未検証・create2）",
+  "emitter": "0xdf460698e3abae9c26f60a69f207ddc8eff81cc8",
+  "indexed": [
+   {
+    "type": "uint256",
+    "meaning": "ルート/プール識別値（0x65efa87d5f6ca 等）"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenIn（売却トークン）"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut（取得トークン=USDC）"
+   }
+  ],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "amountIn（tokenIn の売却量）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut（tokenOut の取得量）"
+   }
+  ]
+ },
+ "0x2d720abb2e4bf42730e89955397ce0f5b08db0caff9be7e08ca184a8b1b2db2f": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "V4 プール売買ボット（Commonplace トークン等。未検証・6回アップグレードのEIP1967プロキシ）",
+  "emitter": "0xb1000000096bd2f8ca9b6883182eccaf31e7c3fd",
+  "indexed": [],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "direction=1(買): amountIn=ETH（tx.value と一致）/ direction=2(売): amountIn=トークン量（Transfer と一致）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "direction=1: amountOut=取得トークン量（Transfer と一致）/ direction=2: amountOut=WETH 正味量（=総量−w2、総量は Transfer と一致）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "direction=1: 基準量（=amountIn×1%）/ direction=2: 手数料（WETH。w1+w2=Transfer の総量と一致）"
+   },
+   {
+    "type": "address",
+    "meaning": "対向トークン（direction=1: 取得トークン / direction=2: 売却トークン）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "0（未確認）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "方向フラグ（1=WETH→トークン / 2=トークン→WETH）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "0（未確認）"
+   }
+  ]
+ },
+ "0x30f37b38d89bb68b48c0047134ad4233076b12665fb9e4de4561f517825ede76": {
+  "name": "SwapExecuted(address,address,uint256,uint256,uint256,uint256,uint256)",
+  "sig_keccak_verified": true,
+  "protocol": "WalletAutomator（PowerWallet 自動化システム、公式名タグ無し）",
+  "emitter": "0xc109798bb4f3f57bbc3b4d82859daf21b995bf19（サンプル1） / 0x93cf01ef…（サンプル2、同型のユーザー別ウォレット）",
+  "indexed": [],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "tokenA（サンプルでは USDC）"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenB（サンプルでは cbBTC）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "tokenA の量"
+   },
+   {
+    "type": "uint256",
+    "meaning": "tokenB の量"
+   },
+   {
+    "type": "uint256",
+    "meaning": "タイムスタンプ（unix秒）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "補助値（意味未確定）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "補助値（ブロック番号様。意味未確定）"
+   }
+  ]
+ },
+ "0x38367098fb4a75d52361b6c8bda4d52eaeb6dbf04ecb183b39052acd6710bffb": {
+  "name": "Swapped(address,address,uint256,address,uint256,uint256)",
+  "sig_keccak_verified": true,
+  "protocol": null,
+  "emitter": "0x9f12bb8ae3cd5f0d22d096cff984414adcbbee82",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "pool（使用した V3 プール）"
+   }
+  ],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "tokenIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "netAmountOut（手数料控除後の正味取得量。w3 から約1%控除）"
+   }
+  ]
+ },
+ "0x3b789221424f82297b0a955714dad16eca8fbfd3f8704a0220283252d93766ae": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "リバランス/スワップボット（aBasWETH→cbBTC、EURC→USDC + Slipstream LP。2つの同型インスタンス 0x0006f346 / 0x7f6d91d1）",
+  "emitter": "0x0006f3462be7043c594f503602e3a9269b024482",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "tokenIn"
+   }
+  ],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "フラグ（0 または 1）"
+   }
+  ]
+ },
+ "0x4a6de6fb74140040ff5f8a230383d4ce15312512a98da513ec606b8c60c45314": {
+  "name": "Swap(bytes32,address,address,address,address,uint256,address,uint256)",
+  "sig_keccak_verified": true,
+  "protocol": "imToken (GenericSwap)",
+  "emitter": "0xac4f3817a726016fc8254119fc48be838a21f17f",
+  "indexed": [
+   {
+    "type": "bytes32",
+    "meaning": "swapHash（注文識別子）"
+   },
+   {
+    "type": "address",
+    "meaning": "maker（オーダー作成者/実行者 0x4d5eca…）"
+   },
+   {
+    "type": "address",
+    "meaning": "taker（tx.from ユーザー）"
+   }
+  ],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "recipient（受取先）"
+   },
+   {
+    "type": "address",
+    "meaning": "inputToken（0x0 は native）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "inputAmount"
+   },
+   {
+    "type": "address",
+    "meaning": "outputToken（0x0 は native ETH）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "outputAmount"
+   }
+  ]
+ },
+ "0x4f0bfa1a7d099a507fc174e7b5b59654b26d1cf94cdbc9fecb7b8023371a70a2": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "トークン売却サービス（受取先固定 0x00c07f007a...9d000。未検証・V4 PoolManager と相互作用）",
+  "emitter": "0x00012c436240fa0b7286aa85ca098c9fd8cc2000",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "受取先（0x00c07f007a4020625001c6929b1b10001819d000 固定）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "ID（ハッシュ様の値。トークンアドレスではない — 自動監査が捕捉・訂正）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "固定値 6（意味未確定）"
+   }
+  ],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "受取先（idx0 と同値）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn（売却トークン量。トークン自体はイベントに含まれず同txのTransferから特定）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut（WETH量）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "定数 100"
+   },
+   {
+    "type": "uint256",
+    "meaning": "タイムスタンプ（unix秒）"
+   }
+  ]
+ },
+ "0x4fd47c7108c4f49e2398c5159bbd183546a2fca795309705e629fed588852416": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "ホワイトリスト付き V3/V4 スワップルータ（未検証、173日前）",
+  "emitter": "0x9e7243b98a8a9713cb9dc37fe9f18879f0e64dcb",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "対象（プール/実行先 0x54d527f7...007e）"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenIn（USDC）"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut（VIRTUAL）"
+   }
+  ],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "実行スワップ数（2 = V3+V4 の2ホップ）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut"
+   }
+  ]
+ },
+ "0x6bef5eec9bc0ce6168c21a5cfb879d8b7dd72ef58d698042cd16112a52a7daa3": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "EIP1967プロキシ型アグリゲータ（206,934 tx、7回アップグレード、実装未検証）",
+  "emitter": "0x774c69ab32f404e7205ff61779c52d6d2df4062e",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "ユーザー"
+   }
+  ],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "プール"
+   },
+   {
+    "type": "uint256",
+    "meaning": "方向フラグ（0/1）"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenIn"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "プールの終了 sqrtPriceX96（V3 Swap の sqrtPriceX96 と一致）"
+   }
+  ]
+ },
+ "0x6d32c49713283fb5a97cce0721fc538d74432a839930d49ddb15a199f6cb44c3": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "パーソナル売却ボット（MORPHO/Basecat→USDC、 Permit2 経由 V3、バイトコードに 'USD_C_V3_BOUNDS'/'V4_BRIDGE_ROUTER_RESIDUAL'）",
+  "emitter": "0x3e0c83e29f92982754ba7dd03ec596e331b67db5",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "tokenIn"
+   }
+  ],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut（USDC）"
+   }
+  ]
+ },
+ "0x829000a5bc6a12d46e30cdcecd7c56b1efd88f6d7d059da6734a04f3764557c4": {
+  "name": "Swap(address,address,int256,int256,uint256,uint256)",
+  "sig_keccak_verified": true,
+  "protocol": "Pendle (PendleMarketV7)",
+  "emitter": "0x9d91977cba597d910b1755b8acb3b616e3552f17 ほか各市場",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "caller（Pendle Router 0x88888888…）"
+   },
+   {
+    "type": "address",
+    "meaning": "receiver（収受先。RouterV4 の経由先）"
+   }
+  ],
+  "data": [
+   {
+    "type": "int256",
+    "meaning": "netPtOut（PT の増減。正=市場が受け取り）"
+   },
+   {
+    "type": "int256",
+    "meaning": "netSyOut（SY の増減。負=市場が支払い）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "netSyFee"
+   },
+   {
+    "type": "uint256",
+    "meaning": "netSyToReserve（Treasury 0xcbcb48… への送金額と一致）"
+   }
+  ]
+ },
+ "0x9c45db89e530035bcb2e1d6a8c5526097f83283b8c1938f69ee5ffff9ae133ca": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "Coinbase トークン化株式（SNDKc/NVDAc）の売却サービス（未検証）",
+  "emitter": "0x32754c23ca2866824cb3ec86e1d3bb2a21b7b58b",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "アカウント（0x0eb7f079...8a1d 固定。ユーザーまたはオーナー）"
+   },
+   {
+    "type": "address",
+    "meaning": "株式トークン（SNDKc / NVDAc）"
+   }
+  ],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "株式量"
+   },
+   {
+    "type": "uint256",
+    "meaning": "USDC 総額"
+   },
+   {
+    "type": "uint256",
+    "meaning": "USDC 正味額（総額−約1.23bps）"
+   }
+  ]
+ },
+ "0xd3c1d9b397236779b29ee5b5b150c1110fc8221b6b6ec0be49c9f4860ceb2036": {
+  "name": "SwapPtAndToken(address,address,address,address,int256,int256,uint256)",
+  "sig_keccak_verified": true,
+  "protocol": "Pendle (Router V3/V4 ActionMiscV3)",
+  "emitter": "0x888888888889758f76e7103c6cbf23abbf58f946",
+  "indexed": [
+   {
+    "type": "address",
+    "meaning": "caller（Router 呼び出し元/ユーザー）"
+   },
+   {
+    "type": "address",
+    "meaning": "market（Pendle 市場）"
+   },
+   {
+    "type": "address",
+    "meaning": "token（PT と交換するトークン）"
+   }
+  ],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "receiver（受取先）"
+   },
+   {
+    "type": "int256",
+    "meaning": "netPtToAccount（正=アカウントが PT を受け取り）"
+   },
+   {
+    "type": "int256",
+    "meaning": "netTokenToAccount（負=トークンを支払い）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "netSyInterm（中間 SY 量）"
+   }
+  ]
+ },
+ "0xdb0b70fa5771e65d47b7423c9262d9ae65427b832aa4f1d014bbc0ded82da37d": {
+  "name": null,
+  "sig_keccak_verified": false,
+  "protocol": "DRV 購入サービス（EIP1967プロキシ・7回アップグレード。Edel/LayerZero OFT/CCIP との相互作用が Basescan 表示あり）",
+  "emitter": "0x0000000021526b5c055653a55df60b21b73da999",
+  "indexed": [],
+  "data": [
+   {
+    "type": "uint256",
+    "meaning": "1（固定）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "カウンタ/注文ID（146978→146980→149537 と増加）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn（WETH）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut（DRV 等）"
+   }
+  ]
+ },
+ "0xe5aa1cf5889c85b4317294c95f7f50feb57435a6defc7fa30823011ec18212a1": {
+  "name": "Swap(address,uint256,address,uint256)",
+  "sig_keccak_verified": true,
+  "protocol": "Routa (RoutaProxy)",
+  "emitter": "0xb00000fdc6785dd211185092e2328106964ddbdb",
+  "indexed": [],
+  "data": [
+   {
+    "type": "address",
+    "meaning": "tokenIn（0xeeee…eeee は native ETH のプレースホルダ）"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountIn"
+   },
+   {
+    "type": "address",
+    "meaning": "tokenOut"
+   },
+   {
+    "type": "uint256",
+    "meaning": "amountOut"
+   }
+  ]
+ },
+ "0xdde2f3711ab09cdddcfee16ca03e54d21fb8cf3fa647b9797913c950d38ad693": {
+  "name": "SwapExecuted",
+  "indexed": [],
+  "data": [
+   {
+    "name": "user",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xac98876c63e9e95442ed72d8ca81d9a5c922f18616dc2b8b155416310b898dd9": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "caller",
+    "type": "address"
+   },
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "fromAsset",
+    "type": "address"
+   },
+   {
+    "name": "toAsset",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "returnAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "minReturnAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "referralCode",
+    "type": "bytes32"
+   },
+   {
+    "name": "hops_offset",
+    "type": "uint256"
+   },
+   {
+    "name": "pools_offset",
+    "type": "uint256"
+   },
+   {
+    "name": "amounts_offset",
+    "type": "uint256"
+   },
+   {
+    "name": "hops_len",
+    "type": "uint256"
+   },
+   {
+    "name": "pools_len",
+    "type": "uint256"
+   },
+   {
+    "name": "amounts_len",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x5380cf97d8f645d3c4896da60c053458dca03a3a31cec642ac80e1ddf0d8d02a": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x2fb0748023df976464b18b5e5d1c2f8d79da559ffeb202c8a2ce83737a946906": {
+  "name": "MultiSwap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "minAmountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "feeAmount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469": {
+  "name": "WooSwap",
+  "indexed": [
+   {
+    "name": "fromToken",
+    "type": "address"
+   },
+   {
+    "name": "toToken",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "fromAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "toAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "from",
+    "type": "address"
+   },
+   {
+    "name": "rebateTo",
+    "type": "address"
+   },
+   {
+    "name": "swapVol",
+    "type": "uint256"
+   },
+   {
+    "name": "swapFee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xe4c8d224f59766afb8ace8df8ee71f9f0e26664f915e4045a3df5296a991ad50": {
+  "name": "TideFiSwap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140": {
+  "name": "TokenExchange",
+  "indexed": [
+   {
+    "name": "buyer",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "sold_id",
+    "type": "int128"
+   },
+   {
+    "name": "tokens_sold",
+    "type": "uint256"
+   },
+   {
+    "name": "bought_id",
+    "type": "int128"
+   },
+   {
+    "name": "tokens_bought",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x3b841dc9ab51e3104bda4f61b41e4271192d22cd19da5ee6e292dc8e2744f713": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   },
+   {
+    "name": "zeroToOne",
+    "type": "bool"
+   },
+   {
+    "name": "exactIn",
+    "type": "bool"
+   },
+   {
+    "name": "amount0",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1",
+    "type": "uint256"
+   },
+   {
+    "name": "tick",
+    "type": "int32"
+   }
+  ]
+ },
+ "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c": {
+  "name": "TokenExchange",
+  "indexed": [
+   {
+    "name": "buyer",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "sold_id",
+    "type": "uint256"
+   },
+   {
+    "name": "tokens_sold",
+    "type": "uint256"
+   },
+   {
+    "name": "bought_id",
+    "type": "uint256"
+   },
+   {
+    "name": "tokens_bought",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "packed_price_scale",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x2170c741c41531aec20e7c107c24eecfdd15e69c9bb0a8dd37b1840b9e0b207b": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "poolId",
+    "type": "bytes32"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x7199b4a4e868be23324b6c68ae97411fef576cbaac785d28fcd301e2a8b0715a": {
+  "name": "BebopPmmSwap",
+  "indexed": [
+   {
+    "name": "maker",
+    "type": "address"
+   },
+   {
+    "name": "nonce",
+    "type": "uint128"
+   },
+   {
+    "name": "expiry",
+    "type": "uint256"
+   }
+  ],
+  "data": [
+   {
+    "name": "flags",
+    "type": "uint256"
+   },
+   {
+    "name": "base_token",
+    "type": "address"
+   },
+   {
+    "name": "quote_token",
+    "type": "address"
+   },
+   {
+    "name": "base_amount",
+    "type": "uint256"
+   },
+   {
+    "name": "quote_amount",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xa62ddba0018cb74df710cd81eb65dbeb85eb16937bc4967591c36b169d8100c6": {
+  "name": "SwapDone",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "srcToken",
+    "type": "address"
+   },
+   {
+    "name": "dstToken",
+    "type": "address"
+   },
+   {
+    "name": "spentAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "returnAmount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x88b012650d7da64b7697c175b1dc42bd7dd09d8a2ef28c62cbb448086f548ce6": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "poolId",
+    "type": "uint256"
+   }
+  ],
+  "data": [
+   {
+    "name": "direction",
+    "type": "bool"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xdc004dbca4ef9c966218431ee5d9133d337ad018dd5b5c5493722803f75c64f7": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "swap0to1",
+    "type": "bool"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ]
+ },
+ "0x2251435bd151cd72851a82be055bf6d1c3d7f34d08d56493dddf874229b8e897": {
+  "name": "TransitSwapped",
+  "indexed": [
+   {
+    "name": "fromToken",
+    "type": "address"
+   },
+   {
+    "name": "toToken",
+    "type": "address"
+   },
+   {
+    "name": "from",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "fromAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "toAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "channelOffset",
+    "type": "uint256"
+   },
+   {
+    "name": "channelLength",
+    "type": "uint256"
+   },
+   {
+    "name": "channelData",
+    "type": "bytes32"
+   }
+  ]
+ },
+ "0x0874b2d545cb271cdbda4e093020c452328b24af12382ed62c4d00f5c26709db": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "pool",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "swapFeePercentage",
+    "type": "uint256"
+   },
+   {
+    "name": "swapFeeAmount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xc2c0245e056d5fb095f04cd6373bc770802ebd1e6c918eb78fdef843cdb37b0f": {
+  "name": "DODOSwap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "fromToken",
+    "type": "address"
+   },
+   {
+    "name": "toToken",
+    "type": "address"
+   },
+   {
+    "name": "fromAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "toAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "trader",
+    "type": "address"
+   },
+   {
+    "name": "receiver",
+    "type": "address"
+   }
+  ]
+ },
+ "0xf76b0a9f3f6bd67b451ced26ad2cb170e00275721f450e2f7218a0fd53bb6b82": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "id",
+    "type": "bytes32"
+   },
+   {
+    "name": "selector",
+    "type": "bytes4"
+   }
+  ],
+  "data": [
+   {
+    "name": "tupleOffset",
+    "type": "uint256"
+   },
+   {
+    "name": "inputAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "inputToken",
+    "type": "address"
+   },
+   {
+    "name": "outputToken",
+    "type": "address"
+   },
+   {
+    "name": "receiver",
+    "type": "address"
+   },
+   {
+    "name": "subSelector",
+    "type": "bytes4"
+   },
+   {
+    "name": "legsOffset",
+    "type": "uint256"
+   },
+   {
+    "name": "legsCount",
+    "type": "uint256"
+   },
+   {
+    "name": "legToken0",
+    "type": "address"
+   },
+   {
+    "name": "legToken1",
+    "type": "address"
+   },
+   {
+    "name": "outputAmount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xe2cee3f6836059820b673943853afebd9b3026125dab0d774284e6f28a4855be": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "expectedAmountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xdb587d878116df0bdd4fe154699aa2c5f439da001cc811dfd05d9f589fc5a8ee": {
+  "name": "Swapped",
+  "indexed": [],
+  "data": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xbfca96f8fea048c07457ab90159d04dfbef79bc43270596da55ae633213585e4": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "swapType",
+    "type": "uint8"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xb159dc503a6f507638f48f62f81cab93f1e806b7476ac426ea5f5793ddbf9127": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amount0",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint24"
+   },
+   {
+    "name": "zeroForOne",
+    "type": "bool"
+   }
+  ]
+ },
+ "0xc82975a4eae9f14416813a0bd7312edf547928cd25ae9b8597ee4c92fa6862d2": {
+  "name": "RFQTrade",
+  "indexed": [],
+  "data": [
+   {
+    "name": "maker",
+    "type": "address"
+   },
+   {
+    "name": "takerToken",
+    "type": "address"
+   },
+   {
+    "name": "makerToken",
+    "type": "address"
+   },
+   {
+    "name": "takerAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "makerAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "orderId",
+    "type": "bytes16"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ]
+ },
+ "0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c": {
+  "name": "WooRouterSwap",
+  "indexed": [
+   {
+    "name": "fromToken",
+    "type": "address"
+   },
+   {
+    "name": "toToken",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "swapType",
+    "type": "uint8"
+   },
+   {
+    "name": "fromAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "toAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "from",
+    "type": "address"
+   },
+   {
+    "name": "rebateTo",
+    "type": "address"
+   }
+  ]
+ },
+ "0xb2e76ae99761dc136e598d4a629bb347eccb9532a5f8bbd72e18467c3c34cc98": {
+  "name": "TokenExchange",
+  "indexed": [
+   {
+    "name": "buyer",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "sold_id",
+    "type": "uint256"
+   },
+   {
+    "name": "tokens_sold",
+    "type": "uint256"
+   },
+   {
+    "name": "bought_id",
+    "type": "uint256"
+   },
+   {
+    "name": "tokens_bought",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xf067e8ca829f67e4f9be38e977ceedd503b4602e190ac8c71415bc72d2b8663a": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "user",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "direction",
+    "type": "bool"
+   },
+   {
+    "name": "amount0",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x2e65e08f215f8172b6bc6ae6c1191f00c014355c9d39c03627de921283bd3ba2": {
+  "name": "Unknown",
+  "indexed": [
+   {
+    "name": "orderId",
+    "type": "uint256"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x3993372c7f54dee1879dcc58987731c2857a033eccc34111f4d2efb1b045d947": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   },
+   {
+    "name": "pool",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "sqrtPrice",
+    "type": "uint112"
+   },
+   {
+    "name": "dataOffset",
+    "type": "uint256"
+   },
+   {
+    "name": "dataLength",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xc4cc441884c8b8ce500de14f1f490522149ac5ec673710ca5c792c38ec736847": {
+  "name": "Swap",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "orderHash",
+    "type": "bytes32"
+   }
+  ]
+ },
+ "0xdd36740e2a012d93061a0d99eaa9107860955de4e90027d3cf465a055026c407": {
+  "name": "SwapExecuted",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xa3f37f0446dcac60c3831cc0ebda32d57d7cddb7bef6d734cdd7b0c72c277922": {
+  "name": "SwapExecuted",
+  "indexed": [
+   {
+    "name": "user",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "swapType",
+    "type": "uint8"
+   }
+  ]
+ },
+ "0xb39c9bc43f811e1a7ce159c5f147458fdb80266bf23c17322013316e27e086d0": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ]
+ },
+ "0x6abc2d6699315cdd965afdaa01e9bfd32b512397f6ed431a17b64af87b2c3555": {
+  "name": "SwappedExactAmountOut",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "recipient",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOutMax",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "pathOffset",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xa078c4190abe07940190effc1846be0ccf03ad6007bc9e93f9697d0b460befbb": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x298c349c742327269dc8de6ad66687767310c948ea309df826f5bd103e19d207": {
+  "name": "Swap",
+  "indexed": [],
+  "data": [
+   {
+    "name": "amount0In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount0Out",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1Out",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xfe5d070a8c6c1bf4a4675905e56f14d922474c8fead10febb0d9c963a2c2d0e7": {
+  "name": "Unknown",
+  "indexed": [
+   {
+    "name": "sender",
+    "type": "address"
+   },
+   {
+    "name": "to",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amount0In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1In",
+    "type": "uint256"
+   },
+   {
+    "name": "amount0Out",
+    "type": "uint256"
+   },
+   {
+    "name": "amount1Out",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xa54201e99d8e1488291e015a3af88c7a169bcf4932617ecd9536e1f1ad435110": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xca1985de4499b70bca89ad1f3711d7081a4bfefe76dfbdf83beecf1336fb85d8": {
+  "name": "Swapped",
+  "indexed": [
+   {
+    "name": "orderId",
+    "type": "bytes32"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   },
+   {
+    "name": "str1Offset",
+    "type": "uint256"
+   },
+   {
+    "name": "str2Offset",
+    "type": "uint256"
+   },
+   {
+    "name": "flag",
+    "type": "uint8"
+   }
+  ]
+ },
+ "0x25f1d03755df23c30e25db2dbd3891e31ce084bdfbfc46f9fe5e446ee5f9b2d4": {
+  "name": "TokensSwapped",
+  "indexed": [
+   {
+    "name": "tokenIn",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokenOut",
+    "type": "address"
+   },
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x6621486d9c28838df4a87d2cca5007bc2aaf6a5b5de083b1db8faf709302c473": {
+  "name": "OrderFilled",
+  "indexed": [
+   {
+    "name": "orderHash",
+    "type": "bytes32"
+   },
+   {
+    "name": "maker",
+    "type": "address"
+   },
+   {
+    "name": "taker",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "makerToken",
+    "type": "address"
+   },
+   {
+    "name": "makerAmount",
+    "type": "uint256"
+   },
+   {
+    "name": "takerToken",
+    "type": "address"
+   },
+   {
+    "name": "takerAmount",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0xbbc79dc7d11fb8ae8de963e009943172807faa4a90c3620ef772f4783e76355f": {
+  "name": "Sell",
+  "indexed": [
+   {
+    "name": "seller",
+    "type": "address"
+   },
+   {
+    "name": "tokenIn",
+    "type": "address"
+   },
+   {
+    "name": "tokenOut",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "amountIn",
+    "type": "uint256"
+   },
+   {
+    "name": "amountOut",
+    "type": "uint256"
+   }
+  ]
+ },
+ "0x6b17016c67d28f4cc3a653d895e3b1db09320d6852a46f95aa225059190f7dcd": {
+  "name": "TokensSold",
+  "indexed": [
+   {
+    "name": "seller",
+    "type": "address"
+   }
+  ],
+  "data": [
+   {
+    "name": "tokensSold",
+    "type": "uint256"
+   },
+   {
+    "name": "netProceeds",
+    "type": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256"
+   },
+   {
+    "name": "grossProceeds",
+    "type": "uint256"
+   }
+  ]
+ }
+}
