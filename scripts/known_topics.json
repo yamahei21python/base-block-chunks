@@ -1065,6 +1065,11 @@
    "name": "Unknown",
    "note": "Non-swap application event (unresolved application event)"
   },
+  "0x083acb1b03b4345bfe17d72c4be5372c6fbcbd6cad468f8cf85467d20c8f228d": {
+   "class": "non_swap",
+   "name": "ProposalCreated(uint256,uint8)",
+   "note": "True Markets LaunchpadFactory proposal created event (defi-loopbatch15)"
+  },
   "0x0848fb34f98917ba3937fd2e5bed4e6c4eed0eb0d4a87f3b0a9826219183b2e2": {
    "class": "marker",
    "name": "Anchored",
@@ -1820,6 +1825,11 @@
    "name": "BidPlaced",
    "note": "database hit: BidPlaced(uint256,address,uint256)"
   },
+  "0x0e668991dc806b96bad9c4cea098fe1f66697f2b765d9628556fa06a5e3ffeb5": {
+   "class": "non_swap",
+   "name": "ConfirmationRequest(uint256,uint256,uint256,uint256,address,address)",
+   "note": "Reactive Network Bridge cross-chain confirmation request event (defi-loopbatch15)"
+  },
   "0x0e6e0d79fd9851747c4be48268c22bb479d38f3b968386f32d6eafb1359da917": {
    "class": "non_swap",
    "name": "P2P Fiat Ramp (OrderFlow) Event",
@@ -1849,6 +1859,11 @@
    "class": "swap",
    "name": "RangoSwap",
    "note": "swap91 verification 2026-11-05: Rango Router (0x69460570...); topic tokenIn, data word 0 tokenOut, and words 2,4 amounts match Transfers"
+  },
+  "0x0e983fc4cd017698542c7ed8b9abd0bb7f1a98991ebe2d16d6a305a84eeb40f9": {
+   "class": "non_swap",
+   "name": "ReleasedExpired(address,address,uint256)",
+   "note": "Halo Vault balance release event (defi-loopbatch15)"
   },
   "0x0ea04acfb0b57a01d82d09a81f11ac1c99f0f92967676eb18b086cb7cc2fbd61": {
    "class": "non_swap",
@@ -27174,6 +27189,11 @@
    "name": "LzMessageSent",
    "note": "LzMessageSent(uint32,uint64,bytes32) application/infrastructure event (2 ow, 0 nv)"
   },
+  "0xbbbdee62287b5bf3bee13cab60a29ad729cf38109bccbd2a986a11c99b8ca704": {
+   "class": "swap_adjacent",
+   "name": "Withdraw(address,address,address,uint256,uint256,uint256)",
+   "note": "Jooce Index withdraw event emitted adjacent to DEX Swap (defi-loopbatch15)"
+  },
   "0xbbc0d12298c7c72e459555042e55d94a3a705b5762796357f1e94201278222f9": {
    "class": "non_swap",
    "name": "DirectSettlement",
@@ -28308,6 +28328,11 @@
    "class": "non_swap",
    "name": "BetPlaced",
    "note": "Non-swap application event (BetPlaced(address,address,bool,uint256,uint256))"
+  },
+  "0xc2c021f5d73c63c481d336fbbafec58f694fc45095f00b02d2deb8cca59afe07": {
+   "class": "non_swap",
+   "name": "ProposalCreated(uint256)",
+   "note": "True Markets Launchpad proposal created event (defi-loopbatch15)"
   },
   "0xc2c0245e056d5fb095f04cd6373bc770802ebd1e6c918eb78fdef843cdb37b0f": {
    "class": "swap",
@@ -33642,6 +33667,11 @@
    "name": "UnknownEvent",
    "note": "Unknown topic on 0x7be14359... with non-exchange flow (2 ow, 0 nv)"
   },
+  "0xe56d80fb0ff2f929966227056120d5fee57f98d0b057c1b4fb9286f03eeba057": {
+   "class": "non_swap",
+   "name": "DeliveryConfirmation(uint256,uint256,uint256,address,address)",
+   "note": "Reactive Network Bridge delivery confirmation event (defi-loopbatch15)"
+  },
   "0xe575a063e3dae59781b2089c49a922a8d6a76290b3e73b67d1fa34ca59a8c87f": {
    "class": "non_swap",
    "name": "WithdrawalCanceled",
@@ -37554,5 +37584,5 @@
    "note": "OpenChain hit: \"OFTSent(bytes32,uint32,address,uint256)\". Non-exchange protocol bookkeeping/lifecycle event at emitter 0x2b11834ed1feaed4b4b3a86a6f571315e25a884d."
   }
  },
- "version": "2026-11-05.11"
+ "version": "2026-11-05.12"
 }
