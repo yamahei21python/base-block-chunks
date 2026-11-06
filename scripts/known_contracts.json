@@ -423,6 +423,12 @@
    "role": "other (governance voter)",
    "source": "step 2: Basescan verified contract name LeafVoter with Dromos tag/deployment"
   },
+  "0x3907f660b257560883e891fbbb9f997eff70e40e": {
+   "name": "HaloVault",
+   "protocol": "Halo",
+   "role": "vault",
+   "source": "step 1: identified in defi-loopbatch15 with Basescan verified contract name HaloVault; step 2: Muse verified emitter on the ReleasedExpired sample receipt"
+  },
   "0x391e07a9921b047407d81e30bd2e857825e97b0e": {
    "name": "CLPool",
    "protocol": "Dromos",
@@ -788,6 +794,12 @@
    "role": "pool_manager",
    "source": "step 1: listed in Aerodrome official documentation; step 2: Basescan verified contract name NonfungiblePositionManager"
   },
+  "0x83190636c344cf1220ffcbfc0c1198f7867b3667": {
+   "name": "Index",
+   "protocol": "Jooce",
+   "role": "index_token",
+   "source": "step 1: identified in defi-loopbatch15 with Basescan verified contract name Index (emitter is its ERC1967Proxy); step 2: Muse verified emitter on the Withdraw sample receipt"
+  },
   "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
    "name": "USD Coin (USDC)",
    "protocol": "Circle",
@@ -953,6 +965,12 @@
    "kind": "",
    "name": null,
    "note": " [unresolved56 round, PR #29]"
+  },
+  "0x9f04de860cc8b77044682a2706f39b81739a5417": {
+   "name": "LaunchpadFactory",
+   "protocol": "True Markets",
+   "role": "factory",
+   "source": "step 1: identified in defi-loopbatch15 with Basescan verified contract name LaunchpadFactory (emitter is its ERC1967Proxy); step 2: Muse verified emitter on the ProposalCreated sample receipt"
   },
   "0x9f12bb8ae3cd5f0d22d096cff984414adcbbee82": {
    "kind": "",
@@ -1417,6 +1435,12 @@
    "role": "Emitter",
    "source": "https://basescan.org/address/0xe5c6a301fff7de54847cb92be9d9577ca4d04af4#code"
   },
+  "0xe68ead313a33a78e0b00e25ae22800d4455cd5c8": {
+   "name": "Bridge",
+   "protocol": "Reactive Network",
+   "role": "bridge",
+   "source": "step 1: identified in defi-loopbatch15 with Basescan verified contract name Bridge; step 2: Muse verified emitter on the ConfirmationRequest and DeliveryConfirmation sample receipts"
+  },
   "0xe74ea7af85a9e8f8d68f07d780d2a9cee0ab3ebe": {
    "name": "Coordinator",
    "protocol": "Rain Cards",
@@ -1446,6 +1470,12 @@
    "protocol": "Aerodrome Slipstream",
    "role": "pool",
    "source": "step 2: Basescan verified contract name CLPool; step 3: emits Concentrated Liquidity Swap/Mint/Burn topics corroborated by Aerodrome router"
+  },
+  "0xed3ebc2e17a0cc20d22ff7b7d13488f187fd1af6": {
+   "name": "Launchpad",
+   "protocol": "True Markets",
+   "role": "launchpad",
+   "source": "step 1: identified in defi-loopbatch15 with Basescan verified contract name Launchpad (emitter is its ERC1967Proxy); step 2: Muse verified emitter on the ProposalCreated sample receipt"
   },
   "0xefc320800b70ffb9a06c040c12265583001a769f": {
    "name": "PRCVault",
@@ -1535,5 +1565,5 @@
    "note": " [unresolved56 round, PR #29]"
   }
  },
- "version": "2026-11-05.9"
+ "version": "2026-11-05.10"
 }
