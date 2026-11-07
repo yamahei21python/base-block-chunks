@@ -37717,7 +37717,22 @@
    "class": "non_swap",
    "name": "PoolActivated",
    "note": "PoolActivated(uint256,bool) emitted upon pool activation via activatePool(uint256)"
+  },
+  "0xf4b08c4ec1c79e01a5d08211f5f73ac14809d2016e223af4ff93a504e4a9ff56": {
+   "class": "non_swap",
+   "name": "BetResolved",
+   "note": "Overtime Roulette contract bet resolution event emitted upon Chainlink VRF random word fulfillment"
+  },
+  "0x63eb03fb0475d0c1ede445770d9154050f5567f54a71ed921fc9fced01909ec4": {
+   "class": "non_swap",
+   "name": "PoolAdded",
+   "note": "Concentrated liquidity pool registration event mapping pool ID to CLPool and CLGauge contract addresses"
+  },
+  "0x2adf902289e9609396fcd4960e507f84cfe8aa8dc07a0190d2ea568609cbcffc": {
+   "class": "non_swap",
+   "name": "PoolConfigured",
+   "note": "Concentrated liquidity pool configuration update event recording parameter updates for pool ID"
   }
  },
- "version": "2026-11-05.21"
+ "version": "2026-11-05.22"
 }
