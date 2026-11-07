@@ -20480,6 +20480,22 @@
   "0xed7aa11ca0e0b4e70a77b8c77613ca0432bf7b07": {
    "symbol": "AMBRX",
    "name": "Amber tokenized stock (xStock)  "
+  },
+  "0x02394fe5e086a877a36dce27f06c30d4948316fe": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x4fd3cf2e96af5ff93b2c095110c3cfa356affb19": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x6ac5840cccb8d1b35efadcef8b0c41db3299356a": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x9a44504c41e559ef95678e32f791521d26377777": {
+   "symbol": "Chaineye 👁",
+   "name": "ChainEye 👁"
   }
  }
 }
