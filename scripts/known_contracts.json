@@ -1599,7 +1599,19 @@
    "protocol": "Metopia",
    "role": "router",
    "source": "https://basescan.org/address/0xf050fe0a2b8520a3b843fb02c0b285c8d9212363#code"
+  },
+  "0x43ea69b0117af91bb709b6131bbea580ad9faf2d": {
+   "name": "Staking",
+   "protocol": "Autonomous Loop",
+   "role": "Index-based LOOP staking with 8h declining rebase schedule",
+   "source": "Sourcify (chain 8453: src/Staking.sol, contract Staking)"
+  },
+  "0x61c36aff32be348a3d1fe1e2b4745048f652770f": {
+   "name": "CLCore",
+   "protocol": "EZManager",
+   "role": "Canonical state and accounting core for concentrated liquidity positions",
+   "source": "Sourcify (chain 8453: src/CLCore.sol, contract CLCore; Basescan: EZManager: CL Core)"
   }
  },
- "version": "2026-11-05.14"
+ "version": "2026-11-05.15"
 }
