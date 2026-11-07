@@ -20696,6 +20696,10 @@
   "0xadf272382da0822e98fa5c1f29b7ee7f22e61986": {
    "symbol": "PDM",
    "name": "PDM github.com/pdm-project/PDM"
+  },
+  "0xadf292cdb7ec6e1e8c97a5db55b9ddf8795529d5": {
+   "symbol": "IMHEX",
+   "name": "IMHEX github.com/werwolv/IMHEX"
   }
  }
 }
