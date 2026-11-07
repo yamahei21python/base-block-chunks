@@ -37747,7 +37747,17 @@
    "class": "non_swap",
    "name": "RewardKeeper(bool)",
    "note": "State transition event emitted by ScoreCohort.bandSortCycle(uint256) at 0xb04743bfcc57ed58e38951bd3a5b3362d4626687 on Base; carries bool entryGem (false), no token transfer or value exchange."
+  },
+  "0xa59389c0e9f22a96b7fb6890647aa9f3a62866ba222330a817427fa95abdca46": {
+   "class": "non_swap",
+   "name": "LevelUp(address,uint256,uint256,address,uint256)",
+   "note": "BaseHarvesting proxy (BaseForEver protocol) level upgrade event"
+  },
+  "0x627fed2be919fabcb742eb549236b8a97074cae7c5a6c82ff510dd0295a42ef6": {
+   "class": "non_swap",
+   "name": "GNSent(address,address)",
+   "note": "GMGNCounter social greeting event emitted by sayGN"
   }
  },
- "version": "2026-11-05.25"
+ "version": "2026-11-05.26"
 }
