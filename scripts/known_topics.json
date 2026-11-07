@@ -37757,7 +37757,22 @@
    "class": "non_swap",
    "name": "GNSent(address,address)",
    "note": "GMGNCounter social greeting event emitted by sayGN"
+  },
+  "0x067bdf7ecf1f9cd29cd0b7e78a2e8997f575f3f5e13f5f5570234dc11cff09fa": {
+   "class": "non_swap",
+   "name": "WalletDeployed(address,uint16,bytes20,uint16,bytes32,bytes32)",
+   "note": "Mayan Swift MPSFactory event emitted upon deploying a cross-chain deposit wallet"
+  },
+  "0x93ec05e60f129442337b102e9c069fd4929f0f8be50614f58c7b979a0f57619f": {
+   "class": "non_swap",
+   "name": "NewNiteContract(uint256,address,address)",
+   "note": "Nite protocol Factory event emitted upon deploying a new NiteToken contract for a host slot"
+  },
+  "0xe9a9745c27c99a8a79ab25b83aa5c7f38c55c6e1181f5bd5584b01d67b0dcb17": {
+   "class": "non_swap",
+   "name": "ContractCallSuccess(address,bytes4,uint32,uint64)",
+   "note": "Agoric RemoteAccount execution event logging target, selector, call index, and gas used"
   }
  },
- "version": "2026-11-05.26"
+ "version": "2026-11-05.27"
 }
