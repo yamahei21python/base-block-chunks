@@ -37687,7 +37687,17 @@
    "class": "non_swap",
    "name": "Purchased(address,uint32,address,address,uint256,uint256,(uint32,uint128,uint128)[])",
    "note": "Suno protocol PWattSale primary sale delivery order on Ethereum L1; USDC payment on Base without on-chain token exchange (non_swap under swap-promotion rule)"
+  },
+  "0x2ea33da55ed1ec4820672430c9e485db0d72098e6f6478fbc0060d293e2875f7": {
+   "class": "non_swap",
+   "name": "DepositAMLResult(uint256,bool)",
+   "note": "SoDexTokenBridgeAML compliance verification outcome for bridge deposit escrow"
+  },
+  "0xe938be36f36fdd00e60edf87a8d7b13c0cbbb73e34ababd91ee78da49a5f09c0": {
+   "class": "non_swap",
+   "name": "GradedRootUpdated(bytes32,uint256,uint256,uint256)",
+   "note": "GradedPriceOracle Merkle root update for graded trading card price proofs"
   }
  },
- "version": "2026-11-05.19"
+ "version": "2026-11-05.20"
 }
