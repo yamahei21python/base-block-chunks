@@ -1593,7 +1593,13 @@
    "protocol": "Capminal",
    "role": "sCAP staking and CAPU minter/burner",
    "source": "official repository https://github.com/Capminal/capminal-contracts and verified source on Sourcify (Base chainId 8453, src/ScapStaking.sol)"
+  },
+  "0xf050fe0a2b8520a3b843fb02c0b285c8d9212363": {
+   "name": "RewardRouter",
+   "protocol": "Metopia",
+   "role": "router",
+   "source": "https://basescan.org/address/0xf050fe0a2b8520a3b843fb02c0b285c8d9212363#code"
   }
  },
- "version": "2026-11-05.13"
+ "version": "2026-11-05.14"
 }
