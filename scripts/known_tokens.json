@@ -20524,6 +20524,14 @@
   "0xa0ba24c132f36b9b8862aa775f7e3f93f63dbb07": {
    "symbol": "BTCX",
    "name": "AMD Bitcoin       Tokenised Stock       (xStock)  "
+  },
+  "0x7ae49f73511be93b2134b22bf3cf2e3bdd88db3c": {
+   "symbol": "APL",
+   "name": "Apollo CurrencyAPL"
+  },
+  "0x82b8ab6fb6df3fc2a500377dd749f9a5e56a86c6": {
+   "symbol": "USTR",
+   "name": "US TITANIUM RESERVE"
   }
  }
 }
