@@ -37772,7 +37772,17 @@
    "class": "non_swap",
    "name": "ContractCallSuccess(address,bytes4,uint32,uint64)",
    "note": "Agoric RemoteAccount execution event logging target, selector, call index, and gas used"
+  },
+  "0xa4d615b1dc6565f91ecada9a8b865e50734fb0ce78b1fce8716ab6b6a0a6d239": {
+   "class": "non_swap",
+   "name": "SplitConsumed(address,uint256,uint256,uint256)",
+   "note": "BitTON StakingSourceTracker accounting event tracking clean vs tainted BTN consumed during staking (not a swap)"
+  },
+  "0x7ee50f2eff98162792efa4e4a47b91d52c2f8bd05c1d8442784af599bd9e4111": {
+   "class": "non_swap",
+   "name": "PaymentChannelMigrationRequest(address,uint256,uint256,uint256,uint256,uint8,uint256,uint256)",
+   "note": "P2P.me MerchantOnboardFacet event emitted on merchant payment channel migration request (not a swap)"
   }
  },
- "version": "2026-11-05.27"
+ "version": "2026-11-05.28"
 }
