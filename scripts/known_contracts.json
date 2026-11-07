@@ -1665,7 +1665,25 @@
    "protocol": "GMGNCounter",
    "role": "counter",
    "source": "Sourcify (chain 8453, matchId 20656524, GMGNCounter.sol)"
+  },
+  "0x28d8f4513d5d74d7c43ca7fe111cac906dcd2e88": {
+   "name": "MPSFactory",
+   "protocol": "Mayan Finance",
+   "role": "Factory deploying Mayan Swift deposit wallets",
+   "source": "https://basescan.org/address/0x28d8f4513d5d74d7c43ca7fe111cac906dcd2e88#code"
+  },
+  "0x891dd7cca021a753342a6eee396b23c1f1f8bd01": {
+   "name": "Factory",
+   "protocol": "Nite",
+   "role": "Factory deploying NiteToken booking contracts",
+   "source": "https://basescan.org/address/0x891dd7cca021a753342a6eee396b23c1f1f8bd01#code"
+  },
+  "0x26500ba9800dc10ba668aa11b94967c5f7367046": {
+   "name": "RemoteAccount",
+   "protocol": "Agoric",
+   "role": "EIP-1167 proxy remote account executing cross-chain calls via Axelar",
+   "source": "https://basescan.org/address/0x26500ba9800dc10ba668aa11b94967c5f7367046#code"
   }
  },
- "version": "2026-11-05.21"
+ "version": "2026-11-05.22"
 }
