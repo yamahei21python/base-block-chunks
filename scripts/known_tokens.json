@@ -20608,6 +20608,26 @@
   "0xc9852eb671d9254d9de1c6f2621dbccfda42671e": {
    "symbol": "BIC",
    "name": "BIC"
+  },
+  "0x4e4e53937985a5ce7d0935cf914106ca3b304726": {
+   "symbol": "INFX",
+   "name": "INFERNOX"
+  },
+  "0x59c2f99429fb7178ee8ce9bdb1d2bab730601ea4": {
+   "symbol": "WINT",
+   "name": "Wrapped Integer"
+  },
+  "0xa061f47b9a86e77359d13bf68a74fcec537fc303": {
+   "symbol": "FLARE",
+   "name": "Flare"
+  },
+  "0xcab815d8a171091a8647f126e0fb7c009946b162": {
+   "symbol": "X402",
+   "name": "x402 Lite"
+  },
+  "0xe4377a0b1c0a86be9260f19679d798f69acb7777": {
+   "symbol": "CREED",
+   "name": "CreedCoin"
   }
  }
 }
