@@ -37587,7 +37587,42 @@
    "class": "non_swap",
    "name": "DepositPaymentMethodActiveUpdated",
    "note": "DepositPaymentMethodActiveUpdated(uint256,bytes32,bool) emitted by ZKP2P EscrowV2 contract"
+  },
+  "0xc37a78a5b783bcf05d03fd82689d8633d84c632e9879719e70bc8175fdae5634": {
+   "class": "non_swap",
+   "name": "ConfigSet",
+   "note": "ConfigSet(uint256,(uint32,uint32,uint128,bool)) emitted by TokenBoost on tier configuration updates"
+  },
+  "0xfa628b578e095243f0544bfad9255f49d79d03a5bbf6c85875d05a215e247ad2": {
+   "class": "non_swap",
+   "name": "SwapReleased",
+   "note": "SwapReleased(uint256) emitted by Meson cross-chain protocol upon release payout"
+  },
+  "0xdb51cf0b293f705e3dcc4cff5e283370c70dcbb625d7c8351436403d6264b279": {
+   "class": "non_swap",
+   "name": "StableTokenUpdated",
+   "note": "StableTokenUpdated(address,address) emitted by TokenBoost on stable token configuration"
+  },
+  "0xaaebcf1bfa00580e41d966056b48521fa9f202645c86d4ddf28113e617c1b1d3": {
+   "class": "non_swap",
+   "name": "FeeRecipientUpdated",
+   "note": "FeeRecipientUpdated(address,address) emitted by TokenBoost on fee recipient update"
+  },
+  "0x70e8c9832122117f89258474137715af1e73268409ff0697e9e2cf6c6ffa2256": {
+   "class": "non_swap",
+   "name": "LauncherPoolUpdated",
+   "note": "LauncherPoolUpdated(address,address) emitted by TokenBoost on launcher pool update"
+  },
+  "0xa4bce52cbe7901ca36ee4ae5e81633935d7957946eb65fb48ba86368fc52c11a": {
+   "class": "non_swap",
+   "name": "ProofPivot",
+   "note": "ProofPivot(uint256) state marker emitted by KeyConfigEscrow"
+  },
+  "0xc9f46f6e3da5b231f7e649ca4cb1e66b8927b0efe47be9a1284a41492faf1860": {
+   "class": "swap",
+   "name": "TokenSwapped",
+   "note": "TokenSwapped(address,address,address,address,address,address,uint256,uint256,uint256,uint256,bool) emitted by MetaAggregatorSwapContract with exact token exchange amounts"
   }
  },
- "version": "2026-11-05.13"
+ "version": "2026-11-05.14"
 }
