@@ -1563,7 +1563,13 @@
    "kind": "",
    "name": null,
    "note": " [unresolved56 round, PR #29]"
+  },
+  "0x777777779d229cdf3110e9de47943791c26300ef": {
+   "name": "EscrowV2",
+   "protocol": "ZKP2P",
+   "role": "Holds maker liquidity, deposit configuration and funds locked for intents",
+   "source": "https://github.com/zkp2p/zkp2p-contracts"
   }
  },
- "version": "2026-11-05.10"
+ "version": "2026-11-05.11"
 }
