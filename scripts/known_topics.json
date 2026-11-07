@@ -37647,7 +37647,17 @@
    "class": "non_swap",
    "name": "UnstakeInitiated(address,uint256,uint256)",
    "note": "Capminal ScapStaking unbonding cooldown initiation event recording user, sCAP shares burned, and release timestamp."
+  },
+  "0xbb5eb5de4cc650243ba27fbfe8fa1a75080ff46d265a4c26c4ef4b28aba6a72a": {
+   "class": "non_swap",
+   "name": "Executed(uint256,address,uint256,bool)",
+   "note": "Emitted by Metopia RewardRouter on execute(Call[]) per executed subcall (index, target, value, success)."
+  },
+  "0xeee9d4d637e9c3317d56b99bd2d5f25a28fa7d08b336638b893e0a7a700271ff": {
+   "class": "non_swap",
+   "name": "AllocSplitHaven(bool,address)",
+   "note": "Emitted by ClaimReward contract during sectorHash, withdrawAmount, or logAlloc without token/value transfer."
   }
  },
- "version": "2026-11-05.16"
+ "version": "2026-11-05.17"
 }
