@@ -37782,7 +37782,27 @@
    "class": "non_swap",
    "name": "PaymentChannelMigrationRequest(address,uint256,uint256,uint256,uint256,uint8,uint256,uint256)",
    "note": "P2P.me MerchantOnboardFacet event emitted on merchant payment channel migration request (not a swap)"
+  },
+  "0x15692ca900a1baa471ea0a1c983dea1e7bac9a46f7e989d6ef5d3f96ebab9898": {
+   "class": "swap_adjacent",
+   "name": "OrderSettled(bytes32,address,uint128,uint128)",
+   "note": "Doefin protocol order settlement event emitted during matchOrders execution"
+  },
+  "0x81ceff30f5d23d82b8ad7922700bc0992169ab65e642fbf08c012e94b01028db": {
+   "class": "marker",
+   "name": "SwapFailed()",
+   "note": "Skip Protocol AxelarHandler parameterless marker event emitted upon failed swap attempt"
+  },
+  "0x96829272595835540d61b628336840a5fabfe66caffbb67353fe3f590e48a882": {
+   "class": "non_swap",
+   "name": "PoolSeedNativeUpdated(uint256)",
+   "note": "Administrative parameter update event emitted when updating poolSeedNative"
+  },
+  "0x5ce179813e31ddff43eb56654b63b03a57564f6773420175860ae11f55c604d6": {
+   "class": "swap_adjacent",
+   "name": "OrdersMatched(bytes32,bytes32,uint8,uint128)",
+   "note": "Doefin protocol order matching event emitted upon matching paired orders"
   }
  },
- "version": "2026-11-05.28"
+ "version": "2026-11-05.29"
 }
