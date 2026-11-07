@@ -37622,7 +37622,22 @@
    "class": "swap",
    "name": "TokenSwapped",
    "note": "TokenSwapped(address,address,address,address,address,address,uint256,uint256,uint256,uint256,bool) emitted by MetaAggregatorSwapContract with exact token exchange amounts"
+  },
+  "0x1bd8bf0c889724edd76ec96893cde539f17d89941b7cbb11df841b8c07c3c2fd": {
+   "class": "marker",
+   "name": "EpochResolved",
+   "note": "EpochResolved(uint64) - Matador USDC Nav Vault (EpochNavVault) epoch resolution lifecycle marker"
+  },
+  "0x986293233f2646aae634a25b4c5620619b0354ec4f0234ff1d6b3d30651d54c7": {
+   "class": "marker",
+   "name": "EpochOpened",
+   "note": "EpochOpened(uint64,uint64,uint64) - Matador USDC Nav Vault (EpochNavVault) epoch opening lifecycle marker"
+  },
+  "0xe5094c4fa71e16fa038ba9b23bf0d2b65250e4351da407d7ed79be15b00c2473": {
+   "class": "non_swap",
+   "name": "ScapUnlocked",
+   "note": "ScapUnlocked(address,uint256,uint256) - Capminal ScapStaking vault burnAndUnlockScap event"
   }
  },
- "version": "2026-11-05.14"
+ "version": "2026-11-05.15"
 }
