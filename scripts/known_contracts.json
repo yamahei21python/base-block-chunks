@@ -1647,7 +1647,13 @@
    "protocol": "Etherlink",
    "role": "bridge",
    "source": "https://docs.etherlink.com/evm/bridging/bridging-evm/"
+  },
+  "0xf35bfed65d64ed01e8e29d77455bc1748c980653": {
+   "name": "Roles",
+   "protocol": "Zodiac",
+   "role": "modifier",
+   "source": "https://github.com/gnosisguild/zodiac-modifier-roles"
   }
  },
- "version": "2026-11-05.19"
+ "version": "2026-11-05.20"
 }
