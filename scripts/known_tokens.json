@@ -20628,6 +20628,18 @@
   "0xe4377a0b1c0a86be9260f19679d798f69acb7777": {
    "symbol": "CREED",
    "name": "CreedCoin"
+  },
+  "0x49e128e048dc1bcbd1e2bde6786030742acbbf9b": {
+   "symbol": "barkinghotdog",
+   "name": "barkinghotdog"
+  },
+  "0xadf4876e04abc4cb22abb62485ffc1d54d128de9": {
+   "symbol": "PANDOC",
+   "name": "PANDOC github.com/jgm/PANDOC"
+  },
+  "0xb8d59c7b33054beda610b2b2d38ea38694cdfabd": {
+   "symbol": "MIDAS",
+   "name": "Midas The Minotaur"
   }
  }
 }
