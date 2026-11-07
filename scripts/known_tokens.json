@@ -20680,6 +20680,10 @@
   "0xadf9404351cb698457502aedff17e2a299a7e056": {
    "symbol": "AWESOME-JAVA",
    "name": "AWESOME-JAVA github.com/akullpp/AWESOME-JAVA"
+  },
+  "0xadf42d585ffdf1fc448c0f857235fb2d49b1990a": {
+   "symbol": "DOTENV",
+   "name": "DOTENV github.com/motdotla/DOTENV"
   }
  }
 }
