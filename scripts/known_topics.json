@@ -37742,7 +37742,12 @@
    "class": "non_swap",
    "name": "AllowFunction",
    "note": "AllowFunction(bytes32,address,bytes4,uint8) emitted by Zodiac Roles Modifier v2 proxy when configuring role permissions"
+  },
+  "0xaf5c1313d364c6bff89fdcc36bd880a5ee1681efce6f1a280bcef951f80a1074": {
+   "class": "non_swap",
+   "name": "RewardKeeper(bool)",
+   "note": "State transition event emitted by ScoreCohort.bandSortCycle(uint256) at 0xb04743bfcc57ed58e38951bd3a5b3362d4626687 on Base; carries bool entryGem (false), no token transfer or value exchange."
   }
  },
- "version": "2026-11-05.24"
+ "version": "2026-11-05.25"
 }
