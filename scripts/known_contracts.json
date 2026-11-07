@@ -1641,7 +1641,13 @@
    "protocol": "Roulette",
    "role": "gaming",
    "source": "Basescan (implementation 0x04c59ad182a27c42facf0cca3fafc2467b7df04a)"
+  },
+  "0x1f8e735f424b7a49a885571a2fa104e8c13c26c7": {
+   "name": "OriginalTokenBridge",
+   "protocol": "Etherlink",
+   "role": "bridge",
+   "source": "https://docs.etherlink.com/evm/bridging/bridging-evm/"
   }
  },
- "version": "2026-11-05.18"
+ "version": "2026-11-05.19"
 }
