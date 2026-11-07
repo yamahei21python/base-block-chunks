@@ -20532,6 +20532,22 @@
   "0x82b8ab6fb6df3fc2a500377dd749f9a5e56a86c6": {
    "symbol": "USTR",
    "name": "US TITANIUM RESERVE"
+  },
+  "0x0cdb9a7490948f2912a193bb5ef439897d08b045": {
+   "symbol": "BRICS",
+   "name": "BRICS Currency"
+  },
+  "0x815269d17c10f0f3df7249370e0c1b9efe781aa8": {
+   "symbol": "SANTA",
+   "name": "SANTA by Virtuals"
+  },
+  "0x84cebeeb2f555dc0f644857a7a5455a4fd2218c6": {
+   "symbol": "NIGHT",
+   "name": "Midnight"
+  },
+  "0xadfc80337c6fbf80226e3fb4a7442b44d4fddd33": {
+   "symbol": "BAIKAL",
+   "name": "BAIKAL github.com/sabre-io/BAIKAL"
   }
  }
 }
