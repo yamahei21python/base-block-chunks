@@ -20700,6 +20700,22 @@
   "0xadf292cdb7ec6e1e8c97a5db55b9ddf8795529d5": {
    "symbol": "IMHEX",
    "name": "IMHEX github.com/werwolv/IMHEX"
+  },
+  "0x20002cfd1f8e9406020ac6a690053bb2b10134ac": {
+   "symbol": "OHM",
+   "name": "Olympus"
+  },
+  "0xb08543cb8efde7d22859b42eb214c0c78d2e0709": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0xd0d65623becee0630723f20ea9f7143fba5ac9fd": {
+   "symbol": "HeinrichKlaasen_BASE",
+   "name": "Heinrich Klaasen BASE"
+  },
+  "0xea081ac453ba7fe010d4a1994e656bd244ec7777": {
+   "symbol": "STONKGUY",
+   "name": "The Stonk Guy"
   }
  }
 }
