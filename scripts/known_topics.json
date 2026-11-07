@@ -37682,7 +37682,12 @@
    "class": "swap_adjacent",
    "name": "DustAdded(address,bytes32,uint256,uint256)",
    "note": "EZManager CLCore concentrated liquidity dust accounting event recording unutilized USDC dust added to position after compounding fees alongside Uniswap V3 swaps."
+  },
+  "0x989f8962b980b595c0928275f4f4b2bdd4ef5dbf343591ff06e91e9d3bf1711b": {
+   "class": "non_swap",
+   "name": "Purchased(address,uint32,address,address,uint256,uint256,(uint32,uint128,uint128)[])",
+   "note": "Suno protocol PWattSale primary sale delivery order on Ethereum L1; USDC payment on Base without on-chain token exchange (non_swap under swap-promotion rule)"
   }
  },
- "version": "2026-11-05.18"
+ "version": "2026-11-05.19"
 }
