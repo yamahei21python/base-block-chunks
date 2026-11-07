@@ -37732,7 +37732,12 @@
    "class": "non_swap",
    "name": "PoolConfigured",
    "note": "Concentrated liquidity pool configuration update event recording parameter updates for pool ID"
+  },
+  "0x49b9b5358c9580b3e6c5ee10b8b260c1e64bede87cb8a212e9e20a0b7dc20e5a": {
+   "class": "non_swap",
+   "name": "SendToken(address,address,address,uint256)",
+   "note": "Etherlink EVM Bridge (OriginalTokenBridge): emitted upon locking ERC20 tokens or WETH on Base to bridge to Etherlink via LayerZero."
   }
  },
- "version": "2026-11-05.22"
+ "version": "2026-11-05.23"
 }
