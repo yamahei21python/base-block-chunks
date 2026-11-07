@@ -1611,7 +1611,13 @@
    "protocol": "EZManager",
    "role": "Canonical state and accounting core for concentrated liquidity positions",
    "source": "Sourcify (chain 8453: src/CLCore.sol, contract CLCore; Basescan: EZManager: CL Core)"
+  },
+  "0xe5dee7da99ab3c2a18bb5e029caf4bbb608b7881": {
+   "name": "PWattSale",
+   "protocol": "Suno",
+   "role": "Primary sale contract for project tokens (pWatts)",
+   "source": "https://basescan.org/address/0xe5dee7da99ab3c2a18bb5e029caf4bbb608b7881#code"
   }
  },
- "version": "2026-11-05.15"
+ "version": "2026-11-05.16"
 }
