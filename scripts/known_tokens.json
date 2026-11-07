@@ -20656,6 +20656,30 @@
   "0xadf8faaa1561bcbb7f0d5a50b3cb805bf2311dd9": {
    "symbol": "GLANCE",
    "name": "GLANCE github.com/glanceapp/GLANCE"
+  },
+  "0x4446a5e68add17e32f482051b61ded3b81f186c0": {
+   "symbol": "BFB",
+   "name": "Bigfoot Bullrun"
+  },
+  "0x502acdbb3f2f1bce5c1458ec447f5db99df055e5": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x60bb384726ea8f22d1c4dea87f710947a76999b8": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0x7bb68487cd1beff1aeb31a8de4caecf549b14f73": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0xa5f8f9306a8ed03928bae91f2f2b5c969c6e8b07": {
+   "symbol": "ROADY",
+   "name": "Roadybot"
+  },
+  "0xadf9404351cb698457502aedff17e2a299a7e056": {
+   "symbol": "AWESOME-JAVA",
+   "name": "AWESOME-JAVA github.com/akullpp/AWESOME-JAVA"
   }
  }
 }
