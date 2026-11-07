@@ -20684,6 +20684,18 @@
   "0xadf42d585ffdf1fc448c0f857235fb2d49b1990a": {
    "symbol": "DOTENV",
    "name": "DOTENV github.com/motdotla/DOTENV"
+  },
+  "0x5a961028a9918aac169c4186442aa9d2c7dd466e": {
+   "symbol": "OSOR",
+   "name": "Official Saudi Oil Reserve"
+  },
+  "0xa0a30564efac165e8bf89560d5017f0e13efe692": {
+   "symbol": "CIRCUIT OVERLOAD",
+   "name": "CIRCUIT OVERLOAD"
+  },
+  "0xadf272382da0822e98fa5c1f29b7ee7f22e61986": {
+   "symbol": "PDM",
+   "name": "PDM github.com/pdm-project/PDM"
   }
  }
 }
