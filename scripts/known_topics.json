@@ -37737,7 +37737,12 @@
    "class": "non_swap",
    "name": "SendToken(address,address,address,uint256)",
    "note": "Etherlink EVM Bridge (OriginalTokenBridge): emitted upon locking ERC20 tokens or WETH on Base to bridge to Etherlink via LayerZero."
+  },
+  "0x9603b65b11492fec54ccc3d9feb93536f804d82e12228187ff730a253fc283ee": {
+   "class": "non_swap",
+   "name": "AllowFunction",
+   "note": "AllowFunction(bytes32,address,bytes4,uint8) emitted by Zodiac Roles Modifier v2 proxy when configuring role permissions"
   }
  },
- "version": "2026-11-05.23"
+ "version": "2026-11-05.24"
 }
