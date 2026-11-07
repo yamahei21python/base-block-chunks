@@ -1695,7 +1695,19 @@
    "protocol": "P2P.me",
    "role": "P2P fiat-crypto ramp Diamond proxy (MerchantOnboardFacet)",
    "source": "https://github.com/p2pdotme/subgraph (abis/MerchantOnboardFacet.json, networks.json)"
+  },
+  "0x71c424ef79819c852952e517c082c4d17f89fdf9": {
+   "name": "Diamond",
+   "protocol": "Doefin",
+   "role": "Diamond proxy / core exchange & settlement contract",
+   "source": "Sourcify (chainId 8453, match)"
+  },
+  "0x569594f181ac9abde3ebf89954f3d3af40d63600": {
+   "name": "ERC1967Proxy",
+   "protocol": "Skip Protocol",
+   "role": "Cross-chain swap handler via Axelar Gateway",
+   "source": "Sourcify (chainId 8453, exact_match)"
   }
  },
- "version": "2026-11-05.23"
+ "version": "2026-11-05.24"
 }
