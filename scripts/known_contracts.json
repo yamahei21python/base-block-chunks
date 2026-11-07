@@ -1569,7 +1569,19 @@
    "protocol": "ZKP2P",
    "role": "Holds maker liquidity, deposit configuration and funds locked for intents",
    "source": "https://github.com/zkp2p/zkp2p-contracts"
+  },
+  "0x83d21577a1a9010995bd4318be63146698c37f30": {
+   "name": "TransparentUpgradeableProxy",
+   "protocol": "TokenBoost",
+   "role": "Token boost escrow proxy (implementation: TokenBoost at 0xc091c4d11887f06fa43352c3e895d9e9d8e4f4ba)",
+   "source": "https://basescan.org/address/0x83d21577a1a9010995bd4318be63146698c37f30#code"
+  },
+  "0x7d6dbe08f610ca1ade4fea11e5d40d0fb9faecc7": {
+   "name": "MetaAggregatorSwapContract",
+   "protocol": "MetaAggregator",
+   "role": "DEX meta-aggregator swap execution router",
+   "source": "https://basescan.org/address/0x7d6dbe08f610ca1ade4fea11e5d40d0fb9faecc7#code"
   }
  },
- "version": "2026-11-05.11"
+ "version": "2026-11-05.12"
 }
