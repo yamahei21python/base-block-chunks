@@ -20548,6 +20548,26 @@
   "0xadfc80337c6fbf80226e3fb4a7442b44d4fddd33": {
    "symbol": "BAIKAL",
    "name": "BAIKAL github.com/sabre-io/BAIKAL"
+  },
+  "0x156f8042de39dc54ad0309bde1139337715b7777": {
+   "symbol": "PARESTOCK",
+   "name": "PareStock"
+  },
+  "0x8b62f938a60dae68e080c122e2f820cddcd4e716": {
+   "symbol": "GOIF",
+   "name": "Global Oil Institution Fund"
+  },
+  "0x8e038a667686fdf22a15e3a619ad63460d8ec990": {
+   "symbol": "USPR",
+   "name": "United States Power Reserve $USPR"
+  },
+  "0xb200000000000000000000fffa494c50a69a7701": {
+   "symbol": "SI",
+   "name": "Super Iguana"
+  },
+  "0xfef2d7b013b88fec2bfe4d2fee0aeb719af73481": {
+   "symbol": "ONCHAIN",
+   "name": "/onchain"
   }
  }
 }
