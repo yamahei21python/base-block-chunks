@@ -20596,6 +20596,18 @@
   "0x782412b2f2f7b9e04e371f7a55adf81f60dc7777": {
    "symbol": "AMBRX",
    "name": "Amber Tokenized Stock XStock"
+  },
+  "0x080f91e395a52eb323f7a4188faf04a243c4527d": {
+   "symbol": "Spawnn",
+   "name": "Spawnn"
+  },
+  "0x3a5b423603c4ccc1f5986a5b16c124a62b68072b": {
+   "symbol": "USOE",
+   "name": "US Oil Exchange (USOE)"
+  },
+  "0xc9852eb671d9254d9de1c6f2621dbccfda42671e": {
+   "symbol": "BIC",
+   "name": "BIC"
   }
  }
 }
