@@ -20516,6 +20516,14 @@
   "0xf221551f1bbce4edf2694e6ca14a434adab94e01": {
    "symbol": "SPACEX",
    "name": "SpaceX"
+  },
+  "0x6c0d4a5b5cf5598a320b54de616f2e3c01e2e360": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0xa0ba24c132f36b9b8862aa775f7e3f93f63dbb07": {
+   "symbol": "BTCX",
+   "name": "AMD Bitcoin       Tokenised Stock       (xStock)  "
   }
  }
 }
