@@ -1581,7 +1581,19 @@
    "protocol": "MetaAggregator",
    "role": "DEX meta-aggregator swap execution router",
    "source": "https://basescan.org/address/0x7d6dbe08f610ca1ade4fea11e5d40d0fb9faecc7#code"
+  },
+  "0xc6bc695aacaaca4cd4f025f1978bc6004a26ff3d": {
+   "name": "EpochNavVault",
+   "protocol": "Matador",
+   "role": "ERC-7540 asynchronous NAV vault",
+   "source": "verified source on Sourcify (Base chainId 8453, src/EpochNavVault.sol)"
+  },
+  "0x92ee42a61cf55642949b4fe74bb4796978ddb47a": {
+   "name": "ScapStaking",
+   "protocol": "Capminal",
+   "role": "sCAP staking and CAPU minter/burner",
+   "source": "official repository https://github.com/Capminal/capminal-contracts and verified source on Sourcify (Base chainId 8453, src/ScapStaking.sol)"
   }
  },
- "version": "2026-11-05.12"
+ "version": "2026-11-05.13"
 }
