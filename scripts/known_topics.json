@@ -37637,7 +37637,17 @@
    "class": "non_swap",
    "name": "ScapUnlocked",
    "note": "ScapUnlocked(address,uint256,uint256) - Capminal ScapStaking vault burnAndUnlockScap event"
+  },
+  "0xcbc791002c01ec1a56b45b0ce54abfc42ea9475bddb001a7e5eb6f211998ebe8": {
+   "class": "swap_adjacent",
+   "name": "SettlementExecuted(bytes32,uint64,uint64,address,uint256,uint256)",
+   "note": "TplusAtomicSettler execution log carrying tokenIn, amountIn, profit; adjacent to multi-hop RFQ swap settlement."
+  },
+  "0x9cee5eacd317086e5050733a5dad16ef5aaec185de792371a9625bfee2a3213b": {
+   "class": "non_swap",
+   "name": "UnstakeInitiated(address,uint256,uint256)",
+   "note": "Capminal ScapStaking unbonding cooldown initiation event recording user, sCAP shares burned, and release timestamp."
   }
  },
- "version": "2026-11-05.15"
+ "version": "2026-11-05.16"
 }
