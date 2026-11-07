@@ -37697,7 +37697,27 @@
    "class": "non_swap",
    "name": "GradedRootUpdated(bytes32,uint256,uint256,uint256)",
    "note": "GradedPriceOracle Merkle root update for graded trading card price proofs"
+  },
+  "0xe561aac0de81b851ec9dc55886f16502085f54e485f7f9dea81cccce4e9f3f74": {
+   "class": "non_swap",
+   "name": "OperationResult",
+   "note": "OperationResult(string,string,string,address,bytes4,bool,bytes) emitted by RemoteAccountAxelarRouter on cross-chain remote account execution"
+  },
+  "0x58c93a0551604465b4dbadac99726a14a8a7a10e2141de758e001303125c1a22": {
+   "class": "non_swap",
+   "name": "BetPlaced",
+   "note": "BetPlaced(uint256,uint256,address,address,uint256,uint8,uint8) emitted by Roulette contract when a user places a wager"
+  },
+  "0xe3b452dde5497c607568e08a8e119f184bfffd42c3fbd54e3466e97b218ab5ba": {
+   "class": "non_swap",
+   "name": "MultiBetPlaced",
+   "note": "MultiBetPlaced(uint256,uint256,address,address,uint256,uint8,bool) emitted by Roulette contract when a user places multiple bets"
+  },
+  "0xe91ed7e8668cc588245e241f11913e4de1fcece5ca3b383106d60348578600b6": {
+   "class": "non_swap",
+   "name": "PoolActivated",
+   "note": "PoolActivated(uint256,bool) emitted upon pool activation via activatePool(uint256)"
   }
  },
- "version": "2026-11-05.20"
+ "version": "2026-11-05.21"
 }
