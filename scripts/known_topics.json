@@ -37657,7 +37657,32 @@
    "class": "non_swap",
    "name": "AllocSplitHaven(bool,address)",
    "note": "Emitted by ClaimReward contract during sectorHash, withdrawAmount, or logAlloc without token/value transfer."
+  },
+  "0x73fc076a6dc311c86aa8be0baa48f246eeb171cb2728ea07541508e63767d9de": {
+   "class": "non_swap",
+   "name": "Rebase(uint256,uint256,uint256,uint256)",
+   "note": "Autonomous Loop Staking contract 8-hour epoch rebase event recording inflation minting and updated rebase index."
+  },
+  "0xe9dc3aa904dc4deea7cee1f305f02b909d8d648d04d0fe205ec6451a1736f9e3": {
+   "class": "non_swap",
+   "name": "MerkleRootUpdated(uint64,bytes32)",
+   "note": "Merkle distribution/airdrop contract epoch root update event carrying indexed epoch and bytes32 merkle root."
+  },
+  "0x08679bf54d9634209ca064c3b80cde00c02d4c3c099e055738ebcf61ddab6da5": {
+   "class": "non_swap",
+   "name": "BatchDeposited(uint256,uint256,bool)",
+   "note": "Batch deposit caller contract 0xbad9bffeb3783062f58b2f9bcf6cf193d6e976ab event emitted in batchDeposit(uint256[],bool) recording deposit count, total amount, and flag."
+  },
+  "0xf21e9480b8d912fc77444c62b0f64604ade9c2afa4e9234ce9b990d535dbfb98": {
+   "class": "non_swap",
+   "name": "LinearDeposit(uint256,address,uint256)",
+   "note": "RWA Inc linear staking pool deposit event emitted by TransparentUpgradeableProxy 0xef66fd159e226218d97eaba4c5fd3e807da0e71e recording poolId, staker, and staked token amount."
+  },
+  "0x2229f558d0d533a13cb2791df7de38ddbe380f3bad63b6dd61037cc5cf2fcdf5": {
+   "class": "swap_adjacent",
+   "name": "DustAdded(address,bytes32,uint256,uint256)",
+   "note": "EZManager CLCore concentrated liquidity dust accounting event recording unutilized USDC dust added to position after compounding fees alongside Uniswap V3 swaps."
   }
  },
- "version": "2026-11-05.17"
+ "version": "2026-11-05.18"
 }
