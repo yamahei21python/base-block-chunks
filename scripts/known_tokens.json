@@ -20640,6 +20640,22 @@
   "0xb8d59c7b33054beda610b2b2d38ea38694cdfabd": {
    "symbol": "MIDAS",
    "name": "Midas The Minotaur"
+  },
+  "0x19448475cc265d8033f3f385cb341ac9af11e40f": {
+   "symbol": "Archangel",
+   "name": "Archangel "
+  },
+  "0x658ccee03ed9712121fdac752185242598d98023": {
+   "symbol": "DUSOR",
+   "name": "Diamond U.S Oil Reserve"
+  },
+  "0xadf379eb663888f9a25db8a79b9efcbae6b9a46b": {
+   "symbol": "OPENTRAILMAP",
+   "name": "OPENTRAILMAP github.com/osmus/OPENTRAILMAP"
+  },
+  "0xadf8faaa1561bcbb7f0d5a50b3cb805bf2311dd9": {
+   "symbol": "GLANCE",
+   "name": "GLANCE github.com/glanceapp/GLANCE"
   }
  }
 }
