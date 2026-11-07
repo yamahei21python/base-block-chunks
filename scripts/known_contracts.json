@@ -1653,7 +1653,19 @@
    "protocol": "Zodiac",
    "role": "modifier",
    "source": "https://github.com/gnosisguild/zodiac-modifier-roles"
+  },
+  "0x1dec81c4d84ec1f96426fff54249b95aad9db570": {
+   "name": "BaseHarvesting",
+   "protocol": "BaseForEver",
+   "role": "proxy",
+   "source": "Sourcify (chain 8453, matchId 5184607, BaseHarvesting.sol)"
+  },
+  "0x16b578c38ad74045fb6d86f33317039841d4b489": {
+   "name": "GMGNCounter",
+   "protocol": "GMGNCounter",
+   "role": "counter",
+   "source": "Sourcify (chain 8453, matchId 20656524, GMGNCounter.sol)"
   }
  },
- "version": "2026-11-05.20"
+ "version": "2026-11-05.21"
 }
