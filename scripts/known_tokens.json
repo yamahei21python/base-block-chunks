@@ -20568,6 +20568,30 @@
   "0xfef2d7b013b88fec2bfe4d2fee0aeb719af73481": {
    "symbol": "ONCHAIN",
    "name": "/onchain"
+  },
+  "0x02f31d8e32575ddbdc3ae4ca17b7663029debaec": {
+   "symbol": "Orb Power",
+   "name": "Orb Power"
+  },
+  "0x4d9b05bad1a88dcd68b16bcfebc532a2cbf12b07": {
+   "symbol": "DROPS",
+   "name": "Drops"
+  },
+  "0x98ebd4ac5d4f7022140c51e03cac39d9f94cde9b": {
+   "symbol": "CLAUDIA",
+   "name": "CLAUDIA"
+  },
+  "0x9d2b74e54a1d9c7c39043ac860450283f2dc7277": {
+   "symbol": "MUTM",
+   "name": "MutuumFinance"
+  },
+  "0xadfbe2e2f101086ec27d9093425ad3f5da8fe5ca": {
+   "symbol": "TEMPL",
+   "name": "TEMPL github.com/a-h/TEMPL"
+  },
+  "0xded24c944fc3338873d9b977ce896a27050c8e05": {
+   "symbol": "REB3L",
+   "name": "REB3L"
   }
  }
 }
