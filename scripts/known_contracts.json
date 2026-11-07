@@ -1683,7 +1683,19 @@
    "protocol": "Agoric",
    "role": "EIP-1167 proxy remote account executing cross-chain calls via Axelar",
    "source": "https://basescan.org/address/0x26500ba9800dc10ba668aa11b94967c5f7367046#code"
+  },
+  "0x2565accf3b744f0cef1322220ae9029b08f3e2f9": {
+   "name": "StakingSourceTracker",
+   "protocol": "BitTON",
+   "role": "Staking source tracking",
+   "source": "Basescan (verified implementation at 0x399e9efe9a46b820d0b5ebd874965f59ff4fd667)"
+  },
+  "0x4cad6ec90e65babec9335cad728ddc610c316368": {
+   "name": "MerchantOnboardFacet",
+   "protocol": "P2P.me",
+   "role": "P2P fiat-crypto ramp Diamond proxy (MerchantOnboardFacet)",
+   "source": "https://github.com/p2pdotme/subgraph (abis/MerchantOnboardFacet.json, networks.json)"
   }
  },
- "version": "2026-11-05.22"
+ "version": "2026-11-05.23"
 }
