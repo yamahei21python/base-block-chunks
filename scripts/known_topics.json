@@ -37582,7 +37582,12 @@
    "class": "non_swap",
    "name": "OFTSent(bytes32,uint32,address,uint256)",
    "note": "OpenChain hit: \"OFTSent(bytes32,uint32,address,uint256)\". Non-exchange protocol bookkeeping/lifecycle event at emitter 0x2b11834ed1feaed4b4b3a86a6f571315e25a884d."
+  },
+  "0xfc0fae2131c415309f829a0025dc0c5e27bd3c891bfb77cc0d2269a19ac04379": {
+   "class": "non_swap",
+   "name": "DepositPaymentMethodActiveUpdated",
+   "note": "DepositPaymentMethodActiveUpdated(uint256,bytes32,bool) emitted by ZKP2P EscrowV2 contract"
   }
  },
- "version": "2026-11-05.12"
+ "version": "2026-11-05.13"
 }
