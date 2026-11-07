@@ -20496,6 +20496,26 @@
   "0x9a44504c41e559ef95678e32f791521d26377777": {
    "symbol": "Chaineye 👁",
    "name": "ChainEye 👁"
+  },
+  "0x630056f4704e806726171f0377c6fb729a8691b3": {
+   "symbol": "IOTA",
+   "name": "IOTA"
+  },
+  "0x77d23efeebad38d44b246f6f912ca6b1367732ab": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0xadf0c71af9c38535d5c53c843f5834f916f0c327": {
+   "symbol": "CLASH-VERGE-REV",
+   "name": "CLASH-VERGE-REV github.com/clash-verge-rev/CLASH-VERGE-REV"
+  },
+  "0xcd5abda1421e9f5f71b8fca085678b7e37128f50": {
+   "symbol": "nobuytest",
+   "name": "nobuytest"
+  },
+  "0xf221551f1bbce4edf2694e6ca14a434adab94e01": {
+   "symbol": "SPACEX",
+   "name": "SpaceX"
   }
  }
 }
