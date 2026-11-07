@@ -1617,7 +1617,19 @@
    "protocol": "Suno",
    "role": "Primary sale contract for project tokens (pWatts)",
    "source": "https://basescan.org/address/0xe5dee7da99ab3c2a18bb5e029caf4bbb608b7881#code"
+  },
+  "0x3c754fccace327a6b59f37b28de2b4c40a3f6261": {
+   "name": "SoDexTokenBridgeAML",
+   "protocol": "SoDex",
+   "role": "Bridge AML Compliance Escrow Proxy",
+   "source": "Basescan: verified ERC1967Proxy pointing to verified SoDexTokenBridgeAML implementation at 0x46ae3de514974c3771b805904d56575d7b902a6f"
+  },
+  "0x2f1a99a834de7fad747f2765b37a29c8997b3b42": {
+   "name": "GradedPriceOracle",
+   "protocol": "Meme Merchants",
+   "role": "Trading Card Graded Price Merkle Oracle",
+   "source": "Basescan: verified contract GradedPriceOracle at 0x2f1a99a834de7fad747f2765b37a29c8997b3b42"
   }
  },
- "version": "2026-11-05.16"
+ "version": "2026-11-05.17"
 }
