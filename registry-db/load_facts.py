@@ -153,6 +153,9 @@ def main():
         " (SELECT count(*) FROM topic)").fetchone()
     print(f"topic coverage: shape {cov[0]}, emitter {cov[1]}, "
           f"evidence {cov[2]}, flow {cov[3]} of {cov[4]} registry topics")
+    print(f"coverage rate: {cov[0] / cov[4] * 100:.1f}% "
+          "(全121チャンク投入時は 7,425 / 7,559 = 98.2%。"
+          "これより低い場合は partials の不足を疑ってください)")
     con.close()
 
 if __name__ == "__main__":
