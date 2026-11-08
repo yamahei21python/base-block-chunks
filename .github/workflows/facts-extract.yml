@@ -1,0 +1,55 @@
+name: facts-extract
+
+# Extract the registry DB's 4 fact layers from the raw chunk DBs in the
+# `data-*` releases, entirely inside GitHub Actions (the chunk DBs are
+# ~2.4 GB gz and never leave GitHub). Only the small partial JSONs are
+# published, as a `facts-extract` release asset, for the registry
+# loader to merge locally. Chunks whose partials already exist locally
+# are listed in scripts/facts_skip.txt and skipped via placeholders.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Prepare output dir with skip placeholders
+        run: |
+          mkdir -p facts-out dl
+          while read -r f; do touch "facts-out/$f"; done < scripts/facts_skip.txt
+          ls facts-out | wc -l
+      - name: Extract release by release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for tag in $(gh release list --limit 100 --json tagName --jq '.[].tagName' | grep '^data-' || true); do
+            echo "== $tag =="
+            gh release download "$tag" --pattern 'chunk_*.db.gz' --dir dl
+            for gz in dl/*.db.gz; do gunzip -f "$gz"; done
+            python3 scripts/extract_facts.py dl facts-out
+            rm -f dl/*.db
+          done
+      - name: Package partials
+        run: |
+          find facts-out -size 0 -delete
+          ls facts-out | wc -l
+          tar -czf facts-partials.tar.gz -C facts-out .
+          ls -la facts-partials.tar.gz
+      - name: Publish partials as release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create facts-extract facts-partials.tar.gz \
+            --title "facts extract partials" \
+            --notes "4 fact layers (shape/emitter/evidence/flow) extracted from data-* chunk DBs by facts-extract.yml" \
+          || gh release upload facts-extract facts-partials.tar.gz --clobber
