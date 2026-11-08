@@ -37802,7 +37802,17 @@
    "class": "swap_adjacent",
    "name": "OrdersMatched(bytes32,bytes32,uint8,uint128)",
    "note": "Doefin protocol order matching event emitted upon matching paired orders"
+  },
+  "0xdaf9101d1252b2a64d581ac74c5158c51129acca2ba55c45d3477163f7070fba": {
+   "class": "non_swap",
+   "name": "TokenEnabled(address,bool)",
+   "note": "Verified signature TokenEnabled(address,bool) in OpenChain registry; emitted by setTokenEnabled on 0xf1d73563fe3e7bc602bced062c8b74317eeafad6; administrative/permissioning event."
+  },
+  "0xfc12ecb14d8997444c5cb252763060a68ef0dce22f1a0dc2e49b3722c79682bc": {
+   "class": "non_swap",
+   "name": "DeployedCapitalReported(uint256,uint256,uint64)",
+   "note": "Verified in Sourcify source code for RwaVaultV3 (0x8db493c05f9094d0bc9778a50c3fcc62e7a10cab); accounting report of deployed capital in RWA vault."
   }
  },
- "version": "2026-11-05.29"
+ "version": "2026-11-09.1"
 }
