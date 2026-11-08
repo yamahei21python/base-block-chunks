@@ -49,6 +49,17 @@ def keccak_map(signatures):
         raise RuntimeError("node keccak failed: " + r.stderr[:500])
     return json.loads(r.stdout)
 
+EXPECTED_VERSIONS = {"topics": "2026-11-05.29", "pools": "2026-11-08.2",
+                     "contracts": "2026-11-05.24"}
+
+def check_version(kind, doc):
+    got = doc.get("version")
+    exp = EXPECTED_VERSIONS[kind]
+    if got != exp:
+        print(f"WARNING: {kind} の版が期待と違います "
+              f"(got: {got}, expected: {exp})。"
+              "このまま続けると件数が変わります。版の取り違えに注意。")
+
 def main():
     if os.path.exists(DB):
         os.remove(DB)
@@ -70,12 +81,21 @@ def main():
 
     # ---------------- topics ----------------
     tdoc = json.load(open(TOPICS))
+    check_version("topics", tdoc)
     topics = tdoc["topics"]
     sig_re = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*\(.*\)$")
     sig_names = {v.get("name") for v in topics.values()
                  if v.get("name") and sig_re.match(v["name"])}
     sig_names |= {v["signature"] for v in topics.values() if v.get("signature")}
-    kmap = keccak_map(sig_names)
+    try:
+        kmap = keccak_map(sig_names)
+    except Exception as e:
+        # keccak 照合は署名の真偽チェックであって構築の前提ではない。
+        # 落ちる代わりに未照合 (keccak_matches=NULL) で続行し、警告する。
+        print(f"WARNING: keccak 照合をスキップしました ({e})。"
+              "topic_signature.keccak_matches は NULL (未照合) になります。"
+              "node + ethers を用意すれば照合付きで再構築できます。")
+        kmap = {}
     n_sig_match = n_sig_mismatch = 0
     for t0, info in topics.items():
         cur.execute(
@@ -124,6 +144,7 @@ def main():
 
     # ---------------- pools + tokens ----------------
     pdoc = json.load(open(POOLS))
+    check_version("pools", pdoc)
     pools, decimals = pdoc["pools"], pdoc.get("decimals", {})
     seen_tokens = {}
     n_pools = 0
@@ -168,6 +189,7 @@ def main():
 
     # ---------------- contracts ----------------
     cdoc = json.load(open(CONTRACTS))
+    check_version("contracts", cdoc)
     contracts = cdoc["contracts"]
     role_map = {"emitter": "emitter", "router": "router",
                 "aggregator": "aggregator", "pool_manager": "pool_manager",
