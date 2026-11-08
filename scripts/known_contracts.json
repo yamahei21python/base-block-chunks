@@ -2331,7 +2331,13 @@
    "protocol": "Maverick",
    "role": "emitter",
    "source": "registry audit 2026-11-08 (PR #61): token0() reverts; identical bytecode length 21,689 for the tokenab: class; 0 legs in corpus ledgers"
+  },
+  "0x8db493c05f9094d0bc9778a50c3fcc62e7a10cab": {
+   "name": "RwaVaultV3",
+   "protocol": "uRWA",
+   "role": "vault",
+   "source": "Sourcify verified source code (RwaVaultV3.sol, Base chain 8453); event DeployedCapitalReported(uint256,uint256,uint64); ERC-4626 custodial RWA fund vault with pluggable compliance (uRWA)"
   }
  },
- "version": "2026-11-08.1"
+ "version": "2026-11-09.1"
 }
