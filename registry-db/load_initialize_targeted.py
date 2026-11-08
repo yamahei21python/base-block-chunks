@@ -44,7 +44,9 @@ def main():
         truth[log["topic1"].lower()] = {
             "currency0": addr(log["topic2"]),
             "currency1": addr(log["topic3"]),
-            "fee": int(w[0], 16),
+            # v4 DYNAMIC_FEE_FLAG = 0x800000: no fixed fee -> NULL fee_ppm
+            "fee": None if int(w[0], 16) == 0x800000 else int(w[0], 16),
+            "dynamic_fee": int(w[0], 16) == 0x800000,
             "tick_spacing": int(w[1], 16),
             "hooks": "0x" + w[2][-40:],
             "block": log["block_number"],
@@ -73,12 +75,21 @@ def main():
                 (CHAIN, b(pid), e["block"]))
             dbid = cur.lastrowid
             n_new += 1
+        # 冪等ガード: 同じ Initialize 主張が既にあれば再投入しない
+        # （再実行で主張が二重化した実績があるため）
+        already = cur.execute(
+            "SELECT 1 FROM pool_pair_assertion WHERE pool_id=?"
+            " AND source_kind='initialize_event' AND priority=100",
+            (dbid,)).fetchone()
+        if already:
+            continue
         cur.execute(
             "INSERT INTO pool_pair_assertion(pool_id, token0, token1, fee_ppm,"
             " source_kind, priority, source_ref, run_id) VALUES"
             " (?, ?, ?, ?, 'initialize_event', 100, ?, ?)",
             (dbid, b(e["currency0"]), b(e["currency1"]), e["fee"],
-             f"initialize tx:{e['tx']} block:{e['block']}", run_id))
+             f"initialize tx:{e['tx']} block:{e['block']}"
+             + (" dynamic_fee" if e["dynamic_fee"] else ""), run_id))
     print(f"assertions inserted: {len(truth)} ({n_new} pools newly created)")
 
     imported = {}
@@ -107,6 +118,7 @@ def main():
             "registry_pair": list(reg) if reg else None,
             "truth": ([t["currency0"], t["currency1"]] if t else None),
             "fee": t["fee"] if t else None,
+            "dynamic_fee": t["dynamic_fee"] if t else None,
             "block": t["block"] if t else None,
             "tx": t["tx"] if t else None,
             "verdict": ("not_in_truth" if t is None else
