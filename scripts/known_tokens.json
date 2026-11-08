@@ -20716,6 +20716,1806 @@
   "0xea081ac453ba7fe010d4a1994e656bd244ec7777": {
    "symbol": "STONKGUY",
    "name": "The Stonk Guy"
+  },
+  "0x00000000efe302beaa2b3e6e1b18d08d69a9012a": {
+   "symbol": "AUSD",
+   "name": "AUSD"
+  },
+  "0x003bb36f7839416007a0c8ff105fb6cd1f5bab07": {
+   "symbol": "Clawlinker",
+   "name": "Clawlinker"
+  },
+  "0x006566e56a3c88c3b692ec9c9086f52bc3a13ba3": {
+   "symbol": "TRRNV",
+   "name": "TERRANOVA"
+  },
+  "0x00d2a624267e5ec1f52e65db049290845f4a588b": {
+   "symbol": "SUPPOK",
+   "name": "SUPPOK"
+  },
+  "0x011d33122ecbab3c46e476524c861a2af447581a": {
+   "symbol": "NAFF",
+   "name": "NAFF"
+  },
+  "0x0145f8534527fd0c373ecb446ae75af0aa675222": {
+   "symbol": "TIGERCAT",
+   "name": "Tigercat"
+  },
+  "0x015cf988e5a8443208180dad9b88f1b5dac1ff87": {
+   "symbol": "USDP",
+   "name": "United States Dividend Program"
+  },
+  "0x022888411dd5c04f2245b5117d18a51c521f30c5": {
+   "symbol": "MIRA",
+   "name": "Mira Parsen"
+  },
+  "0x02a7c7a61bfb48d0c4a8ded7f5f4402ffe936271": {
+   "symbol": "TRDR",
+   "name": "TRADR"
+  },
+  "0x030ad8202c1f56783b6d428bd7f315865e3a7032": {
+   "symbol": "UTDF",
+   "name": "UTDF"
+  },
+  "0x034b2f529dc9b647da2c7bcb016064e74e32d7c2": {
+   "symbol": "ZBTC",
+   "name": "ZBTC Production v2"
+  },
+  "0x03569cc076654f82679c4ba2124d64774781b01d": {
+   "symbol": "BOLD",
+   "name": "BOLD Stablecoin"
+  },
+  "0x03672f84d43656c51852a7f60916236b87a67777": {
+   "symbol": "ADTF",
+   "name": "AMERCAN DEVIDEND TRUST FUND"
+  },
+  "0x0449738674a9ef310f31cfdb5f67353c601d78b7": {
+   "symbol": "11",
+   "name": "BAD"
+  },
+  "0x04d2d6cc1e5507a46c8b72cbc528ffd1ad4c6ffd": {
+   "symbol": "gork",
+   "name": "New XAI gork"
+  },
+  "0x04e3426c887bdf526826614e49ee044abd99dae6": {
+   "symbol": "SHARK",
+   "name": "SHARK"
+  },
+  "0x05d96231b6d0c104da410d480f5e51b701a286d6": {
+   "symbol": "LORE",
+   "name": "LORE"
+  },
+  "0x05fb44f09cc874471c22bd8062e24b0493932882": {
+   "symbol": "starkware_ltd",
+   "name": "starkware_ltd"
+  },
+  "0x06db872ffbe7acf7ef18f2cc31ced15152f62966": {
+   "symbol": "ADOF",
+   "name": "ADOF"
+  },
+  "0x078f1f3549ec4a31d4b8dce6cdb0db7bcbf73e1f": {
+   "symbol": "cosmic_tapir_2400",
+   "name": "cosmic_tapir_2400"
+  },
+  "0x08ccb86a31270fd97d927a4e17934c6262a68b7e": {
+   "symbol": "SQUAD",
+   "name": "SquadSwap"
+  },
+  "0x09b052085e9c6291fbf0dfb0918c861bcb47eb25": {
+   "symbol": "RICKY",
+   "name": "Ricky the Raccoon"
+  },
+  "0x09b1f7619eba64d096aa5103eec19945c3dded6e": {
+   "symbol": "LAPTOP",
+   "name": "LAPTOP"
+  },
+  "0x09b5cb12fadc6dfa39cc2aa569b05dd3c9b6ea9e": {
+   "symbol": "WSOS",
+   "name": "WSOS"
+  },
+  "0x09b85783f6d9b6f482cde7df4b71ea931f187777": {
+   "symbol": "FILDLT",
+   "name": "FilingDelta"
+  },
+  "0x0a04200e009c6386e000a29c8cd33474902f0038": {
+   "symbol": "NADF",
+   "name": "National American Dividend Fund"
+  },
+  "0x0a8753e39d5805bab0e570dd1974ee43f90799a8": {
+   "symbol": "BARKBARK",
+   "name": "clankerdoge"
+  },
+  "0x0bddfa9a0a1eb326593262c7af47ee091db9cb70": {
+   "symbol": "DENIM",
+   "name": "DENIM"
+  },
+  "0x0c3e14ca158e874f513c70caafeea49a85d4ccc6": {
+   "symbol": "BASE-69",
+   "name": "Brian Armstrong Saves Ethereum"
+  },
+  "0x0c66d591d1ff5944a44aebb65c33f6b6e82a124f": {
+   "symbol": "ENSURE",
+   "name": "ensure"
+  },
+  "0x0e0857dc811ae37c4bdd122510ad35f9f770e4ad": {
+   "symbol": "EPT",
+   "name": "EpicToken"
+  },
+  "0x0ee0cc20d82f484a588ea64f16b658dd6fcbae27": {
+   "symbol": "bull",
+   "name": "bull"
+  },
+  "0x0f8ac22b85076f9bfe0b93cc49fb6426cb150f88": {
+   "symbol": "Totem",
+   "name": "Totem"
+  },
+  "0x1020ec8aa3f709a1f3d8705cdba89b950451bd88": {
+   "symbol": "wtAAPL",
+   "name": "Wrapped Apple Inc. ST0x"
+  },
+  "0x11a8a603b98e14783c8ee4ba8993fe8f49d75ba1": {
+   "symbol": "some things are meant to be",
+   "name": "some things are meant to be"
+  },
+  "0x11c77e7a39c80e00f1c15bfb5f394e7b7e9a50c6": {
+   "symbol": "dadsdefispace",
+   "name": "dadsdefispace"
+  },
+  "0x11f7773e604c83f6b4edb67e515502e23a389e32": {
+   "symbol": "12,56",
+   "name": "ZORA"
+  },
+  "0x12ee7d672d27cd4fbb4153e29608396d775c8d43": {
+   "symbol": "UODF",
+   "name": "United Oil Dividend Fund"
+  },
+  "0x134ba967d5973baafcd5abbf459b91eff34e0b07": {
+   "symbol": "CLANKDEXER",
+   "name": "Clankdexer"
+  },
+  "0x13741c5df9ab03e7aa9fb3bf1f714551dd5a5f8a": {
+   "symbol": "NOGS",
+   "name": "Noggles"
+  },
+  "0x14cabcf6b5d644e421d358721dc15f990a3a5a39": {
+   "symbol": "UODF",
+   "name": "United Oil Dividend Fund"
+  },
+  "0x163fb041c2e0026fcfa8e215f123b2cd55b2da81": {
+   "symbol": "HAIR",
+   "name": "Base Wif Hair "
+  },
+  "0x16ab79d2bc081b33e5dcf59b9904b264e3cf7777": {
+   "symbol": "WINDOWLIT",
+   "name": "Window"
+  },
+  "0x172bf570a3726588e52d7b623d33e81d2269eb51": {
+   "symbol": "GOODVIBES",
+   "name": "GOODVIBES"
+  },
+  "0x174a0de0fa1c4771ca980a42553c0041016e5a67": {
+   "symbol": "WARD",
+   "name": "WARD"
+  },
+  "0x17705f2171a5869356eeef9827a5b16a8fbf871e": {
+   "symbol": "ADOF",
+   "name": "ADOF"
+  },
+  "0x17d70172c7c4205bd39ce80f7f0ee660b7dc5a23": {
+   "symbol": "DIME",
+   "name": "Dimes"
+  },
+  "0x18c9839227a8a5dbff320ca213500e37b02f385e": {
+   "symbol": "barkinghotdog",
+   "name": "BDOG Style"
+  },
+  "0x18cdf3b63ebe6a7af2159801873ba0225c98c2aa": {
+   "symbol": "GAIA",
+   "name": "Gaia"
+  },
+  "0x1921c1b60500a220421a1af72ef24340f0787777": {
+   "symbol": "CALL",
+   "name": "Call"
+  },
+  "0x1a1fdeeb28d8b3a95c02230f3378454d90c0f3a1": {
+   "symbol": "schnoz",
+   "name": "schnoz"
+  },
+  "0x1abe5117844bf1d9797f3a39918934739dcf7777": {
+   "symbol": "AIRDROP",
+   "name": "We Want The Airdrop"
+  },
+  "0x1ac11a6363735ca64bd8359676899244de926511": {
+   "symbol": "poumpam",
+   "name": "poumpam"
+  },
+  "0x1c524dfd59caa5c795aebf278887496b03e40024": {
+   "symbol": "ADP",
+   "name": "ADP"
+  },
+  "0x1dd264855c7de0e2fe2cdd6e82bcc71bd86c4fe9": {
+   "symbol": "WRP",
+   "name": "Warp"
+  },
+  "0x1e46d7efef64a833afb1cd49299a7ad5b439f4d8": {
+   "symbol": "wtIAU",
+   "name": "Wrapped iShares Gold Trust ST0x"
+  },
+  "0x1ec6b5d408d1e7857b232c9ec50c353f9e36e757": {
+   "symbol": "STAR",
+   "name": "Digital Creator"
+  },
+  "0x1ec7ea3aa68abe236b3ef895aad183db5a5d6252": {
+   "symbol": "USOE",
+   "name": "USOE"
+  },
+  "0x1f1a979e6f9e0179218376041ea54caedef5dba3": {
+   "symbol": "ETHR",
+   "name": "ethresearchbot"
+  },
+  "0x1f348cc97520289ff38c39929b7f45f1f3108a92": {
+   "symbol": "ADP",
+   "name": "ADP"
+  },
+  "0x1f88ce99cbfade1e95653794738a19cb1365e15d": {
+   "symbol": "USOT",
+   "name": "US OIL TRUST"
+  },
+  "0x1fce49e1c5d1f2f477b25744a060e85921968e70": {
+   "symbol": "DOB",
+   "name": "DOB on Base"
+  },
+  "0x20043719498e7353e3664411696449188754749c": {
+   "symbol": "USDF",
+   "name": "United States Dividend Fund"
+  },
+  "0x20eaba9d6818529cfffa2c1c63b97a02a0049ba3": {
+   "symbol": "CLERK",
+   "name": "CLERK"
+  },
+  "0x2112b92a4f6496b7b2f10850857ffa270464d054": {
+   "symbol": "BORING",
+   "name": "SuperBoring"
+  },
+  "0x21ac0af83ee0b4fe4de853eca85f74d0eb0e14fd": {
+   "symbol": "<3",
+   "name": "<3"
+  },
+  "0x222f10edab925bdd8d6241d488ad576fa7dfb12e": {
+   "symbol": "cbCEN",
+   "name": "CEN Crypto"
+  },
+  "0x224d77976705a24f355134c11f6aa43bfb377777": {
+   "symbol": "WINDOW",
+   "name": "Window Of Opportunity"
+  },
+  "0x23418de10d422ad71c9d5713a2b8991a9c586443": {
+   "symbol": "BGCI",
+   "name": "Bloomberg Galaxy Crypto Index"
+  },
+  "0x23f0abc773dc923b10702461457c7d092f8d0ed3": {
+   "symbol": "GAS",
+   "name": "GasToken"
+  },
+  "0x240459044e9da1c971b40385ec5f13875012335d": {
+   "symbol": "$RAVE",
+   "name": "RaveDAO."
+  },
+  "0x24aaf0269a7bcb2fb2fe60d9e424b0976d35ebb6": {
+   "symbol": "NAFF",
+   "name": "NAFF"
+  },
+  "0x24ca2fcca044b345d0676f770c6cb42ac34809d7": {
+   "symbol": "PACATO",
+   "name": "Pacato"
+  },
+  "0x24f7c4be57a1d2b36b6be2eb4bd415803703855b": {
+   "symbol": "$BCD",
+   "name": "BankrClankerDRB"
+  },
+  "0x2511bba5ae4f53c7942251777964153e2558952e": {
+   "symbol": "BWIF",
+   "name": "Base Wif Hat"
+  },
+  "0x26414193474deed585fa71a5e947c7cc8bb39dcc": {
+   "symbol": "PDA",
+   "name": "Public Dividend American"
+  },
+  "0x26c69e4924bd0d7d52d680b33616042ee13f621c": {
+   "symbol": "SALUKI",
+   "name": "SALUKI"
+  },
+  "0x26e6bd8cde0a38229f83a9804e93d65e6678dbb1": {
+   "symbol": "pfWETH-188",
+   "name": "Peapods Interest Bearing WETH - 188"
+  },
+  "0x27ef445420cf06a0d5c03470d36049be7a644e01": {
+   "symbol": "pTIPS",
+   "name": "Moltbook tips"
+  },
+  "0x28974aec76de8958361b49e8093865636ce71e1b": {
+   "symbol": "GOO",
+   "name": "GOO"
+  },
+  "0x29d47e46629ae87018d747b6e7c11482fac035a8": {
+   "symbol": "AOP",
+   "name": "AOP"
+  },
+  "0x2aab3a78b41690ed08001dcc16b70d34b1223ba3": {
+   "symbol": "STABLE",
+   "name": "Stable Specialist"
+  },
+  "0x2adc355bc8645cf0b02f32a3f27aa396921a5ddf": {
+   "symbol": "gloriasanz",
+   "name": "gloriasanz"
+  },
+  "0x2b679d861553426aa7fc8d80f9eacba69007d88b": {
+   "symbol": "ADTF",
+   "name": "AMERCAN DEVIDEND TRUST FUND"
+  },
+  "0x2b843f8d297f3b08278a4ce05c9ed58f5daa5e11": {
+   "symbol": "2.11",
+   "name": "zora"
+  },
+  "0x2c23f28e6703df468d11d7ed8444ff36d18d356d": {
+   "symbol": "HASH",
+   "name": "Provenance Blockchain (HASH)"
+  },
+  "0x2cea822e8ee4fc095a1d11b68e7fbac58ca80e09": {
+   "symbol": "95000",
+   "name": "Devidend Trust Fund American"
+  },
+  "0x2d9496436defe137ca241b37e25017f3f80c1cd3": {
+   "symbol": "BAN3",
+   "name": "Bananas3"
+  },
+  "0x2e3a23146381c33381af97e6268c6344ae8a68e5": {
+   "symbol": "DOGEB",
+   "name": "Dogecoin On Base"
+  },
+  "0x2e7d9280bd793b3fb3afd7f9748aa0a9075b6c6e": {
+   "symbol": "AOP",
+   "name": "AOP"
+  },
+  "0x2efd686fe4023b683b67fe0b59a0f941ab381d84": {
+   "symbol": "pfUSDC-195",
+   "name": "Peapods Interest Bearing USDC - 195"
+  },
+  "0x2f9abfc7c0a3ff644baf3df18a17983082b0fa8f": {
+   "symbol": "CLANKDEXER",
+   "name": "Clankdexer"
+  },
+  "0x30f56869be006668ebde57fe834c61cdd9e9fba3": {
+   "symbol": "Zeroxoneb",
+   "name": "Zeroxoneb"
+  },
+  "0x31711525456d3fdf8eccd99fefb02b65d7575cde": {
+   "symbol": "EPICDYLAN.com",
+   "name": "epicdylan.com"
+  },
+  "0x319927efee4a7d2e756b4353ed2f95ce3d80ac12": {
+   "symbol": "USOE",
+   "name": "USOE"
+  },
+  "0x31f5064808a6446ae81bb307c8bd9b3363d98222": {
+   "symbol": "TDH",
+   "name": "TIMI Diamond Hands - BaseStonk.io"
+  },
+  "0x3238f79e9a087ae97f4fa0cf216c49303c37ce19": {
+   "symbol": "XMR",
+   "name": "XMR Monero"
+  },
+  "0x32db20f8176538582ee6e13debfac8e88e93d68f": {
+   "symbol": "AODF",
+   "name": "American Oil Dividend Fund"
+  },
+  "0x33137f8ac2cfbc7bd30d461cb4090c7a3b810675": {
+   "symbol": "PONZI",
+   "name": "Ponzi"
+  },
+  "0x33d71201bcbe34301512f8a259e382b8ef4146b3": {
+   "symbol": "cnc",
+   "name": "creativity and collaboration"
+  },
+  "0x342ecde3c08b925e85fc8a2c80c286cd13a98ef5": {
+   "symbol": "ZEDX",
+   "name": "Zedxion"
+  },
+  "0x34b1bcaeaf5893248af5b04219637b7c20642dd8": {
+   "symbol": ".AI",
+   "name": "Agent ID"
+  },
+  "0x34dd9041e0aab568cb8c55060618f1cea2630ac3": {
+   "symbol": "FODF ",
+   "name": "Federal Oil Devidend Fund "
+  },
+  "0x3535eda4546fc834006781ad13b33d2b4a077777": {
+   "symbol": "CRW",
+   "name": "FastCRW"
+  },
+  "0x354584ff431aad6d6dd7313df7d418e23b28fc49": {
+   "symbol": "UDTF",
+   "name": "United Dividend Trust Fund"
+  },
+  "0x359d5bfa1bb87598e2198ec139ee44d31bd06fac": {
+   "symbol": "wNeckCoin",
+   "name": "Chia Warped NeckCoin"
+  },
+  "0x35ce817c28e6351a7c41e2d15c6808586d8fb11a": {
+   "symbol": "OMGSUP",
+   "name": "Omega Supreme"
+  },
+  "0x364c1fcc43a840dc88f3523cfe94dd08d25c76e6": {
+   "symbol": "AOFD",
+   "name": "American Oil Fund Dividend‘"
+  },
+  "0x379a6e5ab250762c52e5dc8315f3f25e7d0532bb": {
+   "symbol": "EPIC",
+   "name": "Epic Chain"
+  },
+  "0x37f24b26bcefbfac7f261b97f8036da98f81a299": {
+   "symbol": "BRISH ",
+   "name": "BRISH "
+  },
+  "0x381f546b894b68f39b376746b11a243358237777": {
+   "symbol": "SAIBOT92",
+   "name": "SAIBOT92"
+  },
+  "0x382dec50863f0623fe773f2aa1239467ac8c7ffa": {
+   "symbol": "KDX",
+   "name": "KieDex"
+  },
+  "0x38ac2c1d082b4f6326fe0bd88faeb7341ed9f401": {
+   "symbol": "ELON",
+   "name": "ELON COIN"
+  },
+  "0x3954784974ebbdba40805dc7723fb2c45ea66b2a": {
+   "symbol": "Paper",
+   "name": "Papertrade"
+  },
+  "0x3a115f568c4b3d0c6e239b2e8f3d4cda3798f536": {
+   "symbol": "IDLE",
+   "name": "Idle Network"
+  },
+  "0x3a3c11fe5083f9904f0426f537230c3478db5194": {
+   "symbol": "AODF",
+   "name": "AODF"
+  },
+  "0x3c820a9b571680c7780514b092150e4ff91c9d9b": {
+   "symbol": "SPCX",
+   "name": "SpaceX"
+  },
+  "0x3cd928ce9e2841a69a90348c0b940d48fc49865e": {
+   "symbol": "sollution",
+   "name": "sollution"
+  },
+  "0x3cfe5d1bb2afc1ecb5ad50709f6498e57528f6ea": {
+   "symbol": "ONE",
+   "name": "One coin to unite us all"
+  },
+  "0x3d517d5f37543da0afefe83b3aea8263443bf6ea": {
+   "symbol": "GROYPER",
+   "name": "Groyper"
+  },
+  "0x3e5c4fa0caa794516ed0df77f31daa534918d492": {
+   "symbol": "WOOF",
+   "name": "Degen Dogs WOOF"
+  },
+  "0x412797c37c677f0af5ba5418fd12df8b18e0ca87": {
+   "symbol": "TIPS",
+   "name": "TIPS"
+  },
+  "0x413642cfb90667e20c6effbc500bf2686cb59daf": {
+   "symbol": "PEPKING",
+   "name": "PepeKing"
+  },
+  "0x42c23884ca3fc81429bc50ad50575ce681ccfe59": {
+   "symbol": "XTO",
+   "name": "XTO"
+  },
+  "0x4343f6e0415582c489e9a6e150ab7461d2129d6c": {
+   "symbol": "FODF",
+   "name": "Federal Oil Dividend Fund"
+  },
+  "0x434ed11532004deca09cf28c324325dfacf10ab8": {
+   "symbol": "PAD",
+   "name": "Public American Dividend’"
+  },
+  "0x45a11f114babdccdc6a99f242d11d756d80dcc36": {
+   "symbol": "SOLANA PAIRS",
+   "name": "Solana Beach Surf"
+  },
+  "0x470dcb0be00bc717c53aaeefeecb3fa73a767777": {
+   "symbol": "GROUPER",
+   "name": "Grouper"
+  },
+  "0x47e6cc2d43192d0e27bace5128a6519d4043feaa": {
+   "symbol": "UDOF",
+   "name": "United Dividend Oil Fund"
+  },
+  "0x484ebf1204c1a34d8dc9cd2d5b51c5a83e713f56": {
+   "symbol": "MCX",
+   "name": "(MCX) MetaCortex"
+  },
+  "0x4b361e60cf256b926ba15f157d69cac9cd037426": {
+   "symbol": "CLUSTR",
+   "name": "Clustr"
+  },
+  "0x4d15e62900b9f518352a94daf6c46b11775e3697": {
+   "symbol": "GPM",
+   "name": "GOLD PUMP MEME"
+  },
+  "0x4d526ec9c885469aee508585d99e77daef09da35": {
+   "symbol": "HOLM",
+   "name": "HolmBase"
+  },
+  "0x4da78059d97f155e18b37765e2e042270f4e0fc4": {
+   "symbol": "WUF",
+   "name": "Wuffi"
+  },
+  "0x5083fc11f27d192aad217101cf1bc40205a910ab": {
+   "symbol": "PWC",
+   "name": "Parallel World Coin"
+  },
+  "0x50888fe0a199a6c427a062c7bd590ed31d6c11a8": {
+   "symbol": "barkinghotdog",
+   "name": "Grand Dame"
+  },
+  "0x50ebc7f597a90d9fd1d9c27d94102ce277fafee1": {
+   "symbol": "FLOOM",
+   "name": "Floom"
+  },
+  "0x51f1b19f4534033ec53fc4143d6718cccd727777": {
+   "symbol": "BACKED",
+   "name": "Backed"
+  },
+  "0x5226e4eb5d6e9a8abf3edbe798e3f5883a0c5ba3": {
+   "symbol": "StarkWare",
+   "name": "StarkWare"
+  },
+  "0x5270065ef34f90694336d27cdb7aaa07c8afb0e9": {
+   "symbol": "ADTF",
+   "name": "AMERCAN DEVIDEND TRUST FUND"
+  },
+  "0x52c2b317eb0bb61e650683d2f287f56c413e4cf6": {
+   "symbol": "TREE",
+   "name": "Tree"
+  },
+  "0x53308581990d18189b09527174c8feff5ce0b89f": {
+   "symbol": "GRDE",
+   "name": "Global Reserve Digital Energy"
+  },
+  "0x538e3b171f3faa6eca06b4cfa34ae010d1e18429": {
+   "symbol": "SWIPE",
+   "name": "Dating App But For Tokens"
+  },
+  "0x53ce611b5477997972dad83585a0ad5cb56f433b": {
+   "symbol": "pfUSDC-147",
+   "name": "Peapods Interest Bearing USDC - 147"
+  },
+  "0x576d94ea82913467f53af9a21146cc2e28d77777": {
+   "symbol": "CS",
+   "name": "Chickenshrimp"
+  },
+  "0x5855dd2da69b30902fdac3048273d46440007777": {
+   "symbol": "PRIME",
+   "name": "Primal Roar"
+  },
+  "0x58c96613b08739a1fb58b3a56da8ee3c2491b22a": {
+   "symbol": "FOTF",
+   "name": "FOTF"
+  },
+  "0x58cbc88c2085e983c895386414445433772aea40": {
+   "symbol": "FUEF",
+   "name": "FUEF"
+  },
+  "0x59deeafd5aca4771b24e04eb5a3677f93fbbd9ab": {
+   "symbol": "WEALTH",
+   "name": "Wealth Transfer"
+  },
+  "0x5be83f77521cf1174de4c91089e007937fcf47c6": {
+   "symbol": "NDTA",
+   "name": "National Digital Trump Account - NDTA"
+  },
+  "0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7": {
+   "symbol": "yoUSD Edge",
+   "name": "yoUSD Edge"
+  },
+  "0x5df82b9cc7ddd86cf9c020b50fa3d25453a84a7c": {
+   "symbol": "USOS",
+   "name": "USOS"
+  },
+  "0x60555ab88a0caaf893ab284c1332c9d0a05af222": {
+   "symbol": "ZKAT",
+   "name": "ZERO KNOWLEDGE CAT"
+  },
+  "0x605a680b3557d6cfcc99d24e8d0f1202c5ef7777": {
+   "symbol": "OPENRO",
+   "name": "Openrouter Mcp"
+  },
+  "0x616a77792ca88a14c25b625196ff71d421ca4151": {
+   "symbol": "USDG",
+   "name": "Global Dollar (USDG)"
+  },
+  "0x620468c62ad229a110365495dd0d7b7b802fab81": {
+   "symbol": "push",
+   "name": "Keep Pushing"
+  },
+  "0x621be46fbeaf74843d90cf0b8d7fd92ebbb15b07": {
+   "symbol": "USN",
+   "name": "US Treasury Note - 2025"
+  },
+  "0x63a33d03fb990c670cf135ca3178f4f7e6fe3456": {
+   "symbol": "VERGE",
+   "name": "Verge Snowy x402"
+  },
+  "0x654ce43d48732b2dac9163b9c05cabbf86607777": {
+   "symbol": "SLURP",
+   "name": "Slurp"
+  },
+  "0x65b4405cd68cd762246b3bf03bcb820f95230b07": {
+   "symbol": "wwt",
+   "name": "we win together "
+  },
+  "0x65bb70c7caaec220f2fa5a195a0bd2b71e3d570d": {
+   "symbol": "CRK",
+   "name": "CRACK"
+  },
+  "0x65cc9d262e2af620d0a07478db321e7604fb7f01": {
+   "symbol": "STCKMXXNG",
+   "name": "STOCKSMAXXING"
+  },
+  "0x66ed85929f5255f906c73ad04d0a754d42d17777": {
+   "symbol": "SILO",
+   "name": "SILO"
+  },
+  "0x6989021c9393d0364c2b4b999f4c882ffdd175fa": {
+   "symbol": "20.26",
+   "name": "ZORA"
+  },
+  "0x69fbb9f753c1d7dbb0e8120d8bf32b253ea90aea": {
+   "symbol": "BALLSACK",
+   "name": "Ballsackcoin"
+  },
+  "0x6ac99094167eb69e94b60a8da8d60a02fefdfbb1": {
+   "symbol": "USPR",
+   "name": "United States Power Reserve"
+  },
+  "0x6b4720c55884f9001b6cea89738c944673948c3c": {
+   "symbol": "AXIS",
+   "name": "Axis Token"
+  },
+  "0x6c97dccef0e2292b9f36473a8dbe0d5a62246e54": {
+   "symbol": "CHUBBY",
+   "name": "Chubby"
+  },
+  "0x6cf0bf056cab08fa1d07a0b47031ed3ddee3fb66": {
+   "symbol": "XPUMP",
+   "name": "XPUMP"
+  },
+  "0x6cf4ba158bbd92122ad04450dab11158898a4795": {
+   "symbol": "USDF",
+   "name": "US Dividend Fund - USDF"
+  },
+  "0x6d56a131a3c2149b1e6de0c08691f4f352e7ca2d": {
+   "symbol": "vmp",
+   "name": "Participate or Doom Loop"
+  },
+  "0x6dbe34192b0172c64e1afae90bb24c8a5f7e5791": {
+   "symbol": "Snow",
+   "name": "Ski Mask Brian"
+  },
+  "0x6dd82a9ccea0d62bc19a1c11c735b56c0dc9ea6e": {
+   "symbol": "MTL",
+   "name": "Metal DAO"
+  },
+  "0x6e0090dbecf3b4f0f9429637756cadd8fc468c54": {
+   "symbol": "MILK",
+   "name": "Milk"
+  },
+  "0x6f35720b272bf23832852b13ae9888c706e1a379": {
+   "symbol": "APU",
+   "name": "BASED APU"
+  },
+  "0x6f89bca4ea5931edfcb09786267b251dee752b07": {
+   "symbol": "REGENT",
+   "name": "Regent"
+  },
+  "0x6ff9a473a3d3c78487213bbc0c6ff3b736754874": {
+   "symbol": "coinovo",
+   "name": "coinovo.app"
+  },
+  "0x7063dad0e5cc6060fa39ab80b1cfd00d60a7ef6f": {
+   "symbol": "USMS",
+   "name": "United States Mineral Supply"
+  },
+  "0x73c41e0bd713fe3c33a5a76c756aedb2527ea6ea": {
+   "symbol": "PANTHA",
+   "name": "Panthalassa"
+  },
+  "0x747f012d3356ec6c40ed7bc7cc7ca0b68f66cefc": {
+   "symbol": "Discord",
+   "name": "DiscordCoin"
+  },
+  "0x752610f225edf1d62fcff2d89375a1755cafebe6": {
+   "symbol": "WWRA",
+   "name": "World War Reserve Asset"
+  },
+  "0x76230ae5625b54f00c93e803ea8d8a987b5a7dc9": {
+   "symbol": "8bitkid",
+   "name": "8bitkid"
+  },
+  "0x76734b57dfe834f102fb61e1ebf844adf8dd931e": {
+   "symbol": "weirdo",
+   "name": "weirdo"
+  },
+  "0x76ba7949f64532d32fe19ecfbcaf28be53a57777": {
+   "symbol": "ROAMB",
+   "name": "Roambee"
+  },
+  "0x78b9ce06f0e20d89c78ced2ae739bb45dd5794ab": {
+   "symbol": "PROV",
+   "name": "Provenance Fact-check"
+  },
+  "0x7ab39631d4c1b06162ff5beb554f98b9ebcba0a7": {
+   "symbol": "FIRN",
+   "name": "firn"
+  },
+  "0x7ca599caa4671909701198682782b84e24457777": {
+   "symbol": "SUBLUN",
+   "name": "Sublunar AI"
+  },
+  "0x7dacb83efc06a926fb7a829137791a028b15f74e": {
+   "symbol": "Sahur",
+   "name": "tungtungtung"
+  },
+  "0x7e5cc7eae0455a07ab4abf354e0f5657ba2888bd": {
+   "symbol": "wtBABA",
+   "name": "Wrapped Alibaba Group Holding Limited ADR ST0x"
+  },
+  "0x7e8a93515199d167d8fe31c2c4586ddf05254b07": {
+   "symbol": "TRWA",
+   "name": "Tharwa"
+  },
+  "0x806041b6473da60abbe1b256d9a2749a151be6c6": {
+   "symbol": "stTAO",
+   "name": "Tensorplex Staked TAO"
+  },
+  "0x82b71a47a7e37ba2b3c3b3e999713d714a5efee1": {
+   "symbol": "KOKORO",
+   "name": "Kokoro"
+  },
+  "0x83db73ef5192de4b6a4c92bd0141ba1a0dc87c65": {
+   "symbol": "cUSDO",
+   "name": "Compounding Open Dollar"
+  },
+  "0x8556c86a47d8faaf3010b1e40cc787578dca7777": {
+   "symbol": "TESLA",
+   "name": "Gently Used Tesla"
+  },
+  "0x86780db695dfa929a9e15780460dbaa94e6746ea": {
+   "symbol": "GTAR",
+   "name": "GTA REWARDS"
+  },
+  "0x86c0791a687ddb02770318eb5321d065ba6bbc77": {
+   "symbol": "flowers",
+   "name": "flowers"
+  },
+  "0x86e26cd7792fd5f12333eb6d0f43c58b8ca9e2b7": {
+   "symbol": "pCLUSTR",
+   "name": "Clustr Pod"
+  },
+  "0x87c335c94c8ab70dcd9d1887bbd464819d0651e9": {
+   "symbol": "ME DÁ UMA MOEDA AÍ",
+   "name": "ME DÁ UMA MOEDA AÍ "
+  },
+  "0x87e4c45de6fcc2b8ae61ff98763175f6b818ef20": {
+   "symbol": "pAVNT",
+   "name": "Avantis.usdc"
+  },
+  "0x88d029c6f6158d47e40b52c8ab1b32548f0fcccc": {
+   "symbol": "SKINNY",
+   "name": "Skinny"
+  },
+  "0x89c089af271e4c9f23d662eedb267be2c077dd06": {
+   "symbol": "INFL",
+   "name": "Influencee"
+  },
+  "0x8a638ea79f71f3b91bdc96bbdf9fb27c93013d60": {
+   "symbol": "BBT",
+   "name": "Baby Tiger"
+  },
+  "0x8b5034a2bb428df77f1e3a305e97ac36583b99a1": {
+   "symbol": "jenneverley",
+   "name": "jenneverley"
+  },
+  "0x8c43675d712fcc6d373098000886179a55f80eb0": {
+   "symbol": "NDAF",
+   "name": "National Dividend American Fund"
+  },
+  "0x8d010bf9c26881788b4e6bf5fd1bdc358c8f90b8": {
+   "symbol": "DOT",
+   "name": "Polkadot Token (Relay Chain)"
+  },
+  "0x8d285df5be4570097e84241090fca8034ab18547": {
+   "symbol": "ETHB",
+   "name": "ETHEREUM ON BASE"
+  },
+  "0x8d2af5e3ac1478212852cf7b86e058b3cd184075": {
+   "symbol": "UPSR",
+   "name": "United Program States Relief"
+  },
+  "0x8d7dc06b49317c1c30227f1118aae82f2979f7d3": {
+   "symbol": "PHAROS",
+   "name": "Pharos"
+  },
+  "0x8e120482fe2f616f994a08dd95be3b9ab181b254": {
+   "symbol": "USEO",
+   "name": "USEO | United States Oil Exchange 🇺🇸"
+  },
+  "0x8f019931375454fe4ee353427eb94e2e0c9e0a8c": {
+   "symbol": "KOMPETE",
+   "name": "KOMPETE Token"
+  },
+  "0x8f9ae2ae840a93ab8601c2daf334cfd81b30b2dd": {
+   "symbol": "HOMEGIRL",
+   "name": "Mary Is My Homegirl — My Stepmother Edition"
+  },
+  "0x9006d081e57866063020fd61c477249fc9674b9b": {
+   "symbol": "TFGX",
+   "name": "TFGX"
+  },
+  "0x900a86afd8bf28f3b524a3ba8df740519b1ea5af": {
+   "symbol": "jilly",
+   "name": "jilly"
+  },
+  "0x909851a8598f560f2f3b68bb949d836e7dbb5e93": {
+   "symbol": "UM",
+   "name": "UM"
+  },
+  "0x90a052d606f9170cc6f0fecc252c48a220508c4d": {
+   "symbol": "USOE",
+   "name": "US Oil Exchange (USOE)"
+  },
+  "0x90bd9987c641ea8f889459bb09fa4c6499a67777": {
+   "symbol": "APEI",
+   "name": "Ape Intelligence"
+  },
+  "0x915bac7fcb31f573968e5a95612fc9aef177b369": {
+   "symbol": "MEOW",
+   "name": "MeowCoin"
+  },
+  "0x931d0748317a7d500bb29ae4f6c0d1619116d99d": {
+   "symbol": "motm",
+   "name": "Man on the Moon"
+  },
+  "0x94f87518b8d70284b0d20cbc7e036de0588c85dd": {
+   "symbol": "US OIL EXCHANGE",
+   "name": "USOE"
+  },
+  "0x94fe2443553cac98e9a4be911b9c2cf559415b0a": {
+   "symbol": "NOTF",
+   "name": "National Oil Trust Fund "
+  },
+  "0x95ad40842fae5da7247357202e2acb60cd0ff28e": {
+   "symbol": "SPACEX",
+   "name": "SpaceX"
+  },
+  "0x95b1f4450db8ac2da34862a2db37b41a4d073ba3": {
+   "symbol": "Stlh2",
+   "name": "stealth2"
+  },
+  "0x9688bc0611fd01f44141f9a199c2f728a0bf12ac": {
+   "symbol": "USDF",
+   "name": "United States Dividend Fund"
+  },
+  "0x97b959385dfdcaf252223838746beb232ac601aa": {
+   "symbol": "AIM",
+   "name": "AI Market Compass"
+  },
+  "0x97ce8365a6e1cb46a20c7b671f39a783bba53fb7": {
+   "symbol": "WILLIE",
+   "name": "WILLIE"
+  },
+  "0x97ef397a2415a65eddaffc813d51e59367a26b17": {
+   "symbol": "UKOR",
+   "name": "United Kingdom Oil Reserve"
+  },
+  "0x980c7de576149bfd0456aa5cf79e66db2dd0799f": {
+   "symbol": "SPARK",
+   "name": "PolySpark"
+  },
+  "0x9911f4e25788cd14ddeeb8330f54b0d1dff4a6cb": {
+   "symbol": "knowledgeispower84",
+   "name": "knowledgeispower84"
+  },
+  "0x994c96b520271a1454a3632a57fe568f607f0faa": {
+   "symbol": "HACKED",
+   "name": "HACKED"
+  },
+  "0x99e8f00aa3b79142355fe6e3d8a7605d62c4d799": {
+   "symbol": "BOINK",
+   "name": "Boink The Based Pig"
+  },
+  "0x9a9de07629ef283c2d700efd3958f59b7d528453": {
+   "symbol": "MOTO",
+   "name": "MOTO"
+  },
+  "0x9d29dd0114738d8a30f79156d81aea3067587777": {
+   "symbol": "OPENAI",
+   "name": "OpenAI"
+  },
+  "0x9e57a0b6648736be5f36e46659d0148785355b15": {
+   "symbol": "AOTF",
+   "name": "American Oil Trust Fund"
+  },
+  "0x9e9b9c53755a2df46ad8c5bf75a626b25efa242c": {
+   "symbol": "CHUBBY",
+   "name": "Chubby"
+  },
+  "0x9ef0315ca80fadaf5a6d760f545a55420e1b2b7f": {
+   "symbol": "FIDELITY ",
+   "name": "FIDELITY "
+  },
+  "0x9f0750c0db5253f3f536371d2e9fcf8a09ef9903": {
+   "symbol": "NAFF",
+   "name": "National American Future Fund"
+  },
+  "0x9f62b62cf8cc3aea56a3ce8808cf13503d1131e7": {
+   "symbol": "thenickshirley",
+   "name": "thenickshirley"
+  },
+  "0xa3d36e8b5ca7a74b95c6427e546da586de5607be": {
+   "symbol": "USOR OIL",
+   "name": "U.S. Oil Reserve (USOR)"
+  },
+  "0xa4bdd1f00bf3baba7b8714499ec06da14fc00043": {
+   "symbol": "KZ",
+   "name": "Z1000"
+  },
+  "0xa67885b7a6a3605ffe487dd7e3e5e3a95a0286a4": {
+   "symbol": "(TFG)TONFROGFINANCEMEME+UTILIDAD",
+   "name": "(TFG)TONFROGFINANCEMEME+UTILIDAD"
+  },
+  "0xa67e388a304a29d887935aa19500edcbe2717777": {
+   "symbol": "Some Things Are Meant To Be",
+   "name": "Some Things Are Meant To Be"
+  },
+  "0xa6a76c8a0967eac3371a491a1474b02590581f0b": {
+   "symbol": "TROLL",
+   "name": "TROLL"
+  },
+  "0xa8a8cdaab4ade13e02d77b48acc13302d3af9646": {
+   "symbol": "nxyz",
+   "name": "nxyz erc20"
+  },
+  "0xa8dfdc64a72e61b86f6a91fa4461262721b8eb69": {
+   "symbol": "DADS",
+   "name": "POLYGON DADS"
+  },
+  "0xaad5de835931e9546359b546c20c2a4c37aeef7d": {
+   "symbol": "MPAL",
+   "name": "MyPal4Life"
+  },
+  "0xab0db60a7c39fdea0ee438f431a9a456799e7777": {
+   "symbol": "AIDEVO",
+   "name": "Aidevops"
+  },
+  "0xab3f23c2abcb4e12cc8b593c218a7ba64ed17ba3": {
+   "symbol": "CRED",
+   "name": "Helixa Cred"
+  },
+  "0xabadab847728514d20ad3a015cae885cbfb7792a": {
+   "symbol": "pRSC",
+   "name": "pRSC"
+  },
+  "0xad45023f0e2db7099ad2c231563157d8b7f97777": {
+   "symbol": "PHYSCL",
+   "name": "Physicl"
+  },
+  "0xad5608426e8846af2afe14ac009d0235e904b840": {
+   "symbol": "XTX",
+   "name": "PROJECT CORTEX [XTX]"
+  },
+  "0xadf047c6239f2a5ad6532a59df88bcad0cfd0c11": {
+   "symbol": "DRISSIONPAGE",
+   "name": "DRISSIONPAGE github.com/g1879/DRISSIONPAGE"
+  },
+  "0xadf0b08d95de2c215a4cc35108a8ea039776f871": {
+   "symbol": "OPENCVSHARP",
+   "name": "OPENCVSHARP github.com/shimat/OPENCVSHARP"
+  },
+  "0xadf17942e4083f12911a3654c6596ff4f6b62414": {
+   "symbol": "NETBIRD",
+   "name": "NETBIRD github.com/netbirdio/NETBIRD"
+  },
+  "0xadf1d83e39064449bd232c97c798bcb867035e7e": {
+   "symbol": "KBD-AUDIO",
+   "name": "KBD-AUDIO github.com/ggerganov/KBD-AUDIO"
+  },
+  "0xadf22ccf990526ff60e2528ee49e955a2d0394e7": {
+   "symbol": "GO-OPENAI",
+   "name": "GO-OPENAI github.com/sashabaranov/GO-OPENAI"
+  },
+  "0xadf241ead8e690c4eb731332dc287648a215aa88": {
+   "symbol": "HOMELAB",
+   "name": "HOMELAB github.com/khuedoan/HOMELAB"
+  },
+  "0xadf25b5b9518234ad97969552b5c0e57b3f4a6f8": {
+   "symbol": "DEARPYGUI",
+   "name": "DEARPYGUI github.com/hoffstadt/DEARPYGUI"
+  },
+  "0xadf2a522886eb28082634f8f51beddd588de172a": {
+   "symbol": "LLMWARE",
+   "name": "LLMWARE github.com/llmware-ai/LLMWARE"
+  },
+  "0xadf2ac84f579919762b45dd4f7b555a7bdcd18b8": {
+   "symbol": "TTYD",
+   "name": "TTYD github.com/tsl0922/TTYD"
+  },
+  "0xadf2b784472130ac38960d8f4ecba5586b9562d2": {
+   "symbol": "SEEDBOX-LITE",
+   "name": "SEEDBOX-LITE github.com/hotheadhacker/SEEDBOX-LITE"
+  },
+  "0xadf30c02cecedc6ff1c3b1c6dcda3807c04870c4": {
+   "symbol": "AWESOME-FLUTTER",
+   "name": "AWESOME-FLUTTER github.com/solido/AWESOME-FLUTTER"
+  },
+  "0xadf328f6e6f1b6e0a4466bbe09744e5021fe2d8b": {
+   "symbol": "PHPDOCUMENTOR",
+   "name": "PHPDOCUMENTOR github.com/phpdocumentor/PHPDOCUMENTOR"
+  },
+  "0xadf3688b32e5d7c24fb20c3163ff6131fbb80bad": {
+   "symbol": "VERIFY",
+   "name": "VERIFY github.com/verifytests/VERIFY"
+  },
+  "0xadf40dc290c069dbf8cb675dc41c01f6021e97e8": {
+   "symbol": "RYTUNEX",
+   "name": "RYTUNEX github.com/rayenghanmi/RYTUNEX"
+  },
+  "0xadf4700e1ca7d5900ef175130b65d3396f361627": {
+   "symbol": "RUSTDESK",
+   "name": "RUSTDESK github.com/rustdesk/RUSTDESK"
+  },
+  "0xadf488117ecb82dac789c962f824fd789cdb7fdf": {
+   "symbol": "MURDER",
+   "name": "MURDER github.com/isadorasophia/MURDER"
+  },
+  "0xadf4b2b60212e353cba241b40c12d7c89c1d316e": {
+   "symbol": "ERROR-OR",
+   "name": "ERROR-OR github.com/amantinband/ERROR-OR"
+  },
+  "0xadf54253de0e7a185ea0e3fe7efb942f6785a456": {
+   "symbol": "SERVO",
+   "name": "SERVO github.com/servo/SERVO"
+  },
+  "0xadf57292ef94e9f0881e4d21901876d0811b261d": {
+   "symbol": "KARATE",
+   "name": "KARATE github.com/karatelabs/KARATE"
+  },
+  "0xadf595ea2cf9c0a96ccdd55fc5ff9a9c1f3d1bb1": {
+   "symbol": "OATPP",
+   "name": "OATPP github.com/oatpp/OATPP"
+  },
+  "0xadf5b40df3c2e2448186fc91524929bfac721d54": {
+   "symbol": "GUN",
+   "name": "GUN github.com/amark/GUN"
+  },
+  "0xadf600fabed4b1993a44f293c29157685179a23f": {
+   "symbol": "SECLISTS",
+   "name": "SECLISTS github.com/danielmiessler/SECLISTS"
+  },
+  "0xadf6a6822f86b8b8ed5bcb247b84b3c5481bc081": {
+   "symbol": "GRAPHENEOS.ORG",
+   "name": "GRAPHENEOS.ORG github.com/grapheneos/GRAPHENEOS.ORG"
+  },
+  "0xadf6ae8d627469762b21f9022647d2b75d373dd0": {
+   "symbol": "RISKFOLIO-LIB",
+   "name": "RISKFOLIO-LIB github.com/dcajasn/RISKFOLIO-LIB"
+  },
+  "0xadf6dc30f935b12c077336cc42536fda1ffa3921": {
+   "symbol": "GQL",
+   "name": "GQL github.com/amrdeveloper/GQL"
+  },
+  "0xadf700f57ccdeda25e9361fc524225425d7fdd2a": {
+   "symbol": "HTMX",
+   "name": "HTMX github.com/bigskysoftware/HTMX"
+  },
+  "0xadf7680281b92d673f804d7b6d90a32f4be02d0b": {
+   "symbol": "PSST",
+   "name": "PSST github.com/jpochyla/PSST"
+  },
+  "0xadf7a59e6c1b867542ff579b6c8f60a8674001ea": {
+   "symbol": "FIRACODE",
+   "name": "FIRACODE github.com/tonsky/FIRACODE"
+  },
+  "0xadf7c29aceac39ba89cac676acf8c9ebbdc28979": {
+   "symbol": "GSUDO",
+   "name": "GSUDO github.com/gerardog/GSUDO"
+  },
+  "0xadf7e07288d6007fe1f76b946e97f462549a7334": {
+   "symbol": "CUTTER",
+   "name": "CUTTER github.com/rizinorg/CUTTER"
+  },
+  "0xadf7e1d1844b4faebe986b24d621a085a63cab4f": {
+   "symbol": "QUERY-MONITOR",
+   "name": "QUERY-MONITOR github.com/johnbillion/QUERY-MONITOR"
+  },
+  "0xadf82089950277ec50cb5715ce0e445afd4a9fd2": {
+   "symbol": "EFCOREPOWERTOOLS",
+   "name": "EFCOREPOWERTOOLS github.com/erikej/EFCOREPOWERTOOLS"
+  },
+  "0xadf82f6290e2f3bb5fc7aa3f0cea1f9527efb9ea": {
+   "symbol": "FUSE",
+   "name": "FUSE github.com/krisk/FUSE"
+  },
+  "0xadf842536794b76f1be3bfd54f547697e01e38f0": {
+   "symbol": "PGRX",
+   "name": "PGRX github.com/pgcentralfoundation/PGRX"
+  },
+  "0xadf8ee4aa03d6ff0fb0f1f4dcc630f80746b020b": {
+   "symbol": "NOVEL",
+   "name": "NOVEL github.com/steven-tey/NOVEL"
+  },
+  "0xadf91a48d00c42e09a83eb582b0d30676c7ab09b": {
+   "symbol": "YAF",
+   "name": "YAF github.com/laruence/YAF"
+  },
+  "0xadf997923f55339f432efc6e13d936aa4999503b": {
+   "symbol": "OPENMQTTGATEWAY",
+   "name": "OPENMQTTGATEWAY github.com/1technophile/OPENMQTTGATEWAY"
+  },
+  "0xadf9ab0bf3c15c6c7a85fb128cacd694afa252b3": {
+   "symbol": "PYSYFT",
+   "name": "PYSYFT github.com/openmined/PYSYFT"
+  },
+  "0xadf9f6c33faefe5d821e1d809b10129b6d31562a": {
+   "symbol": "KHOJ",
+   "name": "KHOJ github.com/khoj-ai/KHOJ"
+  },
+  "0xadfa05f49899aa51333e0372957816777935661b": {
+   "symbol": "REACT-USE",
+   "name": "REACT-USE github.com/streamich/REACT-USE"
+  },
+  "0xadfa169264e84eebb3150543941779b956230ba5": {
+   "symbol": "REVOKEMSGPATCHER",
+   "name": "REVOKEMSGPATCHER github.com/huiyadanli/REVOKEMSGPATCHER"
+  },
+  "0xadfa3c415ef2af323ac801abcfcc30d53ea49965": {
+   "symbol": "FLURL",
+   "name": "FLURL github.com/tmenier/FLURL"
+  },
+  "0xadfa57c8baca1eab50080fbcfc8f2e01e01d6354": {
+   "symbol": "VPNCLOUD",
+   "name": "VPNCLOUD github.com/dswd/VPNCLOUD"
+  },
+  "0xadfaff136e04093844396db34353f7598d983019": {
+   "symbol": "SHADOW-TLS",
+   "name": "SHADOW-TLS github.com/ihciah/SHADOW-TLS"
+  },
+  "0xadfb077039fb5b15b304194b3b3d72f34e2d2857": {
+   "symbol": "CAMERADAR",
+   "name": "CAMERADAR github.com/ullaakut/CAMERADAR"
+  },
+  "0xadfb0b3d8720dbd628b3e0baf5d1ddcceca7cab1": {
+   "symbol": "NEW-PAC",
+   "name": "NEW-PAC github.com/alvin9999/NEW-PAC"
+  },
+  "0xadfb287920db9ad8854abe9fffc32bb62ec1cfab": {
+   "symbol": "GITEA",
+   "name": "GITEA github.com/go-gitea/GITEA"
+  },
+  "0xadfb578e717698f825ffa079940a8775e1987229": {
+   "symbol": "HELLOGITHUB",
+   "name": "HELLOGITHUB github.com/521xueweihan/HELLOGITHUB"
+  },
+  "0xadfb60edede9ebcb5926b48ccbb4311db64f5007": {
+   "symbol": "CURSOR-FREE-VIP",
+   "name": "CURSOR-FREE-VIP github.com/yeongpin/CURSOR-FREE-VIP"
+  },
+  "0xadfb7be474fecd8f38d52c8ea3ad202858cf996a": {
+   "symbol": "MICROUI",
+   "name": "MICROUI github.com/rxi/MICROUI"
+  },
+  "0xadfbc7f86c3a94cbfc09515846fec2f68952e7f6": {
+   "symbol": "SEA-ORM",
+   "name": "SEA-ORM github.com/seaql/SEA-ORM"
+  },
+  "0xadfbd09fae2d986f5638ee2a6da953e3ecde24a0": {
+   "symbol": "YARNSPINNER",
+   "name": "YARNSPINNER github.com/yarnspinnertool/YARNSPINNER"
+  },
+  "0xadfbe61702ff7369f0480fab96a017f503408acb": {
+   "symbol": "MULTI-TENANT",
+   "name": "MULTI-TENANT github.com/tenancy/MULTI-TENANT"
+  },
+  "0xadfc13022cffb819f1dfaebe67d3f83c145e71af": {
+   "symbol": "DEJAVU",
+   "name": "DEJAVU github.com/appbaseio/DEJAVU"
+  },
+  "0xadfc32976f131f09f718a17bf62e0763967e476e": {
+   "symbol": "FSOCIETY",
+   "name": "FSOCIETY github.com/manisso/FSOCIETY"
+  },
+  "0xadfcb0b9b413b737002d91a684a893c4b61bdcad": {
+   "symbol": "WEBOTS",
+   "name": "WEBOTS github.com/cyberbotics/WEBOTS"
+  },
+  "0xadfcfbc7d7ded7438429fcd61cbc18229a3158dc": {
+   "symbol": "VUE-GRID-LAYOUT",
+   "name": "VUE-GRID-LAYOUT github.com/jbaysolutions/VUE-GRID-LAYOUT"
+  },
+  "0xadfd292d6b7e67f9221cad2bb5dede09abe0bf19": {
+   "symbol": "MARKDOWN-HERE",
+   "name": "MARKDOWN-HERE github.com/adam-p/MARKDOWN-HERE"
+  },
+  "0xadfd72e84b881544bf8facd3d954e8d78e17b9d2": {
+   "symbol": "IT-TOOLS",
+   "name": "IT-TOOLS github.com/corentinth/IT-TOOLS"
+  },
+  "0xadfd7cea59212aecff0a61e871865e5b9acdd0b7": {
+   "symbol": "PLYR",
+   "name": "PLYR github.com/sampotts/PLYR"
+  },
+  "0xadfdb7f60b656d8e7e1c07f2b3acf92e3a4c514c": {
+   "symbol": "OPENMPTCPROUTER",
+   "name": "OPENMPTCPROUTER github.com/ysurac/OPENMPTCPROUTER"
+  },
+  "0xadfdc40076dd4769cd15762e998c244faccc1c14": {
+   "symbol": "NQ",
+   "name": "NQ github.com/leahneukirchen/NQ"
+  },
+  "0xadfdc65fb42a3de0c1afa1adddabf17df7cdae02": {
+   "symbol": "PROMPTS",
+   "name": "PROMPTS github.com/terkelg/PROMPTS"
+  },
+  "0xadfddbddc621a6331daa4890d2dc58a7c488a09a": {
+   "symbol": "STRESS-NG",
+   "name": "STRESS-NG github.com/colinianking/STRESS-NG"
+  },
+  "0xadfdf968475d141032a7730bda6d5f5cd961cd62": {
+   "symbol": "SIGNAL-CLI",
+   "name": "SIGNAL-CLI github.com/asamk/SIGNAL-CLI"
+  },
+  "0xadfdf9fef8cce39367225fb4cfdd38f0e4f81c9e": {
+   "symbol": "EBITEN",
+   "name": "EBITEN github.com/hajimehoshi/EBITEN"
+  },
+  "0xadfe235d8e0d73386ed56d4329920962a823399b": {
+   "symbol": "UTM",
+   "name": "UTM github.com/utmapp/UTM"
+  },
+  "0xadfe2cc8822e4fdb28eaf5a864023e6d846ccc45": {
+   "symbol": "ROCKET",
+   "name": "ROCKET github.com/rwf2/ROCKET"
+  },
+  "0xadfe3fc7f2e1fa39b2e82501530fdbef4a8437c9": {
+   "symbol": "LOGOS",
+   "name": "LOGOS github.com/maciejhirsz/LOGOS"
+  },
+  "0xadfe5ee9e81096348e4180e18a5909528d2a348d": {
+   "symbol": "HOSTS",
+   "name": "HOSTS github.com/stevenblack/HOSTS"
+  },
+  "0xadfe85e46671c29c4a3e1977e168361c1a412949": {
+   "symbol": "MINIAUDIO",
+   "name": "MINIAUDIO github.com/mackron/MINIAUDIO"
+  },
+  "0xadfef05a1db71ee56ec01e47d131111f78372b5a": {
+   "symbol": "CRYPTPAD",
+   "name": "CRYPTPAD github.com/cryptpad/CRYPTPAD"
+  },
+  "0xadff39eaa995e5dc13a275190a5d53d843bbbd87": {
+   "symbol": "NODE-POSTGRES",
+   "name": "NODE-POSTGRES github.com/brianc/NODE-POSTGRES"
+  },
+  "0xadff443f16777137686c2ffe9e9dafd163f98f4b": {
+   "symbol": "ILLA-BUILDER",
+   "name": "ILLA-BUILDER github.com/illacloud/ILLA-BUILDER"
+  },
+  "0xadff50e542bf527351b1560678b44a3dcb0f47d5": {
+   "symbol": "TOCK",
+   "name": "TOCK github.com/tock/TOCK"
+  },
+  "0xadffe81dec39011948a3d1832e3008a8235f8102": {
+   "symbol": "NNN",
+   "name": "NNN github.com/jarun/NNN"
+  },
+  "0xae0d87b9b9f8d81013cfc604096b7a5c6e6e8c55": {
+   "symbol": "GENERATIONAL WEALTH",
+   "name": "Generational Wealth"
+  },
+  "0xaf11b23a708bee537c44f3d85c2e0fd93e508b07": {
+   "symbol": "AIGHT",
+   "name": "aight"
+  },
+  "0xaf15a124e3d9e18e82801d69a94279d85bd6289b": {
+   "symbol": "HEPE",
+   "name": "Hunt Pepe"
+  },
+  "0xb0908b2fac2a0786cedfe4769c9d74e254c1009e": {
+   "symbol": "MPX",
+   "name": "EmpactX"
+  },
+  "0xb0991361cf509b8e5a9749356d73ea33e4948375": {
+   "symbol": "AOFT",
+   "name": "OIL AMERICAN TRUST FUND (AOFT)"
+  },
+  "0xb0e221f19a41b510e3e948ecabd84f685ea84198": {
+   "symbol": "satumalam_ch",
+   "name": "satumalam_ch"
+  },
+  "0xb1c3a6ac90e324c4072ad4b2a71c5d9382f9565c": {
+   "symbol": "BOOTR",
+   "name": "Bootr"
+  },
+  "0xb200000000000000000000002d805fee3c74e001": {
+   "symbol": "100",
+   "name": "100 USDC And A Dream"
+  },
+  "0xb2000000000000000000000ff4a547c891ab1b01": {
+   "symbol": "BaseUnc",
+   "name": "BaseUnc"
+  },
+  "0xb200000000000000000000146fcb4b636b3ffe7c": {
+   "symbol": "1WIN",
+   "name": "1win by Virtuals"
+  },
+  "0xb20000000000000000000015d87dc4d7045b1019": {
+   "symbol": "REBOOT",
+   "name": "clanker intern arc"
+  },
+  "0xb20000000000000000000019f6e7c675b73c2e4d": {
+   "symbol": "CRCLc",
+   "name": "Circle Internet Group Inc."
+  },
+  "0xb200000000000000000000245f3eec9cb5522f01": {
+   "symbol": "DINO",
+   "name": "o1Dino"
+  },
+  "0xb2000000000000000000002460f734fee93e3e64": {
+   "symbol": "Reboot",
+   "name": "Base Reboot"
+  },
+  "0xb200000000000000000000381eb1ba12960f1dfa": {
+   "symbol": "ClankV6",
+   "name": "Clank V5"
+  },
+  "0xb2000000000000000000003da1dd86da5ec4af0d": {
+   "symbol": "Reboot",
+   "name": "Base Reboot"
+  },
+  "0xb2000000000000000000004dbad0bb9b64bc7a01": {
+   "symbol": "CrazyFrog",
+   "name": "Crazy Frog"
+  },
+  "0xb20000000000000000000051a529fa1ddd49f401": {
+   "symbol": "MEMESTONK",
+   "name": "MEMESTONK"
+  },
+  "0xb200000000000000000000680d78ae1182a7bd01": {
+   "symbol": "LFG",
+   "name": "Lil Finder Guy"
+  },
+  "0xb20000000000000000000069789065766b24ec01": {
+   "symbol": "POWERUSERS",
+   "name": "powerusers"
+  },
+  "0xb2000000000000000000007005b52d0a0f35c8ba": {
+   "symbol": "REBOOT",
+   "name": "clanker intern arc"
+  },
+  "0xb200000000000000000000819b5c323b1d650b01": {
+   "symbol": "DiamondPepe",
+   "name": "DiamondPepe69"
+  },
+  "0xb200000000000000000000a164a26b09e6439d94": {
+   "symbol": "hawkclank",
+   "name": "Clank V5"
+  },
+  "0xb200000000000000000000a5b2fcf585efeda501": {
+   "symbol": "VETO",
+   "name": "Mr. Veto"
+  },
+  "0xb200000000000000000000afe7e4af2ecc3a161f": {
+   "symbol": "BLUE",
+   "name": "Blue"
+  },
+  "0xb200000000000000000000b1c85db99d1de6ef2a": {
+   "symbol": "COFFR",
+   "name": "Coffer 402"
+  },
+  "0xb200000000000000000000d3677a2bddb1184d01": {
+   "symbol": "Plumbing",
+   "name": "Plumbing"
+  },
+  "0xb200000000000000000000da1a91eeffa1d5b54a": {
+   "symbol": "ClankV7",
+   "name": "Clank V5"
+  },
+  "0xb200000000000000000000eaf40b03741bb4c801": {
+   "symbol": "TOSHI",
+   "name": "Polar Bear Dog"
+  },
+  "0xb200000000000000000000f1609ffd45046be501": {
+   "symbol": "COBIE",
+   "name": "The Base Bull"
+  },
+  "0xb200000000000000000000f8489deb2d21bde38c": {
+   "symbol": "FIX",
+   "name": "Fix by Virtuals"
+  },
+  "0xb320825f32a65a81ef69184ab295350004e3c02a": {
+   "symbol": "UFOD",
+   "name": "United Fund Oil Dividend"
+  },
+  "0xb33fee05a2c1c08fbd3772838bfc98156fff7777": {
+   "symbol": "GENESIS",
+   "name": "GENESIS CHAD"
+  },
+  "0xb381c282d8f9b9eba8c9c0dc79204ae05b8bbc2c": {
+   "symbol": "PUSDC",
+   "name": "ParallelWorld Test USD Coin"
+  },
+  "0xb39f8e33ef5856e114af9c73d7e30c30045bcccc": {
+   "symbol": "ReBoot",
+   "name": "ReBoot"
+  },
+  "0xb3a3d12adb8cd5815526eb8a5c85be1ee7b8e66c": {
+   "symbol": "Democat",
+   "name": "Democrat Cat"
+  },
+  "0xb4303b01fba6f8bf2b7f62d2fc479210ed0264d2": {
+   "symbol": "TROLL",
+   "name": "TROLL"
+  },
+  "0xb4311d3dd84e3c862483b1de84bae6e3225b92b7": {
+   "symbol": "ORION",
+   "name": "Manto de Orion - Gen7Arte  Original"
+  },
+  "0xb4533af189546f68fb5602db60ee6e2b60837777": {
+   "symbol": "GASRES",
+   "name": "GasRescue"
+  },
+  "0xb51eff119ce6a238f67db7ca48431c3d319c7211": {
+   "symbol": "XKICK",
+   "name": "xKick"
+  },
+  "0xb53e94779c13999937d478c63fdf592fcfad7777": {
+   "symbol": "BANG",
+   "name": "Bangpad"
+  },
+  "0xb568caa0ef384f6248ce95a12da53b8d8b1547cd": {
+   "symbol": "Bitcoin Hyper",
+   "name": "Bitcoin Hyper"
+  },
+  "0xb621ce20127165656b758afb91e58728a9e55988": {
+   "symbol": "NAFD",
+   "name": "National American Fund Dividend"
+  },
+  "0xb7d21097451a13134a7ceddffd57e517b7c3ac5b": {
+   "symbol": "WWAR",
+   "name": "World War Asset Reserve’"
+  },
+  "0xb83dbf23dca15ff1bd8827a6cf01e2b82a356bdb": {
+   "symbol": "ARC",
+   "name": "Autonomous Return Capital"
+  },
+  "0xb89d354ad1b0d95a48b3de4607f75a8cd710c1ba": {
+   "symbol": "LAY",
+   "name": "Loomlay"
+  },
+  "0xb8bfa92c1c92896b9ea328ebf37ee0f1de2d1d9b": {
+   "symbol": "NODF",
+   "name": "National Oil Dividend Fund"
+  },
+  "0xbbaf79c3922e1089d66532c7e3156f8bc5e25083": {
+   "symbol": "CROC",
+   "name": "CROC CAT"
+  },
+  "0xbbc508fca5f91ab260d618dbeaf78ef7c4dfc289": {
+   "symbol": "CHUBBY",
+   "name": "Chubby"
+  },
+  "0xbcc95a4877eb1eafaee2d94060097155db9c43c6": {
+   "symbol": "XCHAT",
+   "name": "XCHAT"
+  },
+  "0xbfb06f15e929b99f490ee485dacf9ecc8184edef": {
+   "symbol": "DOTF",
+   "name": "Digital Oil Trust Fund"
+  },
+  "0xc02743b782d7a93706122bf73413d6c2fe935099": {
+   "symbol": "BITSY",
+   "name": "BITSY the Based Kitty 🟦"
+  },
+  "0xc1b43871c9eecfcf630dd6285caee85e3d546f2d": {
+   "symbol": "BDOG 03",
+   "name": "BDOG 03"
+  },
+  "0xc34b17a3bef8ad0ebeb1cd3888f5160686538ab8": {
+   "symbol": "FIDELITY",
+   "name": "Fidelity"
+  },
+  "0xc54da048a809f29f7ee7ef39d65529d0d9d13b07": {
+   "symbol": "我的女友景甜",
+   "name": "我的女友景甜"
+  },
+  "0xc5625a1473c117089a13e327c74711f61c277777": {
+   "symbol": "DAVID",
+   "name": "David Dobrik Coin"
+  },
+  "0xc7562d0536d3bf5a92865ac22062a2893e45cb07": {
+   "symbol": "SYYN",
+   "name": "Siyana"
+  },
+  "0xc762e6cc52a09fe712a41e56838292ca841d6570": {
+   "symbol": "PIZZA",
+   "name": "PIZZA"
+  },
+  "0xc796e499cc8f599a2a8280825d8bda92f7a895e0": {
+   "symbol": "BRO",
+   "name": "Neurobro by Virtuals"
+  },
+  "0xc88de64db4df19b4fe8e66568cc36a72bd90ba73": {
+   "symbol": "DTCC Steller XLM",
+   "name": "DTCC STELLAR XLM"
+  },
+  "0xcaa817ded5d8cb3bc3fae5fb34df78b9b4808d38": {
+   "symbol": "USFR",
+   "name": "UNITED STATES FIRE RESERVE"
+  },
+  "0xcb48fa978002d522bb7250ff8487b9231be758a1": {
+   "symbol": "UOFD",
+   "name": "United Oil Fund Dividend"
+  },
+  "0xcd0c744c53fd500ec22440681e501ee9a18f0907": {
+   "symbol": "GEDR",
+   "name": "Global Egergy Digital Reserve"
+  },
+  "0xcdb4f0511e6d4709ca18a6d2632242de7ac32078": {
+   "symbol": "AORP",
+   "name": "AORP"
+  },
+  "0xce902f57b53e770d1366b1471897acb692ba2f58": {
+   "symbol": "NOTF",
+   "name": "National Oil Trust Fund"
+  },
+  "0xcf78abf1e459e1f3a16d96164ab8d9ae1360a21b": {
+   "symbol": "USWR",
+   "name": "United States Water Reserve"
+  },
+  "0xd1434c3ffee621c47e0b883f0deebc0ca24b6f33": {
+   "symbol": "BUFFER",
+   "name": "Buffering Economy"
+  },
+  "0xd19de281fda2f0abfc219127cfcf4b4c6ddd7777": {
+   "symbol": "ASML",
+   "name": "ASMLcompany"
+  },
+  "0xd2448e59d73a6329366a10657e09c3700478c3c1": {
+   "symbol": "USPR",
+   "name": "US POWER RESERVE⚡️"
+  },
+  "0xd2b338a36f837acd290fb0f7683ae42b0887f6cd": {
+   "symbol": "ZEDGE",
+   "name": "Zedge"
+  },
+  "0xd2c5838b888c4cce38b4d5a14ef51eb758717953": {
+   "symbol": "ANT",
+   "name": "Proof of Ant"
+  },
+  "0xd34258b7e34641f3429647bcf63d2a91b924fb85": {
+   "symbol": "BLL",
+   "name": "BellToken"
+  },
+  "0xd3679306360705ba3580bc4130b56460fb4e6926": {
+   "symbol": "KOR",
+   "name": "KOR"
+  },
+  "0xd3b0b58ec9516e4b875a075328e2cb059d4d54db": {
+   "symbol": "archai",
+   "name": "ArchAI"
+  },
+  "0xd3fc200b320e2433467220d3b66581dc6b486ed5": {
+   "symbol": "GOIF",
+   "name": "Global Oil Institution Fund"
+  },
+  "0xd45906561212b6402d499f7751580e1ba7d5d495": {
+   "symbol": "UKRO",
+   "name": "United Kingdom Reserve Oil"
+  },
+  "0xd652c5425aea2afd5fb142e120fecf79e18fafc3": {
+   "symbol": "POOL",
+   "name": "PoolTogether"
+  },
+  "0xd6d5bae3e06dfb4028ebf51a41d3bdc6f3558ff5": {
+   "symbol": "BAG",
+   "name": "Based Ape Gang"
+  },
+  "0xd8575dfdd6a19004ca6ecee60e617d70f6f52a5e": {
+   "symbol": "TiTi",
+   "name": "TiTiSocialFi"
+  },
+  "0xd89f6d47566753f291a4126b8326be6bbfa67777": {
+   "symbol": "PING",
+   "name": "Ping"
+  },
+  "0xd8b783287d24c9543275fd303c3c4f265d357777": {
+   "symbol": "CC",
+   "name": "Claude Code"
+  },
+  "0xdb9a4bdbf13a90362dd8b6b3957587727b78c0ae": {
+   "symbol": "STFY",
+   "name": "Stockify"
+  },
+  "0xdc929069377bc10a3a574e3544b49054541ca498": {
+   "symbol": "IFO",
+   "name": "Institusional Oil Fund"
+  },
+  "0xdcf0c69b1787acdc2ca1c4a6cfcf4ea2113a86d3": {
+   "symbol": "STONKS",
+   "name": "STONKS On Base"
+  },
+  "0xdd77cf7b2fdd29e783237ac3b7a5d479ce4ee109": {
+   "symbol": "USTF",
+   "name": "US Trust Fund"
+  },
+  "0xdd9f595b3cd9ca78c58bec2c8d42f1786dff285c": {
+   "symbol": "pOhmRage",
+   "name": "High burn Ohm (Rage)"
+  },
+  "0xdda991d4a31864c6216547b498f9c9432e9f389a": {
+   "symbol": "NDAF",
+   "name": "National Dividend American Fund (NDAF)"
+  },
+  "0xe031b0cd88ca5d41d13db188e4bfc6c0cfa3e5a2": {
+   "symbol": "NKMIND",
+   "name": "Satoshi’s Mind by Virtuals"
+  },
+  "0xe0c0f44a84cc4a60206360006eba237a5e8fc2dd": {
+   "symbol": "STBU",
+   "name": "Stobox Token"
+  },
+  "0xe116ba58acdfbe4f8746c20ee0892b4264f2076b": {
+   "symbol": "AOP",
+   "name": "American Overwatch Protocol"
+  },
+  "0xe16c666811ad6d6dea7f8651d3133452bfed4d13": {
+   "symbol": "BUNI",
+   "name": "Blue Unicorn"
+  },
+  "0xe18d95cbd9c526171bf3eb4ab36b7479ef388888": {
+   "symbol": "Baseguard",
+   "name": "Baseguard"
+  },
+  "0xe2e0844c503c047f0fdc4ec6da16e133d1396b07": {
+   "symbol": "COCOA",
+   "name": "Toady Hawk Dog"
+  },
+  "0xe4176f02127b8c929ac0ccd66e24663a48ae78ea": {
+   "symbol": "XTO",
+   "name": "XTO"
+  },
+  "0xe44b67c494ac53d67aae02a21c865aeeed0f0201": {
+   "symbol": "pfWETH-165",
+   "name": "Peapods Interest Bearing WETH - 165"
+  },
+  "0xe56abd659c54d1c2999bbff80b5bf05cfe736397": {
+   "symbol": "USRP",
+   "name": "United States Relief Program"
+  },
+  "0xe6fab54fbdcfc99703bbf8dddc353cd5438e5b07": {
+   "symbol": "L",
+   "name": "Larpcast"
+  },
+  "0xe7a315a4c0ee5e3ad79d3b3759d05239241ba176": {
+   "symbol": "Always on the move…",
+   "name": "Always on the move…"
+  },
+  "0xe7c0429d01d92ffacb07fa6cad9d9a166b87782f": {
+   "symbol": "tfg_oflcial",
+   "name": "tfg_oflcial"
+  },
+  "0xe7c986268344d25a54702da348243e16330f094d": {
+   "symbol": "UFDS",
+   "name": "United Fund Dividend States "
+  },
+  "0xe7da8a3892786150fb59e14806a9daa895572e0c": {
+   "symbol": "JELLY",
+   "name": "Jelly By Virtuals"
+  },
+  "0xebb0204eb7971313855cb030c368587e42537777": {
+   "symbol": "VVV",
+   "name": "Valvoline"
+  },
+  "0xed243140af9dd3e868e93ad0467ef6ecc2fd9d69": {
+   "symbol": "ANCHOR",
+   "name": "Hydrex Anchor"
+  },
+  "0xedf9793a916dd57051cbee1e62b6788ed3d6683f": {
+   "symbol": "32.55",
+   "name": "🟦BASE🟦"
+  },
+  "0xeed9425adc12ac316ada38e053e00b6e78b7ab07": {
+   "symbol": "VALIDIUM",
+   "name": "Validium"
+  },
+  "0xeee75954eded526ef98a0cecc027beee4586315e": {
+   "symbol": "pfUSDC-17",
+   "name": "Peapods Interest Bearing USDC - 17"
+  },
+  "0xef25e8d1262765046a50f8aefb35e59baabd7777": {
+   "symbol": "CALLINU",
+   "name": "Call Inu"
+  },
+  "0xf00535c4e346ec0eaeac177ff89129bfa9d3b81e": {
+   "symbol": "USRP",
+   "name": "US Reserve Power⚡️"
+  },
+  "0xf0413f1756877d7db16c29cc3eff1c5d7a2a7777": {
+   "symbol": "PIZZA",
+   "name": "PIZZA"
+  },
+  "0xf119bf0473864b42c61cb2ed53e16f24b5cacccc": {
+   "symbol": "MAOPE",
+   "name": "MAOPPE"
+  },
+  "0xf1c69c43b21d18ab66abdeacd82d938c46b0a3a8": {
+   "symbol": "SANTACOIN",
+   "name": "SANTAHOOD Network"
+  },
+  "0xf21e946666bbfb82e8acb4ead1c1adffc130f7ab": {
+   "symbol": "barkinghotdog",
+   "name": "Zombie Attack Part 1"
+  },
+  "0xf275bf540dc4f64c1e36d4b041b009f93cdb7777": {
+   "symbol": "HAMIEVERSE",
+   "name": "Hamieverse"
+  },
+  "0xf30174e92db558c2e6ac8932977d4528b69ce328": {
+   "symbol": "ADP",
+   "name": "ADP🔥"
+  },
+  "0xf34afbb914c513d6dab05765e0a0a32d89debe9e": {
+   "symbol": "URSP",
+   "name": "United Relief States Program"
+  },
+  "0xf62d350c84ac23e87eb1cce603afd001a491fd5d": {
+   "symbol": "RIP POPE",
+   "name": "RIP POPE FRANCIS"
+  },
+  "0xf68ae0d1af13b4db908614edea3569d5fc7306e5": {
+   "symbol": "SCMR",
+   "name": "Strategic Critical Minerals Reserve"
+  },
+  "0xf72a5c7da0a9b68372d04b4b17136514bea726ea": {
+   "symbol": "ONE",
+   "name": "One Coin"
+  },
+  "0xf732a566121fa6362e9e0fbdd6d66e5c8c925e49": {
+   "symbol": "LITKEY",
+   "name": "Lit Protocol"
+  },
+  "0xf9575da3331b0d03d6e8d840c9ba5c181c0b3b07": {
+   "symbol": "LOTRY",
+   "name": "Lotry "
+  },
+  "0xfa2e883295488089759446a16c9cad1dbcc8eb37": {
+   "symbol": "SHX",
+   "name": "SHX"
+  },
+  "0xfbc97efc4935c58dc05fde6752ba5f6cdd16a87b": {
+   "symbol": "USDA",
+   "name": "United States Dividend Asset (USDA)"
+  },
+  "0xfc1ac69df793ac2dd120b0c74c891b9884cd7777": {
+   "symbol": "NUTS",
+   "name": "Nuts"
+  },
+  "0xfc4538493d19f190dce2e16269770e24dc377777": {
+   "symbol": "SPIRIT",
+   "name": "The Indomitable Human Spirit"
   }
  }
 }
