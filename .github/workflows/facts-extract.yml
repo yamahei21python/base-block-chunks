@@ -34,10 +34,15 @@ jobs:
           set -euo pipefail
           for tag in $(gh release list --limit 100 --json tagName --jq '.[].tagName' | grep '^data-' || true); do
             echo "== $tag =="
-            gh release download "$tag" --pattern 'chunk_*.db.gz' --dir dl
-            for gz in dl/*.db.gz; do gunzip -f "$gz"; done
-            python3 scripts/extract_facts.py dl facts-out
-            rm -f dl/*.db
+            # some data-* releases carry ledger DBs only (no raw chunks)
+            gh release download "$tag" --pattern 'chunk_*.db.gz' --dir dl || true
+            if ls dl/*.db.gz >/dev/null 2>&1; then
+              for gz in dl/*.db.gz; do gunzip -f "$gz"; done
+              python3 scripts/extract_facts.py dl facts-out
+              rm -f dl/*.db
+            else
+              echo "no raw chunks in $tag, skipping"
+            fi
           done
       - name: Package partials
         run: |
