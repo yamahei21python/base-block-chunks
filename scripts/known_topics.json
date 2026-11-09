@@ -37812,7 +37812,47 @@
    "class": "non_swap",
    "name": "DeployedCapitalReported(uint256,uint256,uint64)",
    "note": "Verified in Sourcify source code for RwaVaultV3 (0x8db493c05f9094d0bc9778a50c3fcc62e7a10cab); accounting report of deployed capital in RWA vault."
+  },
+  "0xe5acd897a1efff3a4c9433fe970fc8b0a24537a741575a436763be96a88c530a": {
+   "class": "swap_adjacent",
+   "name": "SwapWithFee(address,address,uint256,uint256,address)",
+   "note": "Fee wrapper emitted alongside Uniswap V3 swap; carries input amount and fee but no output amount; cannot be promoted to swap under strict transfer matching rule"
+  },
+  "0x2495fa811eaf045164f6b2b6e4e8ef9a811406c411bd8baae627b71c8231bcae": {
+   "class": "non_swap",
+   "name": "ProofHaven(address,address)",
+   "note": "Standalone proof verification event; no value transfer or exchange"
+  },
+  "0x52b48bf4ebd0c581080c4b0d3d213663ad3e44f23c10c2a6d2987abc969b451a": {
+   "class": "non_swap",
+   "name": "PoolStakedAdjusted(uint256,int256)",
+   "note": "Staking pool accounting event adjusting pool totalStaked by signed delta; no token transfers"
+  },
+  "0xccbb340100ae0231275bbc78f96bf86cd6924bfdc95af2988f131406f33e18a0": {
+   "class": "non_swap",
+   "name": "KeeperChanged(address)",
+   "note": "Administrative event updating contract keeper address via multisig; no tokens involved"
+  },
+  "0x3d34cc8a188b0116ebbbbab43310493807ae037bdab3d6746427d0e815dce3e0": {
+   "class": "non_swap",
+   "name": "LiquidityManagerChanged(address)",
+   "note": "Administrative role update event emitted on setLiquidityManager(address) in Slipstream vault contract."
+  },
+  "0x4ccc456c5e1646cee62037b4cc8574129612d670d9d8423f3818d0c9f1294683": {
+   "class": "marker",
+   "name": "Step(uint256,address,bytes4)",
+   "note": "Batch execution progress marker event emitted per subcall step in EIP-7702 delegated smart account."
+  },
+  "0xfbd65cfd6de1493db337385c0712095397ecbd0504df64b861cdfceb80c7b422": {
+   "class": "non_swap",
+   "name": "Unstake(address,uint256,uint256,uint256)",
+   "note": "DecubateMasterChef staking unstake event for COOKIE tokens."
+  },
+  "0x40e8969471749fd8c924eca5b6451e0db4de839c54a8791f5e1092149cd268b0": {
+   "class": "swap_adjacent",
+   "name": "FeesCollected(address,bytes32,uint256,uint256,uint256,uint256)",
+   "note": "CLManager fee collection event emitted in collectFeesToUSDC. Contains harvested fees and USDC output after an internal Aero pool swap."
   }
  },
- "version": "2026-11-09.1"
+ "version": "2026-11-09.2"
 }
