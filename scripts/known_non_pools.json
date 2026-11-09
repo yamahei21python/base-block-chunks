@@ -1,0 +1,511 @@
+{
+ "version": "2026-11-09.1",
+ "note": "Addresses audited as NOT pools. merge_pool_registry.py never merges these as pools. 113 entries = 131 audit-evidence entries minus 18 metric immutables pools verified as real pools via getImmutables() (PR #61). To appeal an entry, remove it here with an audit trail.",
+ "non_pools": {
+  "0x1b433fe555af6016a48ce82548ed77849b9832d8": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x1b433fe555af6016a48ce82548ed77849b9832d8",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3cfcc73dd7a81e5373cd9d50960d5ba5f113cb7e": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x3cfcc73dd7a81e5373cd9d50960d5ba5f113cb7e",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x571d430b1924e8cd50d0f9a3e2a2cc33d594a29c": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x571d430b1924e8cd50d0f9a3e2a2cc33d594a29c",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x5fb33b095c6e739be19364ab408cd8f102262bb6": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x5fb33b095c6e739be19364ab408cd8f102262bb6",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x616535324976f8dbcef19df0705b95ace86ebb48": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x616535324976f8dbcef19df0705b95ace86ebb48",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x6a1d7630c014060fcf2a58915b10e56298402ca8": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x6a1d7630c014060fcf2a58915b10e56298402ca8",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x994c90f2e654b282e24a1b7d00ee12e82408312c": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0x994c90f2e654b282e24a1b7d00ee12e82408312c",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xb6e91d9b24092d6cf422c37aff8ccaa9f95abe4e": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xb6e91d9b24092d6cf422c37aff8ccaa9f95abe4e",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xc7954f4639aaae2b1c33c27209deb79fea3d5b5a": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xc7954f4639aaae2b1c33c27209deb79fea3d5b5a",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xcb2b007bceb1d8e399d1d11ff07b7ba542dc90f9": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xcb2b007bceb1d8e399d1d11ff07b7ba542dc90f9",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xdeac3451b21038b89476ea60c8bb21bdfe97995e": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xdeac3451b21038b89476ea60c8bb21bdfe97995e",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xdf033790907c60c9b81ae355f76f74f52f92114a": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xdf033790907c60c9b81ae355f76f74f52f92114a",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xe20e20c5e78495ebb924f9b8f90ba2db72fda185": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xe20e20c5e78495ebb924f9b8f90ba2db72fda185",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xe3832e74f6058627b8eefdfa4b00c6f45a66c2df": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xe3832e74f6058627b8eefdfa4b00c6f45a66c2df",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xe789204a908fc586743f7b8acbee9194e5e2ea73": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xe789204a908fc586743f7b8acbee9194e5e2ea73",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xe944d5653d668fe85fb10a0d14f195dca70814c1": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xe944d5653d668fe85fb10a0d14f195dca70814c1",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xff615535e281b96022f1423c89a83744fbf3dc27": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "tokenab:0xff615535e281b96022f1423c89a83744fbf3dc27",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x005b3f4b78f46980948e56a968ae5a4f38204a3c": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x005b3f4b78f46980948e56a968ae5a4f38204a3c",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x0cb6608ffb4544c9916acda35525dde45a5ee912": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x0cb6608ffb4544c9916acda35525dde45a5ee912",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x1e25263a982a86bf76adef474d04f67a00e1bc40": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x1e25263a982a86bf76adef474d04f67a00e1bc40",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x24d25f010c43f94255f66fcdd420b95e56a5eea0": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x24d25f010c43f94255f66fcdd420b95e56a5eea0",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x2e3ee5666b160a80ffbddd9e5869e2d1b9212b5c": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x2e3ee5666b160a80ffbddd9e5869e2d1b9212b5c",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x4661daebb41e68ebccb02533352edb0b55f81aa3": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x4661daebb41e68ebccb02533352edb0b55f81aa3",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x4c21f4d24552dded396be940599bc49e76c1fb86": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x4c21f4d24552dded396be940599bc49e76c1fb86",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x523335fd8c15031301975cb1e37bc44ba1d248ca": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x523335fd8c15031301975cb1e37bc44ba1d248ca",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x58d4f97dae139f6fd0b21a1bcebc29ba0988df70": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x58d4f97dae139f6fd0b21a1bcebc29ba0988df70",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x5c21e843b21ee55c44a80067d1d887db43792c4d": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x5c21e843b21ee55c44a80067d1d887db43792c4d",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x5ede9c4a61405c5fb929d45c19434f85494e0aa9": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x5ede9c4a61405c5fb929d45c19434f85494e0aa9",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x618313f8168fa85d33dd54814dd4db7c7772ac26": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x618313f8168fa85d33dd54814dd4db7c7772ac26",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x61c8e2d0ecc8cbe352924655a376487a8dc76ff6": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x61c8e2d0ecc8cbe352924655a376487a8dc76ff6",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x720d8a4633cd322bb941dacb42407394b4e565ef": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x720d8a4633cd322bb941dacb42407394b4e565ef",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x7634f1bb2912eddfb62e3a79f5184401001a9613": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x7634f1bb2912eddfb62e3a79f5184401001a9613",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x83161541c6a7fbad1ab3960e9ce2b691afeb1cc1": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x83161541c6a7fbad1ab3960e9ce2b691afeb1cc1",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x8372e03a80de136e1239b629345b631e7b093366": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x8372e03a80de136e1239b629345b631e7b093366",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x8ddcff86c3e3d84052231afa9a9b2cd6e7de5e82": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x8ddcff86c3e3d84052231afa9a9b2cd6e7de5e82",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x977bd34ac7eefa0c3b4335ad7e0b0e1d6e0de746": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0x977bd34ac7eefa0c3b4335ad7e0b0e1d6e0de746",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xa5231ebce7fd5853bc9c3d05d4324cfa10eec12f": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xa5231ebce7fd5853bc9c3d05d4324cfa10eec12f",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xcde89660ef8b3f62d0fdd150eb02dbd7f30162ea": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xcde89660ef8b3f62d0fdd150eb02dbd7f30162ea",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xd69e78df9972eea3d0a3bcc83243d8b2583052c5": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xd69e78df9972eea3d0a3bcc83243d8b2583052c5",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xd977dc9433e656d60441a66b383f19e9f14bcb21": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xd977dc9433e656d60441a66b383f19e9f14bcb21",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xda066700b293ec09316d0f5fb2fb55259bd89c0e": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xda066700b293ec09316d0f5fb2fb55259bd89c0e",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xda8115f123e08bab243b2008994ec0be55111e6c": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xda8115f123e08bab243b2008994ec0be55111e6c",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xdf5e4ed6eaa25601a22488df2769f135ffb1206e": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xdf5e4ed6eaa25601a22488df2769f135ffb1206e",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xea506b85eb2138db00fb7cdce122eef01f372f9c": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xea506b85eb2138db00fb7cdce122eef01f372f9c",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xeaf1ca36c6f0c3b5e0cbc7169cc5321acf62df14": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xeaf1ca36c6f0c3b5e0cbc7169cc5321acf62df14",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xf5d3c23a316b0ebdd3af57665ca4966d5ce15ed3": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xf5d3c23a316b0ebdd3af57665ca4966d5ce15ed3",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xfd12bac9b0655dcba7c181ec30a3f6971802e7ac": {
+   "verdict": "contract_not_pool",
+   "registry_key": "xy:0xfd12bac9b0655dcba7c181ec30a3f6971802e7ac",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x51b39c596d9830c372ce5d3283fbdb646e6b17cd": {
+   "verdict": "contract_not_pool",
+   "registry_key": "immutables:0x51b39c596d9830c372ce5d3283fbdb646e6b17cd",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xfdaf783664a71af1fda539f47438c946e540b763": {
+   "verdict": "contract_not_pool",
+   "registry_key": "immutables:0xfdaf783664a71af1fda539f47438c946e540b763",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x8f912e785f1b0a8e27cd79d52168e1ca2d21bbbb": {
+   "verdict": "contract_not_pool",
+   "registry_key": "immutables:0x8f912e785f1b0a8e27cd79d52168e1ca2d21bbbb",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3165a6015126774c48f8e8657608fcd00c1c2b01": {
+   "verdict": "contract_not_pool",
+   "registry_key": "immutables:0x3165a6015126774c48f8e8657608fcd00c1c2b01",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xddd2de45eded93453eb2deb9c061ed1c5edb8aaa": {
+   "verdict": "unknown_not_pool",
+   "registry_key": "immutables:0xddd2de45eded93453eb2deb9c061ed1c5edb8aaa",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x95853622e225d4e9aef639cf6ecfba2f2e55e800": {
+   "verdict": "contract_not_pool",
+   "registry_key": "immutables:0x95853622e225d4e9aef639cf6ecfba2f2e55e800",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x290e41f7b52dbd2dc1e3009fe19e6a824f296a42": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x20f6ee51340adeed01a59b0e65cb3703f3dc860c": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x71def100007a540305dd65d1034d10e809679fd5": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x5520385bfcf07ec87c4c53a7d8d65595dff69fa4": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x0000efc4ec03a7c47d3a38a9be7ff1d52dd01b99": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x42046ff86b306958edb349b3edcaedc638b73123": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xe87b933e326195d399725a8d4f7abde743bcfb1a": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x46abd510d0dafe56a53ce629171155a7af506714": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x865d8cab29e4003b9b512e2121fdc1660d66b1d3": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x09bf787b9ab2d52d7836272a41e9809481795ab0": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xf6c5f01c7f3148891ad0e19df78743d31e390d1f": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xba12222222228d8ba445958a75a0704d566bf2c8": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xecbce11f310637bdb778096bf9ca69dd4e093f0d": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x07964f135f276412b3182a3b2407b8dd45000000": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x78585a997bac9950de16a56d15c6d7086cec5178": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x9e7243b98a8a9713cb9dc37fe9f18879f0e64dcb": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x302a94e3c28c290eaf2a4605fc52e11eb915f378": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x7957e5a88f0389997b352315e70ab20d77ec410a": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x73543879fda6f4ca837d409b08622d3f172045f5": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x72574feefb0197271f63e263cc158d8941f12454": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x70f9aa00d5789d7bf87e282bdfed28b3c2a238ce": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xcf846b006925f9e60a52373fbfa81595663a2ee4": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x14c5100481fee08d497e07397df2f435f648c4b5": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xde37e221442fa15c35dc19fbae11ed106ba52fb2": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xf559cc974203de7eb677fd656072cf881a790a5f": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x0000000055ec25287227aa8693471ee5f89221be": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3401fcbcee77f30502ff156a29af2c6792967a08": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xeac80c1722e8990aafeb2ea3bcf040d29f722bd9": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3d70b2f31f75dc84acdd5e1588695221959b2d37": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x4c4af8dbc524681930a27b2f1af5bcc8062e6fb7": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x064a804e338083693b8efb4a7f440de608a72a3a": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x571af1490e7fbfcb4231b5bcd7ef6b6b2f35ce5b": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x1429ec186c30938ce88dac87cb3b3929a402fc39": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xbaa8c0dd620f6411c9cc380140d5d312bcaf2a38": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x389b36fd948ede092018e83008d14e5a76b4b04d": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xf96a0ec41ae502d2bc58b7d5838ed39a33ae1d9f": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xdf460698e3abae9c26f60a69f207ddc8eff81cc8": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x19803434838e2c6a5f0022c6dc5086afb0083454": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x5bdb08ae195c8f085704582a27d566028a719265": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x30e0b788dd77035fa09ac6fd8fcb0f64a29300fd": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xf2ecc3a2defb4ecc1ac510cbbc405a539a990be4": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3e111115a82df6190e36adf0d552880663a4dbf1": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xb115124f277215bf85b710f0137efacac09cbaaf": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x94830eed62055e68d67a92f8f1aa3d600dd25ab3": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x4032b93bd4cda296838c123011ee9d28d756e370": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x84415b028d6bf8ac993bfa8cd586d02a65f1c98a": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x42902ab83a12cd96bd52d9780e2a24ee505bc1e9": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xa4745d15e06e8ee084a207e0226223e7beb02140": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xb373be045237b93e167c9ca788da011b757c2125": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xc170b635219545d44370ab023b88436cf669f81c": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xdecb02dbb077a21c91ca122b97fec756c1bbbb04": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xba1333333333a1ba1108e8412f11850a5c319ba9": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3e11226fe3d85142b734abce6e58918d5828d1b4": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xb222da5a71e8fb89a5a38b7c920eab5dfbc74b91": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x0347346eb6ceb870c9d3024bf9b3f643247ddaa1": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x11c1fbd4b3de66bc0565779b35171a6cf3e71f59": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0xf666d63901759b7c46f64f5a55f703a64b365ab9": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x3e11444c7650234c748d743d8d374fce2ee5e6c9": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  },
+  "0x105b298365cc15f23901c6a938e6787aaa53eec9": {
+   "verdict": "not_pool(recheck:66/66)",
+   "source": "PR #61 registry audit (registry_non_pools_merged.json)"
+  }
+ }
+}
