@@ -22516,6 +22516,106 @@
   "0xfc4538493d19f190dce2e16269770e24dc377777": {
    "symbol": "SPIRIT",
    "name": "The Indomitable Human Spirit"
+  },
+  "0x081c20779004aa3f6df98dc9e4ebd7ce78d882d8": {
+   "symbol": "GIT",
+   "name": "Get In Touch"
+  },
+  "0x0b8b8f19e1ae9bb36dad0ce13de3e40e81b4621b": {
+   "symbol": "B88",
+   "name": "B88"
+  },
+  "0x2d291ce2308e3c8174346c315ce35484da6c16bd": {
+   "symbol": "northidahojoe",
+   "name": "northidahojoe"
+  },
+  "0x584c50fc7677b2099c6f0be7a3eeb51bac0466a6": {
+   "symbol": "Basefish",
+   "name": "Basefish"
+  },
+  "0x6fba5157f650de083bf8ca1b19cb172dc511843d": {
+   "symbol": "SMOKE",
+   "name": "Smoke Ring"
+  },
+  "0x982a7f92c1c534fd1c0c4b046718c6b23de84595": {
+   "symbol": "TUCS",
+   "name": "TUCS Coin"
+  },
+  "0x9df00c60087c711cfc643021f43cda492b856b07": {
+   "symbol": "pDROID",
+   "name": "Praple Droid"
+  },
+  "0x9fe6d1f9a3e28a5119faa32503a143bcea4afb07": {
+   "symbol": "PYPLx",
+   "name": "PayPal tokenized   stock    (xStock)  "
+  },
+  "0xadf0c46b8a476ccd53bcbb02be8295a414f77a86": {
+   "symbol": "MKCERT",
+   "name": "MKCERT github.com/filosottile/MKCERT"
+  },
+  "0xadf0da9871a87e065fe257e60ff08857bb07bc79": {
+   "symbol": "FP-TS",
+   "name": "FP-TS github.com/gcanti/FP-TS"
+  },
+  "0xadf2def2434ac0b8a589b77a25a78f83420a6916": {
+   "symbol": "SUBSURFACE",
+   "name": "SUBSURFACE github.com/subsurface/SUBSURFACE"
+  },
+  "0xadf70fd1993a88735ddf3ed7c485942a19ec355f": {
+   "symbol": "AFFINE",
+   "name": "AFFINE github.com/toeverything/AFFINE"
+  },
+  "0xadfba45cbe49585977692781f83d62741a16077e": {
+   "symbol": "DUST3D",
+   "name": "DUST3D github.com/huxingyi/DUST3D"
+  },
+  "0xadfe8a2bd151494dfc5eb3c589721546f045c33f": {
+   "symbol": "OPENBAZAAR-GO",
+   "name": "OPENBAZAAR-GO github.com/openbazaar/OPENBAZAAR-GO"
+  },
+  "0xae570da82e86a53f8d5d90b494a70d31783deb07": {
+   "symbol": "$etherium",
+   "name": "spidermantumpgoku100"
+  },
+  "0xb2000000000000000000005e9ee2121a248f2bb6": {
+   "symbol": "NADF",
+   "name": "NADF"
+  },
+  "0xb20000000000000000000080292683d49f63cf75": {
+   "symbol": "TICKER",
+   "name": "XTO Token"
+  },
+  "0xb200000000000000000000ca425ab42e07c35bc3": {
+   "symbol": "QUBTc",
+   "name": "Quantum Computing Inc."
+  },
+  "0xc175f9decaff2f639765e57fa1e15944431bf98f": {
+   "symbol": "Orange is the color of fear",
+   "name": "It’s Halloween, baby — Miss Barkinghotdog"
+  },
+  "0xc24e457f3a8a82b225af0fe78613704fc3faf35d": {
+   "symbol": "$WOOF",
+   "name": "$WOOF"
+  },
+  "0xc8ccf79ba9f236ef7aeb019f50ce93a2ea338e4a": {
+   "symbol": "NYANCAT",
+   "name": "Nyan Cat!"
+  },
+  "0xc9750053fe947e0961eab0f3e29325f0311dcb07": {
+   "symbol": "CLANKER",
+   "name": "C"
+  },
+  "0xdb9b75fb265709714688a93a3923b36a944071e4": {
+   "symbol": "RWWA",
+   "name": "Reserve World war Asset"
+  },
+  "0xf83beb932997815bc83d83a2b663909407b5ea75": {
+   "symbol": "WRWA",
+   "name": "World Reserve War Asset"
+  },
+  "0xff66f4bcbb25aecb722bdbd11c210491dae297e2": {
+   "symbol": "BBB",
+   "name": "Blu By Base"
   }
  }
 }
