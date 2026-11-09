@@ -2337,7 +2337,13 @@
    "protocol": "uRWA",
    "role": "vault",
    "source": "Sourcify verified source code (RwaVaultV3.sol, Base chain 8453); event DeployedCapitalReported(uint256,uint256,uint64); ERC-4626 custodial RWA fund vault with pluggable compliance (uRWA)"
+  },
+  "0x47ce620831336a2b6c15260002ca27788b87c81c": {
+   "name": "DecubateMasterChef",
+   "protocol": "Decubate",
+   "role": "staking",
+   "source": "Sourcify verified implementation DecubateMasterChef (src/DecubateMasterChef.sol) via UpgradeableBeacon 0x0ba8cd57b0a641b898d08bb3770dd92485821f14 -> implementation 0x28e6acdc2259350def998999bd194abff7e79189; event Unstake(address,uint256,uint256,uint256)"
   }
  },
- "version": "2026-11-09.1"
+ "version": "2026-11-09.2"
 }
