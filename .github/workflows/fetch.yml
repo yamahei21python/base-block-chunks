@@ -69,7 +69,7 @@ jobs:
         batch: ${{ fromJSON(needs.plan.outputs.batches) }}
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch and publish batch
+      - name: Fetch, capture and publish batch
         env:
           BATCH: ${{ toJSON(matrix.batch) }}
           MODE: ${{ inputs.mode }}
@@ -81,23 +81,35 @@ jobs:
             f=$(printf '%s' "$c" | jq -r .first)
             l=$(printf '%s' "$c" | jq -r .last)
             echo "=== chunk ${f}-${l} ==="
+            sleep 2  # pace RPC calls between chunks
             python3 scripts/fetch_chunk.py --first "$f" --last "$l" \
               --out "chunk_${f}_${l}.db" --workers 4
+            # Ledger needed in both modes: pool ids and tokens come from legs.
+            python3 scripts/decode_chunk.py "chunk_${f}_${l}.db" "ledger_${f}_${l}.db"
+            python3 scripts/capture_state.py "ledger_${f}_${l}.db" "state_${f}_${l}.json"
+            gzip -9 "state_${f}_${l}.json"
+            python3 scripts/capture_prices.py "ledger_${f}_${l}.db" "prices_${f}_${l}.json"
+            gzip -9 "prices_${f}_${l}.json"
             if [ "$MODE" = "ledger" ]; then
-              python3 scripts/decode_chunk.py "chunk_${f}_${l}.db" "ledger_${f}_${l}.db"
               gzip -9 "ledger_${f}_${l}.db"
               gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber \
                 "ledger_${f}_${l}.db.gz" \
-                "ledger_${f}_${l}.db.manifest.json"
+                "ledger_${f}_${l}.db.manifest.json" \
+                "state_${f}_${l}.json.gz" \
+                "prices_${f}_${l}.json.gz"
               rm -f "chunk_${f}_${l}.db" "chunk_${f}_${l}.db.manifest.json" \
                     "ledger_${f}_${l}.db.gz" "ledger_${f}_${l}.db.manifest.json"
             else
               gzip -9 "chunk_${f}_${l}.db"
               gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber \
                 "chunk_${f}_${l}.db.gz" \
-                "chunk_${f}_${l}.db.manifest.json"
-              rm -f "chunk_${f}_${l}.db.gz" "chunk_${f}_${l}.db.manifest.json"
+                "chunk_${f}_${l}.db.manifest.json" \
+                "state_${f}_${l}.json.gz" \
+                "prices_${f}_${l}.json.gz"
+              rm -f "chunk_${f}_${l}.db.gz" "chunk_${f}_${l}.db.manifest.json" \
+                    "ledger_${f}_${l}.db"
             fi
+            rm -f "state_${f}_${l}.json.gz" "prices_${f}_${l}.json.gz"
           done
 
   notify:
