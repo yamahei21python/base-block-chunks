@@ -56,7 +56,7 @@ def rpc_batch(calls, block):
         urls = [_ACTIVE["url"]] + [u for u in urls if u != _ACTIVE["url"]]
     out = [None] * len(calls)
     last = None
-    for attempt in range(3):
+    for attempt in range(5):
         for url in urls:
             for start in range(0, len(calls), BATCH):
                 chunk = calls[start:start + BATCH]
@@ -78,19 +78,19 @@ def rpc_batch(calls, block):
                 if errs and not all(_is_permanent_error(e) for e in errs):
                     last = RuntimeError(f"RPC error at {url}: {errs[0]}")
                     _ACTIVE["url"] = None  # do not reuse an endpoint that is failing
-                    time.sleep(2 + attempt * 3)
+                    time.sleep(3 + attempt * 5)
                     break
                 for i in range(len(chunk)):
                     out[start + i] = by_id.get(start + i, {"error": "missing response"})
                 _ACTIVE["url"] = url
-                time.sleep(0.15)  # gentle pacing between batches
+                time.sleep(0.4)  # gentle pacing between batches (4 jobs in parallel)
                 continue
             else:
                 if all(r is not None for r in out):
                     return out
                 continue
             continue  # try the next endpoint after a failed batch
-        time.sleep(1 + attempt)
+        time.sleep(2 + attempt * 4)
     raise RuntimeError(f"RPC batch failed for block {block}: {last}")
 
 
