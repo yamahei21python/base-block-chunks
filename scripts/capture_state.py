@@ -38,44 +38,49 @@ def decode_slot0(word):
     return str(sqrt), tick
 
 
+def _uint(word, mask):
+    if not isinstance(word, str) or not word.startswith("0x"):
+        return None
+    try:
+        return int(word, 16) & mask
+    except ValueError:
+        return None
+
+
 def snapshot(pools, block):
     hb = hex_block(block)
     calls = []
     for pool in pools:
         calls.append(("eth_getStorageAt", [pool, "0x0", hb]))
         calls.append(("eth_call", [{"to": pool, "data": LIQ_SELECTOR}, hb]))
-        for slot in range(1, 7):
-            calls.append(("eth_getStorageAt", [pool, hex(slot), hb]))
+        calls.append(("eth_getStorageAt", [pool, "0x4", hb]))
     responses = rpc_batch(calls, block)
-    out = []
+    out, fallback = [], []
     for i, pool in enumerate(pools):
-        base = i * 8
-        sqrt, tick = decode_slot0(result_of(responses[base]))
-        liq_word = result_of(responses[base + 1])
-        want = None
-        if isinstance(liq_word, str) and liq_word.startswith("0x"):
-            try:
-                want = int(liq_word, 16) & MASK128
-            except ValueError:
-                want = None
-        liquidity = None
-        if want is not None:
-            for slot in range(1, 7):
-                word = result_of(responses[base + 1 + slot])
-                if isinstance(word, str) and word.startswith("0x"):
-                    try:
-                        val = int(word, 16) & MASK128
-                    except ValueError:
-                        continue
-                    if val == want:
-                        liquidity = str(val)
-                        break
-        if sqrt is None and liquidity is None:
-            out.append(None)  # unreadable pool: explicit null, never zero
-        else:
-            out.append({"pool_id": pool, "sqrt_price_x96": sqrt,
-                        "tick": tick, "liquidity": liquidity})
-    return out
+        base = i * 3
+        word = result_of(responses[base])
+        sqrt, tick = decode_slot0(word)
+        want = _uint(result_of(responses[base + 1]), MASK128)
+        val4 = _uint(result_of(responses[base + 2]), MASK128)
+        liquidity = str(want) if want is not None and val4 == want else None
+        out.append({"pool_id": pool, "sqrt_price_x96": sqrt,
+                    "tick": tick, "liquidity": liquidity})
+        if want is not None and liquidity is None:
+            fallback.append((i, pool, want))
+    if fallback:
+        extra = []
+        for _i, pool, _want in fallback:
+            for slot in (1, 2, 3, 5, 6):
+                extra.append(("eth_getStorageAt", [pool, hex(slot), hb]))
+        extra_res = rpc_batch(extra, block)
+        for j, (idx, _pool, want) in enumerate(fallback):
+            base = j * 5
+            for slot in range(5):
+                if _uint(result_of(extra_res[base + slot]), MASK128) == want:
+                    out[idx]["liquidity"] = str(want)
+                    break
+    return [None if e["sqrt_price_x96"] is None and e["liquidity"] is None else e
+            for e in out]
 
 
 def main():

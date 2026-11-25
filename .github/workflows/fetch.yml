@@ -39,7 +39,8 @@ jobs:
           assert last >= first and last - first + 1 <= 100000, "bad range"
           chunks = [{"first": f, "last": min(f + 99, last)}
                     for f in range(first, last + 1, 100)]
-          batches = [chunks[i:i + 200] for i in range(0, len(chunks), 200)]
+          # ~3 min/chunk including state+prices; 50 chunks stays under the 360m job limit.
+          batches = [chunks[i:i + 50] for i in range(0, len(chunks), 50)]
           assert len(batches) <= 256, "GitHub Actions matrix limit is 256 jobs"
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
               fh.write(f"batches={json.dumps(batches)}\n")
