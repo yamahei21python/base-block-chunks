@@ -65,7 +65,7 @@ jobs:
     timeout-minutes: 360
     strategy:
       fail-fast: false
-      max-parallel: 10
+      max-parallel: 2  # public archive RPC tolerates two state-capture jobs
       matrix:
         batch: ${{ fromJSON(needs.plan.outputs.batches) }}
     steps:
