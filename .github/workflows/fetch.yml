@@ -25,7 +25,7 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     outputs:
-      chunks: ${{ steps.plan.outputs.chunks }}
+      batches: ${{ steps.plan.outputs.batches }}
       tag: ${{ steps.plan.outputs.tag }}
     steps:
       - id: plan
@@ -39,10 +39,12 @@ jobs:
           assert last >= first and last - first + 1 <= 100000, "bad range"
           chunks = [{"first": f, "last": min(f + 99, last)}
                     for f in range(first, last + 1, 100)]
+          batches = [chunks[i:i + 200] for i in range(0, len(chunks), 200)]
+          assert len(batches) <= 256, "GitHub Actions matrix limit is 256 jobs"
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
-              fh.write(f"chunks={json.dumps(chunks)}\n")
+              fh.write(f"batches={json.dumps(batches)}\n")
               fh.write(f"tag=data-{first}-{last}\n")
-          print(chunks)
+          print(f"chunks={len(chunks)} batches={len(batches)}")
           EOF
       - name: Create release for this range
         env:
@@ -59,48 +61,44 @@ jobs:
   fetch:
     needs: plan
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     strategy:
       fail-fast: false
       max-parallel: 10
       matrix:
-        chunk: ${{ fromJSON(needs.plan.outputs.chunks) }}
+        batch: ${{ fromJSON(needs.plan.outputs.batches) }}
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch chunk ${{ matrix.chunk.first }}-${{ matrix.chunk.last }}
-        run: |
-          python3 scripts/fetch_chunk.py \
-            --first ${{ matrix.chunk.first }} --last ${{ matrix.chunk.last }} \
-            --out chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db --workers 4
-          ls -la
-      - name: Decode chunk into ledger (ledger mode)
-        if: inputs.mode == 'ledger'
-        run: |
-          python3 scripts/decode_chunk.py \
-            chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db \
-            ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
-          gzip -9 ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
-          ls -la
-      - name: Upload ledger to release (raw chunk is discarded with the runner)
-        if: inputs.mode == 'ledger'
+      - name: Fetch and publish batch
         env:
+          BATCH: ${{ toJSON(matrix.batch) }}
+          MODE: ${{ inputs.mode }}
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ needs.plan.outputs.tag }}
         run: |
-          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
-            ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
-            ledger_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
-            --clobber
-      - name: Upload chunk to release (raw mode)
-        if: inputs.mode == 'raw'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: ${{ needs.plan.outputs.tag }}
-        run: |
-          gzip -9 chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db
-          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
-            chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.gz \
-            chunk_${{ matrix.chunk.first }}_${{ matrix.chunk.last }}.db.manifest.json \
-            --clobber
+          set -euo pipefail
+          for c in $(printf '%s' "$BATCH" | jq -c '.[]'); do
+            f=$(printf '%s' "$c" | jq -r .first)
+            l=$(printf '%s' "$c" | jq -r .last)
+            echo "=== chunk ${f}-${l} ==="
+            python3 scripts/fetch_chunk.py --first "$f" --last "$l" \
+              --out "chunk_${f}_${l}.db" --workers 4
+            if [ "$MODE" = "ledger" ]; then
+              python3 scripts/decode_chunk.py "chunk_${f}_${l}.db" "ledger_${f}_${l}.db"
+              gzip -9 "ledger_${f}_${l}.db"
+              gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber \
+                "ledger_${f}_${l}.db.gz" \
+                "ledger_${f}_${l}.db.manifest.json"
+              rm -f "chunk_${f}_${l}.db" "chunk_${f}_${l}.db.manifest.json" \
+                    "ledger_${f}_${l}.db.gz" "ledger_${f}_${l}.db.manifest.json"
+            else
+              gzip -9 "chunk_${f}_${l}.db"
+              gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber \
+                "chunk_${f}_${l}.db.gz" \
+                "chunk_${f}_${l}.db.manifest.json"
+              rm -f "chunk_${f}_${l}.db.gz" "chunk_${f}_${l}.db.manifest.json"
+            fi
+          done
 
   notify:
     needs: [plan, fetch]
